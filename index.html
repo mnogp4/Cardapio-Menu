@@ -7,63 +7,44 @@
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   
   <style>
-    :root {
-      --cor-principal: #ff6b35;
-      --fundo: #f8f9fa;
-      --texto: #222;
-    }
+    :root { --cor-principal: #ff6b35; --fundo: #f8f9fa; --texto: #222; }
     body { margin:0; font-family:'Segoe UI',Arial,sans-serif; background:var(--fundo); color:var(--texto); line-height:1.5; }
+    
     header {
       background: #1a1a1a; color:white; padding:20px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);
     }
     header h1 { margin:0; font-size:2.2em; }
     header h2 { margin:8px 0 0; font-weight:300; color:#ff6b35; }
-    
+
     .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
-    
-    details {
-      margin: 20px 0;
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+    .filtros {
+      background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      margin-bottom: 30px; text-align: center;
     }
-    summary {
-      background: var(--cor-principal);
-      color: white;
-      padding: 18px 25px;
-      font-size: 1.4em;
-      font-weight: 600;
-      cursor: pointer;
-      user-select: none;
-      transition: 0.2s;
+    .filtros label { font-weight: 600; margin-right: 12px; font-size: 1.1em; }
+    select, input {
+      padding: 10px 14px; font-size: 1em; border: 2px solid #ddd; border-radius: 8px; width: 300px;
     }
-    summary:hover { background: #e55a2b; }
-    summary::marker, summary::-webkit-details-marker { display:none; }
-    
+    input { width: 400px; max-width: 100%; }
+
     table {
-      width: 100%;
-      border-collapse: collapse;
-      background: white;
+      width: 100%; border-collapse: collapse; background: white; border-radius: 12px;
+      overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     }
     th, td {
-      padding: 14px 16px;
-      text-align: left;
-      border-bottom: 1px solid #eee;
+      padding: 14px 16px; text-align: left; border-bottom: 1px solid #eee;
     }
     th {
-      background: #f1f1f1;
-      font-weight: 600;
-      color: #444;
+      background: #f1f1f1; font-weight: 600; color: #444;
     }
     tr:hover { background: #fff8f5; }
     .preco { font-weight: bold; color: var(--cor-principal); text-align: right; white-space: nowrap; }
-    
-    footer {
-      text-align:center;
-      padding:30px;
-      color:#777;
-      font-size:0.9em;
+    .categoria-tag {
+      background: var(--cor-principal); color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.8em; font-weight: bold;
+    }
+    .sem-resultado {
+      text-align: center; padding: 40px; color: #888; font-size: 1.2em;
     }
   </style>
 </head>
@@ -74,81 +55,108 @@
     <h2>Cardápio Digital</h2>
   </header>
 
-  <div class="container" id="cardapio">
-    <p style="text-align:center; font-size:1.2em; color:#666;">Carregando cardápio...</p>
+  <div class="container">
+    <div class="filtros">
+      <label for="categoria">Filtrar por categoria:</label>
+      <select id="categoria">
+        <option value="">Tudo</option>
+        <!-- Opções preenchidas via JS -->
+      </select>
+
+      <input type="text" id="busca" placeholder=" Pesquisar produto ou descrição..." style="margin-left: 20px;">
+    </div>
+
+    <div id="resultado">
+      <p style="text-align:center; color:#666;">Carregando cardápio...</p>
+    </div>
   </div>
 
-  <footer>
-    Menu Brands © 2025 — Cardápio sempre atualizado
-  </footer>
-
   <script>
-    // Carrega o CSV e monta o cardápio
+    let todosOsItens = [];
+
     Papa.parse("MenuFiltrado.csv", {
       download: true,
       header: true,
       complete: function(results) {
-        const data = results.data;
-        const container = document.getElementById("cardapio");
-        container.innerHTML = "";
+        todosOsItens = results.data.filter(item => item["NOME CARDAPIO"]);
 
-        // Agrupa por CATEGORIA
-        const grupos = {};
-        data.forEach(item => {
-          const cat = (item.CATEGORIA || "Outros").trim();
-          if (!grupos[cat]) grupos[cat] = [];
-          grupos[cat].push(item);
+        // Preenche o select com categorias únicas
+        const categorias = [...new Set(todosOsItens.map(i => i.CATEGORIA || "Outros"))].sort();
+        const select = document.getElementById("categoria");
+        categorias.forEach(cat => {
+          const opt = document.createElement("option");
+          opt.value = cat;
+          opt.textContent = cat;
+          select.appendChild(opt);
         });
 
-        // Ordena as categorias (opcional: alfabeticamente)
-        Object.keys(grupos).sort().forEach(categoria => {
-          const itens = grupos[categoria];
+        // Mostra tudo inicialmente
+        mostrarItens(todosOsItens);
+      }
+    });
 
-          const details = document.createElement("details");
-          details.open = true; // abre todas por padrão (pode mudar para false)
-          
-          const summary = document.createElement("summary");
-          summary.textContent = categoria;
-          details.appendChild(summary);
+    function mostrarItens(itens) {
+      const container = document.getElementById("resultado");
+      if (itens.length === 0) {
+        container.innerHTML = '<p class="sem-resultado">Nenhum produto encontrado.</p>';
+        return;
+      }
 
-          const table = document.createElement("table");
-          const thead = document.createElement("thead");
-          const tbody = document.createElement("tbody");
-
-          // Cabeçalho da tabela
-          thead.innerHTML = `
+      let tabela = `
+        <table>
+          <thead>
             <tr>
+              <th>Categoria</th>
               <th>Nome no Cardápio</th>
               <th>Nome PDV</th>
               <th>Cód. PDV</th>
-              <th style="width:110px;">Preço</th>
+              <th>Preço</th>
               <th>Descrição</th>
-            </tr>`;
+            </tr>
+          </thead>
+          <tbody>`;
 
-          // Linhas de produtos
-          itens.forEach(p => {
-            if (!p["NOME CARDAPIO"]) return; // pula linhas sem nome
-            const tr = document.createElement("tr");
-            tr.innerHTML = `
-              <td><strong>${p["NOME CARDAPIO"] || ""}</strong></td>
-              <td>${p["NOME PDV"] || ""}</td>
-              <td>${p["CÓD PDV"] || ""}</td>
-              <td class="preco">R$ ${(parseFloat(p["PREÇO VENDA CHEIO"]) || 0).toFixed(2).replace(".",",")}</td>
-              <td>${p["DESCRICAO ITEM CARDAPIO"] || ""}</td>
-            `;
-            tbody.appendChild(tr);
-          });
+      itens.forEach(p => {
+        const preco = parseFloat(p["PREÇO VENDA CHEIO"]) || 0;
+        tabela += `
+          <tr>
+            <td><span class="categoria-tag">${p.CATEGORIA || "Outros"}</span></td>
+            <td><strong>${p["NOME CARDAPIO"] || ""}</strong></td>
+            <td>${p["NOME PDV"] || ""}</td>
+            <td>${p["CÓD PDV"] || ""}</td>
+            <td class="preco">R$ ${preco.toFixed(2).replace(".",",")}</td>
+            <td>${p["DESCRICAO ITEM CARDAPIO"] || ""}</td>
+          </tr>`;
+      });
 
-          table.appendChild(thead);
-          table.appendChild(tbody);
-          details.appendChild(table);
-          container.appendChild(details);
-        });
-      },
-      error: function() {
-        document.getElementById("cardapio").innerHTML = "<p style='text-align:center;color:red;'>Erro ao carregar o cardápio. Verifique o arquivo MenuFiltrado.csv</p>";
+      tabela += `</tbody></table>`;
+      container.innerHTML = tabela;
+    }
+
+    // Filtros em tempo real
+    document.getElementById("categoria").addEventListener("change", filtrar);
+    document.getElementById("busca").addEventListener("input", filtrar);
+
+    function filtrar() {
+      const catSelecionada = document.getElementById("categoria").value;
+      const termo = document.getElementById("busca").value.toLowerCase();
+
+      let filtrados = todosOsItens;
+
+      if (catSelecionada) {
+        filtrados = filtrados.filter(i => (i.CATEGORIA || "Outros") === catSelecionada);
       }
-    });
+
+      if (termo) {
+        filtrados = filtrados.filter(i =>
+          (i["NOME CARDAPIO"] || "").toLowerCase().includes(termo) ||
+          (i["DESCRICAO ITEM CARDAPIO"] || "").toLowerCase().includes(termo) ||
+          (i["NOME PDV"] || "").toLowerCase().includes(termo)
+        );
+      }
+
+      mostrarItens(filtrados);
+    }
   </script>
 </body>
 </html>
