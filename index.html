@@ -72,91 +72,108 @@
   </div>
 
   <script>
-    let todosOsItens = [];
+  let todosOsItens = [];
 
-    Papa.parse("MenuFiltrado.csv", {
-      download: true,
-      header: true,
-      complete: function(results) {
-        todosOsItens = results.data.filter(item => item["NOME CARDAPIO"]);
+  // Função para limpar nomes de categoria (remove \n, \r, tabs, espaços extras e : )
+  function limparCategoria(txt) {
+    if (!txt) return "Outros";
+    return txt
+      .toString()
+      .replace(/[\r\n\t]+/g, " ")    // remove quebras de linha e tabs
+      .replace(/\s+/g, " ")          // múltiplos espaços → um só
+      .replace(/:/g, "")             // remove dois-pontos (caso ainda tenha)
+      .trim();
+  }
 
-        // Preenche o select com categorias únicas
-        const categorias = [...new Set(todosOsItens.map(i => i.CATEGORIA || "Outros"))].sort();
-        const select = document.getElementById("categoria");
-        categorias.forEach(cat => {
-          const opt = document.createElement("option");
-          opt.value = cat;
-          opt.textContent = cat;
-          select.appendChild(opt);
-        });
+  Papa.parse("MenuFiltrado.csv", {
+    download: true,
+    header: true,
+    complete: function(results) {
+      // Limpa e padroniza todos os itens
+      todosOsItens = results.data
+        .filter(item => item["NOME CARDAPIO"])
+        .map(item => ({
+          ...item,
+          CATEGORIA: limparCategoria(item.CATEGORIA)
+        }));
 
-        // Mostra tudo inicialmente
-        mostrarItens(todosOsItens);
-      }
-    });
+      // Preenche o select com categorias únicas e limpas
+      const categoriasUnicas = [...new Set(todosOsItens.map(i => i.CATEGORIA))].sort();
+      const select = document.getElementById("categoria");
+      select.innerHTML = '<option value="">Tudo</option>'; // limpa e recria
 
-    function mostrarItens(itens) {
-      const container = document.getElementById("resultado");
-      if (itens.length === 0) {
-        container.innerHTML = '<p class="sem-resultado">Nenhum produto encontrado.</p>';
-        return;
-      }
-
-      let tabela = `
-        <table>
-          <thead>
-            <tr>
-              <th>Categoria</th>
-              <th>Nome no Cardápio</th>
-              <th>Nome PDV</th>
-              <th>Cód. PDV</th>
-              <th>Preço</th>
-              <th>Descrição</th>
-            </tr>
-          </thead>
-          <tbody>`;
-
-      itens.forEach(p => {
-        const preco = parseFloat(p["PREÇO VENDA CHEIO"]) || 0;
-        tabela += `
-          <tr>
-            <td><span class="categoria-tag">${p.CATEGORIA || "Outros"}</span></td>
-            <td><strong>${p["NOME CARDAPIO"] || ""}</strong></td>
-            <td>${p["NOME PDV"] || ""}</td>
-            <td>${p["CÓD PDV"] || ""}</td>
-            <td class="preco">R$ ${preco.toFixed(2).replace(".",",")}</td>
-            <td>${p["DESCRICAO ITEM CARDAPIO"] || ""}</td>
-          </tr>`;
+      categoriasUnicas.forEach(cat => {
+        const opt = document.createElement("option");
+        opt.value = cat;
+        opt.textContent = cat;
+        select.appendChild(opt);
       });
 
-      tabela += `</tbody></table>`;
-      container.innerHTML = tabela;
+      mostrarItens(todosOsItens);
+    }
+  });
+
+  function mostrarItens(itens) {
+    const container = document.getElementById("resultado");
+    if (itens.length === 0) {
+      container.innerHTML = '<p class="sem-resultado">Nenhum produto encontrado.</p>';
+      return;
     }
 
-    // Filtros em tempo real
-    document.getElementById("categoria").addEventListener("change", filtrar);
-    document.getElementById("busca").addEventListener("input", filtrar);
+    let tabela = `
+      <table>
+        <thead>
+          <tr>
+            <th>Categoria</th>
+            <th>Nome no Cardápio</th>
+            <th>Nome PDV</th>
+            <th>Cód. PDV</th>
+            <th>Preço</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>`;
 
-    function filtrar() {
-      const catSelecionada = document.getElementById("categoria").value;
-      const termo = document.getElementById("busca").value.toLowerCase();
+    itens.forEach(p => {
+      const preco = parseFloat(p["PREÇO VENDA CHEIO"]) || 0;
+      tabela += `
+        <tr>
+          <td><span class="categoria-tag">${p.CATEGORIA}</span></td>
+          <td><strong>${p["NOME CARDAPIO"] || ""}</strong></td>
+          <td>${p["NOME PDV"] || ""}</td>
+          <td>${p["CÓD PDV"] || ""}</td>
+          <td class="preco">R$ ${preco.toFixed(2).replace(".",",")}</td>
+          <td>${p["DESCRICAO ITEM CARDAPIO"] || ""}</td>
+        </tr>`;
+    });
 
-      let filtrados = todosOsItens;
+    tabela += `</tbody></table>`;
+    container.innerHTML = tabela;
+  }
 
-      if (catSelecionada) {
-        filtrados = filtrados.filter(i => (i.CATEGORIA || "Outros") === catSelecionada);
-      }
+  // Filtros
+  document.getElementById("categoria").addEventListener("change", filtrar);
+  document.getElementById("busca").addEventListener("input", filtrar);
 
-      if (termo) {
-        filtrados = filtrados.filter(i =>
-          (i["NOME CARDAPIO"] || "").toLowerCase().includes(termo) ||
-          (i["DESCRICAO ITEM CARDAPIO"] || "").toLowerCase().includes(termo) ||
-          (i["NOME PDV"] || "").toLowerCase().includes(termo)
-        );
-      }
+  function filtrar() {
+    let filtrados = todosOsItens;
 
-      mostrarItens(filtrados);
+    const catSelecionada = document.getElementById("categoria").value;
+    const termo = document.getElementById("busca").value.toLowerCase();
+
+    if (catSelecionada) {
+      filtrados = filtrados.filter(i => i.CATEGORIA === catSelecionada);
     }
-  </script>
+    if (termo) {
+      filtrados = filtrados.filter(i =>
+        (i["NOME CARDAPIO"] || "").toLowerCase().includes(termo) ||
+        (i["DESCRICAO ITEM CARDAPIO"] || "").toLowerCase().includes(termo) ||
+        (i["NOME PDV"] || "").toLowerCase().includes(termo)
+      );
+    }
+
+    mostrarItens(filtrados);
+  }
+</script>
 </body>
 </html>
