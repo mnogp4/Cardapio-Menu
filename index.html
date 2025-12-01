@@ -24,9 +24,10 @@
     }
     .filtros label { font-weight: 600; margin-right: 12px; font-size: 1.1em; }
     select, input {
-      padding: 10px 14px; font-size: 1em; border: 2px solid #ddd; border-radius: 8px; width: 300px;
+      padding: 10px 14px; font-size: 1em; border: 2px solid #ddd; border-radius: 8px;
     }
-    input { width: 400px; max-width: 100%; }
+    select { width: 320px; }
+    input { width: 400px; max-width: 100%; margin-left: 20px; }
 
     table {
       width: 100%; border-collapse: collapse; background: white; border-radius: 12px;
@@ -40,11 +41,42 @@
     }
     tr:hover { background: #fff8f5; }
     .preco { font-weight: bold; color: var(--cor-principal); text-align: right; white-space: nowrap; }
+
+    /* CATEGORIA TAG — CORRIGIDA E PERFEITA */
     .categoria-tag {
-      background: var(--cor-principal); color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.8em; font-weight: bold;
+      background: var(--cor-principal);
+      color: white;
+      padding: 7px 14px;
+      border-radius: 25px;
+      font-size: 0.82em;
+      font-weight: bold;
+      display: inline-block;
+      max-width: 160px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      vertical-align: middle;
+      box-shadow: 0 2px 6px rgba(255,107,53,0.3);
     }
+    .categoria-tag:hover {
+      overflow: visible;
+      white-space: normal;
+      word-wrap: break-word;
+      max-width: none;
+      background: #e55a2b;
+      z-index: 10;
+      position: relative;
+      padding: 10px 16px;
+    }
+
     .sem-resultado {
-      text-align: center; padding: 40px; color: #888; font-size: 1.2em;
+      text-align: center; padding: 50px; color: #888; font-size: 1.3em;
+    }
+
+    @media (max-width: 768px) {
+      .filtros { flex-direction: column; }
+      select, input { width: 100%; margin: 10px 0; }
+      th, td { font-size: 0.9em; padding: 10px; }
     }
   </style>
 </head>
@@ -60,120 +92,123 @@
       <label for="categoria">Filtrar por categoria:</label>
       <select id="categoria">
         <option value="">Tudo</option>
-        <!-- Opções preenchidas via JS -->
       </select>
-
-      <input type="text" id="busca" placeholder=" Pesquisar produto ou descrição..." style="margin-left: 20px;">
+      <input type="text" id="busca" placeholder=" Pesquisar produto, código ou descrição...">
     </div>
 
     <div id="resultado">
-      <p style="text-align:center; color:#666;">Carregando cardápio...</p>
+      <p style="text-align:center; color:#666; font-size:1.1em;">Carregando cardápio...</p>
     </div>
   </div>
 
   <script>
-  let todosOsItens = [];
+    let todosOsItens = [];
 
-  // Função para limpar nomes de categoria (remove \n, \r, tabs, espaços extras e : )
-  function limparCategoria(txt) {
-    if (!txt) return "Outros";
-    return txt
-      .toString()
-      .replace(/[\r\n\t]+/g, " ")    // remove quebras de linha e tabs
-      .replace(/\s+/g, " ")          // múltiplos espaços → um só
-      .replace(/:/g, "")             // remove dois-pontos (caso ainda tenha)
-      .trim();
-  }
-
-  Papa.parse("MenuFiltrado.csv", {
-    download: true,
-    header: true,
-    complete: function(results) {
-      // Limpa e padroniza todos os itens
-      todosOsItens = results.data
-        .filter(item => item["NOME CARDAPIO"])
-        .map(item => ({
-          ...item,
-          CATEGORIA: limparCategoria(item.CATEGORIA)
-        }));
-
-      // Preenche o select com categorias únicas e limpas
-      const categoriasUnicas = [...new Set(todosOsItens.map(i => i.CATEGORIA))].sort();
-      const select = document.getElementById("categoria");
-      select.innerHTML = '<option value="">Tudo</option>'; // limpa e recria
-
-      categoriasUnicas.forEach(cat => {
-        const opt = document.createElement("option");
-        opt.value = cat;
-        opt.textContent = cat;
-        select.appendChild(opt);
-      });
-
-      mostrarItens(todosOsItens);
-    }
-  });
-
-  function mostrarItens(itens) {
-    const container = document.getElementById("resultado");
-    if (itens.length === 0) {
-      container.innerHTML = '<p class="sem-resultado">Nenhum produto encontrado.</p>';
-      return;
+    // LIMPEZA TOTAL E DEFINITIVA DAS CATEGORIAS
+    function limparCategoria(txt) {
+      if (!txt || txt.trim() === "") return "Outros";
+      return txt.toString()
+        .replace(/[\r\n\t\v\f]+/g, " ")      // remove quebras de linha, tabs, etc.
+        .replace(/[^\w\s\-\(\)\+\&à-úÀ-Ú]/g, "") // remove caracteres estranhos
+        .replace(/\s+/g, " ")                // múltiplos espaços → 1
+        .replace(/:/g, "")                   // remove dois-pontos
+        .trim()
+        .substring(0, 80);                   // limite seguro
     }
 
-    let tabela = `
-      <table>
-        <thead>
-          <tr>
-            <th>Categoria</th>
-            <th>Nome no Cardápio</th>
-            <th>Nome PDV</th>
-            <th>Cód. PDV</th>
-            <th>Preço</th>
-            <th>Descrição</th>
-          </tr>
-        </thead>
-        <tbody>`;
+    Papa.parse("MenuFiltrado.csv", {
+      download: true,
+      header: true,
+      skipEmptyLines: true,
+      complete: function(results) {
+        todosOsItens = results.data
+          .filter(item => item["NOME CARDAPIO"] && item["NOME CARDAPIO"].trim())
+          .map(item => ({
+            ...item,
+            CATEGORIA: limparCategoria(item.CATEGORIA)
+          }));
 
-    itens.forEach(p => {
-      const preco = parseFloat(p["PREÇO VENDA CHEIO"]) || 0;
-      tabela += `
-        <tr>
-          <td><span class="categoria-tag">${p.CATEGORIA}</span></td>
-          <td><strong>${p["NOME CARDAPIO"] || ""}</strong></td>
-          <td>${p["NOME PDV"] || ""}</td>
-          <td>${p["CÓD PDV"] || ""}</td>
-          <td class="preco">R$ ${preco.toFixed(2).replace(".",",")}</td>
-          <td>${p["DESCRICAO ITEM CARDAPIO"] || ""}</td>
-        </tr>`;
+        // Preenche o select com categorias únicas
+        const categorias = [...new Set(todosOsItens.map(i => i.CATEGORIA))].sort();
+        const select = document.getElementById("categoria");
+        select.innerHTML = '<option value="">Tudo</option>';
+        categorias.forEach(cat => {
+          const opt = document.createElement("option");
+          opt.value = cat;
+          opt.textContent = cat;
+          select.appendChild(opt);
+        });
+
+        mostrarItens(todosOsItens);
+      },
+      error: function() {
+        document.getElementById("resultado").innerHTML = "<p style='color:red;text-align:center;'>Erro ao carregar MenuFiltrado.csv</p>";
+      }
     });
 
-    tabela += `</tbody></table>`;
-    container.innerHTML = tabela;
-  }
+    function mostrarItens(itens) {
+      const container = document.getElementById("resultado");
+      if (itens.length === 0) {
+        container.innerHTML = '<p class="sem-resultado">Nenhum produto encontrado.</p>';
+        return;
+      }
 
-  // Filtros
-  document.getElementById("categoria").addEventListener("change", filtrar);
-  document.getElementById("busca").addEventListener("input", filtrar);
+      let tabela = `
+        <table>
+          <thead>
+            <tr>
+              <th style="width:180px;">Categoria</th>
+              <th>Nome no Cardápio</th>
+              <th>Nome PDV</th>
+              <th>Cód. PDV</th>
+              <th style="width:100px;">Preço</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
+          <tbody>`;
 
-  function filtrar() {
-    let filtrados = todosOsItens;
+      itens.forEach(p => {
+        const preco = parseFloat(p["PREÇO VENDA CHEIO"]) || 0;
+        tabela += `
+          <tr>
+            <td>
+              <span class="categoria-tag" title="${p.CATEGORIA}">
+                ${p.CATEGORIA}
+              </span>
+            </td>
+            <td><strong>${p["NOME CARDAPIO"] || ""}</strong></td>
+            <td>${p["NOME PDV"] || ""}</td>
+            <td>${p["CÓD PDV"] || ""}</td>
+            <td class="preco">R$ ${preco.toFixed(2).replace(".",",")}</td>
+            <td>${p["DESCRICAO ITEM CARDAPIO"] || ""}</td>
+          </tr>`;
+      });
 
-    const catSelecionada = document.getElementById("categoria").value;
-    const termo = document.getElementById("busca").value.toLowerCase();
-
-    if (catSelecionada) {
-      filtrados = filtrados.filter(i => i.CATEGORIA === catSelecionada);
+      tabela += `</tbody></table>`;
+      container.innerHTML = tabela;
     }
-    if (termo) {
-      filtrados = filtrados.filter(i =>
-        (i["NOME CARDAPIO"] || "").toLowerCase().includes(termo) ||
-        (i["DESCRICAO ITEM CARDAPIO"] || "").toLowerCase().includes(termo) ||
-        (i["NOME PDV"] || "").toLowerCase().includes(termo)
-      );
-    }
 
-    mostrarItens(filtrados);
-  }
-</script>
+    // Filtros em tempo real
+    document.getElementById("categoria").addEventListener("change", filtrar);
+    document.getElementById("busca").addEventListener("input", filtrar);
+
+    function filtrar() {
+      let filtrados = todosOsItens;
+      const cat = document.getElementById("categoria").value;
+      const termo = document.getElementById("busca").value.toLowerCase().trim();
+
+      if (cat) {
+        filtrados = filtrados.filter(i => i.CATEGORIA === cat);
+      }
+      if (termo) {
+        filtrados = filtrados.filter(i =>
+          (i["NOME CARDAPIO"] || "").toLowerCase().includes(termo) ||
+          (i["NOME PDV"] || "").toLowerCase().includes(termo) ||
+          (i["DESCRICAO ITEM CARDAPIO"] || "").toLowerCase().includes(termo)
+        );
+      }
+      mostrarItens(filtrados);
+    }
+  </script>
 </body>
 </html>
