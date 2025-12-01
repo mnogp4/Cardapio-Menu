@@ -7,84 +7,147 @@
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   
   <style>
-    :root { --cor-principal: #ff6b35; --fundo: #f8f9fa; --texto: #222; }
-    body { margin:0; font-family:'Segoe UI',Arial,sans-serif; background:var(--fundo); color:var(--texto); line-height:1.5; }
-    
-    header {
-      background: #1a1a1a; color:white; padding:20px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    :root {
+      --vermelho-menu: #e30613;
+      --vermelho-hover: #c4000f;
+      --branco: #ffffff;
+      --cinza-claro: #f8f9fa;
     }
-    header h1 { margin:0; font-size:2.2em; }
-    header h2 { margin:8px 0 0; font-weight:300; color:#ff6b35; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--branco);
+      color: #333;
+      line-height: 1.6;
+    }
 
-    .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+    header {
+      background: var(--vermelho-menu);
+      color: white;
+      text-align: center;
+      padding: 20px 15px;
+      box-shadow: 0 4px 15px rgba(227,6,19,0.3);
+    }
+    .logo-container {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    .logo-container img {
+      width: 100%;
+      height: auto;
+    }
+
+    .container {
+      max-width: 1160px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
 
     .filtros {
-      background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      margin-bottom: 30px; text-align: center;
+      background: white;
+      padding: 22px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      margin-bottom: 35px;
+      text-align: center;
+      border: 3px solid var(--vermelho-menu);
     }
-    .filtros label { font-weight: 600; margin-right: 12px; font-size: 1.1em; }
+    .filtros label {
+      font-weight: 700;
+      color: var(--vermelho-menu);
+      font-size: 1.15em;
+      margin-right: 12px;
+    }
     select, input {
-      padding: 10px 14px; font-size: 1em; border: 2px solid #ddd; border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 1.05em;
+      border: 2px solid #ddd;
+      border-radius: 12px;
+      margin: 8px;
     }
-    select { width: 320px; }
-    input { width: 400px; max-width: 100%; margin-left: 20px; }
+    select { width: 340px; }
+    input {
+      width: 420px;
+      max-width: 100%;
+      border-color: var(--vermelho-menu);
+    }
 
     table {
-      width: 100%; border-collapse: collapse; background: white; border-radius: 12px;
-      overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    }
-    th, td {
-      padding: 14px 16px; text-align: left; border-bottom: 1px solid #eee;
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(227,6,19,0.12);
+      border: 2px solid var(--vermelho-menu);
     }
     th {
-      background: #f1f1f1; font-weight: 600; color: #444;
-    }
-    tr:hover { background: #fff8f5; }
-    .preco { font-weight: bold; color: var(--cor-principal); text-align: right; white-space: nowrap; }
-
-    /* CATEGORIA TAG — CORRIGIDA E PERFEITA */
-    .categoria-tag {
-      background: var(--cor-principal);
+      background: var(--vermelho-menu);
       color: white;
-      padding: 7px 14px;
-      border-radius: 25px;
-      font-size: 0.82em;
+      padding: 18px 16px;
+      text-align: left;
+      font-size: 1.1em;
+      font-weight: 600;
+    }
+    td { padding: 16px; border-bottom: 1px solid #eee; }
+    tr:hover { background: #fff5f5; }
+    .preco {
+      font-weight: bold;
+      color: var(--vermelho-menu);
+      text-align: right;
+      white-space: nowrap;
+      font-size: 1.15em;
+    }
+
+    .categoria-tag {
+      background: var(--vermelho-menu);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 0.85em;
       font-weight: bold;
       display: inline-block;
-      max-width: 160px;
+      max-width: 180px;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      vertical-align: middle;
-      box-shadow: 0 2px 6px rgba(255,107,53,0.3);
+      box-shadow: 0 3px 8px rgba(227,6,19,0.3);
     }
     .categoria-tag:hover {
+      background: var(--vermelho-hover);
       overflow: visible;
       white-space: normal;
-      word-wrap: break-word;
       max-width: none;
-      background: #e55a2b;
+      padding: 12px 18px;
       z-index: 10;
       position: relative;
-      padding: 10px 16px;
     }
 
     .sem-resultado {
-      text-align: center; padding: 50px; color: #888; font-size: 1.3em;
+      text-align: center;
+      padding: 60px 20px;
+      color: #888;
+      font-size: 1.4em;
+      background: white;
+      border-radius: 16px;
+      border: 2px dashed var(--vermelho-menu);
     }
 
-    @media (max-width: 768px) {
-      .filtros { flex-direction: column; }
-      select, input { width: 100%; margin: 10px 0; }
-      th, td { font-size: 0.9em; padding: 10px; }
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #666;
+      font-size: 0.95em;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Menu Brands</h1>
-    <h2>Cardápio Digital</h2>
+    <div class="logo-container">
+      <img src="https://i.ibb.co/0jZ4K7w/menu-logo-vermelho.png" alt="Menu Brands">
+    </div>
   </header>
 
   <div class="container">
@@ -97,23 +160,26 @@
     </div>
 
     <div id="resultado">
-      <p style="text-align:center; color:#666; font-size:1.1em;">Carregando cardápio...</p>
+      <p style="text-align:center; color:#666; font-size:1.2em;">Carregando cardápio...</p>
     </div>
   </div>
+
+  <footer>
+    Menu Brands © 2025 — Cardápio sempre atualizado com carinho
+  </footer>
 
   <script>
     let todosOsItens = [];
 
-    // LIMPEZA TOTAL E DEFINITIVA DAS CATEGORIAS
     function limparCategoria(txt) {
       if (!txt || txt.trim() === "") return "Outros";
       return txt.toString()
-        .replace(/[\r\n\t\v\f]+/g, " ")      // remove quebras de linha, tabs, etc.
-        .replace(/[^\w\s\-\(\)\+\&à-úÀ-Ú]/g, "") // remove caracteres estranhos
-        .replace(/\s+/g, " ")                // múltiplos espaços → 1
-        .replace(/:/g, "")                   // remove dois-pontos
+        .replace(/[\r\n\t\v\f]+/g, " ")
+        .replace(/[^\w\s\-\(\)\+\&à-úÀ-Ú]/g, "")
+        .replace(/\s+/g, " ")
+        .replace(/:/g, "")
         .trim()
-        .substring(0, 80);                   // limite seguro
+        .substring(0, 80);
     }
 
     Papa.parse("MenuFiltrado.csv", {
@@ -128,7 +194,6 @@
             CATEGORIA: limparCategoria(item.CATEGORIA)
           }));
 
-        // Preenche o select com categorias únicas
         const categorias = [...new Set(todosOsItens.map(i => i.CATEGORIA))].sort();
         const select = document.getElementById("categoria");
         select.innerHTML = '<option value="">Tudo</option>';
@@ -140,9 +205,6 @@
         });
 
         mostrarItens(todosOsItens);
-      },
-      error: function() {
-        document.getElementById("resultado").innerHTML = "<p style='color:red;text-align:center;'>Erro ao carregar MenuFiltrado.csv</p>";
       }
     });
 
@@ -157,11 +219,11 @@
         <table>
           <thead>
             <tr>
-              <th style="width:180px;">Categoria</th>
+              <th style="width:190px;">Categoria</th>
               <th>Nome no Cardápio</th>
               <th>Nome PDV</th>
               <th>Cód. PDV</th>
-              <th style="width:100px;">Preço</th>
+              <th style="width:110px;">Preço</th>
               <th>Descrição</th>
             </tr>
           </thead>
@@ -172,9 +234,7 @@
         tabela += `
           <tr>
             <td>
-              <span class="categoria-tag" title="${p.CATEGORIA}">
-                ${p.CATEGORIA}
-              </span>
+              <span class="categoria-tag" title="${p.CATEGORIA}">${p.CATEGORIA}</span>
             </td>
             <td><strong>${p["NOME CARDAPIO"] || ""}</strong></td>
             <td>${p["NOME PDV"] || ""}</td>
@@ -188,7 +248,6 @@
       container.innerHTML = tabela;
     }
 
-    // Filtros em tempo real
     document.getElementById("categoria").addEventListener("change", filtrar);
     document.getElementById("busca").addEventListener("input", filtrar);
 
@@ -197,9 +256,7 @@
       const cat = document.getElementById("categoria").value;
       const termo = document.getElementById("busca").value.toLowerCase().trim();
 
-      if (cat) {
-        filtrados = filtrados.filter(i => i.CATEGORIA === cat);
-      }
+      if (cat) filtrados = filtrados.filter(i => i.CATEGORIA === cat);
       if (termo) {
         filtrados = filtrados.filter(i =>
           (i["NOME CARDAPIO"] || "").toLowerCase().includes(termo) ||
