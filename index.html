@@ -11,133 +11,61 @@
       --vermelho-menu: #e30613;
       --vermelho-hover: #c4000f;
       --branco: #ffffff;
-      --cinza-claro: #f8f9fa;
     }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: var(--branco);
-      color: #333;
-      line-height: 1.6;
-    }
-
+    body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: var(--branco); color: #333; line-height: 1.6; }
+    
     header {
       background: var(--vermelho-menu);
       text-align: center;
-      padding: 12px 15px;            /* era 20px → agora 12px */
+      padding: 12px 15px;
       box-shadow: 0 4px 15px rgba(227,6,19,0.3);
     }
-    .logo-container {
-      max-width: 180px;              /* era 320px → agora 180px */
-      margin: 0 auto;
-    }
-    .logo-container img {
-      width: 100%;
-      height: auto;
-    }
+    .logo-container { max-width: 180px; margin: 0 auto; }
+    .logo-container img { width: 100%; height: auto; }
 
-    .container {
-      max-width: 1160px;
-      margin: 30px auto;
-      padding: 0 20px;
+    .main-container {
+      display: flex; gap: 20px; max-width: 1200px; margin: 30px auto; padding: 0 20px;
     }
-
+    .content { flex: 1; }
     .filtros {
-      background: white;
-      padding: 22px;
-      border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-      margin-bottom: 35px;
-      text-align: center;
-      border: 3px solid var(--vermelho-menu);
+      background: white; padding: 22px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      margin-bottom: 25px; text-align: center; border: 3px solid var(--vermelho-menu);
     }
-    .filtros label {
-      font-weight: 700;
-      color: var(--vermelho-menu);
-      font-size: 1.15em;
-      margin-right: 12px;
-    }
-    select, input {
-      padding: 12px 16px;
-      font-size: 1.05em;
-      border: 2px solid #ddd;
-      border-radius: 12px;
-      margin: 8px;
-    }
+    .filtros label { font-weight: 700; color: var(--vermelho-menu); font-size: 1.15em; margin-right: 12px; }
+    select, input { padding: 12px 16px; font-size: 1.05em; border: 2px solid #ddd; border-radius: 12px; margin: 8px; }
     select { width: 340px; }
-    input {
-      width: 420px;
-      max-width: 100%;
-      border-color: var(--vermelho-menu);
-    }
+    input { width: 420px; max-width: 100%; border-color: var(--vermelho-menu); }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: white;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 8px 25px rgba(227,6,19,0.12);
-      border: 2px solid var(--vermelho-menu);
-    }
-    th {
-      background: var(--vermelho-menu);
-      color: white;
-      padding: 18px 16px;
-      text-align: left;
-      font-size: 1.1em;
-      font-weight: 600;
-    }
-    td { padding: 16px; border-bottom: 1px solid #eee; }
+    table { width: 100%; border-collapse: collapse; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 25px rgba(227,6,19,0.12); border: 2px solid var(--vermelho-menu); }
+    th { background: var(--vermelho-menu); color: white; padding: 18px 16px; text-align: left; font-weight: 600; }
+    td { padding: 16px; border-bottom: 1px solid #eee; cursor: pointer; transition: 0.2s; }
     tr:hover { background: #fff5f5; }
-    .preco {
-      font-weight: bold;
-      color: var(--vermelho-menu);
-      text-align: right;
-      white-space: nowrap;
-      font-size: 1.15em;
-    }
+    tr.selected { background: #ffebee !important; font-weight: bold; }
+    .preco { font-weight: bold; color: var(--vermelho-menu); text-align: right; white-space: nowrap; font-size: 1.15em; }
+    .categoria-tag { background: var(--vermelho-menu); color: white; padding: 8px 16px; border-radius: 30px; font-size: 0.85em; font-weight: bold; max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; }
 
-    .categoria-tag {
-      background: var(--vermelho-menu);
-      color: white;
-      padding: 8px 16px;
-      border-radius: 30px;
-      font-size: 0.85em;
-      font-weight: bold;
-      display: inline-block;
-      max-width: 180px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      box-shadow: 0 3px 8px rgba(227,6,19,0.3);
+    /* CARRINHO LATERAL */
+    .carrinho {
+      width: 340px; background: white; border-radius: 16px; padding: 20px; box-shadow: 0 8px 25px rgba(227,6,19,0.15);
+      border: 3px solid var(--vermelho-menu); position: sticky; top: 20px; height: fit-content;
     }
-    .categoria-tag:hover {
-      background: var(--vermelho-hover);
-      overflow: visible;
-      white-space: normal;
-      max-width: none;
-      padding: 12px 18px;
-      z-index: 10;
-      position: relative;
+    .carrinho h2 { margin-top: 0; color: var(--vermelho-menu); text-align: center; font-size: 1.4em; }
+    .carrinho-item {
+      background: #fff0f0; border-radius: 12px; padding: 12px; margin: 10px 0; font-size: 0.95em; position: relative;
     }
+    .carrinho-item button {
+      position: absolute; top: 8px; right: 8px; background: var(--vermelho-hover); color: white; border: none;
+      width: 24px; height: 24px; border-radius: 50%; cursor: pointer; font-size: 0.9em;
+    }
+    .total {
+      font-size: 1.4em; font-weight: bold; text-align: center; color: var(--vermelho-menu); margin: 20px 0 10px;
+    }
+    .limpar { background: #ccc; color: #333; padding: 10px; width: 100%; border: none; border-radius: 12px; cursor: pointer; font-weight: bold; }
+    .limpar:hover { background: #bbb; }
 
-    .sem-resultado {
-      text-align: center;
-      padding: 60px 20px;
-      color: #888;
-      font-size: 1.4em;
-      background: white;
-      border-radius: 16px;
-      border: 2px dashed var(--vermelho-menu);
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      color: #666;
-      font-size: 0.95em;
-      margin-top: 50px;
+    @media (max-width: 900px) {
+      .main-container { flex-direction: column; }
+      .carrinho { width: 100%; position: static; }
     }
   </style>
 </head>
@@ -149,60 +77,51 @@
     </div>
   </header>
 
-  <div class="container">
-    <div class="filtros">
-      <label for="categoria">Filtrar por categoria:</label>
-      <select id="categoria">
-        <option value="">Tudo</option>
-      </select>
-      <input type="text" id="busca" placeholder=" Pesquisar produto ou descrição...">
+  <div class="main-container">
+    <div class="content">
+      <div class="filtros">
+        <label for="categoria">Filtrar por categoria:</label>
+        <select id="categoria"><option value="">Tudo</option></select>
+        <input type="text" id="busca" placeholder=" Pesquisar produto ou descrição...">
+      </div>
+      <div id="resultado">
+        <p style="text-align:center; color:#666; font-size:1.2em;">Carregando cardápio...</p>
+      </div>
     </div>
 
-    <div id="resultado">
-      <p style="text-align:center; color:#666; font-size:1.2em;">Carregando cardápio...</p>
+    <!-- CARRINHO -->
+    <div class="carrinho">
+      <h2>Seu Pedido</h2>
+      <div id="itens-carrinho">Clique nos itens do cardápio para adicionar</div>
+      <div class="total">Total: R$ 0,00</div>
+      <button class="limpar" onclick="limparCarrinho()">Limpar Tudo</button>
     </div>
   </div>
 
-  <footer>
-    Menu Brands © 2025 — Cardápio sempre atualizado com carinho
-  </footer>
-
   <script>
     let todosOsItens = [];
+    let carrinho = [];
 
     function limparCategoria(txt) {
       if (!txt || txt.trim() === "") return "Outros";
-      return txt.toString()
-        .replace(/[\r\n\t\v\f]+/g, " ")
-        .replace(/[^\w\s\-\(\)\+\&à-úÀ-Ú]/g, "")
-        .replace(/\s+/g, " ")
-        .replace(/:/g, "")
-        .trim()
-        .substring(0, 80);
+      return txt.toString().replace(/[\r\n\t\v\f]+/g, " ").replace(/[^\w\s\-\(\)\+\&à-úÀ-Ú]/g, "").replace(/\s+/g, " ").replace(/:/g, "").trim().substring(0, 80);
     }
 
     Papa.parse("MenuFiltrado.csv", {
-      download: true,
-      header: true,
-      skipEmptyLines: true,
+      download: true, header: true, skipEmptyLines: true,
       complete: function(results) {
         todosOsItens = results.data
           .filter(item => item["NOME CARDAPIO"] && item["NOME CARDAPIO"].trim())
-          .map(item => ({
-            ...item,
-            CATEGORIA: limparCategoria(item.CATEGORIA)
-          }));
+          .map(item => ({ ...item, CATEGORIA: limparCategoria(item.CATEGORIA) }));
 
         const categorias = [...new Set(todosOsItens.map(i => i.CATEGORIA))].sort();
         const select = document.getElementById("categoria");
         select.innerHTML = '<option value="">Tudo</option>';
         categorias.forEach(cat => {
           const opt = document.createElement("option");
-          opt.value = cat;
-          opt.textContent = cat;
+          opt.value = cat; opt.textContent = cat;
           select.appendChild(opt);
         });
-
         mostrarItens(todosOsItens);
       }
     });
@@ -210,31 +129,25 @@
     function mostrarItens(itens) {
       const container = document.getElementById("resultado");
       if (itens.length === 0) {
-        container.innerHTML = '<p class="sem-resultado">Nenhum produto encontrado.</p>';
+        container.innerHTML = '<p style="text-align:center; color:#888; padding:50px;">Nenhum produto encontrado.</p>';
         return;
       }
 
-      let tabela = `
-        <table>
-          <thead>
-            <tr>
-              <th style="width:190px;">Categoria</th>
-              <th>Nome no Cardápio</th>
-              <th>Nome PDV</th>
-              <th>Cód. PDV</th>
-              <th style="width:110px;">Preço</th>
-              <th>Descrição</th>
-            </tr>
-          </thead>
-          <tbody>`;
+      let tabela = `<table><thead><tr>
+        <th style="width:190px;">Categoria</th>
+        <th>Nome no Cardápio</th>
+        <th>Nome PDV</th>
+        <th>Cód. PDV</th>
+        <th style="width:110px;">Preço</th>
+        <th>Descrição</th>
+      </tr></thead><tbody>`;
 
-      itens.forEach(p => {
+      itens.forEach((p, index) => {
         const preco = parseFloat(p["PREÇO VENDA CHEIO"]) || 0;
+        const estaNoCarrinho = carrinho.some(item => item.codigo === p["CÓD PDV"]);
         tabela += `
-          <tr>
-            <td>
-              <span class="categoria-tag" title="${p.CATEGORIA}">${p.CATEGORIA}</span>
-            </td>
+          <tr onclick="adicionarAoCarrinho(${index})" style="cursor:pointer;" ${estaNoCarrinho ? 'class="selected"' : ''}>
+            <td><span class="categoria-tag" title="${p.CATEGORIA}">${p.CATEGORIA}</span></td>
             <td><strong>${p["NOME CARDAPIO"] || ""}</strong></td>
             <td>${p["NOME PDV"] || ""}</td>
             <td>${p["CÓD PDV"] || ""}</td>
@@ -242,19 +155,68 @@
             <td>${p["DESCRICAO ITEM CARDAPIO"] || ""}</td>
           </tr>`;
       });
-
       tabela += `</tbody></table>`;
       container.innerHTML = tabela;
     }
 
-    document.getElementById("categoria").addEventListener("change", filtrar);
-    document.getElementById("busca").addEventListener("input", filtrar);
+    function adicionarAoCarrinho(idx) {
+      const item = todosOsItens[idx];
+      const jaExiste = carrinho.find(i => i.codigo === item["CÓD PDV"]);
+      if (!jaExiste) {
+        carrinho.push({
+          nome: item["NOME PDV"],
+          codigo: item["CÓD PDV"],
+          preco: parseFloat(item["PREÇO VENDA CHEIO"]) || 0
+        });
+        atualizarCarrinho();
+        mostrarItens(todosOsItens); // atualiza destaque
+      }
+    }
+
+    function removerDoCarrinho(codigo) {
+      carrinho = carrinho.filter(i => i.codigo !== codigo);
+      atualizarCarrinho();
+      mostrarItens(todosOsItens);
+    }
+
+    function limparCarrinho() {
+      carrinho = [];
+      atualizarCarrinho();
+      mostrarItens(todosOsItens);
+    }
+
+    function atualizarCarrinho() {
+      const div = document.getElementById("itens-carrinho");
+      const totalEl = document.querySelector(".total");
+      if (carrinho.length === 0) {
+        div.innerHTML = "Clique nos itens do cardápio para adicionar";
+        totalEl.textContent = "Total: R$ 0,00";
+        return;
+      }
+
+      let html = "";
+      let total = 0;
+      carrinho.forEach(item => {
+        total += item.preco;
+        html += `
+          <div class="carrinho-item">
+            <strong>${item.nome}</strong><br>
+            Cód: ${item.codigo} - R$ ${item.preco.toFixed(2).replace(".",",")}
+            <button onclick="removerDoCarrinho('${item.codigo}')">×</button>
+          </div>`;
+      });
+      div.innerHTML = html;
+      totalEl.textContent = `Total: R$ ${total.toFixed(2).replace(".",",")}`;
+    }
+
+    // Filtros
+    document.getElementById("categoria").addEventListener("change", () => { filtrar(); });
+    document.getElementById("busca").addEventListener("input", () => { filtrar(); });
 
     function filtrar() {
       let filtrados = todosOsItens;
       const cat = document.getElementById("categoria").value;
       const termo = document.getElementById("busca").value.toLowerCase().trim();
-
       if (cat) filtrados = filtrados.filter(i => i.CATEGORIA === cat);
       if (termo) {
         filtrados = filtrados.filter(i =>
