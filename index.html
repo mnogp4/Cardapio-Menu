@@ -7,97 +7,146 @@
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   
   <style>
-    :root { --vermelho: #e30613; --vermelho-hover: #c4000f; --branco: #fff; }
-    body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #fff; color: #333; }
-    
-    header {
-      background: var(--vermelho); text-align: center; padding: 12px 15px;
-      box-shadow: 0 4px 15px rgba(227,6,19,0.3);
-    }
-    .logo-container { max-width: 180px; margin: 0 auto; }
-    .logo-container img { width: 100%; height: auto; }
+  :root { --vermelho: #e30613; --vermelho-hover: #c4000f; --branco: #fff; }
+  body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #fff; color: #333; }
 
-    .container { max-width: 1160px; margin: 30px auto; padding: 0 20px; }
-    .filtros {
-      background: white; padding: 20px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-      margin-bottom: 25px; text-align: center; border: 3px solid var(--vermelho);
-    }
-    .filtros label { font-weight: 700; color: var(--vermelho); font-size: 1.1em; margin-right: 10px; }
-    select, input { padding: 11px 14px; font-size: 1em; border: 2px solid #ddd; border-radius: 12px; }
-    select { width: 300px; }
-    input { width: 400px; max-width: 100%; border-color: var(--vermelho); margin-left: 15px; }
+  header {
+    background: var(--vermelho); text-align: center; padding: 12px 15px;
+    box-shadow: 0 4px 15px rgba(227,6,19,0.3);
+  }
+  .logo-container { max-width: 180px; margin: 0 auto; }
+  .logo-container img { width: 100%; height: auto; }
 
-    table {
-      width: 100%; border-collapse: collapse; background: white; border-radius: 16px;
-      overflow: hidden; box-shadow: 0 8px 25px rgba(227,6,19,0.12); border: 2px solid var(--vermelho);
-    }
-    th { background: var(--vermelho); color: white; padding: 16px; font-weight: 600; }
-    td { padding: 16px; cursor: pointer; transition: 0.2s; }
-    tr:hover { background: #fff5f5; }
-    tr.selected { background: #ffebee !important; }
-    .preco { font-weight: bold; color: var(--vermelho); text-align: right; font-size: 1.1em; }
-    .categoria-tag {
-      background: var(--vermelho); color: white; padding: 6px 14px; border-radius: 30px;
-      font-size: 0.8em; font-weight: bold; max-width: 160px; overflow: hidden;
-      text-overflow: ellipsis; white-space: nowrap; display: inline-block;
-    }
+  .container { max-width: 1160px; margin: 30px auto; padding: 0 20px; }
+  .filtros {
+    background: white; padding: 20px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    margin-bottom: 25px; text-align: center; border: 3px solid var(--vermelho);
+  }
+  .filtros label { font-weight: 700; color: var(--vermelho); font-size: 1.1em; margin-right: 10px; }
+  select, input { padding: 11px 14px; font-size: 1em; border: 2px solid #ddd; border-radius: 12px; }
+  select { width: 300px; }
+  input { width: 400px; max-width: 100%; border-color: var(--vermelho); margin-left: 15px; }
 
-    /* CARRINHO FLUTUANTE COM MINIMIZAR */
-    .carrinho-flutuante {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 380px;
-      background: white;
-      border-radius: 20px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-      border: 4px solid var(--vermelho);
-      z-index: 1000;
-      transition: all 0.3s ease;
-      display: none;
-    }
-    .carrinho-header {
-      background: var(--vermelho); color: white; padding: 14px 18px;
-      font-size: 1.3em; text-align: center; font-weight: bold;
-      position: relative;
-      border-radius: 16px 16px 0 0;
-    }
-    .btn-minimizar, .btn-fechar {
-      position: absolute; background: none; border: none; color: white;
-      font-size: 1.4em; cursor: pointer; font-weight: bold;
-    }
-    .btn-minimizar { right: 50px; top: 12px; }
-    .btn-fechar { right: 18px; top: 12px; }
+  table {
+    width: 100%; border-collapse: collapse; background: white; border-radius: 16px;
+    overflow: hidden; box-shadow: 0 8px 25px rgba(227,6,19,0.12); border: 2px solid var(--vermelho);
+  }
+  th { background: var(--vermelho); color: white; padding: 16px; font-weight: 600; }
+  td { padding: 16px; cursor: pointer; transition: 0.2s; }
+  tr:hover { background: #fff5f5; }
+  tr.selected { background: #ffebee !important; }
+  .preco { font-weight: bold; color: var(--vermelho); text-align: right; font-size: 1.1em; }
+  .categoria-tag {
+    background: var(--vermelho); color: white; padding: 6px 14px; border-radius: 30px;
+    font-size: 0.8em; font-weight: bold; max-width: 160px; overflow: hidden;
+    text-overflow: ellipsis; white-space: nowrap; display: inline-block;
+  }
 
-    .carrinho-body {
-      max-height: 50vh; overflow-y: auto; padding: 15px;
-    }
-    .item-carrinho {
-      background: #fff0f0; border-radius: 12px; padding: 12px; margin: 10px 0;
-      display: flex; justify-content: space-between; align-items: center;
-      font-size: 0.95em;
-    }
-    .quantidade {
-      display: flex; align-items: center; gap: 10px;
-      background: white; padding: 6px 12px; border-radius: 30px;
-    }
-    .quantidade button {
-      width: 28px; height: 28px; border: none; background: var(--vermelho); color: white;
-      border-radius: 50%; cursor: pointer; font-weight: bold;
-    }
-    .carrinho-total {
-      background: #fff5f5; padding: 16px; text-align: center;
-      font-size: 1.5em; font-weight: bold; color: var(--vermelho);
-      border-top: 3px solid var(--vermelho);
-    }
+  /* CARRINHO FLUTUANTE - CORRIGIDO */
+  .carrinho-flutuante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 380px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    border: 4px solid var(--vermelho);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    display: none;
+    overflow: hidden;
+  }
+  .carrinho-header {
+    background: var(--vermelho);
+    color: white;
+    padding: 16px 20px;
+    font-size: 1.35em;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    min-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .carrinho-header span {
+    flex: 1;
+    text-align: center;
+  }
+  .btn-minimizar, .btn-fechar {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.6em;
+    cursor: pointer;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-minimizar { order: -1; }
+  .btn-fechar { order: 1; }
 
-    /* ESTADO MINIMIZADO */
-    .minimizado {
-      width: 200px; height: 70px; bottom: 20px; right: 20px;
-    }
-    .minimizado .carrinho-body { display: none; }
-    .minimizado .carrinho-total { font-size: 1.3em; padding: 20px 10px; }
-  </style>
+  .carrinho-body {
+    max-height: 50vh;
+    overflow-y: auto;
+    padding: 15px;
+  }
+  .item-carrinho {
+    background: #fff0f0;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95em;
+  }
+  .quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 6px 12px;
+    border-radius: 30px;
+  }
+  .quantidade button {
+    width: 28px; height: 28px; border: none; background: var(--vermelho);
+    color: white; border-radius: 50%; cursor: pointer; font-weight: bold;
+  }
+  .carrinho-total {
+    background: #fff5f5;
+    padding: 18px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--vermelho);
+    border-top: 3px solid var(--vermelho);
+  }
+
+  /* ESTADO MINIMIZADO - CORRIGIDO */
+  .minimizado {
+    width: 260px !important;
+    height: 90px !important;
+  }
+  .minimizado .carrinho-body { display: none !important; }
+  .minimizado .carrinho-total {
+    font-size: 1.4em !important;
+    padding: 20px 10px !important;
+    line-height: 1.2;
+  }
+  .minimizado .carrinho-header {
+    padding: 12px 16px;
+    font-size: 1.2em;
+  }
+
+  @media (max-width: 768px) {
+    .carrinho-flutuante, .minimizado { width: 92% !important; right: 4%; left: 4%; }
+  }
+</style>
 </head>
 <body>
 
@@ -119,17 +168,17 @@
   </div>
 
   <!-- CARRINHO FLUTUANTE -->
-  <div id="carrinho" class="carrinho-flutuante">
-    <div class="carrinho-header">
-      Seu Pedido
-      <button class="btn-minimizar" onclick="minimizarCarrinho()">−</button>
-      <button class="btn-fechar" onclick="fecharCarrinho()">×</button>
-    </div>
-    <div class="carrinho-body" id="listaItens">
-      Clique nos itens para adicionar
-    </div>
-    <div class="carrinho-total">Total: R$ 0,00</div>
+<div id="carrinho" class="carrinho-flutuante">
+  <div class="carrinho-header">
+    <button class="btn-minimizar" onclick="minimizarCarrinho()">−</button>
+    <span>Seu Pedido</span>
+    <button class="btn-fechar" onclick="fecharCarrinho()">×</button>
   </div>
+  <div class="carrinho-body" id="listaItens">
+    Clique nos itens para adicionar
+  </div>
+  <div class="carrinho-total">Total: R$ 0,00</div>
+</div>
 
   <script>
     let todosOsItens = [];
