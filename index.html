@@ -112,123 +112,145 @@
   </div>
 
   <script>
-    let todosOsItens = [];
-    let carrinho = [];
+  let todosOsItens = [];
+  let carrinho = [];
 
-    function limparCategoria(txt) {
-      if (!txt || txt.trim() === "") return "Outros";
-      return txt.toString().replace(/[\r\n\t\v\f]+/g, " ").replace(/[^\w\s\-\(\)\+\&à-úÀ-Ú]/g, "").replace(/\s+/g, " ").replace(/:/g, "").trim().substring(0, 80);
+  function limparCategoria(txt) {
+    if (!txt || txt.trim() === "") return "Outros";
+    return txt.toString()
+      .replace(/[\r\n\t\v\f]+/g, " ")
+      .replace(/[^\w\s\-\(\)\+\&à-úÀ-Ú]/g, "")
+      .replace(/\s+/g, " ")
+      .replace(/:/g, "")
+      .trim()
+      .substring(0, 80);
+  }
+
+  Papa.parse("MenuFiltrado.csv", {
+    download: true,
+    header: true,
+    skipEmptyLines: true,
+    complete: function(results) {
+      todosOsItens = results.data
+        .filter(i => i["NOME CARDAPIO"] && i["NOME CARDAPIO"].trim())
+        .map(i => ({ ...i, CATEGORIA: limparCategoria(i.CATEGORIA) }));
+
+      const categorias = [...new Set(todosOsItens.map(i => i.CATEGORIA))].sort();
+      const select = document.getElementById("categoria");
+      select.innerHTML = '<option value="">Tudo</option>';
+      categorias.forEach(c => {
+        const opt = document.createElement("option");
+        opt.value = c; opt.textContent = c;
+        select.appendChild(opt);
+      });
+
+      mostrarItens(todosOsItens);
+    }
+  });
+
+  function mostrarItens(itensFiltrados) {
+    const container = document.getElementById("resultado");
+    if (itensFiltrados.length === 0) {
+      container.innerHTML = '<p style="text-align:center; color:#888; padding:50px;">Nenhum produto encontrado.</p>';
+      return;
     }
 
-    Papa.parse("MenuFiltrado.csv", {
-      download: true, header: true, skipEmptyLines: true,
-      complete: function(results) {
-        todosOsItens = results.data
-          .filter(i => i["NOME CARDAPIO"] && i["NOME CARDAPIO"].trim())
-          .map(i => ({ ...i, CATEGORIA: limparCategoria(i.CATEGORIA) }));
+    let html = `<table><thead><tr>
+      <th style="width:170px;">Categoria</th>
+      <th>Nome no Cardápio</th>
+      <th>Nome PDV</th>
+      <th>Cód. PDV</th>
+      <th style="width:100px;">Preço</th>
+      <th>Descrição</th>
+    </tr></thead><tbody>`;
 
-        const categorias = [...new Set(todosOsItens.map(i => i.CATEGORIA))].sort();
-        const select = document.getElementById("categoria");
-        select.innerHTML = '<option value="">Tudo</option>';
-        categorias.forEach(c => { const opt = document.createElement("option"); opt.value = c; opt.textContent = c; select.appendChild(opt); });
+    itensFiltrados.forEach(item => {
+      const preco = parseFloat(item["PREÇO VENDA CHEIO"]) || 0;
+      const noCarrinho = carrinho.some(x => x.codigo === item["CÓD PDV"]);
 
-        mostrarItens(todosOsItens);
-      }
+      // Passamos o próprio objeto como parâmetro JSON (evita erro de índice)
+      const itemJSON = JSON.stringify(item).replace(/'/g, "&apos;");
+      
+      html += `<tr onclick='adicionarItem(${itemJSON})' style="cursor:pointer;${noCarrinho?'background:#ffebee;':''}">
+        <td><span class="categoria-tag">${item.CATEGORIA}</span></td>
+        <td><strong>${item["NOME CARDAPIO"]}</strong></td>
+        <td>${item["NOME PDV"]}</td>
+        <td>${item["CÓD PDV"]}</td>
+        <td class="preco">R$ ${preco.toFixed(2).replace(".",",")}</td>
+        <td>${item["DESCRICAO ITEM CARDAPIO"]}</td>
+      </tr>`;
     });
 
-    function mostrarItens(itens) {
-      const container = document.getElementById("resultado");
-      if (itens.length === 0) {
-        container.innerHTML = '<p style="text-align:center; color:#888; padding:50px;">Nenhum produto encontrado.</p>';
-        return;
-      }
+    container.innerHTML = html + `</tbody></table>`;
+  }
 
-      let html = `<table><thead><tr>
-        <th style="width:170px;">Categoria</th>
-        <th>Nome no Cardápio</th>
-        <th>Nome PDV</th>
-        <th>Cód. PDV</th>
-        <th style="width:100px;">Preço</th>
-        <th>Descrição</th>
-      </tr></thead><tbody>`;
-
-      itens.forEach((p, i) => {
-        const preco = parseFloat(p["PREÇO VENDA CHEIO"]) || 0;
-        const noCarrinho = carrinho.some(x => x.codigo === p["CÓD PDV"]);
-        html += `<tr onclick="abrirModal(${i})" style="cursor:pointer;${noCarrinho?'background:#ffebee;':''}">
-          <td><span class="categoria-tag">${p.CATEGORIA}</span></td>
-          <td><strong>${p["NOME CARDAPIO"]}</strong></td>
-          <td>${p["NOME PDV"]}</td>
-          <td>${p["CÓD PDV"]}</td>
-          <td class="preco">R$ ${preco.toFixed(2).replace(".",",")}</td>
-          <td>${p["DESCRICAO ITEM CARDAPIO"]}</td>
-        </tr>`;
+  // Função que recebe o item completo (não depende de índice)
+  function adicionarItem(item) {
+    const existe = carrinho.find(x => x.codigo === item["CÓD PDV"]);
+    if (!existe) {
+      carrinho.push({
+        nome: item["NOME PDV"],
+        codigo: item["CÓD PDV"],
+        preco: parseFloat(item["PREÇO VENDA CHEIO"]) || 0
       });
-      container.innerHTML = html + `</tbody></table>`;
     }
+    atualizarModal();
+    document.getElementById("modalCarrinho").style.display = "flex";
+    mostrarItens(getItensFiltrados()); // atualiza destaque visual
+  }
 
-    function abrirModal(idx) {
-      const item = todosOsItens[idx];
-      const existe = carrinho.find(x => x.codigo === item["CÓD PDV"]);
-      if (!existe) {
-        carrinho.push({
-          nome: item["NOME PDV"],
-          codigo: item["CÓD PDV"],
-          preco: parseFloat(item["PREÇO VENDA CHEIO"]) || 0
-        });
-      }
-      atualizarModal();
-      document.getElementById("modalCarrinho").style.display = "flex";
+  function removerDoCarrinho(codigo) {
+    carrinho = carrinho.filter(x => x.codigo !== codigo);
+    atualizarModal();
+    mostrarItens(getItensFiltrados());
+  }
+
+  function atualizarModal() {
+    const lista = document.getElementById("listaItens");
+    const totalEl = document.querySelector(".total-modal");
+    if (carrinho.length === 0) {
+      lista.innerHTML = "Nenhum item adicionado ainda.";
+      totalEl.textContent = "Total: R$ 0,00";
+      return;
     }
+    let html = "";
+    let total = 0;
+    carrinho.forEach(item => {
+      total += item.preco;
+      html += `<div class="item-carrinho">
+        <strong>${item.nome}</strong><br>
+        Cód: ${item.codigo} — R$ ${item.preco.toFixed(2).replace(".",",")}
+        <button onclick="removerDoCarrinho('${item.codigo}')">×</button>
+      </div>`;
+    });
+    lista.innerHTML = html;
+    totalEl.textContent = `Total: R$ ${total.toFixed(2).replace(".",",")}`;
+  }
 
-    function removerDoCarrinho(codigo) {
-      carrinho = carrinho.filter(x => x.codigo !== codigo);
-      atualizarModal();
-      mostrarItens(todosOsItens);
-    }
+  function fecharModal() {
+    document.getElementById("modalCarrinho").style.display = "none";
+    mostrarItens(getItensFiltrados());
+  }
 
-    function atualizarModal() {
-      const lista = document.getElementById("listaItens");
-      const totalEl = document.querySelector(".total-modal");
-      if (carrinho.length === 0) {
-        lista.innerHTML = "Nenhum item adicionado ainda.";
-        totalEl.textContent = "Total: R$ 0,00";
-        return;
-      }
-      let html = "";
-      let total = 0;
-      carrinho.forEach(item => {
-        total += item.preco;
-        html += `<div class="item-carrinho">
-          <strong>${item.nome}</strong><br>
-          Cód: ${item.codigo} — R$ ${item.preco.toFixed(2).replace(".",",")}
-          <button onclick="removerDoCarrinho('${item.codigo}')">×</button>
-        </div>`;
-      });
-      lista.innerHTML = html;
-      totalEl.textContent = `Total: R$ ${total.toFixed(2).replace(".",",")}`;
-    }
-
-    function fecharModal() {
-      document.getElementById("modalCarrinho").style.display = "none";
-      mostrarItens(todosOsItens);
-    }
-
-    // Filtros
-    document.getElementById("categoria").addEventListener("change", filtrar);
-    document.getElementById("busca").addEventListener("input", filtrar);
-    function filtrar() {
-      let lista = todosOsItens;
-      const cat = document.getElementById("categoria").value;
-      const termo = document.getElementById("busca").value.toLowerCase().trim();
-      if (cat) lista = lista.filter(i => i.CATEGORIA === cat);
-      if (termo) lista = lista.filter(i =>
+  // Função auxiliar para pegar a lista filtrada atual
+  function getItensFiltrados() {
+    let lista = todosOsItens;
+    const cat = document.getElementById("categoria").value;
+    const termo = document.getElementById("busca").value.toLowerCase().trim();
+    if (cat) lista = lista.filter(i => i.CATEGORIA === cat);
+    if (termo) {
+      lista = lista.filter(i =>
         (i["NOME CARDAPIO"]||"").toLowerCase().includes(termo) ||
         (i["NOME PDV"]||"").toLowerCase().includes(termo) ||
         (i["DESCRICAO ITEM CARDAPIO"]||"").toLowerCase().includes(termo)
       );
-      mostrarItens(lista);
     }
-  </script>
+    return lista;
+  }
+
+  // Filtros
+  document.getElementById("categoria").addEventListener("change", () => mostrarItens(getItensFiltrados()));
+  document.getElementById("busca").addEventListener("input", () => mostrarItens(getItensFiltrados()));
+</script>
 </body>
 </html>
