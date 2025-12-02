@@ -10,25 +10,31 @@
     :root { --vermelho: #e30613; --vermelho-hover: #c4000f; --branco: #fff; }
     body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #fff; color: #333; overflow-x: hidden; }
 
-    /* BARRA SUPERIOR */
+    /* TOPBAR CORRIGIDA - LOGO CENTRALIZADA */
     .topbar {
       background: var(--vermelho);
       padding: 12px 20px;
       display: flex;
       align-items: center;
+      justify-content: space-between;
       box-shadow: 0 4px 15px rgba(227,6,19,0.3);
       position: relative;
       z-index: 100;
     }
     .btn-lojas {
-      background: none; border: none; color: white; font-size: 1.4em; cursor: pointer;
-      padding: 8px 14px; border-radius: 8px; transition: 0.2s; font-weight: bold;
+      background: none; border: none; color: white; font-size: 1.35em; cursor: pointer;
+      padding: 10px 16px; border-radius: 10px; transition: 0.2s; font-weight: bold;
     }
     .btn-lojas:hover { background: rgba(255,255,255,0.2); }
-    .logo-container { margin-left: 20px; max-width: 160px; }
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 180px;
+    }
     .logo-container img { width: 100%; height: auto; }
 
-    /* BARRA LATERAL DE LOJAS */
+    /* SIDEBAR E OVERLAY */
     .sidebar {
       position: fixed; top: 0; left: -320px; width: 320px; height: 100%; background: #111;
       transition: left 0.35s ease; z-index: 999; padding-top: 80px; box-shadow: 5px 0 20px rgba(0,0,0,0.5);
@@ -106,18 +112,19 @@
     @media (max-width: 768px) {
       .carrinho-flutuante, .minimizado { width: 92% !important; right: 4%; left: 4%; }
       .topbar { padding: 10px; }
-      .logo-container { max-width: 130px; }
+      .logo-container { max-width: 140px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- TOPBAR COM BOTÃO LOJAS -->
+  <!-- TOPBAR COM LOGO CENTRALIZADA -->
   <div class="topbar">
     <button class="btn-lojas" onclick="toggleSidebar()">Lojas</button>
     <div class="logo-container">
       <img src="Menu.png" alt="Menu Brands">
     </div>
+    <div style="width: 60px;"></div> <!-- espaçador invisível -->
   </div>
 
   <!-- OVERLAY + SIDEBAR -->
@@ -135,9 +142,7 @@
       <select id="categoria"><option value="">Tudo</option></select>
       <input type="text" id="busca" placeholder=" Pesquisar produto ou descrição...">
     </div>
-    <div id="resultado">
-      <p style="text-align:center; color:#666; font-size:1.2em;">Carregando cardápio...</p>
-    </div>
+    <div id="resultado"></div> <!-- já inicia vazio, carrega direto -->
   </div>
 
   <!-- CARRINHO -->
@@ -164,7 +169,6 @@
       document.querySelectorAll(".sidebar li").forEach(li => li.classList.remove("active"));
       event.target.classList.add("active");
       toggleSidebar();
-      document.getElementById("resultado").innerHTML = "<p style='text-align:center;color:#666;'>Carregando cardápio da loja <strong>" + nomeLoja + "</strong>...</p>";
 
       Papa.parse(arquivo, {
         download: true, header: true, skipEmptyLines: true,
@@ -182,7 +186,7 @@
           mostrarItens(todosOsItens);
         },
         error: function() {
-          document.getElementById("resultado").innerHTML = "<p style='color:red;text-align:center;'>Erro ao carregar o cardápio da loja.</p>";
+          document.getElementById("resultado").innerHTML = "<p style='color:red;text-align:center;'>Erro ao carregar o cardápio.</p>";
         }
       });
     }
@@ -193,7 +197,7 @@
         document.getElementById("sidebar").classList.contains("open") ? "block" : "none";
     }
 
-    // Carrega Menu Brands por padrão
+    // INICIA DIRETO COM MENU BRANDS
     window.onload = () => carregarLoja("MenuFiltrado.csv", "Menu Brands");
 
     function mostrarItens(itensFiltrados) {
@@ -217,7 +221,7 @@
         const itemJSON = JSON.stringify(item).replace(/'/g, "&apos;");
         html += `<tr onclick='adicionarItem(${itemJSON})' style="cursor:pointer;${qtd>0?'background:#ffebee;':''}">
           <td><span class="categoria-tag">${item.CATEGORIA}</span></td>
-          <td><strong>${item["NOME CARDAPIO"]}</strong>${qtd>0?` <small style="color:var(--vermelho)">(${qtd}×)</small>`:''}</td>
+          <td><strong>${item["NOME CARDAPIO"]}</strong>${qtd>0?` <small style="color:var(--vermelho)">(${qtd}x)</small>`:''}</td>
           <td>${item["NOME PDV"]}</td>
           <td>${item["CÓD PDV"]}</td>
           <td class="preco">R$ ${preco.toFixed(2).replace(".",",")}</td>
