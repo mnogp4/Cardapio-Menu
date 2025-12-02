@@ -59,7 +59,6 @@
       background: #008248; border-color: #008248;
     }
     body.amicis .preco, body.amicis .filtros label { color: #008248; }
-
     body.buk {
       --cor-principal: #001F3F;
       --cor-hover: #001028;
@@ -73,7 +72,6 @@
     }
     body.buk .preco, body.buk .filtros label { color: #FF9F1C; }
     body.buk .carrinho-total { background: #fff8f0; color: #001F3F; border-top-color: #FF9F1C; }
-
     body.buoni {
       --cor-principal: #e30613;
       --cor-hover: #c4000f;
@@ -86,7 +84,6 @@
       background: #e30613; border-color: #e30613;
     }
     body.buoni .preco, body.buoni .filtros label { color: #e30613; }
-
     body.chapa {
       --cor-principal: #e30613;
       --cor-hover: #c4000f;
@@ -99,7 +96,6 @@
       background: #e30613; border-color: #e30613;
     }
     body.chapa .preco, body.chapa .filtros label { color: #e30613; }
-
     body.ginger {
       --cor-principal: #e30613;
       --cor-hover: #c4000f;
@@ -112,7 +108,6 @@
       background: #e30613; border-color: #e30613;
     }
     body.ginger .preco, body.ginger .filtros label { color: #e30613; }
-
     body.tipico {
       --cor-principal: #d32f2f;
       --cor-hover: #b71c1c;
@@ -125,7 +120,6 @@
       background: #d32f2f; border-color: #d32f2f;
     }
     body.tipico .preco, body.tipico .filtros label { color: #d32f2f; }
-
     body.poke-nordestino {
       --cor-principal: #f4a261;
       --cor-hover: #e76f51;
@@ -137,11 +131,10 @@
       background: #fff59d;
     }
     body.soodeli .topbar { background: #d8dd12 !important; }
-
     body.zack {
-      --cor-principal: #0066FF;     /* azul Zack */
+      --cor-principal: #0066FF;
       --cor-hover: #0044cc;
-      --cor-secundaria: #FFC107;    /* dourado Zack */
+      --cor-secundaria: #FFC107;
       background: #ffffff;
     }
     body.zack .topbar { background: #0066FF; }
@@ -158,12 +151,21 @@
       border-color: var(--cor-principal);
     }
     .preco, .filtros label { color: var(--cor-principal); }
-    .item-carrinho { background: rgba(0,102,255,0.1); }
+    .item-carrinho { background: rgba(227,6,19,0.1); }
     .sidebar li:hover, .sidebar li.active { background: var(--cor-principal); }
 
-    /* TEXTO "Filtrar por categoria:" BRANCO (exceto nas 3 lojas especiais) */
-    .filtros label { color: #333 !important; }
+    /* TEXTO "Filtrar por categoria:" SEM NEGRITO + BRANCO NAS LOJAS COM FUNDO CLARO */
+    .filtros label {
+      font-weight: normal !important;
+      font-size: 1.2em;
+      color: #333 !important;
+    }
     body:not(.menu-brands):not(.poke-nordestino):not(.soodeli) .filtros label {
+      color: white !important;
+    }
+
+    /* TOTAL DO CARRINHO SEMPRE BRANCO */
+    .carrinho-total {
       color: white !important;
     }
 
@@ -249,7 +251,7 @@
     }
     .carrinho-total {
       background: #fff5f5; padding: 20px; text-align: center; font-size: 1.7em;
-      font-weight: bold; color: var(--cor-principal); border-top: 4px solid var(--cor-principal);
+      font-weight: bold; color: white !important; border-top: 4px solid var(--cor-principal);
     }
     .minimizado { width: 300px !important; height: 100px !important; }
     .minimizado .carrinho-body { display: none !important; }
@@ -265,7 +267,6 @@
   </style>
 </head>
 <body>
-
   <div class="topbar">
     <button class="btn-lojas" onclick="toggleSidebar()">Lojas</button>
     <div class="logo-container">
@@ -273,7 +274,6 @@
     </div>
     <div style="width: 70px;"></div>
   </div>
-
   <div class="overlay" onclick="toggleSidebar()"></div>
   <div class="sidebar" id="sidebar">
     <div class="sidebar-header">Lojas</div>
@@ -292,7 +292,6 @@
       </ul>
     </div>
   </div>
-
   <div class="container">
     <div class="filtros">
       <label for="categoria">Filtrar por categoria:</label>
@@ -301,7 +300,6 @@
     </div>
     <div id="resultado"></div>
   </div>
-
   <div id="carrinho" class="carrinho-flutuante">
     <div class="carrinho-header">
       <button class="btn-minimizar" onclick="minimizarCarrinho()">−</button>
@@ -311,16 +309,13 @@
     <div class="carrinho-body" id="listaItens">Clique nos itens para adicionar</div>
     <div class="carrinho-total">Total: R$ 0,00</div>
   </div>
-
   <script>
     let todosOsItens = [];
     let carrinho = [];
-
     function limparCategoria(txt) {
       if (!txt || txt.trim() === "") return "Outros";
       return txt.toString().replace(/[\r\n\t\v\f]+/g, " ").replace(/[^\w\s\-\(\)\+\&à-úÀ-Ú]/g, "").replace(/\s+/g, " ").replace(/:/g, "").trim().substring(0, 80);
     }
-
     function carregarLoja(arquivo, nomeLoja, logoSrc, botaoClicado) {
       document.body.classList.remove("menu-brands", "amicis", "buk", "buoni", "chapa", "ginger", "tipico", "poke-nordestino", "soodeli", "zack");
       if (nomeLoja.includes("Menu")) document.body.classList.add("menu-brands");
@@ -333,14 +328,10 @@
       else if (nomeLoja.includes("Poke")) document.body.classList.add("poke-nordestino");
       else if (nomeLoja === "Soodeli") document.body.classList.add("soodeli");
       else if (nomeLoja.includes("Zack")) document.body.classList.add("zack");
-
       document.getElementById("logo").src = logoSrc;
-
       document.querySelectorAll(".sidebar li").forEach(li => li.classList.remove("active"));
       botaoClicado.classList.add("active");
-
       if (botaoClicado !== document.getElementById("loja-menu")) toggleSidebar();
-
       Papa.parse(arquivo, {
         download: true,
         header: true,
@@ -349,7 +340,6 @@
           todosOsItens = results.data
             .filter(i => i["NOME CARDAPIO"] && i["NOME CARDAPIO"].trim())
             .map(i => ({ ...i, CATEGORIA: limparCategoria(i.CATEGORIA) }));
-
           const categorias = [...new Set(todosOsItens.map(i => i.CATEGORIA))].sort();
           const select = document.getElementById("categoria");
           select.innerHTML = '<option value="">Tudo</option>';
@@ -365,13 +355,11 @@
         }
       });
     }
-
     function toggleSidebar() {
       const sidebar = document.getElementById("sidebar");
       sidebar.classList.toggle("open");
       document.querySelector(".overlay").style.display = sidebar.classList.contains("open") ? "block" : "none";
     }
-
     window.addEventListener("DOMContentLoaded", () => {
       document.body.classList.add("menu-brands");
       document.getElementById("logo").src = "Menu.png";
@@ -379,7 +367,6 @@
       botaoMenu.classList.add("active");
       carregarLoja("MenuFiltrado.csv", "Menu Brands", "Menu.png", botaoMenu);
     });
-
     function mostrarItens(itensFiltrados) {
       const container = document.getElementById("resultado");
       if (itensFiltrados.length === 0) {
@@ -410,7 +397,6 @@
       });
       container.innerHTML = html + `</tbody></table>`;
     }
-
     function adicionarItem(item) {
       const existente = carrinho.find(x => x.codigo === item["CÓD PDV"]);
       if (existente) existente.qtd += 1;
@@ -419,7 +405,6 @@
       atualizarCarrinho();
       mostrarItens(getItensFiltrados());
     }
-
     function mudarQuantidade(codigo, delta) {
       const item = carrinho.find(x => x.codigo === codigo);
       if (item) {
@@ -429,7 +414,6 @@
         mostrarItens(getItensFiltrados());
       }
     }
-
     function atualizarCarrinho() {
       const lista = document.getElementById("listaItens");
       const totalEl = document.querySelector(".carrinho-total");
@@ -452,17 +436,14 @@
       lista.innerHTML = html || "Nenhum item";
       totalEl.textContent = `Total: R$ ${total.toFixed(2).replace(".",",")}`;
     }
-
     function minimizarCarrinho() {
       document.getElementById("carrinho").classList.toggle("minimizado");
     }
-
     function fecharCarrinho() {
       carrinho = [];
       document.getElementById("carrinho").style.display = "none";
       mostrarItens(getItensFiltrados());
     }
-
     function getItensFiltrados() {
       let lista = todosOsItens;
       const cat = document.getElementById("categoria").value;
@@ -475,7 +456,6 @@
       );
       return lista;
     }
-
     document.getElementById("categoria").addEventListener("change", () => mostrarItens(getItensFiltrados()));
     document.getElementById("busca").addEventListener("input", () => mostrarItens(getItensFiltrados()));
   </script>
