@@ -1,0 +1,18 @@
+CATEGORIA,NOME CARDAPIO,NOME PDV,CÓD PDV,PREÇO VENDA CHEIO,DESCRICAO ITEM CARDAPIO
+Kebabs,Kebab de frango,KEBAB DE FRANGO,5211,32.9,"Frango grelhado, especiarias orientais, maionese de alho, alface e tomate."
+Kebabs,Kebab de carne,KEBAB DE CARNE,5212,38.9,"Carne grelhada, especiarias orientais, maionese de alho, alface e tomate."
+Kebabs,Kebab de Falafel,KEBAB DE FALAFEL,5213,32.9,"Falafel, maionese de alho, alface e tomate."
+Kebabs,Kebab de lentilha,KEBAB DE LENTILHA,5239,32.9,"Hambúrguer de lentilha assado, maionese de alho, alface e tomate."
+Kebabs,Kebab de suíno desfiado,KEBAB DE SUÍNO,5420,32.9,"Suíno desfiado, maionese de alho, tomate em cubos e alface americana."
+Street Food,Peixe crocante tigrado teryiaki,EXC -PEIXE CROC TER+CREAM,1807,45.9,"Filé de tilápia empanada na farinha panko com cream cheese e molho agridoce a base de shoyu e gengibre, finalizado com mix de gergelim e cebolinha."
+Street Food,Salmão tigrado teryiaki,EXC - SALMAO TERYAKI CREAM,1808,64.9,"Filé de salmão chileno grelhado, servido com cream cheese e molho agridoce a base de shoyu e gengibre, e finalizado com mix de gergelim e cebolinha."
+Street Food,Frango com molho de queijos,STREET - FGO MOLHO QUEIJOS,5197,35.9,"Tiras de filé de frango, molho a base de queijos."
+Street Food,Frango Teriyaki,STREET - FGO GREL TERYIAKI,5208,35.9,"Tiras de filé de frango, molho teriyaki, finalizado com mix de gergelim e cebolinha fresca."
+Street Food,Frango Cordon Bleu ao ranch,STREET - FGO CORDON BLEU,5225,37.9,"Filé de peito de frango recheado com queijo e presunto, empanado na farinha panko. Servido ao molho ranch."
+Street Food,Hambúrguer de lentilha ao sugo,STREET-HAMB LENTILHA SUGO,5240,34.9,"Dois deliciosos hambúrgueres de lentilha assados, combinados com molho sugo artesanal."
+Street Food,Frango frito thai com teriyaki,STREET - FGO FRITO THAY TERYIAKI,5375,37.9,Tiras de filé de frango empanados na farinha panko e mix de gergelim finalizado com molho teriyaki e cebolinha fresca.
+Street Food,Falafel com sour cream,STREET-FALAFEL SOUR CREAM,5377,34.9,Falafel e molho sour cream.
+Street Food,Frango sweet and sour,STREET - KATSU FGO SWEET SOUR,5380,35.9,"Katsu de frango com molho agridoce, finalizado com cebolinha."
+Street Food,Frango frito thai com teriyaki,POP50 - FGO FRITO THAY TERYIAKI,800001,32.9,"Tiras de filé de frango empanados na farinha panko e mix de gergelim com molho teriyaki, servido com arroz yakimeshi."
+Street Food,Frango frito com geleia de pimenta,EXC - FRANGO FRITO GELEIA,5421,35.9,"Tiras de frango empanado, deliciosa geleia de pimenta artesanal e cebolinha picada."
+Street Food,Tiras de frango frito com geleia de pimenta,POP50 - FGO FRITO GELEIA,5422,32.9,"Tiras de frango empanado, deliciosa geleia de pimenta artesanal, mix de gergelim e cebolinha picada. Servido com arroz à grega."
