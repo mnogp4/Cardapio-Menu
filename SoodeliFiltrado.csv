@@ -1,0 +1,262 @@
+CATEGORIA,NOME CARDAPIO,NOME PDV,CÓD PDV,PREÇO VENDA CHEIO,DESCRICAO ITEM CARDAPIO
+TRANSFORME EM COMBO,Salada verde,G681-MINI SALADA WRAP,1908,9.9,"Mix de folhas, molho mostarda e mel, cenoura, tomate em cubos, ricota e mix de grãos assados. "
+Saladas,Salada Caesar,SALADA CAESAR,20000,44.9,"Alface americana, frango desfiado refogado com cebola e salsinha, queijo parmesão, queijo coalho e tomate em cubos."
+Saladas,Salada Caprese,SALADA CAPRESE,20001,42.9,"Mix de alfaces (alface americana e alface roxa), fusilli integral, tomate em cubos, tomate seco, queijo minas."
+Saladas,Salada Frango levinha,SALADA FRANGO LEVINHA,20002,39.9,"Mix de alfaces (alface americana e alface roxa), frango desfiado refogado com cebola e salsinha, cenoura ralada, milho, ricota e mix de grãos assados. "
+Saladas,Salada de salmão,SALADA SALMAO,20003,49.9,"Mix de alfaces (alface americana e alface roxa), salmão desfiado, tomate em cubos, cenoura ralada e mix de grãos assados."
+Saladas,Salada de Carne de sol,SALADA CARNE DE SOL,20004,45.9,"Mix de alfaces (alface americana e alface roxa), Carne de sol desfiada refogada com cebola roxa, queijo coalho, tomate em cubos, castanhas granuladas. "
+Saladas,Salada Mediterrânea,SALADA MEDITERRANEA,20007,42.9,"Mix de alfaces (alface americana e alface roxa), caponata de berinjela e abobrinha, tomate seco, fusilli integral, ovos de codorna, queijo minas ralado. "
+Saladas,Salada Verde,SALADA VERDE,20008,39.9,"Mix de alfaces (alface americana e alface roxa), ricota, tomate em cubos, cenoura ralada, milho, mix de grãos assados."
+Saladas,Salada Hambúrguer de lentilha,SALADA LENTILHA,20010,39.9,"Mix de alfaces (alface americana e alface roxa), hambúrguer de lentilha assado, tomate em cubos, cenoura ralada, milho."
+Saladas,Salada de camarão,SALADA CAMARAO TRADIC,20012,55.9,"Mix de alfaces (alface americana e alface roxa), camarão com ervas, tomate em cubos, cenoura ralada, mix de grãos assados, parmesão.  "
+Saladas,Salada de camarão com fusilli integral,SALADA CAMARAO FUSILI,20013,55.9,"Mix de alfaces (alface americana e alface roxa), camarão com ervas, fusilli integral, tomate em cubos, parmesão e amêndoas laminadas. "
+Saladas,Salada de Frango com fusilli integral,SALADA FRANGO FUSILLI,20014,45.9,"Mix de alfaces (alface americana e alface roxa), frango desfiado refogado com cebola e salsinha, fusilli integral, tomate em cubos, parmesão e amêndoas laminadas."
+Escolha seu molho,Molho Salsa de ervas,EXTRA -SALSA ERVS SOODELI,20020,0,Molho a base de azeite e ervas frescas. Servido à parte. 40g
+Escolha seu molho,Molho balsâmico,EXTRA - BALSAMICO SOODELI,20021,0,Molho agridoce a base de redução de vinagre balsâmico. Servido à parte. 40g
+Escolha seu molho,Molho mostarda e mel,EXTRA - MOST MEL SOODELI,20022,0,Clássico molho a base de mel e mostarda amarela. Servido à parte. 40g
+Escolha seu molho,Molho Sweet and Sour,EXTRA -SWEET SOUR SOODELI,20024,0,Molho agridoce.
+Outros,Castanha granulada,ADC(+)CASTANHA 15G,20029,"R$ 2,90",Castanha de caju granulada. Item servido na salada. 15g
+Outros,Queijo parmesão,ADC(+)PARMESÃO 20G,20031,"R$ 7,90",Queijo parmesão premium ralado.
+Outros,Queijo minas,ADC(+)MINAS 30G,20032,"R$ 3,90",Queijo minas ralado. Item servido na salada. 30g
+Outros,Queijo gorgonzola,ADC(+)GORGONZOLA 30G,20033,"R$ 6,90",Queijo gorgonzola em pedaços. Item servido na salada. 30g
+Outros,Queijo ricota,ADC(+)RICOTA 30G,20034,3.9,Queijo ricota ralado. Item servido na salada. 30g
+Outros,Amêndoas laminadas,ADC(+)AMENDOAS 15G,20035,"R$ 5,90",Amêndoas laminadas. Item servido na salada. 15g
+Outros,Mix de grãos assados,ADC(+)MIX GRAOS 15G,20036,2.9,"Mix de grãos assados (aveia, linhaça, gergelim branco e gergelim preto). Item servido na salada. 15g"
+Escolha seu molho,Molho caesar,EXTRA - CAESAR SOODELI,20042,0,Molho clássico a base de queijo parmesão. Servido à parte. 40g
+Saladas,Salada Peru levinha,SALADA PERU LEVINHA,20043,43.9,"Mix de alfaces (alface americana e alface roxa), peito de peru ralado, cenoura ralada, milho, ricota e mix de grãos assados."
+Wraps,Wrap caesar,WRAP CAESAR,20046,34.9,"frango desfiado refogado com cebola e salsinha, queijo parmesão, tomate em cubos, alface americana, molho caesar e farofinha de croutons, tudo enroladinho no pão folha."
+Wraps,Wrap frango levinho,WRAP FRANGO LEVINHO,20047,32.9,"frango desfiado refogado com cebola e salsinha, creme de ricota, cenoura, milho, alface americana e mix de grãos assados, tudo enroladinho no pão folha."
+Wraps,Wrap peru levinho,WRAP PERU LEVINHO,20048,33.9,"Peito de peru ralado, creme de ricota, cenoura, milho, alface americana e mix de grãos assados, tudo enroladinho no pão folha."
+Wraps,Wrap de salmão,WRAP SALMAO,20049,39.9,"Salmão grelhado em lascas, creme de ricota, tomate em cubos, cenoura, alface americana e mix grãos assados, tudo enroladinho no pão folha."
+Wraps,Wrap de carne de sol,WRAP CARNE DE SOL,20050,36.9,"Carne de sol desfiada refogada com cebola roxa, queijo coalho, geleia de pimenta artesanal, tomate em cubos, castanhas granuladas e alface americana, tudo enroladinho no pão folha."
+Wraps,Wrap caprese,WRAP CAPRESE,20052,31.9,"Tomate seco, tomate em cubos, queijo minas, molho de ervas frescas, alface americana e farofinha de croutons, tudo enroladinho no pão folha."
+Soodeli do meu jeito!,Salada do meu jeito,SALADA DO MEU JEITO--,20103,42.9,A Soodeli traz para você a opção de montar a sua própria salada! Do seu jeito!
+Escolha sua base,Alface americana,ALFACE AMERICANA 80G,20104,0,Base de alface americana para a sua salada.
+Escolha sua base,Mix de Alfaces,MIX DE ALFACES 80G,20105,0,Base de alface americana e alface roxa.
+Escolha sua base,Fusilli integral e alface americana,FUSILI 70G+MIX ALF 80G,20106,0,"Base de fusilli integral cozido, alface americana e alface roxa."
+Escolha sua proteína,Falafel,FALAFEL 5UN,20107,0,"Bolinhos de grão-de-bico, temperado com especiarias."
+Escolha sua proteína,Hamburguer de lentilha,HAMB. LENTILHA 2UND,20108,0,Hambúrguer de lentilha assado.
+Escolha sua proteína,Frango desfiado,FGO DESFIADO 70G,20109,0,frango desfiado refogado com cebola e salsinha.
+Escolha sua proteína,Peito de peru,PEITO PERU 60G,20110,7.9,Peito de peru ralado.
+Escolha sua proteína,Carne do sol,CARNE SOL 70G,20111,7.9,Carne do sol desfiada.
+Escolha sua proteína,Camarão,CAMARAO GRELHADO 70G,20112,12.9,Camarão grelhado.
+Escolha sua proteína,Caponata de berinjela e abobrinha,CAPONAT BERINJELA 80G,20113,0,"Berinjela, abobrinha, cebola, uva passas e azeitonas."
+Escolha os ingredientes,Tomate em cubos,TOMATE EM CUBOS 25G,20114,0,Tomate em cubos.
+Escolha os ingredientes,Milho verde,MILHO VERDE 20G,20115,0,Milho verde.
+Escolha os ingredientes,Cenoura ralada,CENOURA RALADA 25G,20116,0,Cenoura ralada.
+Escolha os ingredientes,Tomate seco,TOMATE SECO 25G,20117,1.9,Tomate seco.
+Escolha os ingredientes,Grão-de-bico,GRÃO DE BICO 50G,20118,0,Grão de bico temperado com especiarias e suco de limão.
+Escolha os ingredientes,Ovo de codorna,OVO CODORNA-3 UNID,20119,2.9,Ovos de codorna.
+Escolha os ingredientes,Mix de grãos tostados,GRAOS TOSTADOS 10G,20120,0,"Aveia, linhaça, gergelim branco e gergelim preto."
+Escolha os ingredientes,Castanhas granuladas,CASTANHA TRITURAD 15G,20121,0,Castanha de caju granulada.
+Escolha seu queijo,Queijo ricota,RICOTA RALADA 25G,20122,0,Queijo ricota ralado. 
+Escolha seu queijo,Queijo minas,QUEIJO MINAS RLD 25G,20123,0,Queijo minas ralado.
+Escolha seu queijo,Queijo coalho,COALHO RALADO 25G,20124,0,Queijo coalho ralado.
+Escolha seu queijo,Queijo parmesão,PARMESAO SOODELI 15G,20125,4.9,Queijo parmesão premium ralado.
+Escolha seu queijo,Queijo gorgonzola,QUEIJO GORGONZOLA 20G,20126,3.9,Queijo gorgonzola em pedaços.
+Saladas,Salada Frango e Bacon,SALADA FRANGO E BACON,20127,44.9,"Alface americana, frango desfiado, bacon grelhado, tomate em cubos e cebola crispy. "
+Wraps,Wrap de Camarão,WRAP CAMARAO,20128,42.9,"Camarão grelhado, creme de ricota, couve crispy, com geleia de pimenta artesanal e alface americana e cenoura, tudo enroladinho no pão folha."
+Pratos Leves,Prato Leve de Frango e Queijo Minas,LEV-QJO MINAS E FGO DESFI,20129,42.9,"Frango desfiado refogado, arroz integral com brócolis, mix de alfaces, legumes no vapor, queijo minas e couve crispy."
+Saladas,Chicken Sweet Salad,SALADA FRANGO NORDEST,20130,29.9,"Mix de alfaces (alface americana e alface roxa), frango desfiado, tomate em cubo, cenoura ralada, milho e molho mostarda e mel. "
+Escolha sua proteína,Salmão em lascas,SALMAO LASCAS 60G,20132,12.9,Salmão em lascas.
+Soodeli do meu jeito!,Wrap do meu jeito,WRAP DO MEU JEITO----,20277,35.9,A Soodeli traz para você a opção de montar seu próprio wrap! Do seu jeito!
+Alface ou Coleslaw?,Alface americana,ACP-30G ALFACE AMERI,20278,0,Alface americana.
+Item principal,Frango desfiado,ACP-60G FGO DESFIADO,20279,0,Frango desfiado refogado com cebola e salsinha.
+Item principal,Peito de Peru ralado,ACP-60G PEITO PERU ,20280,5.9,Peito de peru ralado.
+Item principal,Salmão em lascas,ACP-60G SALMAO LASCAS,20281,12.9,Salmão em lascas.
+Item principal,Carne de sol desfiada,ACP-60G CARNE SOL,20282,6.9,Carne de sol desfiada.
+Item principal,Hamburguer de lentilha,ACP-2 UN HAMB LENTILH,20283,0,Hambúrguer de lentilha assado.
+Item principal,Camarão,ACP-70G CAMARAO,20284,15.9,Camarão temperados com azeite de ervas.
+Item principal,Falafel,ACP-5UN FALAFEL,20285,0,Falafel de grão de bico.
+Adicione dois ingredientes,Caponata de berinjela e abobrinha,ACP-40G CAPONATA,20286,0,"Berinjela, abobrinha, cebola, uva passas e azeitonas."
+Adicione dois ingredientes,Tomate em cubos,ACP-20G TOMATE CUBOS,20287,0,Tomate em cubos.
+Adicione dois ingredientes,Tomate seco,ACP-30G TOMATE SECO,20288,0,Tomate seco.
+Adicione dois ingredientes,Cenoura ralada,ACP-20G CENOURA,20289,0,Cenoura ralada.
+Adicione dois ingredientes,Milho verde,ACP-20G MILHO VERDE,20290,0,Milho verde.
+Adicione dois ingredientes,Ovo de codorna,ACP-3UN OVO CODORNA,20291,0,Ovos de codorna.
+Adicione dois ingredientes,Mix de grãos assados,ACP-10G MIX DE GRAOS,20292,0,"Aveia, linhaça, gergelim branco e gergelim preto."
+Adicione dois ingredientes,Farofa de croutons,ACP-10G FAROFA CROUTN,20293,0,Farofa de croutons assados.
+Adicione dois ingredientes,Castanhas granuladas,ACP-10G CASTANHA TRIT,20294,0,Castanhas granuladas.
+Escolha uma opção de queijo,Ricota ralada,ACP-30G Q RICOTA RLD,20295,0,Queijo ricota ralado.
+Escolha uma opção de queijo,Queijo Minas ralado,ACP-30G Q MINAS RLD,20296,0,Queijo minas ralado.
+Escolha uma opção de queijo,Queijo coalho ralado,ACP-30G Q COALHO RLD,20297,0,Queijo coalho ralado.
+Escolha uma opção de queijo,Queijo gorgonzola,ACP-20G Q GORGONZOLA,20298,2.9,Queijo gorgonzola em pedaços.
+Escolha uma opção de queijo,Creme de ricota,ACP-30G CREME RICOTA,20299,0,Creme de ricota.
+Escolha uma opção de queijo,Queijo parmesão ralado,ACP-15G PARMESAO SODE,20300,5.9,Queijo parmesão premium ralado.
+Escolha um molho,Molho caesar,ACP-30G MLH CAESAR,20301,0,Molho clássico a base de queijo parmesão.
+Escolha um molho,Molho sweet and sour,ACP-20G MLH SWEET SOU,20303,0,Molho agridoce.
+Escolha um molho,Molho sour cream,ACP-30G MLH SOUR CREM,20304,0,Molho a base de creme de leite e sumo de limão.
+Escolha um molho,Molho ranch,ACP-30G MLH RANCH,20305,0,"Clássico molho americano a base de maionese, creme de leite e ervas."
+Escolha um molho,Molho mostarda e mel,ACP-30G MOSTARDA MEL,20306,0,Clássico molho a base de mel e mostarda amarela. 
+Escolha um molho,Molho balsâmico,ACP-30G MLH BALSAMICO,20307,0,Molho agridoce a base de redução de vinagre balsâmico. 
+Escolha um molho,Molho salsa ervas,ACP-20G MLH SALSA VER,20308,0,Molho a base de azeite e ervas frescas. 
+Pratos Leves,Prato Leve de Camarão,LEV-PRATO CAMARÃO,20309,55.9,"Camarão grelhado, fusilli com manteiga de ervas, rúcula, cebola crispy e queijo parmesão."
+Pratos Leves,Prato Leve de Carne de Sol,LEV-PRATO CARNE SOL ,20310,45.9,"Carne de sol refogada com cebola roxa, arroz integral com brócolis, rúcula, creme de ricota temperada, ovo de codorna e granola salgada."
+Pratos Leves,Prato Leve de Falafel,LEV-PRATO FALAFEL,20311,38.9,"Falafel assados, arroz integral, caponata de berinjela, cenoura ralada, picles de cebola roxa e creme de ricota."
+Pratos Leves,Prato Leve de Frango Desfiado,LEV-PRATO FGO DESFIAD,20312,39.9,"Frango desfiado refogado, arroz integral com brócolis, tomate em cubos, cenoura ralada, creme de ricota temperada e couve crispy."
+Pratos Leves,Prato Leve de Frango Grelhado,LEV-PRATO FGO GRELHAD,20313,41.9,"Frango grelhado com toque de manteiga de ervas frescas, arroz integral, rúcula, milho verde, salada coleslaw e  cenoura ralada."
+Soodeli do meu jeito!,Prato Leve do Meu Jeito,LEV-PRATO MEU JEITO--,20319,47.9,A Soodeli traz pra você a opção de montar a sua refeição leve do seu jeito! O peso final pode variar de acordo com as opções de montagem.
+Escolha sua base favorita,Arroz Integral,ACP 150G-ARRZ INT BASE,20320,0,Arroz integral.
+Escolha sua base favorita,Arroz integral com brócolis,ACP 150G-ARROZ INT BROC,20321,0,Arroz integral com brócolis.
+Escolha sua base favorita,Arroz integral multigrãos,ACP 150G-ARROZ MULTIG,20322,0,"Arroz Integral Multigrãos (aveia, linhaça marrom e mix de gergelim)."
+Escolha sua base favorita,Batata doce assada,ACP 150G-BATATA DOCE,20323,2.9,Batata doce assada
+Escolha sua base favorita,Fusilli integral,ACP 150G-BASE FUSILI ,20324,0,Fusilli integral.
+Escolha sua base favorita,Fusilli integral na manteiga de ervas,ACP 150G-FUSILI MANT,20325,0,Fusilli integral na manteiga de ervas frescas.
+Escolha sua base favorita,Cuscuz,ACP 150G-BASE CUSCUZ ,20326,0,Cuscuz de milho com manteiga.
+Selecione os complementos,Sem ingrediente,ACP - SEM INGREDIENTE,20327,0,Não quero mais ingredientes!
+Selecione os complementos,Rúcula,ACP 15G-RUCULA,20328,0,Folha de rúcula.
+Selecione os complementos,Couve Crispy,ACP 10G-COUVE CRISPY,20329,0,Couve crispy frita.
+Selecione os complementos,Mix de Alfaces,ACP 20G-MIX ALFACES,20330,0,Mix de alface americana e alface roxa.
+Selecione os complementos,Salada Coleslaw,ACP 50G-SLD COLESLAW,20331,0,"Salada de repolho branco com cenoura ralada, molho ranch e cebolinha."
+Selecione os complementos,Salada de grão de bico,ACP 50G-SLD GRAO BICO,20332,0,"Salada de grão de bico com cebola roxa, salsinha e limão."
+Selecione os complementos,Mix de legumes,ACP 50G-SELETA LEGUM,20333,0,"Cenoura, brócolis, couve-flor, ervilha e vagem."
+Selecione os complementos,Caponata de berinjela e abobrinha,ACP 50G-CAPONATA,20334,0,"Berinjela, abobrinha, cebola, uvas passas e azeitonas."
+Selecione os complementos,Brócolis refogado,ACP 30G-BASE BROCOLIS,20335,0,Brócolis picadinho e temperado.
+Selecione os complementos,Ovo de codorna,ACP 4UN-OVO CODRNA,20336,1.9,04 unidades de ovo de codorna partidos ao meio.
+Selecione os complementos,Milho verde,ACP 30G-MILHO VERDE,20337,0,Milho Verde.
+Selecione os complementos,Tomate em cubos,ACP 30G-TOMATE CUBOS,20338,0,Tomate cortado em cubinhos.
+Selecione os complementos,Cenoura,ACP 30G-CENOURA RALAD,20339,0,Cenoura ralada.
+Selecione os complementos,Tomate seco,ACP 25G-TOMATE SECO,20340,0,Tomate seco picado.
+Selecione os complementos,Picles de cebola roxa,ACP 20G-PICLES CEBOLA,20341,0,Picles de cebola roxa.
+Selecione os complementos,Chips de batata doce,ACP 25G-CHIPS BATATA,20342,1.9,Chips de batata doce artesanal. 
+Selecione os complementos,Cebola crispy,ACP 20G-CEBOLA CRISPY,20343,0,Tiras fininhas de cebola empanadas e fritas.
+Selecione os complementos,Queijo parmesão ralado,ACP 20G-PARMESAO SODE,20344,1.9,Queijo parmesão ralado.
+Selecione os complementos,Queijo minas ralado,ACP 30G-MINAS RALADO,20345,0,Queijo minas ralado.
+Selecione os complementos,Cubinhos de queijo coalho grelhado,ACP 30G-COALHO CUBOS,20346,0,Queijo coalho grelhado em cubinhos.
+Selecione os complementos,Creme de ricota,ACP 40G-CREME RICOTA,20347,0,Creme de ricota.
+Selecione os complementos,Croutons,ACP 20G-CROUTONS,20348,0,Torradinhas em cubos saborizadas com azeite e ervas.
+Selecione os complementos,Granola salgada,ACP 25G-GRANOLA,20349,0,Granola artesanal.
+Selecione a proteína,Falafel,ACP 5UN-FALAFEL DISCO,20350,0,Bolinhos de grão-de-bico temperados com especiarias. É assado!
+Selecione a proteína,Burger de Lentilha,ACP 2UN-BURG LENTILHA,20351,0,Burger de lentinha assado.
+Selecione a proteína,Frango grelhado,ACP 120G-FGO INT MANT,20352,0,Frango grelhado com toque de manteiga de ervas.
+Selecione a proteína,Frango desfiado,ACP 70G - FGO DESF,20353,0,Frango desfiado refogado com cebola e salsinha.
+Selecione a proteína,Carne de sol desfiada,ACP 70G - CARNE SOL,20354,0,Carne de sol desfiada refogada com cebola roxa.
+Selecione a proteína,Camarão,ACP 1UN-CAMARAO,20355,12.9,Camarão com ervas.
+Selecione a proteína,Peixe grelhado,ACP 1UN-TILAPIA MANTG,20356,17.9,Tilápia Grelhada com toque de manteiga de ervas.
+Selecione a proteína,Salmão,ACP 1UN-SALMAO GREL,20357,25.9,Filé de Salmão grelhado.
+Escolha sua finalização,Sem Finalização,FLZ-SEM FINALIZAÇÃO,20358,0,"Sem finalização, por favor!"
+Escolha sua finalização,Salsinha,FLZ 2G-SALSINHA,20359,0,Salsinha picada.
+Escolha sua finalização,Castanha granulada,FLZ 5G-CASTANHA,20360,0,Castanha de caju granulada.
+Escolha sua finalização,Mix De Grãos Tostados,FLZ 5G-MIX GRÃOS ,20361,0,"Aveia, linhaça, gergelim branco e gergelim preto."
+Escolha sua finalização,Cebolinha,FLZ 2G-CEBOLINHA,20362,0,Cebolinha picada.
+Selecione o molho (a parte),Sem Molho,EXT 30G-SEM MOLHO,20363,0,"Sem molho, por favor!"
+Selecione o molho (a parte),Molho Mostarda e Mel,EXT 30G-MLH MOST MEL,20364,0,Clássico molho a base de mel e mostarda amarela.
+Selecione o molho (a parte),Molho Caesar,EXT 30G-MLH CAESAR,20365,0,Molho clássico a base de queijo parmesão.
+Selecione o molho (a parte),Molho Salsa de Ervas,EXT 30G-MLH SALSA,20366,0,Molho a base de azeite e ervas frescas. 
+Selecione o molho (a parte),Molho Sour Cream,EXT 30G-MLH SOUR CREA,20367,0,Molho cremoso a base de limão.
+Selecione o molho (a parte),Molho Teriyaki,EXT 30G-MLH TERYIAKI,20368,0,Molho agridoce a base de shoyu e gengibre.
+Selecione o molho (a parte),Molho Sweet and Sour,EXT 30G-MLH SWEET SOU,20369,0,Molho agridoce levemente apimentado.
+Selecione o molho (a parte),Molho Balsâmico,EXT 30G-MLH BALSAMICO,20370,0,Molho agridoce a base de vinagre balsâmico.
+Adicione ingredientes extras,Rúcula,**ADC 15G-RUCULA,20371,1.9,Rúcula.
+Adicione ingredientes extras,Couve Crispy,**ADC 10G-COUVE CRISP,20372,1.9,Couve crispy frita.
+Adicione ingredientes extras,Brócolis refogado,**ADC 30G-BASE BROCOL,20373,1.9,Brócolis picadinho e temperado.
+Adicione ingredientes extras,Ovo Codorna,**ADC 4UN-OVO COD MEI,20374,3.9,04 unidades de ovo de codorna partidos ao meio.
+Adicione ingredientes extras,Milho verde,**ADC 30G-MILHO VERDE,20375,1.9,Milho verde.
+Adicione ingredientes extras,Tomate em cubos,**ADC 30G-TOMATE CUBO,20376,1.9,Tomate cortado em cubinhos.
+Adicione ingredientes extras,Tomate Seco,**ADC 25G-TOMATE SECO,20377,3.9,Tomate seco picado.
+Adicione ingredientes extras,Chips de batata doce,**ADC 25G-CHIPS BATAT,20378,4.9,Chips de batata doce artesanal. 
+Adicione ingredientes extras,Cebola crispy,**ADC 20G-CEBOLA CRISPY,20379,1.9,Tiras fininhas de cebola empanadas e fritas.
+Adicione ingredientes extras,Queijo minhas ralado,**ADC 30G-MINAS RALAD,20380,3.9,Queijo minas ralado.
+Adicione ingredientes extras,Cubinho de queijo coalho grelhado,**ADC 30G-COALHO CUBO,20381,3.9,Queijo coalho grelhado em cubinhos.
+Adicione ingredientes extras,Creme de ricota,**ADC 40G-CREME RICOT,20382,2.9,Creme de ricota.
+Selecione os complementos,Macaxeira Frita,ACP 60G-MACAX FRITA,20383,0,Macaxeira Frita cortada em cubinhos.
+Que tal um extra?,Parmesão Ralado,**ADC-15G Q PARMESAO RLD,20385,4.9,Parmesão Ralado
+Que tal um extra?,Gorgonzola em cubos,**ADC-20G Q GORGONZOL,20386,3.9,Gorgonzola em cubos.
+Que tal um extra?,Tomate seco,**ADC-30G TOMATE SECO,20387,3.9,Tomate seco.
+Que tal um extra?,Ovo de codorna,**ADC-3UN OVO COD MEI,20388,3.9,Ovos de codorna.
+Que tal um extra?,Creme de ricota,**ADC-30G CREME RICOT,20389,2.9,Creme de ricota.
+Que tal um extra?,Queijo coalho ralado,**ADC-30G Q COALH RLD,20390,3.9,Queijo coalho ralado.
+Escolha os ingredientes,Couve crispy,COUVE CRISPY 10G,20391,0,Couve crispy.
+Escolha os ingredientes,Picles de cebola roxa,PICLS CEBOLA ROXA 25G,20392,0,Picles de cebola roxa.
+Adicione dois ingredientes,Couve crispy,ACP-10G COUVE CRISPY,20393,0,Couve crispy.
+Adicione dois ingredientes,Picles de cebola roxa,ACP-25G PICLS CEBOL R,20394,0,Picles de cebola roxa.
+Alface ou Coleslaw?,Salada Coleslaw,ACP-60G COLESLAW,20395,0,"Salada de repolho branco com cenoura ralada, molho ranch e cebolinha."
+Item principal,Tiras de frango crocante.,ACP-FGO CROCANT TIRAS,20396,0,Tiras de filé de peito de frango empanado na farinha panko.
+Item principal,Tiras de Carne de Sol,ACP-60GTIRAS CARN SOL,20397,0,Tiras de Carne de Sol refogado com cebola branca.
+Item principal,Lombo Suíno desfiado,ACP-60GSUÍNO DESFIADO,20398,0,Lombo súino desfiado refogado com cebola branca
+Adicione dois ingredientes,Rúcula,ACP-15G RUCULA,20399,0,Rúcula.
+Adicione dois ingredientes,Palha de batata doce,ACP-30G PALHA DOCE,20400,0,Palha de batata doce bem crocante.
+Adicione dois ingredientes,Brócolis refogado,ACP-30G BROCOLIS,20401,0,Brócolis picadinho e temperado.
+Escolha uma opção de queijo,Mussarela ralada,ACP-30G MUSSARELA,20402,1.9,Queijo mussarela ralado.
+Saladas,Salada de Frango com gorgonzola,SALADA FGO GORGOZONLA,20795,45.9,"Mix de alfaces (alface americana e alface roxa), cenoura ralada, tomate em cubos, frango desfiado refogado com cebola e salsinha, gorgonzola e queijo minas. "
+Saladas,Salada de falafel,SALADA FALAFEL,20796,39.9,"Mix de alfaces (alface americana e alface roxa), grão de bico temperado, tomate em cubos, molho sour cream e falafel."
+Wraps,Wrap de falafel,WRAP FALAFEL,20797,29.9,"Falafel de grão de bico, tomate em cubos, cenoura, molho sour cream e alface americana, tudo enroladinho no pão folha."
+Wraps,Wrap de frango com gorgonzola,WRAP FRANGO GORGNZOLA,20798,34.9,"frango desfiado refogado com cebola e salsinha, creme de ricota, queijo gorgonzola, cenoura e alface americana, tudo enroladinho no pão folha."
+Outros,Queijo coalho,ADC(+)COALHO 30G,20799,"R$ 3,90",Queijo coalho ralado. Item servido na salada. 30g
+Outros,Tomate seco,ADC(+)TOMATE SECO 30G,20801,"R$ 3,90",Tomate seco picado. Item servido na salada. 30g
+Outros,Ovo de codorna,ADC(+)OVO CODORNA 4UN,20802,"R$ 3,90",Ovos de codorna. Item servido na salada. 4 unidades.
+Outros,Milho verde,ADC(+)MILHO VERDE 30G,20803,2.9,Milho verde. Item servido na salada. 30g
+Outros,Grão de bico aromático,ADC(+)GRAO BICO 50G,20805,2.9,Grão de bico temperado com especiarias e suco de limão. Item servido na salada. 50g
+Escolha sua base favorita,Feijão carioca,ACP 70G-FEIJAO,20806,0,Feijão carioquinha.
+Selecione a proteína,Carne moída,ACP-60G CARNE MOIDA,20807,0,Carne moída refogada com mix de especiarias.
+Selecione os complementos,Palha de batata doce,ACP-20G PALHA DOCE,20808,0,Palha de batata doce bem crocante.
+Adicione ingredientes extras,Palha de batata doce,**ADC-20G PALHA DOCE,20809,1.9,Palha de batata doce bem crocante.
+Outros,Salada do meu jeito,SALADA DO MEU JEITO--,80150,39.9,A Soodeli traz para você a opção de montar a sua própria salada! Do seu jeito!
+Outros,Alface americana,ALFACE AMERICANA 80G,80151,0,Base de alface americana para a sua salada.
+Outros,Mix de Alfaces,MIX DE ALFACES 80G,80152,0,Base de alface americana e alface roxa.
+Outros,Fusilli integral e alface americana,FUSILI 70G+MIX ALF 80G,80153,0,"Base de fusilli integral cozido, alface americana e alface roxa."
+Outros,Falafel,FALAFEL 5UN,80200,0,"Bolinhos de grão-de-bico, temperado com especiarias."
+Outros,Hamburguer de lentilha,HAMB. LENTILHA 2UND,80201,0,Hambúrguer de lentilha assado.
+Outros,Frango desfiado,FGO DESFIADO 70G,80202,0,frango desfiado refogado com cebola e salsinha.
+Outros,Peito de peru,PEITO PERU 60G,80203,0,Peito de peru ralado.
+Outros,Carne do sol,CARNE SOL 70G,80204,4.9,Carne do sol desfiada.
+Outros,Camarão,CAMARAO GRELHADO 70G,80205,9.9,Camarão grelhado.
+Outros,Caponata de berinjela e abobrinha,CAPONAT BERINJELA 80G,80206,0,"Berinjela, abobrinha, cebola, uva passas e azeitonas."
+Outros,Salmão em lascas,SALMAO LASCAS 60G,80207,9.9,Salmão em lascas.
+Outros,Tomate em cubos,TOMATE EM CUBOS 25G,80250,0,Tomate em cubos.
+Outros,Milho verde,MILHO VERDE 20G,80251,0,Milho verde.
+Outros,Cenoura ralada,CENOURA RALADA 25G,80252,0,Cenoura ralada.
+Outros,Tomate seco,TOMATE SECO 25G,80253,0,Tomate seco.
+Outros,Grão-de-bico,GRÃO DE BICO 50G,80254,0,Grão de bico temperado com especiarias e suco de limão.
+Outros,Ovo de codorna,OVO CODORNA-3 UNID,80255,0,Ovos de codorna.
+Outros,Mix de grãos tostados,GRAOS TOSTADOS 10G,80256,0,"Aveia, linhaça, gergelim branco e gergelim preto."
+Outros,Castanhas granuladas,CASTANHA TRITURAD 15G,80257,0,Castanha de caju granulada.
+Outros,Couve crispy,COUVE CRISPY 10G,80258,0,Couve crispy.
+Outros,Picles de cebola roxa,PICLS CEBOLA ROXA 25G,80259,0,Picles de cebola roxa.
+Outros,Queijo ricota,RICOTA RALADA 25G,80300,0,Queijo ricota ralado. 
+Outros,Queijo minas,QUEIJO MINAS RLD 25G,80301,0,Queijo minas ralado.
+Outros,Queijo coalho,COALHO RALADO 25G,80302,0,Queijo coalho ralado.
+Outros,Queijo parmesão,PARMESAO SOODELI 15G,80303,0,Queijo parmesão premium ralado.
+Outros,Queijo gorgonzola,QUEIJO GORGONZOLA 20G,80304,0,Queijo gorgonzola em pedaços.
+Outros,Wrap do meu jeito,WRAP DO MEU JEITO----,80350,34.9,A Soodeli traz para você a opção de montar seu próprio wrap! Do seu jeito!
+Outros,Salada Coleslaw,ACP-60G COLESLAW,80351,0,"Salada de repolho branco com cenoura ralada, molho ranch e cebolinha."
+Outros,Alface americana,ACP-30G ALFACE AMERI,80352,0,Alface americana.
+Outros,Frango desfiado,ACP-70G FGO DESFIADO,80400,0,Frango desfiado refogado com cebola e salsinha.
+Outros,Tiras de frango crocante.,ACP-FGO CROCANT TIRAS,80401,0,Tiras de filé de peito de frango empanado na farinha panko.
+Outros,Peito de Peru ralado,ACP-60G PEITO PERU ,80402,0,Peito de peru ralado.
+Outros,Salmão em lascas,ACP-60G SALMAO LASCAS,80403,9.9,Salmão em lascas.
+Outros,Carne de sol desfiada,ACP-70G CARNE SOL,80404,4.9,Carne de sol desfiada.
+Outros,Hamburguer de lentilha,ACP-2 UN HAMB LENTILH,80405,0,Hambúrguer de lentilha assado.
+Outros,Camarão,ACP-70G CAMARAO,80406,9.9,Camarão temperados com azeite de ervas.
+Outros,Falafel,ACP-5UN FALAFEL,80407,0,Falafel de grão de bico.
+Outros,Caponata de berinjela e abobrinha,ACP-40G CAPONATA,80450,0,"Berinjela, abobrinha, cebola, uva passas e azeitonas."
+Outros,Tomate em cubos,ACP-20G TOMATE CUBOS,80451,0,Tomate em cubos.
+Outros,Tomate seco,ACP-30G TOMATE SECO,80452,0,Tomate seco.
+Outros,Cenoura ralada,ACP-20G CENOURA,80453,0,Cenoura ralada.
+Outros,Rúcula,ACP-15G RUCULA,80454,0,Rúcula.
+Outros,Palha de batata doce,ACP-30G PALHA DOCE,80455,0,Palha de batata doce bem crocante.
+Outros,Brócolis refogado,ACP-30G BROCOLIS,80456,0,Brócolis picadinho e temperado.
+Outros,Milho verde,ACP-20G MILHO VERDE,80457,0,Milho verde.
+Outros,Ovo de codorna,ACP-3UN OVO CODORNA,80458,0,Ovos de codorna.
+Outros,Mix de grãos assados,ACP-10G MIX DE GRAOS,80459,0,"Aveia, linhaça, gergelim branco e gergelim preto."
+Outros,Farofa de croutons,ACP-10G FAROFA CROUTN,80460,0,Farofa de croutons assados.
+Outros,Castanhas granuladas,ACP-10G CASTANHA TRIT,80461,0,Castanhas granuladas.
+Outros,Couve crispy,ACP-10G COUVE CRISPY,80462,0,Couve crispy.
+Outros,Picles de cebola roxa,ACP-25G PICLS CEBOL R,80463,0,Picles de cebola roxa.
+Outros,Ricota ralada,ACP-30G Q RICOTA RLD,80500,0,Queijo ricota ralado.
+Outros,Mussarela ralada,ACP-30G MUSSARELA,80501,0,Queijo mussarela ralado.
+Outros,Queijo Minas ralado,ACP-30G Q MINAS RLD,80502,0,Queijo minas ralado.
+Outros,Queijo coalho ralado,ACP-30G Q COALHO RLD,80503,0,Queijo coalho ralado.
+Outros,Queijo gorgonzola,ACP-20G Q GORGONZOLA,80504,0,Queijo gorgonzola em pedaços.
+Outros,Creme de ricota,ACP-30G CREME RICOTA,80505,0,Creme de ricota.
+Outros,Queijo parmesão ralado,ACP-15G PARMESAO SODE,80506,0,Queijo parmesão premium ralado.
+Outros,Molho caesar,ACP-30G MLH CAESAR,80550,0,Molho clássico a base de queijo parmesão.
+Outros,Molho sweet and sour,ACP-20G MLH SWEET SOU,80551,0,Molho agridoce.
+Outros,Molho sour cream,ACP-30G MLH SOUR CREM,80552,0,Molho a base de creme de leite e sumo de limão.
+Outros,Molho ranch,ACP-30G MLH RANCH,80553,0,"Clássico molho americano a base de maionese, creme de leite e ervas."
+Outros,Molho mostarda e mel,ACP-30G MOSTARDA MEL,80554,0,Clássico molho a base de mel e mostarda amarela. 
+Outros,Molho balsâmico,ACP-30G MLH BALSAMICO,80555,0,Molho agridoce a base de redução de vinagre balsâmico. 
+Outros,Molho salsa ervas,ACP-20G MLH SALSA VER,80556,0,Molho a base de azeite e ervas frescas. 
+Escolha um molho,Geleia de pimenta ,ACP-20G GELEIA PIMENTA,20403,0,Geleia de pimenta e abacaxi artesanal.
+Selecione o molho (a parte),Geleia de pimenta ,EXT 30G-GELEIA PIMENTA,20404,0,Geleia de pimenta e abacaxi artesanal.
+Escolha seu molho,Geleia de pimenta artesanal.,EXTRA-GELEIA PIMENTA SOOD,20405,0,Geleia de pimenta e abacaxi. Servido à parte. 40g
