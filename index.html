@@ -52,6 +52,11 @@
       --cor-hover: #e76f51;
       background: #fff7ed;
     }
+    body.soodeli {
+      --cor-principal: #008248;     /* verde Soodeli */
+      --cor-hover: #006400;
+      background: #fff59d;          /* amarelo limão claro */
+    }
 
     .topbar { background: var(--cor-principal); }
     .btn-lojas, th, .categoria-tag, .quantidade button, .carrinho-header, .filtros, .carrinho-total {
@@ -165,7 +170,8 @@
   <div class="sidebar" id="sidebar">
     <ul>
       <li onclick="carregarLoja('MenuFiltrado.csv', 'Menu Brands', 'Menu.png', this)" id="loja-menu">Menu Brands</li>
-      <li onclick="carregarLoja('PokeFiltrado.csv', 'Poké Nordestino', 'Poke.png', this)" id="loja-poke">Poké Nordestino</li>
+      <li onclick="carregarLoja('PokeFiltrado.csv', 'Poke Nordestino', 'Poke.png', this)" id="loja-poke">Poke Nordestino</li>
+      <li onclick="carregarLoja('SoodeliFiltrado.csv', 'Soodeli', 'Soodeli.png', this)" id="loja-soodeli">Soodeli</li>
     </ul>
   </div>
 
@@ -197,10 +203,13 @@
       return txt.toString().replace(/[\r\n\t\v\f]+/g, " ").replace(/[^\w\s\-\(\)\+\&à-úÀ-Ú]/g, "").replace(/\s+/g, " ").replace(/:/g, "").trim().substring(0, 80);
     }
 
-    function carregarLoja(arquivo, nomeLoja, logoSrc, botaoClicado) {
-      document.body.classList.remove("menu-brands", "poke-nordestino");
-      if (nomeLoja.includes("Menu")) document.body.classList.add("menu-brands");
-      else document.body.classList.add("poke-nordestino");
+    if (nomeLoja.includes("Menu")) {
+        document.body.classList.add("menu-brands");
+    } else if (nomeLoja.includes("Poke Nodestino") {
+      document.body.classList.add("poke-nordestino");
+    } else if (nomeLoja === "Soodeli") {
+      document.body.classList.add("soodeli");
+    }
 
       document.getElementById("logo").src = logoSrc;
 
