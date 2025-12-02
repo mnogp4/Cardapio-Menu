@@ -103,7 +103,7 @@
     body.ginger {
       --cor-principal: #e30613;
       --cor-hover: #c4000f;
-      background: #d4a017; /* dourado da Ginger */
+      background: #d4a017;
     }
     body.ginger .topbar { background: #d4a017; }
     body.ginger .btn-lojas, body.ginger th, body.ginger .categoria-tag,
@@ -112,6 +112,19 @@
       background: #e30613; border-color: #e30613;
     }
     body.ginger .preco, body.ginger .filtros label { color: #e30613; }
+
+    body.tipico {
+      --cor-principal: #d32f2f;
+      --cor-hover: #b71c1c;
+      background: #f5e6cc;
+    }
+    body.tipico .topbar { background: #f5e6cc; }
+    body.tipico .btn-lojas, body.tipico th, body.tipico .categoria-tag,
+    body.tipico .quantidade button, body.tipico .carrinho-header,
+    body.tipico .filtros, body.tipico .carrinho-total {
+      background: #d32f2f; border-color: #d32f2f;
+    }
+    body.tipico .preco, body.tipico .filtros label { color: #d32f2f; }
 
     body.poke-nordestino {
       --cor-principal: #f4a261;
@@ -125,30 +138,32 @@
     }
     body.soodeli .topbar { background: #d8dd12 !important; }
 
-    /* GARANTE QUE O TEXTO "Filtrar por categoria:" SEMPRE SEJA VISÍVEL */
-    .filtros label {
-      color: #333 !important;
-      font-weight: 700 !important;
-      font-size: 1.2em !important;
-    }
-
     .topbar { background: var(--cor-principal); }
     .btn-lojas, th, .categoria-tag, .quantidade button, .carrinho-header, .filtros, .carrinho-total {
       background: var(--cor-principal);
       border-color: var(--cor-principal);
     }
-    .preco { color: var(--cor-principal); }
+    .preco, .filtros label { color: var(--cor-principal); }
     .item-carrinho { background: rgba(227,6,19,0.1); }
     .sidebar li:hover, .sidebar li.active { background: var(--cor-principal); }
 
+    /* SIDEBAR COM SCROLL INTERNO */
     .sidebar {
       position: fixed; top: 0; left: -320px; width: 320px; height: 100%; background: #111;
-      transition: left 0.35s ease; z-index: 999; padding-top: 120px; box-shadow: 5px 0 20px rgba(0,0,0,0.5);
+      transition: left 0.35s ease; z-index: 999; box-shadow: 5px 0 20px rgba(0,0,0,0.5);
+      display: flex; flex-direction: column;
     }
     .sidebar.open { left: 0; }
+    .sidebar-header {
+      padding: 20px 25px; background: #222; color: white; font-size: 1.4em; font-weight: bold;
+      text-align: center; border-bottom: 1px solid #444;
+    }
+    .sidebar-content {
+      flex: 1; overflow-y: auto; padding: 10px 0;
+    }
     .sidebar ul { list-style: none; padding: 0; margin: 0; }
     .sidebar li {
-      padding: 22px 25px; color: white; cursor: pointer; transition: 0.3s; font-size: 1.25em;
+      padding: 18px 25px; color: white; cursor: pointer; transition: 0.3s; font-size: 1.2em;
       border-bottom: 1px solid #333;
     }
     .overlay {
@@ -167,6 +182,7 @@
       background: white; padding: 24px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);
       margin-bottom: 30px; text-align: center; border: 3px solid var(--cor-principal);
     }
+    .filtros label { font-weight: 700; color: #333 !important; font-size: 1.2em; margin-right: 12px; }
     select, input { padding: 13px 16px; font-size: 1.05em; border: 2px solid #ddd; border-radius: 12px; }
     select { width: 320px; }
     input { width: 420px; max-width: 100%; border-color: var(--cor-principal); margin-left: 15px; }
@@ -241,16 +257,20 @@
 
   <div class="overlay" onclick="toggleSidebar()"></div>
   <div class="sidebar" id="sidebar">
-    <ul>
-      <li onclick="carregarLoja('MenuFiltrado.csv', 'Menu Brands', 'Menu.png', this)" class="active" id="loja-menu">Menu Brands</li>
-      <li onclick="carregarLoja('AmicisFiltrado.csv', 'Amicis', 'Amicis.png', this)" id="loja-amicis">Amicis</li>
-      <li onclick="carregarLoja('BukFiltrado.csv', 'BUK BURGER & BEER', 'Buk.png', this)" id="loja-buk">BUK BURGER & BEER</li>
-      <li onclick="carregarLoja('BuoniFiltrado.csv', 'Buoni Slice & Pizza', 'Buoni.png', this)" id="loja-buoni">Buoni Slice & Pizza</li>
-      <li onclick="carregarLoja('ChapaFiltrado.csv', 'Chapa Roti', 'Chapa.png', this)" id="loja-chapa">Chapa Roti</li>
-      <li onclick="carregarLoja('GingerFiltrado.csv', 'Ginger - Street Food & Kebabs', 'Ginger.png', this)" id="loja-ginger">Ginger - Street Food & Kebabs</li>
-      <li onclick="carregarLoja('PokeFiltrado.csv', 'Poke Nordestino', 'Poke.png', this)" id="loja-poke">Poke Nordestino</li>
-      <li onclick="carregarLoja('SoodeliFiltrado.csv', 'Soodeli', 'Soodeli.png', this)" id="loja-soodeli">Soodeli</li>
-    </ul>
+    <div class="sidebar-header">Lojas</div>
+    <div class="sidebar-content">
+      <ul>
+        <li onclick="carregarLoja('MenuFiltrado.csv', 'Menu Brands', 'Menu.png', this)" class="active" id="loja-menu">Menu Brands</li>
+        <li onclick="carregarLoja('AmicisFiltrado.csv', 'Amicis', 'Amicis.png', this)" id="loja-amicis">Amicis</li>
+        <li onclick="carregarLoja('BukFiltrado.csv', 'BUK BURGER & BEER', 'Buk.png', this)" id="loja-buk">BUK BURGER & BEER</li>
+        <li onclick="carregarLoja('BuoniFiltrado.csv', 'Buoni Slice & Pizza', 'Buoni.png', this)" id="loja-buoni">Buoni Slice & Pizza</li>
+        <li onclick="carregarLoja('ChapaFiltrado.csv', 'Chapa Roti', 'Chapa.png', this)" id="loja-chapa">Chapa Roti</li>
+        <li onclick="carregarLoja('GingerFiltrado.csv', 'Ginger - Street Food & Kebabs', 'Ginger.png', this)" id="loja-ginger">Ginger - Street Food & Kebabs</li>
+        <li onclick="carregarLoja('TipicoFiltrado.csv', 'Típico', 'Tipico.png', this)" id="loja-tipico">Típico</li>
+        <li onclick="carregarLoja('PokeFiltrado.csv', 'Poke Nordestino', 'Poke.png', this)" id="loja-poke">Poke Nordestino</li>
+        <li onclick="carregarLoja('SoodeliFiltrado.csv', 'Soodeli', 'Soodeli.png', this)" id="loja-soodeli">Soodeli</li>
+      </ul>
+    </div>
   </div>
 
   <div class="container">
@@ -282,13 +302,14 @@
     }
 
     function carregarLoja(arquivo, nomeLoja, logoSrc, botaoClicado) {
-      document.body.classList.remove("menu-brands", "amicis", "buk", "buoni", "chapa", "ginger", "poke-nordestino", "soodeli");
+      document.body.classList.remove("menu-brands", "amicis", "buk", "buoni", "chapa", "ginger", "tipico", "poke-nordestino", "soodeli");
       if (nomeLoja.includes("Menu")) document.body.classList.add("menu-brands");
       else if (nomeLoja.includes("Amicis")) document.body.classList.add("amicis");
       else if (nomeLoja.includes("BUK")) document.body.classList.add("buk");
       else if (nomeLoja.includes("Buoni")) document.body.classList.add("buoni");
       else if (nomeLoja.includes("Chapa")) document.body.classList.add("chapa");
       else if (nomeLoja.includes("Ginger")) document.body.classList.add("ginger");
+      else if (nomeLoja.includes("Típico")) document.body.classList.add("tipico");
       else if (nomeLoja.includes("Poke")) document.body.classList.add("poke-nordestino");
       else if (nomeLoja === "Soodeli") document.body.classList.add("soodeli");
 
