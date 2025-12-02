@@ -1,0 +1,77 @@
+CATEGORIA,NOME CARDAPIO,NOME PDV,CÓD PDV,PREÇO VENDA CHEIO,DESCRICAO ITEM CARDAPIO
+Burger Vegetarianos,Sóbrio,BUK VEG-SOBRIO,45184,29.9,"Pão brioche, burger de falafel, cheddar cremoso, picles de pepino. Você escolhe dois molhos que vão dentro do burger."
+Burgers Bovinos,"""Baby, baby...''","BUK BOVINO-BABY, BABY",45006,34.9,"Pão brioche, blend bovino, cheddar, picles de pepino, cebola roxa. Você escolhe dois molhos que vão dentro do burger."
+Burgers Bovinos,Divindade,BUK BOVINO-DIVINDADE,45103,36.9,"Pão brioche, blend bovino, cheddar, cream cheese e cebola crispy. Você escolhe dois molhos que vão dentro do burger."
+Burgers Bovinos,Safado,BUK BOVINO-SAFADO,45106,38.9,"Pão brioche, blend bovino, cheddar, bacon em tiras. Você escolhe dois molhos que vão dentro do burger."
+Burgers Bovinos,Sobre o amor,BUK BOVINO-SOBRE AMOR,45109,36.9,"Pão brioche, blend bovino, cheddar, gorgonzola e cebola caramelizada. Você escolhe dois molhos que vão dentro do burger."
+Burgers Bovinos,Amor louco,BUK BOVINO-AMOR LOUCO,45112,34.9,"Pão brioche, blend bovino, cheddar, cebola caramelizada. Você escolhe dois molhos que vão dentro do burger."
+Burgers Bovinos,Old Man,BUK BOVINO-OLD MAN,45113,32.9,"Pão brioche, blend bovino, cheddar. Você escolhe dois molhos que vão dentro do burger."
+Burgers Bovinos,Ardente,BUK BOVINO-ARDENTE,45180,38.9,"Pão brioche, blend bovino, cheddar, cream cheese, geléia de pimenta artesanal e picles de cebola roxa. Você escolhe dois molhos que vão dentro do burger."
+Burgers Bovinos,Clímax,BUK BOVINO-CLIMAX,45181,37.9,"Pão brioche, blend bovino, carne de sol desfiada, queijo coalho grelhado e picles de cebola roxa. Você escolhe dois molhos que vão dentro do burger."
+Burgers Bovinos,Mundano,BUK BOVINO-MUNDANO,45182,36.9,"Pão brioche, blend bovino, cheddar, ovo frito. Você escolhe dois molhos que vão dentro do burger."
+Escolha seu queijo,Fatia De Cheddar,ACP-1UN FATIA CHEDDAR,45163,0.0,1un
+Escolha seu queijo,American cheese (cremoso),ACP-30G BLEND QUEIJOS,45164,0.0,30g
+Escolha seu queijo,Queijo Coalho Grelhado,ACP-20G COALHO RLD CHAP,45165,0.0,20g
+Escolha seu queijo,Cream Cheese,ACP-30G CREAM CHEESE,45166,0.0,30g
+Escolha seu queijo,Mussarela fatiada,ACP-1UN FATIA MUSSARE,45167,0.0,1un
+Escolha seu queijo,Sem queijo,ACP - SEM QUEIJO,45189,0.0,
+Escolha seus complementos,Bacon em tiras,ACP-2UN BACON TIRAS,45168,0.0,2un
+Escolha seus complementos,Picles De Pepino,ACP-4UN PICLES PEPINO,45170,0.0,4un
+Escolha seus complementos,Picles de cebola roxa,ACP-20G PICLES CEBOLA,45171,0.0,10g
+Escolha seus complementos,Cebola Caramelizada,ACP-30G CEBOLA CARAME,45172,0.0,30g
+Escolha seus complementos,Cebola Crispy,ACP-20G CEBOLA CRISPY,45173,0.0,10g
+Escolha seus complementos,Geleia de pimenta artesanal.,ACP-30G GELEIA PIMENT,45174,0.0,30g
+Escolha seus complementos,Carne De Sol Refogada na cebola roxa,ACP-70G CARNE DE SOL ,45175,3.0,20g
+Escolha seus complementos,Ovo Frito,ACP-1UN OVO FRITO,45176,0.0,1un
+Escolha seus complementos,Salada Coleslaw,ACP-30G SLD COLESLAW,45177,0.0,30g
+Escolha seus complementos,Bacon Empanado,ACP-2UN BACON EMPANAD,45178,0.0,2un
+Escolha seus complementos,Calabresa fatiada,ACP-6UN CALABRESA FAT,45190,0.0,6un
+Escolha seus complementos,Presunto fatiado,ACP-1UN PRESUNTO FATI,45191,0.0,1un
+Escolha sua carne,Burger Bovino,ACP-120G BURGR BOVINO,45159,0.0,120g
+Escolha sua carne,Crispy Chicken,ACP-2UN PDÇ FGO CRISP,45161,0.0,2un
+Escolha sua carne,Burguer De Falafel,ACP-1UN BURGR FALAFEL,45162,0.0,1un
+Escolha sua carne,Burger de frango,ACP-120 BURGR FRANGO,45169,0.0,120g
+Escolha sua carne,Burger bovino em dobro,ACP-*DUPLO*BOV 120G,49002,9.9,Dois burgers de 120g cada
+Escolha sua carne,Burger de frango em dobro,ACP-*DUPLO*FRANG 120G,49004,7.9,Dois burgers de 120g cada
+Molho,Maionese temperada,MLH BURG-MAIONES TEMP,45116,0.0,Servido no burger.
+Molho,Maionese de alho,MLH BURG-MAIONES ALHO,45117,0.0,Servido no burger.
+Molho,Molho barbecue,MLH BURG-BARBECUE,45118,0.0,Servido no burger.
+Molho,Ketchup,MLH BURG-KETCHUP,45119,0.0,Servido no burger.
+Molho,Molho mostarda e mel,MLH BURG-MEL MOSTARDA,45120,0.0,Servido no burger.
+Molho,Molho ranch,MLH BURG-RANCH,45121,0.0,Servido no burger.
+Molho,Mostarda,MLH BURG-MOSTRDA TRAD,45122,0.0,Servido no burger.
+Molho,Cheddar cremoso,MLH BURG-MOLHO CHEDAR,45156,0.0,Servido no burger.
+Molho,Maionese especial da casa,MLH BURG-MAIONES ROSE,45157,0.0,Servido no burger.
+Molho,Sem molho,MLH BURG-SEM MOLHO,45158,0.0,"Sem molho, por favor!"
+O mehor Crispy Chicken da cidade,Devasso,BUK CRSP CHCK-DEVASSO,45114,32.9,"Pão brioche, 2 pedaços de filé de frango crocante, cheddar, cebola roxa. Você escolhe dois molhos que vão dentro do burger."
+O mehor Crispy Chicken da cidade,Desejo,BUK CRSP CHCK-DESEJO,45115,35.9,"Pão brioche, 2 pedaços de filé de frango crocante, cheddar, bacon em tiras, cebola roxa. Você escolhe dois molhos que vão dentro do burger."
+O mehor Crispy Chicken da cidade,Insano,BUK CRSP CHCK-INSANO,45183,32.9,"Pão brioche, 2 pedaços de filé de frango crocante, cheddar, salada coleslaw, picles de pepino. Você escolhe dois molhos que vão dentro do burger."
+O mehor Crispy Chicken da cidade,Cruel,BUK CRSP CHCK-CRUEL,45214,32.9,"Pão brioche, 2 pedaços de filé de frango crocante, cream cheese, couve crispy. Você escolhe dois molhos que vão dentro do burger."
+O mehor Crispy Chicken da cidade,Esplêndido,BUK CRSP CHCK-ESPLENDIDO,45215,33.9,"Pão brioche, 2 pedaços de filé de frango crocante, queijo coalho grelhado, picles de cebola roxa. Você escolhe dois molhos que vão dentro do burger."
+O mehor Crispy Chicken da cidade,Sedutor,BUK CRSP CHCK-SEDUTOR,45216,32.9,"Pão brioche, 2 pedaços de filé de frango crocante, cream cheese, cebola crispy. Você escolhe dois molhos que vão dentro do burger."
+Ouse um pouco mais,Tiras de bacon,**ADC-2UN BACON EM TIRAS,36000,5.9,2 unidades
+Ouse um pouco mais,Cream de cheese,**ADC-30G CREAM CHEESE,36002,3.9,30g
+Ouse um pouco mais,Geleia de pimenta artesanal.,**ADC-30G GELEIA DE PIMENTA,36003,1.9,30g
+Ouse um pouco mais,Picles de pepino,**ADC-4UN PICLES DE PEPIN,36004,1.9,4 unidades
+Ouse um pouco mais,Picles de cebola roxa,**ADC-20G PICLES DE CEBOL,36005,1.9,20g
+Ouse um pouco mais,Carne extra Bovina,**ADC-120G BURGER BOVINO,36006,9.9,120g
+Ouse um pouco mais,Ovo frito,**ADC-1UN OVO FRITO CHAPA,36008,2.9,1 unidade
+Ouse um pouco mais,Cebola de crispy,**ADC-20G CEBOLA CRISPY,36009,1.9,20g
+Ouse um pouco mais,Cebola caramelizada,**ADC-30G CEBOLA CARAMELIZA,36010,1.9,30g
+Ouse um pouco mais,Queijo Mussarela,**ADC-1UN FATIA MUSSARELA,36011,2.9,1 unidade
+Ouse um pouco mais,Presunto,**ADC-1UN PRESUNTO FATIADO,36012,1.9,1 unidade
+Ouse um pouco mais,American cheese (cremoso),**ADC-30G BLEND QUEIJOS,45198,3.9,30g
+Ouse um pouco mais,Cream cheese,**ADC-30G CREAM CHEESE,45200,3.9,30g
+Ouse um pouco mais,Bacon em tiras,**ADC-2UN BACON TIRAS,45202,5.9,2un
+Ouse um pouco mais,Picles de pepino,**ADC-4UN PICLES DE PEPIN,45203,1.9,4un
+Ouse um pouco mais,Picles de cebola roxa,**ADC-20G PICLES DE CEBOL,45204,1.9,10g
+Ouse um pouco mais,Cebola Caramelizada,**ADC-30G CEBOLA CARAME,45205,1.9,30g
+Ouse um pouco mais,Cebola crispy,**ADC-20G CEBOLA CRISPY,45206,1.9,10g
+Ouse um pouco mais,Calabresa fatiada,**ADC-6UN CALABRESA FATI,45207,1.9,6un
+Ouse um pouco mais,Geleia de pimenta artesanal.,**ADC-30G GELEIA PIMENTA,45208,2.9,30g
+Ouse um pouco mais,Carne de sol refogada na cebola ROXA,**ADC-70G CARNE DE SOL,45209,7.9,20g
+Ouse um pouco mais,Ovo frito,**ADC-1UN OVO FRITO,45210,2.9,1un
+Ouse um pouco mais,Salada coleslaw,**ADC-30G SLD COLESLAW,45211,1.9,30g
+Ouse um pouco mais,Presunto fatiado,**ADC-1UN PRESUNTO FATI,45213,1.9,1un
+"SE VAI TENTAR, SIGA EM FRENTE",Monte seu burger,BUK-BURGER P/ MONTAR------,45192,39.9,Chegou a hora de você montar o seu próprio hambúrguer. Seguindo o que o velho Buk disse: “Sinta mais. Pense menos.” Do que você precisa agora?
+Vai uma saladinha?,Não quero salada,**SEM** FLZ SALADA BURGER,49001,0.0,
