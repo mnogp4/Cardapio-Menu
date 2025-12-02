@@ -10,36 +10,35 @@
     :root { --vermelho: #e30613; --vermelho-hover: #c4000f; --branco: #fff; }
     body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #fff; color: #333; overflow-x: hidden; }
 
-    /* HEADER +20% MAIOR */
+    /* TOPBAR +20% MAIOR */
     .topbar {
       background: var(--vermelho);
-      padding: 22px 20px; /* +20% */
+      padding: 22px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       box-shadow: 0 6px 20px rgba(227,6,19,0.35);
       position: relative;
       z-index: 100;
-      min-height: 100px; /* +20% */
+      min-height: 100px;
     }
     .btn-lojas {
-      background: none; border: none; color: white; font-size: 1.62em; /* +20% */
+      background: none; border: none; color: white; font-size: 1.62em;
       cursor: pointer; padding: 12px 18px; border-radius: 12px; transition: 0.2s; font-weight: bold;
     }
     .btn-lojas:hover { background: rgba(255,255,255,0.25); }
 
-    /* LOGO +20% MAIOR E CENTRALIZADA */
     .logo-container {
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      max-width: 240px; /* +20% (era 200px) */
+      max-width: 240px;
     }
     .logo-container img {
       width: 100%;
       height: auto;
-      max-height: 144px; /* +20% */
+      max-height: 144px;
       object-fit: contain;
     }
 
@@ -127,7 +126,6 @@
 </head>
 <body>
 
-  <!-- TOPBAR +20% MAIOR -->
   <div class="topbar">
     <button class="btn-lojas" onclick="toggleSidebar()">Lojas</button>
     <div class="logo-container">
@@ -136,7 +134,6 @@
     <div style="width: 70px;"></div>
   </div>
 
-  <!-- OVERLAY + SIDEBAR -->
   <div class="overlay" onclick="toggleSidebar()"></div>
   <div class="sidebar" id="sidebar">
     <ul>
@@ -154,7 +151,6 @@
     <div id="resultado"></div>
   </div>
 
-  <!-- CARRINHO -->
   <div id="carrinho" class="carrinho-flutuante">
     <div class="carrinho-header">
       <button class="btn-minimizar" onclick="minimizarCarrinho()">−</button>
@@ -174,13 +170,18 @@
       return txt.toString().replace(/[\r\n\t\v\f]+/g, " ").replace(/[^\w\s\-\(\)\+\&à-úÀ-Ú]/g, "").replace(/\s+/g, " ").replace(/:/g, "").trim().substring(0, 80);
     }
 
-    function carregarLoja(arquivo, nomeLoja) {
+    function carregarLoja(arquivo, nomeLoja, elementoClicado = null) {
+      // Marca a loja ativa
       document.querySelectorAll(".sidebar li").forEach(li => li.classList.remove("active"));
-      event.target.classList.add("active");
+      if (elementoClicado) elementoClicado.classList.add("active");
+      else document.getElementById("loja-menu").classList.add("active");
+
       toggleSidebar();
 
       Papa.parse(arquivo, {
-        download: true, header: true, skipEmptyLines: true,
+        download: true,
+        header: true,
+        skipEmptyLines: true,
         complete: function(results) {
           todosOsItens = results.data
             .filter(i => i["NOME CARDAPIO"] && i["NOME CARDAPIO"].trim())
@@ -190,7 +191,9 @@
           const select = document.getElementById("categoria");
           select.innerHTML = '<option value="">Tudo</option>';
           categorias.forEach(c => {
-            const opt = document.createElement("option"); opt.value = c; opt.textContent = c; select.appendChild(opt);
+            const opt = document.createElement("option");
+            opt.value = c; opt.textContent = c;
+            select.appendChild(opt);
           });
           mostrarItens(todosOsItens);
         },
@@ -201,15 +204,15 @@
     }
 
     function toggleSidebar() {
-      document.getElementById("sidebar").classList.toggle("open");
-      document.querySelector(".overlay").style.display = 
-        document.getElementById("sidebar").classList.contains("open") ? "block" : "none";
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("open");
+      document.querySelector(".overlay").style.display = sidebar.classList.contains("open") ? "block" : "none";
     }
 
-    // INICIA DIRETO COM MENU BRANDS — GARANTIDO!
-    window.onload = function() {
+    // CARREGA MENU BRANDS DIRETO AO ABRIR - 100% GARANTIDO
+    window.addEventListener("DOMContentLoaded", () => {
       carregarLoja("MenuFiltrado.csv", "Menu Brands");
-    };
+    });
 
     function mostrarItens(itensFiltrados) {
       const container = document.getElementById("resultado");
