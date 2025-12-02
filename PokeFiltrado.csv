@@ -1,0 +1,109 @@
+CATEGORIA,NOME CARDAPIO,NOME PDV,CÓD PDV,PREÇO VENDA CHEIO,DESCRICAO ITEM CARDAPIO
+Poke de Arroz de Leite,Parrudo,POKE ARROZ-PARRUDO,70057,32.9,"Arroz de leite cremoso, carne moída, um ovinho frito e batata palha pra fechar de com força. Lá vem ele, forte, bonitão e cheio de marra."
+Poke Nordestino especial de Natal,Xodó especial de Natal,POKE ARROZ-XODO NATAL,1926,33.9,"Fricassê de Frango, batata palha, farofa natalina e arroz de leite. "
+Poke Nordestino especial de Natal,Lombo suíno especial de Natal,POKE ARROZ-SUÍNO NATAL,1937,33.9,"Lombo suíno desfiado refogado com cebola roxa, salpicão de frango, farofa natalina e arroz de leite."
+Outros,,PRODUTO POKE NORDESTI,70000,0,
+Escolha uma base para seu Poke,Baião de dois cremoso,ACP-250G BAIAO CREMOS,70001,0,Baião de dois cremoso.
+Escolha uma base para seu Poke,Cuscuz,ACP-150G CUSCUZ ,70002,0,Cuscuz bem fofinho.
+Escolha um ingrediente principal,Frango desfiado,ACP-70G FGO DESFIADO,70003,0,Frango desfiado refogado com cebola roxa.
+Escolha um ingrediente principal,Carne de sol desfiada,ACP-70G CARNE SOL,70004,4.9,Carne de sol desfiada refogada com cebola roxa.
+Escolha um ingrediente principal,Ovo frito,ACP-1UN OVO FRITO,70005,0,Ovo frito inteiro.
+Escolha um ingrediente principal,Frango acebolado,ACP-70G FGO ACEBOLADO,70006,0,Tiras de frango refogadas com cebola branca.
+Escolha um ingrediente principal,Tiras de carne,ACP-70G TIRAS CARNE,70007,6.9,Tiras de carne bovina grelhadas.
+Escolha um ingrediente principal,Calabresa acebolada,ACP-60G CALABRSA ACEB,70008,0,Calabresa fatiada refogada com cebola branca.
+Escolha um ingrediente principal,Camarão,ACP-70G CAMARAO,70009,15.9,Camarões limpos temperados com azeite de ervas.
+Escolha um ingrediente principal,Carne moída,ACP-70G CARNE MOIDA,70010,0.9,Carne moída refogada com mix de especiarias.
+Escolha um ingrediente principal,Caponata de berinjela e abobrinha,ACP-90G CAPONATA,70011,0,"Berinjela, abobrinha, cebola, uvas passas e azeitonas."
+Escolha um ingrediente principal,Peito de peru,ACP-40G PEITO PERU,70012,0,Peito de peru ralado.
+Escolha dois acompanhamentos,Presunto,ACP-30G PRESUNTO PIC,70013,0,Presunto picadinho.
+Escolha dois acompanhamentos,Tomate,ACP-30G TOMATE CUBOS,70014,0,Tomate cortado em cubinhos.
+Escolha dois acompanhamentos,Cenoura,ACP-30G CENOURA RALAD,70015,0,Cenoura ralada.
+Escolha dois acompanhamentos,Tomate seco,ACP-30G TOMATE SECO,70016,0.99,Tomate seco.
+Escolha dois acompanhamentos,Cebola crispy,ACP-20G CEBOLA CRISPY,70017,0,Tiras fininhas de cebola empanadas e fritas.
+Escolha dois acompanhamentos,Cebola caramelizada,ACP-30G CEBOLA CARAME,70018,0,Cebola caramelizada.
+Escolha dois acompanhamentos,Bacon,ACP-20G BACON GRELHAD,70019,1.99,Fatias de bacon grelhadas e cortadas em pedaços.
+Escolha dois acompanhamentos,Milho verde,ACP-30G MILHO VERDE,70020,0,Milho verde.
+Escolha dois acompanhamentos,Feijão cremoso,ACP-60G FEIJAO CREMOS,70021,0,Feijão com molho cremoso de queijos.
+Escolha dois acompanhamentos,Queijo coalho grelhado,ACP-30G Q COALHO GREL,70022,0,Queijo coalho grelhado em cubinhos.
+Escolha dois acompanhamentos,Queijo minas,ACP-30G Q MINAS RALAD,70023,0,Queijo minas ralado.
+Escolha dois acompanhamentos,Refogado colorido,ACP-30G REFOGADO COLO,70024,0,"Refogado de cebola branca, tomate e pimentão."
+Escolha dois acompanhamentos,Ovo de codorna,ACP-3UN OVO CODRNA,70025,0,Ovos de codorna cozidos.
+Escolha dois acompanhamentos,Ricota,ACP-40G Q RICOTA RALA,70026,0,Queijo ricota ralado.
+Escolha dois acompanhamentos,Farofa Crispy,ACP-40G FAROFA CRISPY,70027,0,Farinha de mandioca puxada na manteiga com cebola frita.
+Escolha dois acompanhamentos,Requeijão Cremoso,ACP-40G REQ CREMOSO,70028,0,Requeijão cremoso.
+Escolha dois acompanhamentos,Cream Cheese,ACP-40G CREAM CHEESE,70029,0.99,Cream cheese cremoso.
+Escolha sua finalização,Cheiro verde,**FLZ-MIX CHEIRO VERD,70030,0,Coentro e cebolinha picados.
+Adicione ingredientes extras,Frango desfiado,**ADC-60G FGO DESFIAD,70031,6.9,Frango desfiado refogado com cebola roxa
+Adicione ingredientes extras,Carne de sol acebolada,**ADC-70G CARNE SOL,70032,13.9,Carne de sol desfiada refogada com cebola roxa.
+Adicione ingredientes extras,Ovo frito,**ADC-1UN OVO FRITO,70033,1.9,Ovo frito inteiro.
+Adicione ingredientes extras,Calabresa acebolada,**ADC-60G CALABRESA ACEB,70034,3.9,Calabresa refogada com cebola branca.
+Adicione ingredientes extras,Tomate,**ADC-30G TOMATE CUBO,70035,1.9,Tomate cortado em cubinhos.
+Adicione ingredientes extras,Cebola crispy,**ADC-20G CEBOLA CRISPY,70036,1.9,Tiras fininhas de cebola empanadas e fritas.
+Adicione ingredientes extras,Bacon,**ADC-20G BACON GRELH,70037,5.9,Fatias de bacon grelhadas e cortadas em pedaços.
+Adicione ingredientes extras,Milho verde,**ADC-30G MILHO VERDE,70038,1.9,Milho verde.
+Adicione ingredientes extras,Queijo coalho grelhado,**ADC-30G Q COALH GRE,70039,3.9,Queijo coalho grelhado em cubinhos.
+Adicione ingredientes extras,Ovo de codorna,**ADC-3UN OVO CODRNA,70040,2.9,Ovos de codorna.
+Monte Seu Poke Nordestino,"Monte Seu Poke Nordestino, Ganhe uma Bebida",POKE-PARA MONTAR---------,70041,37.9,Monte seu Poke Nordestino. Escolha sua base: Cuscuz ou Baião de dois - os dois pratos eleitos os mais tipicamente cearenses. Depois escolha uma proteína e dois acompanhamentos.
+Poke de Arroz de Leite,Charloso,POKE ARROZ-CHARLOSO,70058,34.9,"Arroz de leite cremoso, carne de sol acebolada, cebola crispy e ovo de codorna. Pense num poke que chama atenção é esse aqui, charla demais! "
+Poke de Arroz de Leite,Ispilicute,POKE ARROZ-ISPILICUTE,70059,28.9,"Arroz de leite cremoso, calabresa, milho e batata palha, esse aqui é estrela onde chega! Ispilicute todo é ele, todo amostrado. Cuida e pede o teu!"
+Poke de Arroz de Leite,Corralinda,POKE ARROZ-CORRALINDA,70061,31.9,"Arroz de leite cremoso, frango desfiado acebolado, milho verde e tomate picadinho.Tão bonito que chega a estremecer as estribeiras."
+Poke de Arroz de Leite,Xodó,POKE ARROZ-XODÓ,70068,33.9,"Fricassê de frango, arroz cremoso, batata palha e farofa crispy. Conheça o novo Xodó do Nordeste! Pense num sabor cremoso da peste!"
+Poke de Arroz de Leite,Arroxadim,POKE ARROZ-ARROXADIM,70079,33.9,"Arroz de leite cremoso, Lombo Suíno desfiado bem gostoso refogado com cebola branca, macaxeira frita e couve crispy pra arrematar. O bixin é dos bons:  É de comer dançando!"
+Lançamentos do mês,Meiota,POKE ARROZ-MEIOTA,70085,30.9,Arroz branco com metadinha de Vatapá com Calabresa e Paçoca de carne do Sol crocante. É de comer rezando!
+Poke de Arroz de Leite,Praieiro,POKE ARROZ-PRAIEIRO,70202,49.9,"O poke Praieiro une arroz cremoso ao molho de queijos, camarões grelhados e cubos de queijo coalho tostado. Finalizado com um delicioso dadinho de vatapá, pimenta biquinho e toque crocante de palha de batata doce, esse poke é um encontro sofisticado entre o litoral e a tradição nordestina."
+Poke de Arroz Branco,Feijoada da Van,POKE ARROZ- FEIJOADA,70203,35.9,"Arroz branco soltinho, couve crispy e a paçoca de torresmo para dar aquele crec gostoso. É a Feijoada da Chef Van no pote, com a sustança e o tempero de casa para encher teu bucho de alegria!"
+Poke de Baião,Marrapaiz,POKE BAIAO- MARRAPAIZ,70042,29.9,"Um baiãozinho de dois cremoso, calabresa acebolada, milho e tomate picado pra arrematar, e nesse precin? Marrapaiz, como é que não aproveita?
+"
+Poke de Baião,Sustança,POKE BAIAO-SUSTANCA,70043,33.9,"Baião cremoso, frango acebolado, refogado de cebola branca, tomate e pimentão com requeijão cremoso pra aumentar a gostosura. Pra quem tá brocado e precisando de sustança não dá outra."
+Poke de Baião,Arretado,POKE BAIAO-ARRETADO,70044,35.9,"Baiãozinho tradicional cremoso que só a gente conhece, carne do sol desfiada e refogada com cebola roxa, cebola crispy e bacon pra zé ninguém botar defeito. O mais mais que vai estremecer as estribeiras da suas papilas gustativas. "
+Escolha sua finalização,"Não, obrigado!",**FLZ-SEM FINALIZAÇÃO,70054,0,
+Escolha uma base para seu Poke,Arroz de leite,ACP-250G ARROZ CREMOS,70055,0,Arroz branco super cremoso.
+Escolha dois acompanhamentos,Batata palha,ACP-20G BATATA PALHA,70056,0,Batata palha.
+Poke de Baião,Arrasta Pé,POKE BAIAO-ARRASTA PE,70045,35.9,"Baião cremoso, carne moída, ovo e aquele bacon crocante que faz crec! Gostoso feito dançar agarradinho. Bora dançar mais eu?
+"
+Poke de Baião,Pitéu,POKE BAIAO-PITEU,70046,32.9,"Baião cremoso, frango desfiado, cebola caramelizada e um queijin minas pra fechar. É só o pitéu, meu fi."
+Poke de Baião,Coladin,POKE BAIAO-COLADIN,70067,31.9,"Vatapá de frango, baião cremoso, batata palha crocante e queijo coalho grelhado. Cada garfada é um passo de forró na boca. É o sabor do Nordeste em um prato, uma experiência irresistível e autêntica."
+Poke de Baião,Matuto,POKE BAIAO-MATUTO,70071,35.9,"Poke de baião cremoso, carne de sol, macaxeira frita, farofinha e ovo! Criado especialmente para o melhor mês no ano. Esse poke vai encher teu bucho e te deixar preparado pra aproveitar os arraiá! "
+Escolha um ingrediente principal,Creme de frango,ACP-100G CREME FGO,70062,0,Creme de frango desfiado. 
+Escolha um ingrediente principal,Vatapá de frango,ACP-100G VATAPA,70063,0,Vatapá de frango.
+Poke de Baião,Bacurim,POKE BAIAO-BACURIM,70077,34.9,"Baião de dois cremoso, Lombo Suíno desfiado dos bem gostosos e refogado com cebola branca, macaxeira frita e paçoca de torresmo que enche o bucho de alegria.  Chamado de Bacurim, esse prato é uma festa de sabores! "
+Lançamentos do mês,Pai D'egua,POKE BAIAO-PAIDEGUA,70086,37.9,"Baião cremoso com tiras de carne de sol, couve crispy e farofa. Era só um desses pra tu ser feliz!"
+Escolha um ingrediente principal,Fricassê de frango,ACP-100G FRICASSE,70069,0,Fricassê de frango.
+Adicione ingredientes extras,Requeijão Cremoso,**ADC-40G REQ CREMOSO,70070,2.9,Requeijão cremoso.
+Poke de Cuscuz,Belezura,POKE CUSCUZ-BELEZURA,70048,25.9,"Cuscuz soltinho, ovo frito, queijo coalho grelhado e tomate pra terminar a obra prima. Rapaz, pense num negócio bonito é esse poke. É tanta belezura que limpou foi minha vista."
+Escolha uma base para seu Poke,Arroz Branco,ACP-150G ARROZ BRANCO,70073,0,Arroz branco bem soltinho. 
+Escolha dois acompanhamentos,Macaxeira Frita,ACP-30G MACAXEIRA ,70074,0,Macaxeira Frita cortada em cubinhos.
+Adicione ingredientes extras,Macaxeira Frita,**ADC-30G MACAXEIRA ,70076,2.9,Macaxeira Frita cortada em cubinhos.
+Poke de Cuscuz,Da Merenda,POKE CUSCUZ-DA MEREND,70049,28.9,"Cuscuz, ovo frito, presunto e requeijão cremoso. Aquela merendinha que sustenta. E é bom viu?"
+Poke de Cuscuz,Amostradinho,POKE CUSCUZ-AMOSTRADINHO,70050,36.9,"Cuscuz, carne de sol desfiada com cebola roxa, requeijão cremoso e bacon. Esse aqui é estrela onde chega! Cuida!"
+Poke de Cuscuz,Danado de Bom,POKE CUSCUZ-DANADO DE BOM,70051,32.9,"Cuscuz soltinho, carne de sol desfiada, feijão cremoso e cebola crispy. Tá é danado de bom,
+Tá danado de bom, meu cumpade 🎵 essa mistura o rei teria cantado!
+"
+Escolha uma base para seu Poke,Baião de dois soltinho,ACP-150G BAIAO SOLTNH,70080,0,Baião de dois soltinho com feijão de corda.
+Escolha dois acompanhamentos,Couve crispy,ACP-5G COUVE CRISPY,70081,0,Couve crispy.
+Escolha dois acompanhamentos,Torresmo frito,ACP-30G TORRESMO FRIT,70082,2.99,Torresmo crocantíssimo! 
+Escolha dois acompanhamentos,Farofa de Torresmo,ACP-30G PCOCA TORES C/2UN,70083,0,Farofa de Torresmo especial da Chef Van.
+Escolha um ingrediente principal,Lombo Suíno desfiado,ACP-70G SUINO DESFIAD,70084,1.9,Lombo súino desfiado refogado com cebola branca
+Poke de Cuscuz,Chamego,POKE CUSCUZ-CHAMEGO,70052,28.9,"Cuscuz, frango desfiado refogado com cebola roxa, cubos de queijo coalho grelhado, refogado de tomate, pimentão e cebola branca. É chamego puro no pote."
+Poke de Cuscuz,Gostosin,POKE CUSCUZ-GOSTOSIN,70053,29.9,"Cuscuz, carne moída, ovo frito e milho. É gostosinnn demais!"
+Porções do Poke,Cuscuz,POKE-250G CUSCUZ,70087,15.9,Cuscuz de milho fofinho e quentinho. Você sente o sabor do milho a todo momento.
+Porções do Poke,Baião Cremoso,POKE-400G BAIAO CREM,70088,19.9,Aquele baião que já é tradição cearense.
+Porções do Poke,Arroz de leite,POKE-400G ARROZ CREM,70089,19.9,Arroz de leite super cremoso.
+Porções do Poke,Arroz Branco,POKE-300G ARROZ BCO,70090,15.9,Arroz Branco soltinho e temperado.
+Porções do Poke,Creme de Frango,POKE-400G CRME DE FGO,70091,34.9,"Creme de Frango, aquele, a cara das festas especiais das nossas famílias."
+Porções do Poke,Vatapá de frango,POKE-400G VATAPA,70092,30.9,"Vatapá de Frango, é muito tradição nordestina."
+Porções do Poke,Carne Moída,POKE-300G CARNE MOIDA,70093,38.9,"Carne moída, molhadinha, com aquele sabor de comida de vó."
+Porções do Poke,Carne de sol desfiada,POKE-250G DE SOL DSF ,70094,46.9,Carne de sol desfiada e refogada com cebola roxa.
+Porções do Poke,Frango desfiado,POKE-250G FGO DESFI,70095,38.9,"Frango desfiado, refogado com cebola e super temperadinho."
+Porções do Poke,Farofa de Torresmo,POKE-250G FARF TORES C/5U,70096,25.9,Farofa de Torresmo especial da Chef Van.
+Porções do Poke,Farofa Crispy,POKE-200G FAROF CRSPY,70097,17.9,Farofa crispy com cebola bem torradinha. Tipo uma farofinha da vovó.
+Porções do Poke,Baião Soltinho,POKE-300G BAIAO SOLT,70098,19.9,Baião de dois com feijão de corda. É de nos fazer voltar no tempo.
+Porções do Poke,Lombo Suíno desfiado,POKE-300G SUINO DESF,70099,43.9,Lombo suíno assado em fogo lento até desfiar facinho. Refogado com cebola branca. Cheio de sabor.
+Escolha um ingrediente principal,Tiras de Carne de Sol,ACP-70G TIRAS C.SOL,70100,5.9,Tiras de Carne de Sol refogado com cebola branca.
+Escolha dois acompanhamentos,Paçoca de Carne de Sol,ACP-40G PACOCA DE SOL,70101,0,Paçoca crocante com a deliciosa Carne de Sol da Chef Van.
+Escolha dois acompanhamentos,Palha de batata doce,ACP-20G PALHA DOCE,70102,0,"Palha de batata doce bem crocante, receita especial da Chef Van. "
+Adicione ingredientes extras,Palha de batata doce,**ADC-20G PALHA DOCE,70107,1.9,"Palha de batata doce bem crocante, receita especial da Chef Van. "
+Adicione ingredientes extras,Torresmo frito,**ADC-30G TORRESMO FR,70185,6.9,Torresmo crocantíssimo! 
+Arraiá do Poke,Metadinha Creme de Frango e Calabresa acebolada.,ACP-150GCREME-30GCALAB,70200,0,Creme de frango desfiado e calabresa acebolada.
+Arraiá do Poke,Metadinha Vatapá de Frango e Calabresa acebolada.,ACP-150GVAT-30GCALAB,70201,0,Vatapá de frango desfiado e calabresa acebolada.
+Poke de Cuscuz,Lá na Roça ,POKE CUSCUZ-LA NA ROÇ,70078,29.9,"Cuscuz quentinho, suíno desfiado suculento refogado com cebola branca, torresmo crocante e um feijão cremoso de dar água na boca. Lá na roça tem fartura, meu cumpade! "
