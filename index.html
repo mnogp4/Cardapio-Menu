@@ -138,14 +138,34 @@
     }
     body.soodeli .topbar { background: #d8dd12 !important; }
 
+    body.zack {
+      --cor-principal: #0066FF;     /* azul Zack */
+      --cor-hover: #0044cc;
+      --cor-secundaria: #FFC107;    /* dourado Zack */
+      background: #ffffff;
+    }
+    body.zack .topbar { background: #0066FF; }
+    body.zack .categoria-tag, body.zack .quantidade button, body.zack .carrinho-header,
+    body.zack .filtros, body.zack .carrinho-total {
+      background: #FFC107; border-color: #FFC107; color: #0066FF !important;
+    }
+    body.zack .preco, body.zack .filtros label { color: #0066FF; }
+    body.zack .carrinho-total { background: #fffdf0; color: #0066FF; border-top-color: #FFC107; }
+
     .topbar { background: var(--cor-principal); }
     .btn-lojas, th, .categoria-tag, .quantidade button, .carrinho-header, .filtros, .carrinho-total {
       background: var(--cor-principal);
       border-color: var(--cor-principal);
     }
     .preco, .filtros label { color: var(--cor-principal); }
-    .item-carrinho { background: rgba(227,6,19,0.1); }
+    .item-carrinho { background: rgba(0,102,255,0.1); }
     .sidebar li:hover, .sidebar li.active { background: var(--cor-principal); }
+
+    /* TEXTO "Filtrar por categoria:" BRANCO (exceto nas 3 lojas especiais) */
+    .filtros label { color: #333 !important; }
+    body:not(.menu-brands):not(.poke-nordestino):not(.soodeli) .filtros label {
+      color: white !important;
+    }
 
     /* SIDEBAR COM SCROLL INTERNO */
     .sidebar {
@@ -182,7 +202,6 @@
       background: white; padding: 24px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);
       margin-bottom: 30px; text-align: center; border: 3px solid var(--cor-principal);
     }
-    .filtros label { font-weight: 700; color: #333 !important; font-size: 1.2em; margin-right: 12px; }
     select, input { padding: 13px 16px; font-size: 1.05em; border: 2px solid #ddd; border-radius: 12px; }
     select { width: 320px; }
     input { width: 420px; max-width: 100%; border-color: var(--cor-principal); margin-left: 15px; }
@@ -269,6 +288,7 @@
         <li onclick="carregarLoja('TipicoFiltrado.csv', 'Típico', 'Tipico.png', this)" id="loja-tipico">Típico</li>
         <li onclick="carregarLoja('PokeFiltrado.csv', 'Poke Nordestino', 'Poke.png', this)" id="loja-poke">Poke Nordestino</li>
         <li onclick="carregarLoja('SoodeliFiltrado.csv', 'Soodeli', 'Soodeli.png', this)" id="loja-soodeli">Soodeli</li>
+        <li onclick="carregarLoja('ZacFiltrado.csv', 'Zack Burgers', 'Zac.png', this)" id="loja-zack">Zack Burgers</li>
       </ul>
     </div>
   </div>
@@ -302,7 +322,7 @@
     }
 
     function carregarLoja(arquivo, nomeLoja, logoSrc, botaoClicado) {
-      document.body.classList.remove("menu-brands", "amicis", "buk", "buoni", "chapa", "ginger", "tipico", "poke-nordestino", "soodeli");
+      document.body.classList.remove("menu-brands", "amicis", "buk", "buoni", "chapa", "ginger", "tipico", "poke-nordestino", "soodeli", "zack");
       if (nomeLoja.includes("Menu")) document.body.classList.add("menu-brands");
       else if (nomeLoja.includes("Amicis")) document.body.classList.add("amicis");
       else if (nomeLoja.includes("BUK")) document.body.classList.add("buk");
@@ -312,6 +332,7 @@
       else if (nomeLoja.includes("Típico")) document.body.classList.add("tipico");
       else if (nomeLoja.includes("Poke")) document.body.classList.add("poke-nordestino");
       else if (nomeLoja === "Soodeli") document.body.classList.add("soodeli");
+      else if (nomeLoja.includes("Zack")) document.body.classList.add("zack");
 
       document.getElementById("logo").src = logoSrc;
 
