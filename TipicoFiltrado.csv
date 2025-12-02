@@ -1,0 +1,91 @@
+CATEGORIA,NOME CARDAPIO,NOME PDV,CÓD PDV,PREÇO VENDA CHEIO,DESCRICAO ITEM CARDAPIO
+Outros,Espaguete ao molho de queijos,G302-ESP QUEIJOS 600,1656,27.9,Espaguete granoduro ao molho de queijos.
+Outros,Espaguete ao sugo,G302-ESP SUGO 600,1657,24.9,Espaguete granoduro ao molho de tomates da casa.
+Outros,Baião de dois cremoso,G302-BAIAO DE DOIS 600,1658,24.9,Baião de dois molhadinho no molho de queijos da casa.
+Outros,Farofa de cuscuz,G303-FAROF CUSCUZ 250,1659,14.9,Farofa de cuscuz de milho com ovos mexidos.
+Outros,Batata doce,G303-BATATA DOCE 250,1661,17.9,Batata doce assada
+Outros,Purê de batata,G303-PURE BATATA 300,1663,17.9,Purê de batata inglesa.
+Outros,Batata com alecrim,G303-BATAT ALECRM 250,1664,19.9,Batata inglesa em cubos assada com azeite de oliva e alecrim fresco.
+Outros,Batata frita,G303-100G BATAT FRITA,1666,14.9,Batata frita.
+Outros,Arroz branco,G302-ARROZ BRANCO 450,1667,17.9,Arroz branco.
+Outros,Arroz à grega,G302-ARRZ A GREGA 450,1668,19.9,Arroz refogado com uvas passas e legumes.
+Outros,Arroz com brócolis,G302-ARRZ BCO BROC 450,1669,21.9,Arroz branco refogado com brócolis.
+Outros,Arroz cremoso,G302-ARRZ CREMOSO 600,1670,24.9,"Arroz branco ao molho de queijos, finalizado com salsinha fresca."
+Outros,Farofa crispy,G303-FAROFA CRSPY 250,1733,14.9,Farofa temperada com cebola frita.
+Acompanhamentos,Farofa com couve crispy e torresmo,ACP-FAROF C/ COUVE+TORRES,1907,2.99,Farofa crispy com couve crispy e torresmo
+Acompanhamentos,Arroz branco com couve crispy,ACP-ARRZ BCO COUV CRISPY,5394,0.0,Arroz branco finalizado com couve crispy.
+Acompanhamentos,Arroz branco com cebola crispy,ACP-ARRZ BCO CEBOL CRISPY,5395,0.0,Arroz branco finalizado com cebola crispy.
+Acompanhamentos,Purê de batata com crocante de bacon,ACP-PURE C/ FAROFA BACON,5396,1.99,Purê de batata inglesa finalizado com bacon crocante.
+Acompanhamentos,Cuscuz de milho com milho verde,ACP-CUSCUZ COM MILHO,5397,0.0,Cuscuz de milho finalizado com milho verde.
+Acompanhamentos,Purê de batata com crocante de bacon e couve crispy,ACP-PURE FAR.BACON-COUVE,5399,1.99,Purê de batata inglesa finalizado com bacon crocante e couve crispy.
+Acompanhamentos,Farofa de torresmo com banana grelhada,ACP-FAROF TORRES C/ BANAN,5400,0.99,Farofa de Torresmo especial da Chef Van com banana gratinada.
+Acompanhamentos,Batata com páprica defumada,ACP-BATAT PAPRICA DEF,5401,0.99,Batata assada temperada com páprica defumada.
+Acompanhamentos,Arroz de Leite com pimenta biquinho,ACP-ARROZ CREM FINALZ,5402,0.0,Arroz de leite com finalização de salsinha e pimenta biquinho.
+Acompanhamentos,Arroz branco com pimenta biquinho,ACP-ARROZ BRANC FINAL,5403,0.0,Arroz branco com finalização de salsinha e pimenta biquinho. 
+Acompanhamentos,Baião soltinho com pimenta biquinho,ACP-BAIAO SOLT FINALZ,5404,0.0,Baião de dois soltinho com finalização de salsinha e pimenta biquinho. 
+Acompanhamentos,Baião cremoso com pimenta biquinho,ACP-BAIAO CREM FINALZ,5405,0.0,Baião de dois cremoso com finalização de salsinha e pimenta biquinho.
+Acompanhamentos,Palha de batata doce crocante,ACP-PALHA DOCE,5406,0.0,"Palha de batata doce bem crocante, receita especial da Chef Van. "
+Acompanhamentos,Arroz branco com palha de batata doce,ACP-ARRZ BCO PALHA DOCE,5407,0.0,Arroz branco finalizado com palha de batata doce crocante.
+Acompanhamentos,Paçoca de Carne de Sol,ACP-PACOCA CARN SOL,5408,2.99,Paçoca de Carne de Sol da Chef Van. 
+Acompanhamentos,Batata Assada,ACP-BATATA BOLA TRADI,5409,0.0,Batata assada tradicional da casa.
+Acompanhamentos,Cebola Crispy,ACP-CEBOLA CRISPY,5410,0.0,Cebola Crispy.
+Outros,Salada verde,G303-MINI SALADA WRAP,20053,9.9,"Mix de folhas, molho mostarda e mel, cenoura, tomate em cubos, ricota e mix de grãos assados. "
+Pratinhos,Pratinho Creme de frango,POP30-CREME DE FGO,40142,26.9,"Creme de frango, servido com arroz branco e farofa crispy."
+Pratos Individuais,Pratinho Vatapá de frango,POP30-VATAPA FRANGO,40143,29.9,"Vatapá de frango, servido com baião de dois soltinho e farofa crispy."
+Pratinhos,Pratinho Frango acebolado,POP30-FGO ACEBOLADO,40146,25.9,"Tirinhas de frango refogadas com cebola branca, servido com baião de dois cremoso."
+Pratinhos,Pratinho Calabresa acebolada,POP30-CALBRSA ACEBOLD,40147,25.9,"Calabresa refogada com cebola branca, servido com baião de dois cremoso."
+Pratinhos,Pratinho Panqueca de frango,POP30- PANQ FGO,40148,25.9,Panquecas de frango servidas com delicioso molho de queijos.
+Pratinhos,Pratinho Panqueca de ricota com espinafre,POP30- PANQ RICOTA,40149,25.9,Panquecas de ricota com espinafre servidas com molho de tomates frescos.
+Pratos Individuais,Creme de carne de sol ,POP50-CREME DE SOL,40152,40.9,"Creme de carne de sol, servido com baião de dois soltinho e farofa crispy."
+Pratos Individuais,Creme de frango ,POP50-CREME DE FRANGO,40153,29.9,"Creme de frango, servido com arroz branco e farofa crispy."
+Pratinhos,Vatapá de frango,POP50-VATAPA FRANGO,40154,26.9,"Vatapá de frango, servido com baião de dois soltinho e farofa crispy."
+Pratos Individuais,Frango empanado com espaguete ao molho de queijos,POP50-ESP QUEIJOS FGO CROC,40155,32.9,Frango crocante servido sobre delicioso espaguete ao molho de queijos.
+Pratos Individuais,Frango empanado com espaguete ao molho sugo,POP50-ESP SUGO FGO CROC,40156,31.9,Frango crocante servido sobre molho de tomates frescos.
+Pratos Individuais,Frango acebolado,POP50-FGO ACEBOLADO,40157,29.9,"Tirinhas de frango refogadas com cebola braca, servido com baião de dois cremoso e farofa crispy."
+Pratos Individuais,Calabresa acebolada,POP50-CALBRSA ACEBOLD,40158,29.9,"Calabresa refogada com cebola branca, servido com baião de dois cremoso e farofa crispy."
+Pratos Individuais,Panqueca de frango,POP50-PANQ FGO,40159,30.9,"Panquecas de frango cobertas com delicioso molho de queijos, servidas com arroz branco e batata palha."
+Pratos Individuais,Panqueca de ricota com espinafre,POP50-PANQ RICOTA,40160,30.9,"Panquecas de ricota com espinafre cobertas com molho de tomates frescos, servidas com arroz branco e batata palha."
+Outros,Creme de carne de sol Família,FAM - CREME SOL,40164,104.9,Creme de carne de sol desfiada ao molho de queijos e coentro.
+Outros,Creme de frango Família,FAM - CREME FRANGO,40165,79.9,Creme de frango tradicional. 
+Outros,Vatapá de frango Família,FAM - VATAPA FRANGO,40166,79.9,Vatapá de frango tradicional.
+Outros,Frango à parmegiana Família,FAM - FGO PARMEGIANA,40167,94.9,Frango empanado com molho de tomates frescos e finalizado com queijo mussarela. 
+Outros,Frango recheado Família,FAM - FGO RECHEADO,40168,94.9,Frango empanado e recheado com queijo e presunto. 
+Outros,Peixe à delicia Família,FAM - PEIXE DELICIA,40170,134.9,"Filé de tilápia servido com bananas grelhadas, molho de queijos e queijo mussarela. "
+Outros,Strogonoff de frango Família,FAM - STROG DE FRANGO,40172,99.9,Strogonoff de frango. 
+Outros,Strogonoff de carne Família,FAM - STROG DE CARNE,40173,114.9,Strogonoff de Carne. 
+Pratos Individuais,Strogonoff de frango,POP50-STROG DE FRANGO,40174,32.9,"Strogonoff de frango, servido com arroz branco e batata palha."
+Pratos Individuais,Strogonoff de carne,POP50-STROG DE CARNE,40175,38.9,"Strogonoff de carne, servido com arroz branco e batata palha."
+Pratos Individuais,Milanesa de carne com espaguete ao molho de queijos,POP50-ESP QUEIJOS CARNE CROC,40176,36.9,Milanesa de carne servido sobre delicioso espaguete ao molho de queijos.
+Pratos Individuais,Milanesa de carne com espaguete ao molho sugo,POP50-ESP SUGO CARNE CROC,40177,36.9,Milanesa de carne servido sobre molho de tomates frescos.
+Monte seu Tipico,Carne de Sol com Queijo Coalho,EXC-CARN SOL C/ COALH,40178,42.9,"Carne de sol acebolada com cubos de queijo coalho, escolha 2 acompanhamentos. "
+Monte seu Tipico,Estrogonofe de Carne ,EXC-ESTROGONOFE CARNE,40179,42.9,"Estrogonofe de carne e champignon, com tempero da Chef Van."
+Monte seu Tipico,Carne Moída com Banana frita,EXC-CARN MOID E BANAN,40180,39.9,"Carne moída temperada com temperos secretos da Chef Van, escolha 2 acompanhamentos. "
+Monte seu Tipico,Carne Moida com Ovo estrelado,EXC-CARN MOID E OVO FRITO,40181,39.9,"Carne moída com tempero secreto da Chef Van, com ovo frito. Escolha 2 acompanhamentos. "
+Monte seu Tipico,Carne de sol no arrozinho cremoso,EXC-CARN SOL ARRZ PCL,40182,42.9,"Carne de sol acebolada sobre arroz cremoso, com picles de cebola roxa. Escolha 2 acompanhamentos. "
+Monte seu Tipico,Vatapá de Frango da Chef Van,EXC-VATAPA DE FRANGO,40183,34.9,"Vatapá de frango da Chef Van, escolha 2 acompanhamentos. "
+Monte seu Tipico,Creme de Frango da Chef Van,EXC-CREME DE FRANGO,40184,34.9,Creme de frango da Chef Van. Escolha 2 acompanhamentos. 
+Monte seu Tipico,Estrogonofe de Frango,EXC-ESTROGONOF FRANGO,40185,36.9,Estrogonofe de frango com champignon assinado pela Chef Van. 
+Monte seu Tipico,Milanesa de frango com molho quatro queijos,EXC-FGO CROC MIX QJOS,40186,38.9,"Frango crocante frito, servido com molho quatro queijos, escolha 2 acompanhamentos. "
+Monte seu Tipico,Meio a meio Creme de Frango e Calabresa,EXC-CREME FGO/CALABRS,40188,34.9,"Creme de frango e calabresa acebolada, esse prato é dividido meio a meio. Escolha 2 acompanhamentos. "
+Monte seu Tipico,Meio a meio vatapa de Frango e Calabresa,EXC-VATAP FGO/CALABRS,40189,37.9,"Vatapá de frango da Chef Van, meio a meio com calabresa acebolada, escolha 2 acompanhamentos. "
+Monte seu Tipico,Calabresa no arrozinho cremoso,EXC-CALAB ARROZ CREMO,40190,34.9,"Calabresa acebolada sobre cama arroz de leite, com a assinatura regional da Chef Van. Escolha 2 acompanhamentos. "
+Monte seu Tipico,Lombo suino desfiado com molho barbecue,EXC-LOMBO C/ BARBECUE,40191,39.9,"Lombo suíno desfiado flambado na cachaça, com molho barbecue, escolha 2 acompanhamentos. "
+Monte seu Tipico,Amostradinho de lombo suíno,EXC-LOMBO C/ PURE,40192,45.9,"Lombo suíno desfiado flambado na cachaça, em cama de purê de batata. É puro regionalismo! Escolha 2 acompanhamentos. "
+Lançamentos da Chef Van,Arroz de Camarão atolado,CHEF-ARROZ DE CAMARÃO,40193,52.9,"Arroz de camarão cremoso com molho de queijos, cubos de queijo coalho grelhados, finalizado com uma palha de batata-doce super crocante! Exclusividade assinada pela Chef Van. "
+Pratos Individuais,Frango à parmegiana com espaguete ao molho sugo.,POP50-FGO PARMEGIANA SUGO,40200,32.9,Frango crocante á parmegiana acompanhado de espaguete e servido sobre molho de tomates frescos.
+Lançamentos da Chef Van,Calabresa no arrozinho cremoso,CHEF-CALAB ARROZ CREMO,,34.9,"Calabresa acebolada sobre cama arroz de leite, acompanhada de batata assada com páprica defumada e farofa crispy. Com a assinatura regional da Chef Van. "
+Lançamentos da Chef Van,Carne Moída com Banana frita,CHEF-CARN MOID E BANAN,,38.9,"Carne moída temperada com temperos secretos da Chef Van, acompanhada de banana grelhada, arroz de leite e farofa de cuscuz com ovo. Finalizado com salsinha e pimenta biquinho."
+Lançamentos da Chef Van,Carne de Sol com Queijo Coalho,CHEF-CARN SOL C/ COALH,,42.9,"Carne de sol acebolada com cubos de queijo coalho, acompanhada de baião de dois cremoso e batata-doce assada. Todo o sabor do tempero da Chef Van."
+Lançamentos da Chef Van,Carne de sol no arrozinho cremoso,CHEF-CARN SOL PICL ROX,,42.9,"Carne de sol acebolada sobre arroz cremoso, com picles de cebola roxa, macaxeira frita e farofa crispy. Uma combinação irresistível."
+Lançamentos da Chef Van,Carne Moida com Ovo estrelado,CHEF-CARNE MOIDA E OVO,,38.9,"Carne moída com tempero secreto da Chef Van, com ovo frito, arroz branco com couve crispy e farofa de torresmo com banana grelhada. Um prato simplesmente delicioso."
+Lançamentos da Chef Van,Creme de Frango da Chef Van,CHEF-CREME DE FRANGO,,34.9,"Creme de frango, acompanhado de arroz branco e paçoca crocante de carne de sol com cebola roxa. Uma delícia que traz conforto a cada garfada."
+Lançamentos da Chef Van,Meio a meio Creme de Frango e Calabresa,CHEF-CREME FGO/CALABRS,,37.9,"Creme de frango e calabresa acebolada, esse prato é dividido meio a meio, acompanha arroz branco e paçoca crocante de carne de sol com cebola roxa. É São João o ano todo! "
+Lançamentos da Chef Van,Estrogonofe de Carne ,CHEF-ESTROG CARNE,,42.9,Estrogonofe de carne com champignon acompanhado de arroz branco coberto com crispy de cebola e batata assada com páprica defumada. Sabor clássico com o toque da Chef Van.
+Lançamentos da Chef Van,Estrogonofe de Frango,CHEF-ESTROGONOF FRANGO,,36.9,"Estrogonofe de frango com champignon assinado pela Chef Van, servido com arroz branco coberto com crispy de cebola e batata assada com páprica defumada."
+Lançamentos da Chef Van,Milanesa de frango com molho de queijos,CHEF-FGO CROC MLH QJOS,,36.9,"Frango crocante frito, servido com molho quatro queijos, arroz branco finalizado com couve crispy e purê de batata com bacon."
+Lançamentos da Chef Van,Franguinho cozido ao molho,CHEF-FRANGO COZIDO,,34.9,"Frango cozido bem temperado, com legumes, arroz branco e cuscuz de milho cozido com milho verde. Comida que parece um abraço! "
+Lançamentos da Chef Van,Lombo suino desfiado com molho barbecue,CHEF-LOMBO C/ BARBECUE,,39.9,"Lombo suíno desfiado flambado na cachaça, com molho barbecue, arroz à grega e batata assada com alecrim, criado pela Chef Van!"
+Lançamentos da Chef Van,Amostradinho de lombo suíno,CHEF-LOMBO C/ PURE,,45.9,"Lombo suíno desfiado flambado na cachaça, em cama de purê de batata, acompanha arroz branco com couve crispy e paçoca de torresmo crocante. É puro regionalismo! "
+Lançamentos da Chef Van,Meio a meio vatapa de Frango e Calabresa,CHEF-VATAP FGO/CALABRS,,37.9,"Vatapá de frango da Chef Van, meio a meio com calabresa acebolada, baião de dois soltinho e paçoca crocante de carne de sol. Para não esperar o São João."
+Lançamentos da Chef Van,Vatapá de Frango da Chef Van,CHEF-VATAPA DE FRANGO,,34.9,"Vatapá de frango da Chef Van, servido com baião de dois soltinho e paçoca crocante de carne de sol com cebola roxa. Um verdadeiro tesouro da culinária nordestina."
+Pratinhos,Sobrecoxa assada.,POP30-SOBRECOXA ASSADA,90008,29.9,Coxa com Sobrecoxa bem assada.
