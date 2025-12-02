@@ -27,7 +27,6 @@
       cursor: pointer; padding: 12px 18px; border-radius: 12px; transition: 0.2s; font-weight: bold;
     }
     .btn-lojas:hover { background: rgba(255,255,255,0.25); }
-
     .logo-container {
       position: absolute;
       left: 50%;
@@ -55,8 +54,8 @@
     }
 
     .topbar { background: var(--cor-principal); }
-    .btn-lojas, th, .categoria-tag, .quantidade button, .carrinho-header, .filtros, .carrinho-total { 
-      background: var(--cor-principal); 
+    .btn-lojas, th, .categoria-tag, .quantidade button, .carrinho-header, .filtros, .carrinho-total {
+      background: var(--cor-principal);
       border-color: var(--cor-principal);
     }
     .preco, .filtros label { color: var(--cor-principal); }
@@ -83,7 +82,7 @@
     /* DISTÂNCIA CORRIGIDA ENTRE HEADER E FILTROS */
     .container {
       max-width: 1160px;
-      margin: 80px auto 50px auto; /* aumentado de 50px para 80px */
+      margin: 80px auto 50px auto;
       padding: 0 20px;
     }
 
@@ -202,19 +201,26 @@
     }
 
     function carregarLoja(arquivo, nomeLoja, logoSrc) {
+      // Aplica tema da loja
       document.body.classList.remove("menu-brands", "poke-nordestino");
       if (nomeLoja.includes("Menu")) document.body.classList.add("menu-brands");
       else document.body.classList.add("poke-nordestino");
 
+      // Troca logo
       document.getElementById("logo").src = logoSrc;
 
+      // Marca loja ativa
       document.querySelectorAll(".sidebar li").forEach(li => li.classList.remove("active"));
-      event.target.classList.add("active");
+      const botao = event ? event.target : document.getElementById("loja-menu");
+      botao.classList.add("active");
 
-      toggleSidebar();
+      // Fecha sidebar se estiver aberta (exceto no carregamento inicial)
+      if (event) toggleSidebar();
 
       Papa.parse(arquivo, {
-        download: true, header: true, skipEmptyLines: true,
+        download: true,
+        header: true,
+        skipEmptyLines: true,
         complete: function(results) {
           todosOsItens = results.data
             .filter(i => i["NOME CARDAPIO"] && i["NOME CARDAPIO"].trim())
@@ -224,9 +230,14 @@
           const select = document.getElementById("categoria");
           select.innerHTML = '<option value="">Tudo</option>';
           categorias.forEach(c => {
-            const opt = document.createElement("option"); opt.value = c; opt.textContent = c; select.appendChild(opt);
+            const opt = document.createElement("option");
+            opt.value = c; opt.textContent = c;
+            select.appendChild(opt);
           });
           mostrarItens(todosOsItens);
+        },
+        error: function() {
+          document.getElementById("resultado").innerHTML = "<p style='color:red;text-align:center;'>Erro ao carregar o cardápio.</p>";
         }
       });
     }
@@ -237,8 +248,10 @@
       document.querySelector(".overlay").style.display = sidebar.classList.contains("open") ? "block" : "none";
     }
 
+    // INICIA DIRETO COM MENU BRANDS - 100% GARANTIDO
     window.addEventListener("DOMContentLoaded", () => {
       document.body.classList.add("menu-brands");
+      document.getElementById("logo").src = "Menu.png";
       document.getElementById("loja-menu").classList.add("active");
       carregarLoja("MenuFiltrado.csv", "Menu Brands", "Menu.png");
     });
