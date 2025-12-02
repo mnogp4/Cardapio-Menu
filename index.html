@@ -58,7 +58,28 @@
       background: #fff59d;
     }
     body.soodeli .topbar {
-      background: #d8dd12 !important;   /* verde claro da logo */
+      background: #d8dd12 !important;
+    }
+    body.amicis {
+      --cor-principal: #e30613;     /* vermelho da Amicis */
+      --cor-hover: #c4000f;
+      --cor-secundaria: #008248;    /* verde da Amicis */
+      background: #ffffff;
+    }
+    body.amicis .topbar {
+      background: #e30613;         /* header vermelho */
+    }
+    body.amicis .categoria-tag,
+    body.amicis .quantidade button,
+    body.amicis .carrinho-header,
+    body.amicis .filtros,
+    body.amicis .carrinho-total {
+      background: #008248;         /* detalhes em verde */
+      border-color: #008248;
+    }
+    body.amicis .preco,
+    body.amicis .filtros label {
+      color: #008248;
     }
 
     .topbar { background: var(--cor-principal); }
@@ -173,7 +194,8 @@
   <div class="sidebar" id="sidebar">
     <ul>
       <li onclick="carregarLoja('MenuFiltrado.csv', 'Menu Brands', 'Menu.png', this)" class="active" id="loja-menu">Menu Brands</li>
-      <li onclick="carregarLoja('PokeFiltrado.csv', 'Poke Nordestino', 'Poke.png', this)" id="loja-poke">Poke Nordestino</li>
+      <li onclick="carregarLoja('AmicisFiltrado.csv', 'Amicis', 'Amicis.png', this)" id="loja-amicis">Amicis</li>
+      <li onclick="carregarLoja('PokeFiltrado.csv', 'Poké Nordestino', 'Poke.png', this)" id="loja-poke">Poké Nordestino</li>
       <li onclick="carregarLoja('SoodeliFiltrado.csv', 'Soodeli', 'Soodeli.png', this)" id="loja-soodeli">Soodeli</li>
     </ul>
   </div>
@@ -207,10 +229,11 @@
     }
 
     function carregarLoja(arquivo, nomeLoja, logoSrc, botaoClicado) {
-      document.body.classList.remove("menu-brands", "poke-nordestino", "soodeli");
+      document.body.classList.remove("menu-brands", "poke-nordestino", "soodeli", "amicis");
       if (nomeLoja.includes("Menu")) document.body.classList.add("menu-brands");
-      else if (nomeLoja.includes("Poke") || nomeLoja.includes("Nordestino")) document.body.classList.add("poke-nordestino");
+      else if (nomeLoja.includes("Poké") || nomeLoja.includes("Nordestino")) document.body.classList.add("poke-nordestino");
       else if (nomeLoja === "Soodeli") document.body.classList.add("soodeli");
+      else if (nomeLoja === "Amicis") document.body.classList.add("amicis");
 
       document.getElementById("logo").src = logoSrc;
 
