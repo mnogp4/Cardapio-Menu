@@ -227,17 +227,19 @@
       });
     }
 
-    function toggleSidebar() {
+    window.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.add("menu-brands");
+      document.getElementById("loja-menu").classList.add("active");
+      carregarLoja("MenuFiltrado.csv", "Menu Brands", "Menu.png");
+    
+      function toggleSidebar() {
       const sidebar = document.getElementById("sidebar");
       sidebar.classList.toggle("open");
       document.querySelector(".overlay").style.display = sidebar.classList.contains("open") ? "block" : "none";
     }
 
     // INICIA COM MENU BRANDS - 100% GARANTIDO
-    window.addEventListener("DOMContentLoaded", () => {
-      document.body.classList.add("menu-brands");
-      document.getElementById("loja-menu").classList.add("active");
-      carregarLoja("MenuFiltrado.csv", "Menu Brands", "Menu.png");
+    
     });
 
     function mostrarItens(itensFiltrados) {
