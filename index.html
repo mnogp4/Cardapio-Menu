@@ -8,7 +8,7 @@
   
   <style>
     :root { --vermelho: #e30613; --vermelho-hover: #c4000f; --branco: #fff; }
-    body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #fff; color: #333; overflow-x: hidden; }
+    body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #fff; color: #333; overflow-x: hidden; transition: background 0.4s ease; }
 
     /* TOPBAR +20% MAIOR */
     .topbar {
@@ -21,6 +21,7 @@
       position: relative;
       z-index: 100;
       min-height: 100px;
+      transition: background 0.4s ease;
     }
     .btn-lojas {
       background: none; border: none; color: white; font-size: 1.62em;
@@ -42,6 +43,27 @@
       object-fit: contain;
     }
 
+    /* IDENTIDADE VISUAL POR LOJA */
+    body.menu-brands {
+      --cor-principal: #e30613;
+      --cor-hover: #c4000f;
+      background: #ffffff;
+    }
+    body.poke-nordestino {
+      --cor-principal: #f4a261;     /* laranja nordestino */
+      --cor-hover: #e76f51;
+      background: #fff7ed;          /* bege claro */
+    }
+
+    .topbar { background: var(--cor-principal); }
+    .btn-lojas, th, .categoria-tag, .quantidade button, .carrinho-header, .filtros, .carrinho-total { 
+      background: var(--cor-principal); 
+      border-color: var(--cor-principal);
+    }
+    .preco, .filtros label { color: var(--cor-principal); }
+    .item-carrinho { background: rgba(244,162,97,0.15); }
+    .sidebar li:hover, .sidebar li.active { background: var(--cor-principal); }
+
     /* SIDEBAR E OVERLAY */
     .sidebar {
       position: fixed; top: 0; left: -320px; width: 320px; height: 100%; background: #111;
@@ -53,31 +75,29 @@
       padding: 22px 25px; color: white; cursor: pointer; transition: 0.3s; font-size: 1.25em;
       border-bottom: 1px solid #333;
     }
-    .sidebar li:hover, .sidebar li.active { background: var(--vermelho); font-weight: bold; }
-    .overlay { 
-      display: none; 
-      position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
-      background: rgba(0,0,0,0.5); z-index: 998; 
+    .overlay {
+      display: none;
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5); z-index: 998;
     }
 
-    .container { max-width: 1160px; margin: 50px auto; padding: 0 20px; }
     .filtros {
       background: white; padding: 24px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-      margin-bottom: 30px; text-align: center; border: 3px solid var(--vermelho);
+      margin-bottom: 30px; text-align: center; border: 3px solid var(--cor-principal);
     }
-    .filtros label { font-weight: 700; color: var(--vermelho); font-size: 1.2em; margin-right: 12px; }
+    .filtros label { font-weight: 700; color: var(--cor-principal); font-size: 1.2em; margin-right: 12px; }
     select, input { padding: 13px 16px; font-size: 1.05em; border: 2px solid #ddd; border-radius: 12px; }
     select { width: 320px; }
-    input { width: 420px; max-width: 100%; border-color: var(--vermelho); margin-left: 15px; }
+    input { width: 420px; max-width: 100%; border-color: var(--cor-principal); margin-left: 15px; }
 
-    table { width: 100%; border-collapse: collapse; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 25px rgba(227,6,19,0.12); border: 2px solid var(--vermelho); }
-    th { background: var(--vermelho); color: white; padding: 18px 16px; font-weight: 600; font-size: 1.1em; }
+    table { width: 100%; border-collapse: collapse; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 25px rgba(227,6,19,0.12); border: 2px solid var(--cor-principal); }
+    th { background: var(--cor-principal); color: white; padding: 18px 16px; font-weight: 600; font-size: 1.1em; }
     td { padding: 18px 16px; cursor: pointer; transition: 0.2s; }
     tr:hover { background: #fff5f5; }
     tr.selected { background: #ffebee !important; }
-    .preco { font-weight: bold; color: var(--vermelho); text-align: right; font-size: 1.2em; }
+    .preco { font-weight: bold; color: var(--cor-principal); text-align: right; font-size: 1.2em; }
     .categoria-tag {
-      background: var(--vermelho); color: white; padding: 7px 16px; border-radius: 30px;
+      background: var(--cor-principal); color: white; padding: 7px 16px; border-radius: 30px;
       font-size: 0.85em; font-weight: bold; max-width: 180px; overflow: hidden;
       text-overflow: ellipsis; white-space: nowrap; display: inline-block;
     }
@@ -85,11 +105,11 @@
     /* CARRINHO FLUTUANTE */
     .carrinho-flutuante {
       position: fixed; bottom: 20px; right: 20px; width: 400px; background: white;
-      border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.3); border: 4px solid var(--vermelho);
+      border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.3); border: 4px solid var(--cor-principal);
       z-index: 1000; transition: all 0.3s ease; display: none; overflow: hidden;
     }
     .carrinho-header {
-      background: var(--vermelho); color: white; padding: 18px 20px; font-size: 1.5em;
+      background: var(--cor-principal); color: white; padding: 18px 20px; font-size: 1.5em;
       text-align: center; font-weight: bold; position: relative; min-height: 32px;
       display: flex; align-items: center; justify-content: center;
     }
@@ -109,12 +129,12 @@
       display: flex; align-items: center; gap: 12px; background: white; padding: 8px 14px; border-radius: 30px;
     }
     .quantidade button {
-      width: 32px; height: 32px; border: none; background: var(--vermelho); color: white;
+      width: 32px; height: 32px; border: none; background: var(--cor-principal); color: white;
       border-radius: 50%; cursor: pointer; font-weight: bold; font-size: 1.1em;
     }
     .carrinho-total {
       background: #fff5f5; padding: 20px; text-align: center; font-size: 1.7em;
-      font-weight: bold; color: var(--vermelho); border-top: 4px solid var(--vermelho);
+      font-weight: bold; color: var(--cor-principal); border-top: 4px solid var(--cor-principal);
     }
     .minimizado { width: 300px !important; height: 100px !important; }
     .minimizado .carrinho-body { display: none !important; }
@@ -133,7 +153,7 @@
   <div class="topbar">
     <button class="btn-lojas" onclick="toggleSidebar()">Lojas</button>
     <div class="logo-container">
-      <img src="Menu.png" alt="Menu Brands">
+      <img id="logo" src="Menu.png" alt="Logo da loja">
     </div>
     <div style="width: 70px;"></div>
   </div>
@@ -141,8 +161,8 @@
   <div class="overlay" onclick="toggleSidebar()"></div>
   <div class="sidebar" id="sidebar">
     <ul>
-      <li onclick="carregarLoja('MenuFiltrado.csv', 'Menu Brands')" class="active" id="loja-menu">Menu Brands</li>
-      <li onclick="carregarLoja('PokeFiltrado.csv', 'Poké Nordestino')" id="loja-poke">Poké Nordestino</li>
+      <li onclick="carregarLoja('MenuFiltrado.csv', 'Menu Brands', 'Menu.png')" class="active" id="loja-menu">Menu Brands</li>
+      <li onclick="carregarLoja('PokeFiltrado.csv', 'Poké Nordestino', 'Poke.png')" id="loja-poke">Poké Nordestino</li>
     </ul>
   </div>
 
@@ -174,10 +194,20 @@
       return txt.toString().replace(/[\r\n\t\v\f]+/g, " ").replace(/[^\w\s\-\(\)\+\&à-úÀ-Ú]/g, "").replace(/\s+/g, " ").replace(/:/g, "").trim().substring(0, 80);
     }
 
-    function carregarLoja(arquivo, nomeLoja, elementoClicado = null) {
+    function carregarLoja(arquivo, nomeLoja, logoSrc) {
+      // Muda visual da loja
+      document.body.classList.remove("menu-brands", "poke-nordestino");
+      if (nomeLoja.includes("Menu")) document.body.classList.add("menu-brands");
+      else document.body.classList.add("poke-nordestino");
+
+      // Troca logo
+      document.getElementById("logo").src = logoSrc;
+
+      // Marca loja ativa
       document.querySelectorAll(".sidebar li").forEach(li => li.classList.remove("active"));
-      if (elementoClicado) elementoClicado.classList.add("active");
-      else document.getElementById("loja-menu").classList.add("active");
+      event.target.classList.add("active");
+
+      toggleSidebar();
 
       Papa.parse(arquivo, {
         download: true, header: true, skipEmptyLines: true,
@@ -193,9 +223,6 @@
             const opt = document.createElement("option"); opt.value = c; opt.textContent = c; select.appendChild(opt);
           });
           mostrarItens(todosOsItens);
-        },
-        error: function() {
-          document.getElementById("resultado").innerHTML = "<p style='color:red;text-align:center;'>Erro ao carregar o cardápio.</p>";
         }
       });
     }
@@ -206,11 +233,11 @@
       document.querySelector(".overlay").style.display = sidebar.classList.contains("open") ? "block" : "none";
     }
 
-    // INICIA COM MENU BRANDS E SIDEBAR FECHADA - 100% GARANTIDO
+    // INICIA COM MENU BRANDS - 100% GARANTIDO
     window.addEventListener("DOMContentLoaded", () => {
-      carregarLoja("MenuFiltrado.csv", "Menu Brands"); // carrega Menu Brands
-      document.getElementById("sidebar").classList.remove("open"); // garante sidebar fechada
-      document.querySelector(".overlay").style.display = "none";   // overlay escondido
+      document.body.classList.add("menu-brands");
+      document.getElementById("loja-menu").classList.add("active");
+      carregarLoja("MenuFiltrado.csv", "Menu Brands", "Menu.png");
     });
 
     function mostrarItens(itensFiltrados) {
@@ -234,7 +261,7 @@
         const itemJSON = JSON.stringify(item).replace(/'/g, "&apos;");
         html += `<tr onclick='adicionarItem(${itemJSON})' style="cursor:pointer;${qtd>0?'background:#ffebee;':''}">
           <td><span class="categoria-tag">${item.CATEGORIA}</span></td>
-          <td><strong>${item["NOME CARDAPIO"]}</strong>${qtd>0?` <small style="color:var(--vermelho)">(${qtd}x)</small>`:''}</td>
+          <td><strong>${item["NOME CARDAPIO"]}</strong>${qtd>0?` <small style="color:var(--cor-principal)">(${qtd}x)</small>`:''}</td>
           <td>${item["NOME PDV"]}</td>
           <td>${item["CÓD PDV"]}</td>
           <td class="preco">R$ ${preco.toFixed(2).replace(".",",")}</td>
