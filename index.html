@@ -47,6 +47,34 @@
       --cor-hover: #c4000f;
       background: #ffffff;
     }
+    body.amicis {
+      --cor-principal: #e30613;
+      --cor-hover: #c4000f;
+      --cor-secundaria: #008248;
+      background: #ffffff;
+    }
+    body.amicis .topbar { background: #e30613; }
+    body.amicis .categoria-tag, body.amicis .quantidade button, body.amicis .carrinho-header,
+    body.amicis .filtros, body.amicis .carrinho-total {
+      background: #008248; border-color: #008248;
+    }
+    body.amicis .preco, body.amicis .filtros label { color: #008248; }
+
+    body.buk {
+      --cor-principal: #001F3F;     /* azul escuro da BUK */
+      --cor-hover: #001028;
+      --cor-secundaria: #FF9F1C;    /* laranja da BUK */
+      background: #ffffff;
+    }
+    body.buk .topbar { background: #001F3F; }
+    body.buk .categoria-tag, body.buk .quantidade button, body.buk .carrinho-header,
+    body.buk .filtros, body.buk excluding .carrinho-total {
+      background: #FF9F1C; border-color: #FF9F1C;
+      color: #001F3F !important;
+    }
+    body.buk .preco, body.buk .filtros label { color: #FF9F1C; }
+    body.buk .carrinho-total { background: #fff8f0; color: #001F3F; border-top-color: #FF9F1C; }
+
     body.poke-nordestino {
       --cor-principal: #f4a261;
       --cor-hover: #e76f51;
@@ -57,30 +85,7 @@
       --cor-hover: #006400;
       background: #fff59d;
     }
-    body.soodeli .topbar {
-      background: #d8dd12 !important;
-    }
-    body.amicis {
-      --cor-principal: #e30613;     /* vermelho da Amicis */
-      --cor-hover: #c4000f;
-      --cor-secundaria: #008248;    /* verde da Amicis */
-      background: #ffffff;
-    }
-    body.amicis .topbar {
-      background: #e30613;         /* header vermelho */
-    }
-    body.amicis .categoria-tag,
-    body.amicis .quantidade button,
-    body.amicis .carrinho-header,
-    body.amicis .filtros,
-    body.amicis .carrinho-total {
-      background: #008248;         /* detalhes em verde */
-      border-color: #008248;
-    }
-    body.amicis .preco,
-    body.amicis .filtros label {
-      color: #008248;
-    }
+    body.soodeli .topbar { background: #d8dd12 !important; }
 
     .topbar { background: var(--cor-principal); }
     .btn-lojas, th, .categoria-tag, .quantidade button, .carrinho-header, .filtros, .carrinho-total {
@@ -88,7 +93,7 @@
       border-color: var(--cor-principal);
     }
     .preco, .filtros label { color: var(--cor-principal); }
-    .item-carrinho { background: rgba(0,130,72,0.1); }
+    .item-carrinho { background: rgba(244,162,97,0.15); }
     .sidebar li:hover, .sidebar li.active { background: var(--cor-principal); }
 
     .sidebar {
@@ -195,6 +200,7 @@
     <ul>
       <li onclick="carregarLoja('MenuFiltrado.csv', 'Menu Brands', 'Menu.png', this)" class="active" id="loja-menu">Menu Brands</li>
       <li onclick="carregarLoja('AmicisFiltrado.csv', 'Amicis', 'Amicis.png', this)" id="loja-amicis">Amicis</li>
+      <li onclick="carregarLoja('BukFiltrado.csv', 'BUK BURGER & BEER', 'Buk.png', this)" id="loja-buk">BUK BURGER & BEER</li>
       <li onclick="carregarLoja('PokeFiltrado.csv', 'Poké Nordestino', 'Poke.png', this)" id="loja-poke">Poké Nordestino</li>
       <li onclick="carregarLoja('SoodeliFiltrado.csv', 'Soodeli', 'Soodeli.png', this)" id="loja-soodeli">Soodeli</li>
     </ul>
@@ -206,7 +212,7 @@
       <select id="categoria"><option value="">Tudo</option></select>
       <input type="text" id="busca" placeholder=" Pesquisar produto ou descrição...">
     </div>
-    <div id="resultado"></div>
+    1<div id="resultado"></div>
   </div>
 
   <div id="carrinho" class="carrinho-flutuante">
@@ -229,11 +235,12 @@
     }
 
     function carregarLoja(arquivo, nomeLoja, logoSrc, botaoClicado) {
-      document.body.classList.remove("menu-brands", "poke-nordestino", "soodeli", "amicis");
+      document.body.classList.remove("menu-brands", "amicis", "buk", "poke-nordestino", "soodeli");
       if (nomeLoja.includes("Menu")) document.body.classList.add("menu-brands");
+      else if (nomeLoja.includes("Amicis")) document.body.classList.add("amicis");
+      else if (nomeLoja.includes("BUK")) document.body.classList.add("buk");
       else if (nomeLoja.includes("Poké") || nomeLoja.includes("Nordestino")) document.body.classList.add("poke-nordestino");
       else if (nomeLoja === "Soodeli") document.body.classList.add("soodeli");
-      else if (nomeLoja === "Amicis") document.body.classList.add("amicis");
 
       document.getElementById("logo").src = logoSrc;
 
