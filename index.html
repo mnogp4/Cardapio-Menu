@@ -156,7 +156,15 @@
   </style>
 </head>
 <body>
-
+  <script>
+    // Garantir carregamento inicial do MenuFiltrado.csv
+    window.addEventListener("DOMContentLoaded", () => {
+      carregarLoja("MenuFiltrado.csv", "Menu Brands", "Menu.png");
+      document.body.classList.add("menu-brands");
+      document.getElementById("logo").src = "Menu.png";
+      document.getElementById("loja-menu").classList.add("active");
+    });
+  </script>
   <div class="topbar">
     <button class="btn-lojas" onclick="toggleSidebar()">Lojas</button>
     <div class="logo-container">
