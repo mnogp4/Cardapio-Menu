@@ -1,0 +1,102 @@
+CATEGORIA,NOME CARDAPIO,NOME PDV,CÓD PDV,PREÇO VENDA CHEIO,DESCRICAO ITEM CARDAPIO
+Pizzas Grandes,Ícone (Grande),PIZZA *G* - ICONE,1051,59.9,"Mussarela, a mais icônica, um clássico que ninguém tomba."
+Pizzas Grandes,Braba (Grande),PIZZA *G* - BRABA,1053,59.9,"Calabresas fininhas, cebola roxa e mussarela. Esse sabor é brabo demais! "
+Pizzas Grandes,Aclamada (Grande),PIZZA *G* - ACLAMADA,1056,59.9,"Brócolis, alho e mussarela. Esse sabor veio para ser aclamado em toda Fortaleza."
+Pizzas Grandes,Crush (Grande),PIZZA *G* - CRUSH,1058,59.9,"Marguerita, a crush perfeita de todo mundo."
+Pizzas Grandes,10/10 (Grande),PIZZA *G* - 10/10,1052,63.9,Bacon & milho & mussarela = 10/10. 
+Pizzas Grandes,Portuga (Grande),PIZZA *G* - PORTUGA,1059,63.9,"Portuguesa com ovos, azeitonas, cebola roxa, presunto e mussarela. "
+Pizzas Grandes,Gratiluz (Grande),PIZZA *G* - GRATILUZ,1060,63.9,"Brócolis, tomate seco, milho e mussarela. Esse sabor good vibes vai fazer você sentir muita gratidão depois de provar."
+Pizzas Grandes,Lenda (Grande),PIZZA *G* - LENDA,1055,67.9,"Frango refogado, cream cheese, milho e mussarela. Uma combinação definitivamente lendária."
+Pizzas Grandes,Cremosa (Grande),PIZZA *G* - CREMOSA,1063,67.9,"Gorgonzola, cebola caramelizada, alho e mussarela. Pra essa você vai dizer: trabalhar para conquistar minha cremosa."
+Pizzas Grandes,Avisa Que É Ela (Grande),PIZZA *G* - AVISA QUE E ELA,1068,67.9,"Calabresa, cheddarcream e mussarela. Avisa que é ela, bb."
+Pizzas Grandes,Resenha (Grande),PIZZA *G* - RESENHA,1057,71.9,"Cream cheese, mussarela e gorgonzola, se unem para uma resenha daquelas."
+Pizzas Grandes,Buoni Melt (Grande),PIZZA *G* - BUONI MELT,1061,71.9,"Cheddar, bacon, cebola caramelizada e mussarela. Essa não vem com brinde do palhaço, mas você vai amar tudo isso."
+Pizzas Grandes,Bem Patrícia (Grande),PIZZA *G* - BEM PATRICIA,1062,71.9,"Lombo, cream cheese, geleia de pimenta artesanal e mussarela. Lá vem ela, toda produzida, bem patrícia."
+Pizzas Grandes,Gera (Grande),PIZZA *G* - GERA,1066,71.9,"Frango refogado, bacon, molho barbecue e mussarela fazem uma pizza perfeita para antes, durante e depois do gera."
+Pizzas Grandes,Entrega Tudo (Grande),PIZZA *G* - ENTREGA TUDO,1067,71.9,"Pepperoni, cebola roxa, pimentão, milho, champignon e mussarela. Palmas que essa entrega tudo!"
+Pizzas Grandes,Esquenta (Grande),PIZZA *G* - ESQUENTA,1054,77.9,Pepperoni com creamcheese para esquentar seu rolê.
+Pizzas Grandes,Rocheda (Grande),PIZZA *G* - ROCHEDA,1064,77.9,"Carne de sol, cebola roxa, cream cheese e mussarela só podiam dar em um sabor rocheda."
+Pizzas Grandes,Larica (Grande),PIZZA *G* - LARICA,1065,77.9,"Calabresa, cream cheese, geleia de pimenta artesanal e Doritos. Tem o salgado de calabresa e mussarela, o doce e apimentado da geléia de pimenta artesanal, a cremosidade do cream cheese e o creck do Doritos."
+Detona Bordas,Doce de leite cremoso,EXT - CREME DOCE LEITE 30,20200,3.9,Creme de doce de leite para comer com a borda.
+Detona Bordas,Creme de avelã,EXT - CREME DE AVELA 30G,20201,3.9,Creme de avelã para comer com a borda.
+Detona Bordas,Cheddar cream,EXT - CHEDDAR CREAM 30G,20202,3.9,Delicioso creme de cheddar para comer com a borda.
+Super Slices - Consagradas,Lenda,SLICE - LENDA,55000,23.9,"Super Fatia de Pizza de Frango Cream Cheese. Frango refogado, cream cheese, milho e mussarela. Uma combinação definitivamente lendária."
+Super Slices - Consagradas,10/10,SLICE - 10/10,55001,21.9,"Super Fatia de Pizza de Bacon & milho. Bacon, milho e mussarela = 10/10. "
+Super Slices - Consagradas,Ícone,SLICE - ICONE,55002,19.9,"Super Fatia de Pizza de Mussarela. A mais icônica, um clássico que ninguém tomba."
+Super Slices - Consagradas,Braba,SLICE - BRABA,55003,19.9,"Super Fatia de Pizza de Calabresa. Calabresas fininhas, cebola roxa e mussarela. Esse sabor é brabo demais! "
+Super Slices - Supremas,Esquenta,SLICE - ESQUENTA,55004,27.9,Super Fatia de Pizza de Pepperoni Cream Cheese. Pepperoni com cream cheese para esquentar seu rolê.
+Super Slices - Consagradas,Aclamada,SLICE - ACLAMADA,55005,19.9,"Super Fatia de Pizza de Brócolis e Alho. Brócolis, alho e mussarela. Esse sabor veio para ser aclamado em toda Fortaleza."
+Super Slices - Consagradas,Resenha,SLICE - RESENHA,55006,25.9,"Super Fatia de Pizza de 3 Queijos. Cream cheese, mussarela e gorgonzola, se unem para uma resenha daquelas."
+Super Slices - Consagradas,Crush,SLICE - CRUSH,55007,19.9,Super Fatia de Pizza de Marguerita. A crush perfeita de todo mundo.
+Super Slices - Consagradas,Gratiluz,SLICE - GRATILUZ,55062,21.9,"Super Fatia de Pizza de Brócolis, tomate seco, milho, cebola roxa, mussarela e alho frito. Esse sabor good vibes vai fazer você sentir muita gratidão depois de provar."
+Super Slices - Consagradas,Portuga,SLICE - PORTUGA,55063,21.9,"Super Fatia de Pizza  Portuguesa. Portuguesa com ovos, azeitonas, cebola roxa, presunto e mussarela. "
+Super Slices - Doces,Morena,SLICE - MORENA,55077,25.9,"Super Fatia de Pizza de Doce de Leite com Chocolate Branco. Doce de leite, chocolate branco e borda açucarada com canela. Não tem como não se apaixonar por essa morena."
+Super Slices - Doces,Biscoteira,SLICE - BISCOITEIRA,55078,25.9,"Super Fatia de Pizza de Duo Chocolate com Bis. Ganache de chocolate preto e branco, com Bis para dar aquela crocância. Pode pedir essa biscoiteira que ela é super instagramável."
+Super Slices - Supremas,Buoni Melt,SLICE - BUONI MELT,55079,25.9,"Super Fatia de Pizza de Cheddar Bacon. Cheddar, bacon, cebola caramelizada e mussarela. Essa não vem com brinde do palhaço, mas você vai amar tudo isso."
+Super Slices - Supremas,Bem Patrícia,SLICE - BEM PATRICIA,55080,25.9,"Super Fatia de Pizza de Lombinho Cream Cheese. Lombo, cream cheese, geleia de pimenta artesanal e mussarela. Lá vem ela, toda produzida, bem patrícia."
+Super Slices - Supremas,Cremosa,SLICE - CREMOSA,55081,23.9,"Super Fatia de Pizza de Gorgonzola Onion. Gorgonzola, cebola caramelizada, alho e mussarela. Pra essa você vai dizer: trabalhar para conquistar minha cremosa."
+Super Slices - Supremas,Rocheda,SLICE - ROCHEDA,55082,27.9,"Super Fatia de Pizza de Carne de Sol Cream Cheese. Carne de sol, cebola roxa, cream cheese e mussarela só podiam dar em um sabor rocheda."
+Super Slices - Supremas,Larica,SLICE - LARICA,55083,27.9,"Super Fatia de Pizza de Calabresa Doritos Cream Chesse. Calabresa, cream cheese, geleia de pimenta artesanal e Doritos. Tem o salgado de calabresa e mussarela, o doce e apimentado da geléia de pimenta, a cremosidade do cream cheese e o creck do Doritos."
+Super Slices - Supremas,Gera,SLICE - GERA,55084,25.9,"Super Fatia de Pizza de Frango & Bacon. Frango refogado, bacon, molho barbecue e mussarela fazem uma pizza perfeita para antes, durante e depois do gera."
+Super Slices - Supremas,Entrega Tudo,SLICE - ENTREGA TUDO,55085,25.9,"Super Fatia de Pizza de Pepperoni Champignon. Pepperoni, cebola roxa, pimentão, milho, champignon e mussarela. Palmas que essa entrega tudo!"
+Super Slices - Supremas,Avisa que é Ela,SLICE - AVISA QUE E ELA,55086,23.9,"Super Fatia de Pizza de Calabresa Cheddar Cream. Calabresa, cheddarcream e mussarela. Avisa que é ela, bb."
+Pizzas Grandes,Metade Ícone (Grande),PIZZA *G* 2 SB - ICONE,55107,29.95,"Mussarela, a mais icônica, um clássico que ninguém tomba."
+Pizzas Grandes,Metade Braba (Grande),PIZZA *G* 2 SB - BRABA,55109,29.95,"Calabresas fininhas, cebola roxa e mussarela. Esse sabor é brabo demais! "
+Pizzas Grandes,Metade Aclamada (Grande),PIZZA *G* 2 SB - ACLAMADA,55112,29.95,"Brócolis, alho e mussarela. Esse sabor veio para ser aclamado em toda Fortaleza."
+Pizzas Grandes,Metade Crush (Grande),PIZZA *G* 2 SB - CRUSH,55114,29.95,"Marguerita, a crush perfeita de todo mundo."
+Pizzas Grandes,Metade 10/10 (Grande),PIZZA *G* 2 SB - 10/10,55108,32.95,Bacon & milho & mussarela = 10/10. 
+Pizzas Grandes,Metade Portuga (Grande),PIZZA *G* 2 SB - PORTUGA,55115,32.95,"Portuguesa com ovos, azeitonas, cebola roxa, presunto e mussarela. "
+Pizzas Grandes,Metade Gratiluz (Grande),PIZZA *G* 2 SB - GRATILUZ,55116,32.95,"Brócolis, tomate seco, milho e mussarela. Esse sabor good vibes vai fazer você sentir muita gratidão depois de provar."
+Pizzas Grandes,Metade Lenda (Grande),PIZZA *G* 2 SB - LENDA,55111,33.95,"Frango refogado, cream cheese, milho e mussarela. Uma combinação definitivamente lendária."
+Pizzas Grandes,Metade Cremosa (Grande),PIZZA *G* 2 SB - CREMOSA,55119,33.95,"Gorgonzola, cebola caramelizada, alho e mussarela. Pra essa você vai dizer: trabalhar para conquistar minha cremosa."
+Pizzas Grandes,Metade Avisa Que É Ela (Grande),PIZZA *G* 2 SB - AVISA QUE E ELA,55124,33.95,"Calabresa, cheddarcream e mussarela. Avisa que é ela, bb."
+Pizzas Grandes,Metade Resenha (Grande),PIZZA *G* 2 SB - RESENHA,55113,35.95,"Cream cheese, mussarela e gorgonzola, se unem para uma resenha daquelas."
+Pizzas Grandes,Metade Buoni Melt (Grande),PIZZA *G* 2 SB - BUONI MELT,55117,35.95,"Cheddar, bacon, cebola caramelizada e mussarela. Essa não vem com brinde do palhaço, mas você vai amar tudo isso."
+Pizzas Grandes,Metade Bem Patrícia (Grande),PIZZA *G* 2 SB - BEM PATRICIA,55118,35.95,"Lombo, cream cheese, geleia de pimenta artesanal e mussarela. Lá vem ela, toda produzida, bem patrícia."
+Pizzas Grandes,Metade Gera (Grande),PIZZA *G* 2 SB - GERA,55122,35.95,"Frango refogado, bacon, molho barbecue e mussarela fazem uma pizza perfeita para antes, durante e depois do gera."
+Pizzas Grandes,Metade Entrega Tudo (Grande),PIZZA *G* 2 SB - ENTREGA TUDO,55123,35.95,"Pepperoni, cebola roxa, pimentão, milho, champignon e mussarela. Palmas que essa entrega tudo!"
+Pizzas Grandes,Metade Esquenta (Grande),PIZZA *G* 2 SB - ESQUENTA,55110,38.95,Pepperoni com creamcheese para esquentar seu rolê.
+Pizzas Grandes,Metade Rocheda (Grande),PIZZA *G* 2 SB - ROCHEDA,55120,38.95,"Carne de sol, cebola roxa, cream cheese e mussarela só podiam dar em um sabor rocheda."
+Pizzas Grandes,Metade Larica (Grande),PIZZA *G* 2 SB - LARICA,55121,38.95,"Calabresa, cream cheese, geleia de pimenta artesanal e Doritos. Tem o salgado de calabresa e mussarela, o doce e apimentado da geléia de pimenta artesanal, a cremosidade do cream cheese e o creck do Doritos."
+Pizzas Grandes,4 sabores - Crush (Grande),PIZZA 4 SB *G* - CRUSH,55128,14.99,"Marguerita, a crush perfeita de todo mundo."
+Pizzas Grandes,4 sabores - Ícone (Grande),PIZZA 4 SB *G* - ICONE,55129,14.99,"Mussarela, a mais icônica, um clássico que ninguém tomba."
+Pizzas Grandes,4 sabores - Aclamada (Grande),PIZZA 4 SB *G* - ACLAMADA,55130,14.99,"Brócolis, alho e mussarela. Esse sabor veio para ser aclamado em toda Fortaleza."
+Pizzas Grandes,4 sabores - Braba (Grande),PIZZA 4 SB *G* - BRABA,55132,14.99,"Calabresas fininhas, cebola roxa e mussarela. Esse sabor é brabo demais! "
+Pizzas Grandes,4 sabores - Gratiluz (Grande),PIZZA 4 SB *G* - GRATILUZ,55131,15.99,"Brócolis, tomate seco, milho e mussarela. Esse sabor good vibes vai fazer você sentir muita gratidão depois de provar."
+Pizzas Grandes,4 sabores - Portuga (Grande),PIZZA 4 SB *G* - PORTUGA,55133,15.99,"Portuguesa com ovos, azeitonas, cebola roxa, presunto e mussarela. "
+Pizzas Grandes,4 sabores - 10/10 (Grande),PIZZA 4 SB *G* - 10/10,55134,15.99,Bacon & milho & mussarela = 10/10. 
+Pizzas Grandes,4 sabores - Avisa Que É Ela (Grande),PIZZA 4 SB *G* - AVISA QUE E ELA,55137,16.99,"Calabresa, cheddarcream e mussarela. Avisa que é ela, bb."
+Pizzas Grandes,4 sabores - Lenda (Grande),PIZZA 4 SB *G* - LENDA,55138,16.99,"Frango refogado, cream cheese, milho e mussarela. Uma combinação definitivamente lendária."
+Pizzas Grandes,4 sabores - Cremosa (Grande),PIZZA 4 SB *G* - CREMOSA,55141,16.99,"Gorgonzola, cebola caramelizada, alho e mussarela. Pra essa você vai dizer: trabalhar para conquistar minha cremosa."
+Pizzas Grandes,4 sabores - Buoni Melt (Grande),PIZZA 4 SB *G* - BUONI MELT,55135,17.99,"Cheddar, bacon, cebola caramelizada e mussarela. Essa não vem com brinde do palhaço, mas você vai amar tudo isso."
+Pizzas Grandes,4 sabores - Gera (Grande),PIZZA 4 SB *G* - GERA,55136,17.99,"Frango refogado, bacon, molho barbecue e mussarela fazem uma pizza perfeita para antes, durante e depois do gera."
+Pizzas Grandes,4 sabores - Resenha (Grande),PIZZA 4 SB *G* - RESENHA,55139,17.99,"Cream cheese, mussarela e gorgonzola, se unem para uma resenha daquelas."
+Pizzas Grandes,4 sabores - Bem Patrícia (Grande),PIZZA 4 SB *G* - BEM PATRICIA,55140,17.99,"Lombo, cream cheese, geleia de pimenta artesanal e mussarela. Lá vem ela, toda produzida, bem patrícia."
+Pizzas Grandes,4 sabores - Entrega Tudo (Grande),PIZZA 4 SB *G* - ENTREGA TUDO,55142,17.99,"Pepperoni, cebola roxa, pimentão, milho, champignon e mussarela. Palmas que essa entrega tudo!"
+Pizzas Grandes,4 sabores - Esquenta (Grande),PIZZA 4 SB *G* - ESQUENTA,55143,19.99,Pepperoni com creamcheese para esquentar seu rolê.
+Pizzas Grandes,4 sabores - Rocheda (Grande),PIZZA 4 SB *G* - ROCHEDA,55144,19.99,"Carne de sol, cebola roxa, cream cheese e mussarela só podiam dar em um sabor rocheda."
+Pizzas Grandes,4 sabores - Larica (Grande),PIZZA 4 SB *G* - LARICA,55145,19.99,"Calabresa, cream cheese, geleia de pimenta artesanal e Doritos. Tem o salgado de calabresa e mussarela, o doce e apimentado da geléia de pimenta artesanal, a cremosidade do cream cheese e o creck do Doritos."
+Para dar o grau na sua Buoni Slice,Calabresa,**ADC - 6UN CALABRESA FAT,55162,1.9,20g
+Para dar o grau na sua Buoni Slice,Alho frito,**ADC - 2G ALHO FRITO,55163,0.9,2g
+Para dar o grau na sua Buoni Slice,Ovo,**ADC - 20G OVO COZIDO,55164,1.9,20g
+Para dar o grau na sua Buoni Slice,Presunto,**ADC - 20G PRESUNTO RALADO,55165,1.9,20g
+Para dar o grau na sua Buoni Slice,Milho,**ADC - 10G MILHO VERDE,55166,0.9,10g
+Para dar o grau na sua Buoni Slice,Bacon,**ADC - 2UN TIRAS DE BACON,55167,4.9,2 unidades
+Para dar o grau na sua Buoni Slice,Cream Cheese,**ADC - 20G CREAM CHEESE,55168,2.9,20g
+Para dar o grau na sua Buoni Slice,Gorgonzola,**ADC - 15G GORGONZOLA,55169,3.9,15g
+Para dar o grau na sua Buoni Slice,Geleia de pimenta artesanal.,**ADC - 40G GELEIA DE PIMENTA,55170,1.9,40g
+Para dar o grau na sua Buoni Slice,Cebola caramelizada,**ADC - 20G CEBOLA CARAMELIZADA,55171,1.9,20g
+Para dar o grau na sua Buoni Slice,Creme de cheddar,**ADC - 20G CREME CHEDDAR,55172,2.9,20g
+Para dar o grau na sua Buoni Slice,Doritos,**ADC - 10G DORITOS,55173,2.9,10g
+Para dar o grau na sua Buoni Grande,Calabresa,**ADC - 25UN CALABRESA FAT,55174,5.9,80g
+Para dar o grau na sua Buoni Grande,Alho frito,**ADC - 5G ALHO FRITO,55175,3.9,5g
+Para dar o grau na sua Buoni Grande,Ovo,**ADC - 80G OVO COZIDO,55176,5.9,80g
+Para dar o grau na sua Buoni Grande,Presunto,**ADC - 80G PRESUNTO RALADO,55177,5.9,80g
+Para dar o grau na sua Buoni Grande,Milho,**ADC - 40G MILHO VERDE,55178,3.9,40g
+Para dar o grau na sua Buoni Grande,Bacon,**ADC - 8UN TIRAS DE BACON,55179,15.9,8 unidades
+Para dar o grau na sua Buoni Grande,Cream Cheese,**ADC - 80G CREAM CHEESE,55180,9.9,80g
+Para dar o grau na sua Buoni Grande,Gorgonzola,**ADC - 60G GORGONZOLA,55181,13.9,60g
+Para dar o grau na sua Buoni Grande,Geleia de pimenta artesanal.,**ADC - 100G GELEIA DE PIMENTA,55182,4.9,100g
+Para dar o grau na sua Buoni Grande,Cebola caramelizada,**ADC - 80G CEBOLA CARAMELIZADA,55183,4.9,80g
+Para dar o grau na sua Buoni Grande,Creme de cheddar,**ADC - 80G CREME CHEDDAR,55184,9.9,80g
+Para dar o grau na sua Buoni Grande,Doritos,**ADC - 40G DORITOS,55185,9.9,40g
