@@ -168,8 +168,8 @@
   <div class="overlay" onclick="toggleSidebar()"></div>
   <div class="sidebar" id="sidebar">
     <ul>
-      <li onclick="carregarLoja('MenuFiltrado.csv', 'Menu Brands', 'Menu.png')" class="active" id="loja-menu">Menu Brands</li>
-      <li onclick="carregarLoja('PokeFiltrado.csv', 'Poké Nordestino', 'Poke.png')" id="loja-poke">Poké Nordestino</li>
+      <li onclick="carregarLoja('MenuFiltrado.csv', 'Menu Brands', 'Menu.png', this)" id="loja-menu">Menu Brands</li>
+      <li onclick="carregarLoja('PokeFiltrado.csv', 'Poké Nordestino', 'Poke.png', this)" id="loja-poke">Poké Nordestino</li>
     </ul>
   </div>
 
@@ -201,22 +201,21 @@
       return txt.toString().replace(/[\r\n\t\v\f]+/g, " ").replace(/[^\w\s\-\(\)\+\&à-úÀ-Ú]/g, "").replace(/\s+/g, " ").replace(/:/g, "").trim().substring(0, 80);
     }
 
-    function carregarLoja(arquivo, nomeLoja, logoSrc, botaoClicado = null) {
-      // Tema da loja
+    function carregarLoja(arquivo, nomeLoja, logoSrc, botaoClicado) {
+      // Remove temas anteriores
       document.body.classList.remove("menu-brands", "poke-nordestino");
       if (nomeLoja.includes("Menu")) document.body.classList.add("menu-brands");
       else document.body.classList.add("poke-nordestino");
 
-      // Logo
+      // Troca logo
       document.getElementById("logo").src = logoSrc;
 
-      // Marca loja ativa
+      // Marca a loja correta como ativa
       document.querySelectorAll(".sidebar li").forEach(li => li.classList.remove("active"));
-      if (botaoClicado) botaoClicado.classList.add("active");
-      else document.getElementById("loja-menu").classList.add("active");
+      botaoClicado.classList.add("active");
 
-      // Fecha sidebar apenas se foi clique do usuário
-      if (botaoClicado) toggleSidebar();
+      // Fecha sidebar apenas se foi um clique real
+      if (botaoClicado !== window) toggleSidebar();
 
       Papa.parse(arquivo, {
         download: true,
@@ -253,8 +252,9 @@
     window.addEventListener("DOMContentLoaded", () => {
       document.body.classList.add("menu-brands");
       document.getElementById("logo").src = "Menu.png";
-      document.getElementById("loja-menu").classList.add("active");
-      carregarLoja("MenuFiltrado.csv", "Menu Brands", "Menu.png");
+      const botaoMenu = document.getElementById("loja-menu");
+      botaoMenu.classList.add("active");
+      carregarLoja("MenuFiltrado.csv", "Menu Brands", "Menu.png", botaoMenu);
     });
 
     function mostrarItens(itensFiltrados) {
