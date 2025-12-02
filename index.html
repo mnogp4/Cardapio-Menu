@@ -160,18 +160,19 @@
       font-size: 1.2em;
       color: #333 !important;
     }
-    body.menu-brands .filtros label,
-    body.poke-nordestino .filtros label,
-    body.soodeli .filtros label {
-      color: #000 !important;
-    }
     body:not(.menu-brands):not(.poke-nordestino):not(.soodeli) .filtros label {
       color: white !important;
     }
 
-    /* TOTAL DO CARRINHO SEMPRE BRANCO */
+    /* TOTAL DO CARRINHO BRANCO EM TODAS AS LOJAS */
     .carrinho-total {
       color: white !important;
+    }
+    /* TOTAL PRETO NAS 3 LOJAS ESPECIAIS */
+    body.menu-brands .carrinho-total,
+    body.poke-nordestino .carrinho-total,
+    body.soodeli .carrinho-total {
+      color: #000 !important;
     }
 
     /* SIDEBAR COM SCROLL INTERNO */
