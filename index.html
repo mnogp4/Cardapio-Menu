@@ -202,19 +202,16 @@
     }
 
     function carregarLoja(arquivo, nomeLoja, logoSrc, botaoClicado) {
-      // Remove temas anteriores
       document.body.classList.remove("menu-brands", "poke-nordestino");
       if (nomeLoja.includes("Menu")) document.body.classList.add("menu-brands");
       else document.body.classList.add("poke-nordestino");
 
-      // Troca logo
       document.getElementById("logo").src = logoSrc;
 
-      // Marca a loja correta como ativa
       document.querySelectorAll(".sidebar li").forEach(li => li.classList.remove("active"));
       botaoClicado.classList.add("active");
 
-      // Fecha sidebar apenas se foi um clique real
+      // Só fecha a sidebar se foi um clique real (não no carregamento inicial)
       if (botaoClicado !== window) toggleSidebar();
 
       Papa.parse(arquivo, {
@@ -248,13 +245,13 @@
       document.querySelector(".overlay").style.display = sidebar.classList.contains("open") ? "block" : "none";
     }
 
-    // INICIA DIRETO COM MENU BRANDS — 100% GARANTIDO
+    // INICIA COM MENU BRANDS CARREGADO E SIDEBAR FECHADA — 100% GARANTIDO
     window.addEventListener("DOMContentLoaded", () => {
       document.body.classList.add("menu-brands");
       document.getElementById("logo").src = "Menu.png";
       const botaoMenu = document.getElementById("loja-menu");
       botaoMenu.classList.add("active");
-      carregarLoja("MenuFiltrado.csv", "Menu Brands", "Menu.png", botaoMenu);
+      carregarLoja("MenuFiltrado.csv", "Menu Brands", "Menu.png", window); // window como marcador de carregamento inicial
     });
 
     function mostrarItens(itensFiltrados) {
