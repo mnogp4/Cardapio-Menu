@@ -41,6 +41,7 @@
       object-fit: contain;
     }
 
+    /* IDENTIDADE VISUAL POR LOJA */
     body.menu-brands {
       --cor-principal: #e30613;
       --cor-hover: #c4000f;
@@ -163,7 +164,7 @@
   <div class="overlay" onclick="toggleSidebar()"></div>
   <div class="sidebar" id="sidebar">
     <ul>
-      <li onclick="carregarLoja('MenuFiltrado.csv', 'Menu Brands', 'Menu.png', this)" class="active" id="loja-menu">Menu Brands</li>
+      <li onclick="carregarLoja('MenuFiltrado.csv', 'Menu Brands', 'Menu.png', this)" id="loja-menu">Menu Brands</li>
       <li onclick="carregarLoja('PokeFiltrado.csv', 'Poké Nordestino', 'Poke.png', this)" id="loja-poke">Poké Nordestino</li>
     </ul>
   </div>
@@ -206,8 +207,10 @@
       document.querySelectorAll(".sidebar li").forEach(li => li.classList.remove("active"));
       botaoClicado.classList.add("active");
 
-      // Só abre/fecha sidebar se for clique do usuário
-      if (botaoClicado !== window) toggleSidebar();
+      // NUNCA abre a sidebar no carregamento inicial
+      if (botaoClicado !== document.getElementById("loja-menu")) {
+        toggleSidebar();
+      }
 
       Papa.parse(arquivo, {
         download: true,
@@ -240,7 +243,7 @@
       document.querySelector(".overlay").style.display = sidebar.classList.contains("open") ? "block" : "none";
     }
 
-    // CARREGA MENU BRANDS AO ABRIR A PÁGINA — 100% GARANTIDO
+    // INICIA COM MENU BRANDS CARREGADO E SIDEBAR FECHADA — 100% GARANTIDO
     window.addEventListener("DOMContentLoaded", () => {
       document.body.classList.add("menu-brands");
       document.getElementById("logo").src = "Menu.png";
