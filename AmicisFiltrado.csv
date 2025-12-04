@@ -1,123 +1,123 @@
 CATEGORIA,NOME CARDAPIO,NOME PDV,CÓD PDV,PREÇO VENDA CHEIO,DESCRICAO ITEM CARDAPIO
-Quer receber sachê de queijo parmesão?,"Sim, quero sachê de queijo parmesão ralado.",EXT - SACHET PARMESAO,1889,0.0,10g
-Quer receber sachê de queijo parmesão?,"Não, obrigado.",EXT - NAO QUERO PARM SACHET,1890,0.0,
-Italianíssimo Amicis,Massa Alfredo Tradicional,ITA-FETTU ALF TRADICI,2027,33.9,Clássico molho de queijos da casa.
-Italianíssimo Amicis,Massa Alfredo Frango,ITA-FETTU ALF FRANGO,2028,36.9,Frango grelhado em cubos com o clássico molho de queijos da casa.
-Italianíssimo Amicis,Massa Alfredo Camarão,ITA-FETTU ALF CAMARAO,2029,49.9,Camarões salteados no azeite de ervas com clássico molho de queijos da casa.
-Italianíssimo Amicis,Massa Calabria,ITA-FETTU CALABRIA,2030,38.9,"Calabresa, milho e tomate em cubos, servidos com o maravilhoso molho rosé (molho sugo e molho de queijos misturados)."
-Italianíssimo Amicis,Massa Parisiense,ITA-FETTU PARISIENSE,2031,38.9,"Molho de queijos tradicional da casa, milho, presunto, ervilha e bacon."
-Italianíssimo Amicis,Massa Alla Norma,ITA-FUSILI ALLA NORMA,2032,38.9,"Molho sugo, manjericão fresco, tomate seco, cenoura ralada, caponata de berinjela e abobrinha e queijo ricota ralada."
-Italianíssimo Amicis,Massa Carbonara,ITA-FETTU ALF BACON,2033,39.9,Nossos clássico molho de queijos da casa e muito bacon.
-Italianíssimo Amicis,Massa Sertanejo,ITA-FETTU SERTANEJO,2034,42.9,"Molho de queijos, carne de sol refogada com cebola roxa, milho verde, cubinhos de queijo coalho."
-Italianíssimo Amicis,Massa Alfredo Carne,ITA-FETTU ALF CARNE,2035,39.9,Tiras de carne grelhadas e nosso clássico molho de queijos da casa.
-Outros,Cream Cheese,ADC - CREAM CHEESE - UND MEDIDA PIZZA G,10069,7.9,Presunto ralado. (O item adicional é servido em toda a pizza)
-Outros,Cebola Roxa e Alho frito ,ADC - CEBOLA ROXA + ALHO FRITO - UND MEDIDA PIZZA G,10071,5.9,O item adicional é servido em toda a pizza
-Outros,Catupiry cremoso original,ADC - CATUPIRY ORIGINAL - UND MEDIDA PIZZA G,10074,9.9,O item adicional é servido em toda a pizza
-Outros,Tomates em rodelas e manjericão fresco,ADC - TOMATES RODELAS + MANJERICAO - UND MEDIDA PIZZA G,10075,4.9,O item adicional é servido em toda a pizza
-Outros,Cogumelos Champignons frescos,ADC - CHAMPGNON FRESCO - UND MEDIDA PIZZA G,10076,9.9,O item adicional é servido em toda a pizza
-Outros,Queijo gorgonzola,ADC - QUEIJO GORGONZOLA - UND MEDIDA PIZZA G,10081,7.9,O item adicional é servido em toda a pizza
-Outros,Pepperoni fatiado,ADC - PEPPERONI FATIADO - UND MEDIDA PIZZA G,10088,9.9,O item adicional é servido em toda a pizza
-Outros,Presunto ralado,ADC - PRESUNTO RALADO - UND MEDIDA PIZZA G,10090,7.9,Presunto ralado. (O item adicional é servido em toda a pizza)
-Pizzas 20 cm,Mussarela ,PIZZA *P* - MUSSARELA,10098,34.9,"Molho de tomate artesanal, muita mussarela e orégano."
-Pizzas 20 cm,Marguerita ,PIZZA *P* - MARGUERITA,10099,34.9,"Mussarela, tomate fresco, manjericão e orégano."
-Pizzas 20 cm,Portuguesa ,PIZZA *P* - PORTUGUESA,10100,36.9,"Calabresa, mussarela, azeitona, ovo, presunto, cebola e orégano."
-Pizzas 20 cm,Quatro Mineiros,PIZZA *P* - QUATRO MINEIROS,10101,40.9,"Mussarela, Catupiry Original, provolone, gorgonzola e orégano."
-Pizzas 20 cm,Brasileira ,PIZZA *P* - BRASILEIRA,10102,38.9,"Frango refogado, Catupiry Original, mussarela, azeitonas sem caroço, milho verde e orégano."
-Pizzas 20 cm,Belchior ,PIZZA *P* - BELCHIORS,10103,42.9,"Rúcula, tomate seco, champignon fresco, mussarela, provolone e orégano."
-Pizzas 20 cm,Amici's,PIZZA *P* - AMICIS,10105,42.9,"Pepperoni, linguiça italiana, mussarela, pimentão, champignon fresco, cebola e orégano."
-Pizzas 20 cm,Fortaleza ,PIZZA *P* - FORTALEZA,10107,42.9,"Carne de sol, macaxeira, mussarela, Catupiry Original, orégano."
-Pizzas 20 cm,Italiana ,PIZZA *P* - ITALIANA,10108,34.9,"Rúcula, tomate seco e mussarela."
-Pizzas doces,Leitinho com Creme de avelâ,PZZ DOC -  LEITINHO C NUTELLA,10255,40.9,"Massa tradicional Amici's, brigadeiro de leite com creme de avelã e topping de leite em pó."
-Pizzas doces,Doce de leite com farofa de brownie,PZZ DOC - DOC LEIT BROWN,10534,40.9,"Massa tradicional Amici's, doce de leite e Brownie em cubos."
-Pizzas grandes,Mussarela ,PIZZA *G* - MUSSARELA,10113,59.9,"Molho de tomate artesanal, muita mussarela e orégano."
-Pizzas grandes,Marguerita ,PIZZA *G* - MARGUERITA,10114,59.9,"Mussarela, tomate fresco, manjericão e orégano."
-Pizzas grandes,Portuguesa ,PIZZA *G* - PORTUGUESA,10115,66.9,"Calabresa, mussarela, azeitona, ovo, presunto, cebola e orégano."
-Pizzas grandes,Quatro Mineiros ,PIZZA *G* - QUATRO MINEIROS,10116,76.9,"Mussarela, Catupiry Original, provolone, gorgonzola e orégano."
-Pizzas grandes,Brasileira ,PIZZA *G* - BRASILEIRA,10117,71.9,"Frango refogado, Catupiry Original, mussarela, azeitonas sem caroço, milho verde e orégano."
-Pizzas grandes,Belchior ,PIZZA *G* - BELCHIORS,10118,79.9,"Rúcula, tomate seco, champignon fresco, mussarela, provolone e orégano."
-Pizzas grandes,Amici's ,PIZZA *G* - AMICIS,10120,79.9,"Pepperoni, linguiça italiana, mussarela, pimentão, champignon fresco, cebola e orégano."
-Pizzas grandes,Fortaleza ,PIZZA *G* - FORTALEZA,10122,79.9,"Carne de sol, macaxeira, mussarela, Catupiry Original, orégano."
-Pizzas grandes,Italiana ,PIZZA *G* - ITALIANA,10123,61.9,"Rúcula, tomate seco e mussarela."
-Pizzas Grandes,Metade Mussarela,METADE *G* - MUSSARELA,10126,30.45,"Molho de tomate artesanal, muita mussarela e orégano."
-Pizzas Grandes,Metade Marguerita ,METADE *G* - MARGUERITA,10127,30.45,"Mussarela, tomate fresco, manjericão e orégano."
-Pizzas grandes,Metade Portuguesa ,METADE *G* - PORTUGUESA,10128,33.45,"Calabresa, mussarela, azeitona, ovo, presunto, cebola e orégano."
-Pizzas Grandes,Metade Quatro Mineiros ,METADE *G* - QUATRO MINEIROS,10129,38.45,"Mussarela, Catupiry Original, provolone, gorgonzola e orégano."
-Pizzas grandes,Metade Brasileira ,METADE *G* - BRASILEIRA,10130,35.95,"Frango refogado, Catupiry Original, mussarela, azeitonas sem caroço, milho verde e orégano."
-Pizzas grandes,Metade Belchior,METADE *G* - BELCHIORS,10131,39.95,"Rúcula, tomate seco, champignon fresco, mussarela, provolone e orégano."
-Pizzas grandes,Metade Amici's ,METADE *G* - AMICIS,10133,39.95,"Pepperoni, linguiça italiana, mussarela, pimentão, champignon fresco, cebola e orégano."
-Pizzas 20 cm,Pepperoni,PIZZA *P* - TRAD PEPPERONNI,10171,40.9,"Pepperoni, mussarela e orégano."
-Pizzas 20 cm,Calábria ,PIZZA *P* - CALABRIA,10172,34.9,"Calabresa, cebola roxa, mussarela e orégano."
-Pizzas 20 cm,Favorita,PIZZA *P* - FAVORITA,10173,40.9,"Pepperoni, cogumelos frescos, linguiça italiana, mussarela e orégano."
-Pizzas grandes,Metade Fortaleza ,METADE *G* - FORTALEZA,10135,39.95,"Carne de sol, macaxeira, mussarela, Catupiry Original, orégano."
-Pizzas Grandes,Metade Italiana,METADE *G* - ITALIANA,10136,31.45,"Rúcula, tomate seco e mussarela."
-Pizzas grandes,Pepperoni ,PIZZA *G* - TRAD PEPPERONNI,10174,76.9,"Pepperoni, mussarela e orégano."
-Pizzas grandes,Calábria ,PIZZA *G* - CALABRIA,10175,59.9,"Calabresa, cebola roxa, mussarela e orégano."
-Pizzas grandes,Favorita ,PIZZA *G* - FAVORITA,10176,76.9,"Pepperoni, cogumelos frescos, linguiça italiana, mussarela e orégano."
-Pizzas Grandes,Metade Pepperoni ,METADE *G* - TRAD PEPPERONNI,10177,38.45,"Pepperoni, mussarela e orégano."
-Pizzas 20 cm,Vegetariana ,PIZZA *P* - VEGETARIANA,10224,36.9,"Mussarela, tomate fresco, pimentão, cebola, azeitonas, champignons frescos."
-Pizzas Grandes,Metade Calábria ,METADE *G* - CALABRIA,10178,30.45,"Calabresa, cebola roxa, mussarela e orégano."
-Pizzas grandes,Metade Favorita ,METADE *G* - FAVORITA,10179,38.45,"Pepperoni, cogumelos frescos, linguiça italiana, mussarela e orégano."
-Pizzas grandes,Vegetariana ,PIZZA *G* - VEGETARIANA,10225,66.9,"Mussarela, tomate fresco, pimentão, cebola, azeitonas, champignons frescos."
-Pizzas grandes,Metade Vegetariana ,METADE *G* - VEGETARIANA,10226,33.45,"Mussarela, tomate fresco, pimentão, cebola, azeitonas, champignons frescos."
-Pizzas 20 cm,Aldeota ,PIZZA *P* - ALDEOTA,10524,36.9,"Linguiça italiana, pimenta calabresa, mussarela, queijo provolone, cebola roxa e alho."
-Pizzas grandes,Aldeota ,PIZZA *G* - ALDEOTA,10522,66.9,"Linguiça italiana, pimenta calabresa, mussarela, queijo provolone, cebola roxa e alho."
-Pizzas Grandes,Metade Aldeota ,METADE *G* - ALDEOTA,10525,33.45,"Linguiça italiana, pimenta calabresa, mussarela, queijo provolone, cebola roxa e alho."
-Pizzas grandes,Pizza Grande (1 Sabor),PRODUTO AMICIS,10532,59.9,"As pizzas Amici's são produzidas com exclusiva massa de pão italiano (crocante por fora e macia por dentro), molho de tomate artesanal e muito recheio. "
-Pizzas Grandes,Pizza Grande (4 sabores),PRODUTO AMICIS,10532,69.9,"As pizzas Amici's são produzidas com exclusiva massa de pão italiano (crocante por fora e macia por dentro), molho de tomate artesanal e muito recheio. "
-Pizzas Grandes,Pizza Grande (2 Sabores),PRODUTO AMICIS,10532,69.9,"As pizzas Amici's são produzidas com exclusiva massa de pão italiano (crocante por fora e macia por dentro), molho de tomate artesanal e muito recheio. "
-Pizzas grandes,Samba do Amicis ,PIZZA *G* - SAMBA DO AMICIS,10555,71.9,"Linguiça italiana, bacon, mussarela, cebola roxa, cebolinha e orégano."
-Pizzas 20 cm,Samba do Amicis ,PIZZA *P* - SAMBA DO AMICIS,10557,38.9,"Linguiça italiana, bacon, mussarela, cebola roxa, cebolinha e orégano."
-Pizzas grandes,Metade Samba do Amici's ,METADE *G* - SAMBA DO AMICIS,10559,35.95,"Linguiça italiana, bacon, mussarela, cebola roxa, cebolinha e orégano."
-Outros,Bacon fatiado,ADC - TIRAS DE BACON - UND MEDIDA PIZZA G,10617,7.9,O item adicional é servido em toda a pizza
-Outros,Calabresa fatiada,ADC - CALABRESA FATIADA - UND MEDIDA PIZZA G,10618,7.9,O item adicional é servido em toda a pizza
-Pizzas Grandes,Metade Bacon Catupiry,METADE *G* - BACON CATUPIRY,10653,38.45,"Tiras de bacon, mussarela, orégano e Catupiry Original."
-Pizzas grandes,Bacon Catupiry,PIZZA *G* - BACON CATUPIRY,10655,76.9,"Tiras de bacon, mussarela, orégano e Catupiry Original."
-Pizzas 20 cm,Bacon Catupiry,PIZZA *P* - BACON CATUPIRY,10656,40.9,"Tiras de bacon, mussarela, orégano e Catupiry Original."
-Pizzas grandes,Metade Pepperoni cream cheese,METADE *G* - CREAM PEPPERONNI,10658,39.95,"Pepperoni, mussarela, orégano e cream cheese."
-Pizzas grandes,Pepperoni cream cheese,PIZZA *G* - CREAM PEPPERONNI,10660,79.9,"Pepperoni, mussarela, orégano e cream cheese."
-Pizzas 20 cm,Pepperoni cream cheese ,PIZZA *P* - CREAM PEPPERONNI,10661,42.9,"Pepperoni, mussarela, orégano e cream cheese."
-Pizzas Grandes,4 Sabores - Aldeota ,4 SABORES *G* - ALDEOTA,10675,16.99,"Linguiça italiana, pimenta calabresa, mussarela, queijo provolone, cebola roxa e alho."
-Pizzas Grandes,4 Sabores - Amici's ,4 SABORES *G* - AMICIS,10676,20.99,"Pepperoni, linguiça italiana, mussarela, pimentão, champignon fresco, cebola e orégano."
-Pizzas Grandes,4 Sabores - Bacon Catupiry,4 SABORES *G* - BACON CATUPIRY,10677,19.99,"Tiras de bacon, mussarela, orégano e Catupiry Original."
-Pizzas Grandes,4 Sabores - Belchior ,4 SABORES *G* - BELCHIORS,10678,20.99,"Rúcula, tomate seco, champignon fresco, mussarela, provolone e orégano."
-Pizzas Grandes,4 Sabores - Brasileira ,4 SABORES *G* - BRASILEIRA,10679,17.99,"Frango refogado, Catupiry Original, mussarela, azeitonas sem caroço, milho verde e orégano."
-Pizzas Grandes,4 Sabores - Calábria,4 SABORES *G* - CALABRIA,10680,14.99,"Calabresa, cebola roxa, mussarela e orégano."
-Pizzas Grandes,4 Sabores - Favorita,4 SABORES *G* - FAVORITA,10681,18.99,"Pepperoni, cogumelos frescos, linguiça italiana, mussarela e orégano."
-Pizzas Grandes,4 Sabores - Fortaleza ,4 SABORES *G* - FORTALEZA,10682,20.99,"Carne de sol, macaxeira, mussarela, Catupiry Original, orégano."
-Pizzas Grandes,4 Sabores - Italiana ,4 SABORES *G* - ITALIANA,10683,15.99,"Rúcula, tomate seco e mussarela."
-Pizzas Grandes,4 Sabores - Marguerita,4 SABORES *G* - MARGUERITA,10684,14.99,"Mussarela, tomate fresco, manjericão e orégano."
-Pizzas Grandes,4 Sabores - Mussarela ,4 SABORES *G* - MUSSARELA,10685,14.99,"Molho de tomate artesanal, muita mussarela e orégano."
-Pizzas Grandes,4 Sabores - Pepperoni cream cheese ,4 SABORES *G* - CREAM PEPPERONNI ,10686,20.99,"Pepperoni, mussarela, orégano e cream cheese."
-Pizzas Grandes,4 Sabores - Pepperoni ,4 SABORES *G* - TRAD PEPPERONNI,10687,19.99,"Pepperoni, mussarela e orégano."
-Pizzas Grandes,4 Sabores - Portuguesa ,4 SABORES *G* - PORTUGUESA,10688,16.99,"Calabresa, mussarela, azeitona, ovo, presunto, cebola e orégano."
-Pizzas Grandes,4 Sabores - Quatro Mineiros,4 SABORES *G* - QUATRO MINEIROS,10689,19.99,"Mussarela, Catupiry Original, provolone, gorgonzola e orégano."
-Pizzas Grandes,4 Sabores - Samba do Amicis ,4 SABORES *G* - SAMBA DO AMICIS,10690,17.99,"Linguiça italiana, bacon, mussarela, cebola roxa, cebolinha e orégano."
-Pizzas Grandes,4 Sabores - Vegetariana,4 SABORES *G* - VEGETARIANA,10691,16.99,"Mussarela, tomate fresco, pimentão, cebola, azeitonas, champignons frescos."
-Outros,Pepperoni,**ADC - 30G PEPPERONI,10710,7.9,30g
-Outros,Linguiça Italiana,**ADC - 15G L TOSC PRE ASSAD,10711,3.9,15g
-Outros,Presunto,**ADC - 10G PRESUNTO RALADO,10712,2.9,10g
-Outros,Ovo,**ADC - 25G OVO COZIDO,10713,2.9,25g
-Outros,Catupiry original,**ADC - 30G CATUPIRY ORIGINAL,10714,5.9,30g
-Outros,Cream Cheese,**ADC - 30G CREAM CHEESE,10715,4.9,30g
-Outros,Gorgonzola,**ADC - 10G GORGONZOLA,10716,5.9,10g
-Outros,Champignon fresco,**ADC - 15G COGUMELO PARIS,10717,4.9,15g
-Outros,Milho,**ADC - 10G MILHO VERDE,10718,1.9,20g
-Outros,Alho frito,**ADC - FLZ ALHO FRITO,10719,0.9,2g
-Outros,Bacon,**ADC - 50G BACON PRE ASSAD,10732,15.9,50g
-Outros,Calabresa,**ADC - 100G CALABRESA,10733,9.9,100g
-Outros,Pepperoni,**ADC - 80G  PEPPERONI,10734,15.9,80g
-Outros,Linguiça Italiana,**ADC - 50G L TOSC PRE ASSAD,10735,9.9,50g
-Outros,Presunto,**ADC - 40G PRESUNTO RALADO,10736,7.9,40g
-Outros,Ovo,**ADC - 100G OVO COZIDO,10737,6.9,100g
-Outros,Catupiry original,**ADC - 80G CATUPIRY ORIGINAL,10738,12.9,80g
-Outros,Cream Cheese,**ADC - 80G CREAM CHEESE,10739,10.9,80g
-Outros,Gorgonzola,**ADC - 30G GORGONZOLA,10740,14.9,30g
-Outros,Champignon fresco,**ADC - 50G COGUMELO PARIS,10741,12.9,50g
-Outros,Milho,**ADC - 30G MILHO VERDE,10742,3.9,30g
-Outros,Alho frito,**ADC - FLZ ALHO FRITO,10743,2.9,5g
-Outros,Bacon,**ADC - 20G BACON PRÉ ASSAD,10744,7.9,20g
-Outros,Calabresa,**ADC - 30G CALABRESA,10745,3.9,30g
-Outros,Suíno defumado com geleia de pimenta artesanal.,4 SABORES *G* - SUINA,10800,20.99,"Lombo suíno desfiado, cebola roxa em tiras, orégano, mussarela, cream cheese e geleia de pimenta artesanal."
-Pizzas grandes,Suíno defumado com geleia de pimenta artesanal.,PIZZA *G* - SUINA,10801,79.9,"Lombo suíno desfiado, cebola roxa em tiras, orégano, mussarela, cream cheese e geleia de pimenta artesanal."
-Outros,Suíno defumado com geleia de pimenta artesanal,METADE *G* - SUINA,10802,39.95,"Lombo suíno desfiado, cebola roxa em tiras, orégano, mussarela, cream cheese e geleia de pimenta artesanal ."
-Outros,Suíno defumado com geleia de pimenta artesanal.,PIZZA *P* - SUINA,10803,42.9,"Lombo suíno desfiado, cebola roxa em tiras, orégano, mussarela, cream cheese e geleia de pimenta artesanal."
+AMICIS - ITALIANISSIMO FINALIZACAO,"Sim, quero sachê de queijo parmesão ralado.",EXT - SACHET PARMESAO,1889,0.0,10g
+AMICIS - ITALIANISSIMO FINALIZACAO,"Não, obrigado.",EXT - NAO QUERO PARM SACHET,1890,0.0,
+AMICIS - ITALIANISSIMO,Massa Alfredo Tradicional,ITA-FETTU ALF TRADICI,2027,33.9,Clássico molho de queijos da casa.
+AMICIS - ITALIANISSIMO,Massa Alfredo Frango,ITA-FETTU ALF FRANGO,2028,36.9,Frango grelhado em cubos com o clássico molho de queijos da casa.
+AMICIS - ITALIANISSIMO,Massa Alfredo Camarão,ITA-FETTU ALF CAMARAO,2029,49.9,Camarões salteados no azeite de ervas com clássico molho de queijos da casa.
+AMICIS - ITALIANISSIMO,Massa Calabria,ITA-FETTU CALABRIA,2030,38.9,"Calabresa, milho e tomate em cubos, servidos com o maravilhoso molho rosé (molho sugo e molho de queijos misturados)."
+AMICIS - ITALIANISSIMO,Massa Parisiense,ITA-FETTU PARISIENSE,2031,38.9,"Molho de queijos tradicional da casa, milho, presunto, ervilha e bacon."
+AMICIS - ITALIANISSIMO,Massa Alla Norma,ITA-FUSILI ALLA NORMA,2032,38.9,"Molho sugo, manjericão fresco, tomate seco, cenoura ralada, caponata de berinjela e abobrinha e queijo ricota ralada."
+AMICIS - ITALIANISSIMO,Massa Carbonara,ITA-FETTU ALF BACON,2033,39.9,Nossos clássico molho de queijos da casa e muito bacon.
+AMICIS - ITALIANISSIMO,Massa Sertanejo,ITA-FETTU SERTANEJO,2034,42.9,"Molho de queijos, carne de sol refogada com cebola roxa, milho verde, cubinhos de queijo coalho."
+AMICIS - ITALIANISSIMO,Massa Alfredo Carne,ITA-FETTU ALF CARNE,2035,39.9,Tiras de carne grelhadas e nosso clássico molho de queijos da casa.
+AMICIS - ADICIONAIS GDE,Cream Cheese,ADC - CREAM CHEESE - UND MEDIDA PIZZA G,10069,7.9,Presunto ralado. (O item adicional é servido em toda a pizza)
+AMICIS - ADICIONAIS GDE,Cebola Roxa e Alho frito ,ADC - CEBOLA ROXA + ALHO FRITO - UND MEDIDA PIZZA G,10071,5.9,O item adicional é servido em toda a pizza
+AMICIS - ADICIONAIS GDE,Catupiry cremoso original,ADC - CATUPIRY ORIGINAL - UND MEDIDA PIZZA G,10074,9.9,O item adicional é servido em toda a pizza
+AMICIS - ADICIONAIS GDE,Tomates em rodelas e manjericão fresco,ADC - TOMATES RODELAS + MANJERICAO - UND MEDIDA PIZZA G,10075,4.9,O item adicional é servido em toda a pizza
+AMICIS - ADICIONAIS GDE,Cogumelos Champignons frescos,ADC - CHAMPGNON FRESCO - UND MEDIDA PIZZA G,10076,9.9,O item adicional é servido em toda a pizza
+AMICIS - ADICIONAIS GDE,Queijo gorgonzola,ADC - QUEIJO GORGONZOLA - UND MEDIDA PIZZA G,10081,7.9,O item adicional é servido em toda a pizza
+AMICIS - ADICIONAIS GDE,Pepperoni fatiado,ADC - PEPPERONI FATIADO - UND MEDIDA PIZZA G,10088,9.9,O item adicional é servido em toda a pizza
+AMICIS - ADICIONAIS GDE,Presunto ralado,ADC - PRESUNTO RALADO - UND MEDIDA PIZZA G,10090,7.9,Presunto ralado. (O item adicional é servido em toda a pizza)
+AMICIS - PIZZAS INDIVIDUAIS,Mussarela ,PIZZA *P* - MUSSARELA,10098,34.9,"Molho de tomate artesanal, muita mussarela e orégano."
+AMICIS - PIZZAS INDIVIDUAIS,Marguerita ,PIZZA *P* - MARGUERITA,10099,34.9,"Mussarela, tomate fresco, manjericão e orégano."
+AMICIS - PIZZAS INDIVIDUAIS,Portuguesa ,PIZZA *P* - PORTUGUESA,10100,36.9,"Calabresa, mussarela, azeitona, ovo, presunto, cebola e orégano."
+AMICIS - PIZZAS INDIVIDUAIS,Quatro Mineiros,PIZZA *P* - QUATRO MINEIROS,10101,40.9,"Mussarela, Catupiry Original, provolone, gorgonzola e orégano."
+AMICIS - PIZZAS INDIVIDUAIS,Brasileira ,PIZZA *P* - BRASILEIRA,10102,38.9,"Frango refogado, Catupiry Original, mussarela, azeitonas sem caroço, milho verde e orégano."
+AMICIS - PIZZAS INDIVIDUAIS,Belchior ,PIZZA *P* - BELCHIORS,10103,42.9,"Rúcula, tomate seco, champignon fresco, mussarela, provolone e orégano."
+AMICIS - PIZZAS INDIVIDUAIS,Amici's,PIZZA *P* - AMICIS,10105,42.9,"Pepperoni, linguiça italiana, mussarela, pimentão, champignon fresco, cebola e orégano."
+AMICIS - PIZZAS INDIVIDUAIS,Fortaleza ,PIZZA *P* - FORTALEZA,10107,42.9,"Carne de sol, macaxeira, mussarela, Catupiry Original, orégano."
+AMICIS - PIZZAS INDIVIDUAIS,Italiana ,PIZZA *P* - ITALIANA,10108,34.9,"Rúcula, tomate seco e mussarela."
+AMICIS - PIZZAS DOCES,Leitinho com Creme de avelâ,PZZ DOC -  LEITINHO C NUTELLA,10255,40.9,"Massa tradicional Amici's, brigadeiro de leite com creme de avelã e topping de leite em pó."
+AMICIS - PIZZAS DOCES,Doce de leite com farofa de brownie,PZZ DOC - DOC LEIT BROWN,10534,40.9,"Massa tradicional Amici's, doce de leite e Brownie em cubos."
+AMICIS - PIZZAS GRANDES,Mussarela ,PIZZA *G* - MUSSARELA,10113,59.9,"Molho de tomate artesanal, muita mussarela e orégano."
+AMICIS - PIZZAS GRANDES,Marguerita ,PIZZA *G* - MARGUERITA,10114,59.9,"Mussarela, tomate fresco, manjericão e orégano."
+AMICIS - PIZZAS GRANDES,Portuguesa ,PIZZA *G* - PORTUGUESA,10115,66.9,"Calabresa, mussarela, azeitona, ovo, presunto, cebola e orégano."
+AMICIS - PIZZAS GRANDES,Quatro Mineiros ,PIZZA *G* - QUATRO MINEIROS,10116,76.9,"Mussarela, Catupiry Original, provolone, gorgonzola e orégano."
+AMICIS - PIZZAS GRANDES,Brasileira ,PIZZA *G* - BRASILEIRA,10117,71.9,"Frango refogado, Catupiry Original, mussarela, azeitonas sem caroço, milho verde e orégano."
+AMICIS - PIZZAS GRANDES,Belchior ,PIZZA *G* - BELCHIORS,10118,79.9,"Rúcula, tomate seco, champignon fresco, mussarela, provolone e orégano."
+AMICIS - PIZZAS GRANDES,Amici's ,PIZZA *G* - AMICIS,10120,79.9,"Pepperoni, linguiça italiana, mussarela, pimentão, champignon fresco, cebola e orégano."
+AMICIS - PIZZAS GRANDES,Fortaleza ,PIZZA *G* - FORTALEZA,10122,79.9,"Carne de sol, macaxeira, mussarela, Catupiry Original, orégano."
+AMICIS - PIZZAS GRANDES,Italiana ,PIZZA *G* - ITALIANA,10123,61.9,"Rúcula, tomate seco e mussarela."
+AMICIS - MEIO A MEIO GRANDES,Metade Mussarela,METADE *G* - MUSSARELA,10126,30.45,"Molho de tomate artesanal, muita mussarela e orégano."
+AMICIS - MEIO A MEIO GRANDES,Metade Marguerita ,METADE *G* - MARGUERITA,10127,30.45,"Mussarela, tomate fresco, manjericão e orégano."
+AMICIS - MEIO A MEIO GRANDES,Metade Portuguesa ,METADE *G* - PORTUGUESA,10128,33.45,"Calabresa, mussarela, azeitona, ovo, presunto, cebola e orégano."
+AMICIS - MEIO A MEIO GRANDES,Metade Quatro Mineiros ,METADE *G* - QUATRO MINEIROS,10129,38.45,"Mussarela, Catupiry Original, provolone, gorgonzola e orégano."
+AMICIS - MEIO A MEIO GRANDES,Metade Brasileira ,METADE *G* - BRASILEIRA,10130,35.95,"Frango refogado, Catupiry Original, mussarela, azeitonas sem caroço, milho verde e orégano."
+AMICIS - MEIO A MEIO GRANDES,Metade Belchior,METADE *G* - BELCHIORS,10131,39.95,"Rúcula, tomate seco, champignon fresco, mussarela, provolone e orégano."
+AMICIS - MEIO A MEIO GRANDES,Metade Amici's ,METADE *G* - AMICIS,10133,39.95,"Pepperoni, linguiça italiana, mussarela, pimentão, champignon fresco, cebola e orégano."
+AMICIS - PIZZAS INDIVIDUAIS,Pepperoni,PIZZA *P* - TRAD PEPPERONNI,10171,40.9,"Pepperoni, mussarela e orégano."
+AMICIS - PIZZAS INDIVIDUAIS,Calábria ,PIZZA *P* - CALABRIA,10172,34.9,"Calabresa, cebola roxa, mussarela e orégano."
+AMICIS - PIZZAS INDIVIDUAIS,Favorita,PIZZA *P* - FAVORITA,10173,40.9,"Pepperoni, cogumelos frescos, linguiça italiana, mussarela e orégano."
+AMICIS - MEIO A MEIO GRANDES,Metade Fortaleza ,METADE *G* - FORTALEZA,10135,39.95,"Carne de sol, macaxeira, mussarela, Catupiry Original, orégano."
+AMICIS - MEIO A MEIO GRANDES,Metade Italiana,METADE *G* - ITALIANA,10136,31.45,"Rúcula, tomate seco e mussarela."
+AMICIS - PIZZAS GRANDES,Pepperoni ,PIZZA *G* - TRAD PEPPERONNI,10174,76.9,"Pepperoni, mussarela e orégano."
+AMICIS - PIZZAS GRANDES,Calábria ,PIZZA *G* - CALABRIA,10175,59.9,"Calabresa, cebola roxa, mussarela e orégano."
+AMICIS - PIZZAS GRANDES,Favorita ,PIZZA *G* - FAVORITA,10176,76.9,"Pepperoni, cogumelos frescos, linguiça italiana, mussarela e orégano."
+AMICIS - MEIO A MEIO GRANDES,Metade Pepperoni ,METADE *G* - TRAD PEPPERONNI,10177,38.45,"Pepperoni, mussarela e orégano."
+AMICIS - PIZZAS INDIVIDUAIS,Vegetariana ,PIZZA *P* - VEGETARIANA,10224,36.9,"Mussarela, tomate fresco, pimentão, cebola, azeitonas, champignons frescos."
+AMICIS - MEIO A MEIO GRANDES,Metade Calábria ,METADE *G* - CALABRIA,10178,30.45,"Calabresa, cebola roxa, mussarela e orégano."
+AMICIS - MEIO A MEIO GRANDES,Metade Favorita ,METADE *G* - FAVORITA,10179,38.45,"Pepperoni, cogumelos frescos, linguiça italiana, mussarela e orégano."
+AMICIS - PIZZAS GRANDES,Vegetariana ,PIZZA *G* - VEGETARIANA,10225,66.9,"Mussarela, tomate fresco, pimentão, cebola, azeitonas, champignons frescos."
+AMICIS - MEIO A MEIO GRANDES,Metade Vegetariana ,METADE *G* - VEGETARIANA,10226,33.45,"Mussarela, tomate fresco, pimentão, cebola, azeitonas, champignons frescos."
+AMICIS - PIZZAS INDIVIDUAIS,Aldeota ,PIZZA *P* - ALDEOTA,10524,36.9,"Linguiça italiana, pimenta calabresa, mussarela, queijo provolone, cebola roxa e alho."
+AMICIS - PIZZAS GRANDES,Aldeota ,PIZZA *G* - ALDEOTA,10522,66.9,"Linguiça italiana, pimenta calabresa, mussarela, queijo provolone, cebola roxa e alho."
+AMICIS - MEIO A MEIO GRANDES,Metade Aldeota ,METADE *G* - ALDEOTA,10525,33.45,"Linguiça italiana, pimenta calabresa, mussarela, queijo provolone, cebola roxa e alho."
+AMICIS - PIZZAS GRANDES,Pizza Grande (1 Sabor),PRODUTO AMICIS,10532,59.9,"As pizzas Amici's são produzidas com exclusiva massa de pão italiano (crocante por fora e macia por dentro), molho de tomate artesanal e muito recheio. "
+AMICIS - 4 SABORES GRANDES,Pizza Grande (4 sabores),PRODUTO AMICIS,10532,69.9,"As pizzas Amici's são produzidas com exclusiva massa de pão italiano (crocante por fora e macia por dentro), molho de tomate artesanal e muito recheio. "
+AMICIS - MEIO A MEIO GRANDES,Pizza Grande (2 Sabores),PRODUTO AMICIS,10532,69.9,"As pizzas Amici's são produzidas com exclusiva massa de pão italiano (crocante por fora e macia por dentro), molho de tomate artesanal e muito recheio. "
+AMICIS - PIZZAS GRANDES,Samba do Amicis ,PIZZA *G* - SAMBA DO AMICIS,10555,71.9,"Linguiça italiana, bacon, mussarela, cebola roxa, cebolinha e orégano."
+AMICIS - PIZZAS INDIVIDUAIS,Samba do Amicis ,PIZZA *P* - SAMBA DO AMICIS,10557,38.9,"Linguiça italiana, bacon, mussarela, cebola roxa, cebolinha e orégano."
+AMICIS - MEIO A MEIO GRANDES,Metade Samba do Amici's ,METADE *G* - SAMBA DO AMICIS,10559,35.95,"Linguiça italiana, bacon, mussarela, cebola roxa, cebolinha e orégano."
+AMICIS - ADICIONAIS GDE,Bacon fatiado,ADC - TIRAS DE BACON - UND MEDIDA PIZZA G,10617,7.9,O item adicional é servido em toda a pizza
+AMICIS - ADICIONAIS GDE,Calabresa fatiada,ADC - CALABRESA FATIADA - UND MEDIDA PIZZA G,10618,7.9,O item adicional é servido em toda a pizza
+AMICIS - MEIO A MEIO GRANDES,Metade Bacon Catupiry,METADE *G* - BACON CATUPIRY,10653,38.45,"Tiras de bacon, mussarela, orégano e Catupiry Original."
+AMICIS - PIZZAS GRANDES,Bacon Catupiry,PIZZA *G* - BACON CATUPIRY,10655,76.9,"Tiras de bacon, mussarela, orégano e Catupiry Original."
+AMICIS - PIZZAS INDIVIDUAIS,Bacon Catupiry,PIZZA *P* - BACON CATUPIRY,10656,40.9,"Tiras de bacon, mussarela, orégano e Catupiry Original."
+AMICIS - MEIO A MEIO GRANDES,Metade Pepperoni cream cheese,METADE *G* - CREAM PEPPERONNI,10658,39.95,"Pepperoni, mussarela, orégano e cream cheese."
+AMICIS - PIZZAS GRANDES,Pepperoni cream cheese,PIZZA *G* - CREAM PEPPERONNI,10660,79.9,"Pepperoni, mussarela, orégano e cream cheese."
+AMICIS - PIZZAS INDIVIDUAIS,Pepperoni cream cheese ,PIZZA *P* - CREAM PEPPERONNI,10661,42.9,"Pepperoni, mussarela, orégano e cream cheese."
+AMICIS - 4 SABORES GRANDES,4 Sabores - Aldeota ,4 SABORES *G* - ALDEOTA,10675,16.99,"Linguiça italiana, pimenta calabresa, mussarela, queijo provolone, cebola roxa e alho."
+AMICIS - 4 SABORES GRANDES,4 Sabores - Amici's ,4 SABORES *G* - AMICIS,10676,20.99,"Pepperoni, linguiça italiana, mussarela, pimentão, champignon fresco, cebola e orégano."
+AMICIS - 4 SABORES GRANDES,4 Sabores - Bacon Catupiry,4 SABORES *G* - BACON CATUPIRY,10677,19.99,"Tiras de bacon, mussarela, orégano e Catupiry Original."
+AMICIS - 4 SABORES GRANDES,4 Sabores - Belchior ,4 SABORES *G* - BELCHIORS,10678,20.99,"Rúcula, tomate seco, champignon fresco, mussarela, provolone e orégano."
+AMICIS - 4 SABORES GRANDES,4 Sabores - Brasileira ,4 SABORES *G* - BRASILEIRA,10679,17.99,"Frango refogado, Catupiry Original, mussarela, azeitonas sem caroço, milho verde e orégano."
+AMICIS - 4 SABORES GRANDES,4 Sabores - Calábria,4 SABORES *G* - CALABRIA,10680,14.99,"Calabresa, cebola roxa, mussarela e orégano."
+AMICIS - 4 SABORES GRANDES,4 Sabores - Favorita,4 SABORES *G* - FAVORITA,10681,18.99,"Pepperoni, cogumelos frescos, linguiça italiana, mussarela e orégano."
+AMICIS - 4 SABORES GRANDES,4 Sabores - Fortaleza ,4 SABORES *G* - FORTALEZA,10682,20.99,"Carne de sol, macaxeira, mussarela, Catupiry Original, orégano."
+AMICIS - 4 SABORES GRANDES,4 Sabores - Italiana ,4 SABORES *G* - ITALIANA,10683,15.99,"Rúcula, tomate seco e mussarela."
+AMICIS - 4 SABORES GRANDES,4 Sabores - Marguerita,4 SABORES *G* - MARGUERITA,10684,14.99,"Mussarela, tomate fresco, manjericão e orégano."
+AMICIS - 4 SABORES GRANDES,4 Sabores - Mussarela ,4 SABORES *G* - MUSSARELA,10685,14.99,"Molho de tomate artesanal, muita mussarela e orégano."
+AMICIS - 4 SABORES GRANDES,4 Sabores - Pepperoni cream cheese ,4 SABORES *G* - CREAM PEPPERONNI ,10686,20.99,"Pepperoni, mussarela, orégano e cream cheese."
+AMICIS - 4 SABORES GRANDES,4 Sabores - Pepperoni ,4 SABORES *G* - TRAD PEPPERONNI,10687,19.99,"Pepperoni, mussarela e orégano."
+AMICIS - 4 SABORES GRANDES,4 Sabores - Portuguesa ,4 SABORES *G* - PORTUGUESA,10688,16.99,"Calabresa, mussarela, azeitona, ovo, presunto, cebola e orégano."
+AMICIS - 4 SABORES GRANDES,4 Sabores - Quatro Mineiros,4 SABORES *G* - QUATRO MINEIROS,10689,19.99,"Mussarela, Catupiry Original, provolone, gorgonzola e orégano."
+AMICIS - 4 SABORES GRANDES,4 Sabores - Samba do Amicis ,4 SABORES *G* - SAMBA DO AMICIS,10690,17.99,"Linguiça italiana, bacon, mussarela, cebola roxa, cebolinha e orégano."
+AMICIS - 4 SABORES GRANDES,4 Sabores - Vegetariana,4 SABORES *G* - VEGETARIANA,10691,16.99,"Mussarela, tomate fresco, pimentão, cebola, azeitonas, champignons frescos."
+AMICIS - ADICIONAIS INDIVIDUAL,Pepperoni,**ADC - 30G PEPPERONI,10710,7.9,30g
+AMICIS - ADICIONAIS INDIVIDUAL,Linguiça Italiana,**ADC - 15G L TOSC PRE ASSAD,10711,3.9,15g
+AMICIS - ADICIONAIS INDIVIDUAL,Presunto,**ADC - 10G PRESUNTO RALADO,10712,2.9,10g
+AMICIS - ADICIONAIS INDIVIDUAL,Ovo,**ADC - 25G OVO COZIDO,10713,2.9,25g
+AMICIS - ADICIONAIS INDIVIDUAL,Catupiry original,**ADC - 30G CATUPIRY ORIGINAL,10714,5.9,30g
+AMICIS - ADICIONAIS INDIVIDUAL,Cream Cheese,**ADC - 30G CREAM CHEESE,10715,4.9,30g
+AMICIS - ADICIONAIS INDIVIDUAL,Gorgonzola,**ADC - 10G GORGONZOLA,10716,5.9,10g
+AMICIS - ADICIONAIS INDIVIDUAL,Champignon fresco,**ADC - 15G COGUMELO PARIS,10717,4.9,15g
+AMICIS - ADICIONAIS INDIVIDUAL,Milho,**ADC - 10G MILHO VERDE,10718,1.9,20g
+AMICIS - ADICIONAIS INDIVIDUAL,Alho frito,**ADC - FLZ ALHO FRITO,10719,0.9,2g
+AMICIS - ADICIONAIS GDE,Bacon,**ADC - 50G BACON PRE ASSAD,10732,15.9,50g
+AMICIS - ADICIONAIS GDE,Calabresa,**ADC - 100G CALABRESA,10733,9.9,100g
+AMICIS - ADICIONAIS GDE,Pepperoni,**ADC - 80G  PEPPERONI,10734,15.9,80g
+AMICIS - ADICIONAIS GDE,Linguiça Italiana,**ADC - 50G L TOSC PRE ASSAD,10735,9.9,50g
+AMICIS - ADICIONAIS GDE,Presunto,**ADC - 40G PRESUNTO RALADO,10736,7.9,40g
+AMICIS - ADICIONAIS GDE,Ovo,**ADC - 100G OVO COZIDO,10737,6.9,100g
+AMICIS - ADICIONAIS GDE,Catupiry original,**ADC - 80G CATUPIRY ORIGINAL,10738,12.9,80g
+AMICIS - ADICIONAIS GDE,Cream Cheese,**ADC - 80G CREAM CHEESE,10739,10.9,80g
+AMICIS - ADICIONAIS GDE,Gorgonzola,**ADC - 30G GORGONZOLA,10740,14.9,30g
+AMICIS - ADICIONAIS GDE,Champignon fresco,**ADC - 50G COGUMELO PARIS,10741,12.9,50g
+AMICIS - ADICIONAIS GDE,Milho,**ADC - 30G MILHO VERDE,10742,3.9,30g
+AMICIS - ADICIONAIS GDE,Alho frito,**ADC - FLZ ALHO FRITO,10743,2.9,5g
+AMICIS - ADICIONAIS INDIVIDUAL,Bacon,**ADC - 20G BACON PRÉ ASSAD,10744,7.9,20g
+AMICIS - ADICIONAIS INDIVIDUAL,Calabresa,**ADC - 30G CALABRESA,10745,3.9,30g
+AMICIS - 4 SABORES GRANDES,Suíno defumado com geleia de pimenta artesanal.,4 SABORES *G* - SUINA,10800,20.99,"Lombo suíno desfiado, cebola roxa em tiras, orégano, mussarela, cream cheese e geleia de pimenta artesanal."
+AMICIS - PIZZAS GRANDES,Suíno defumado com geleia de pimenta artesanal.,PIZZA *G* - SUINA,10801,79.9,"Lombo suíno desfiado, cebola roxa em tiras, orégano, mussarela, cream cheese e geleia de pimenta artesanal."
+AMICIS - MEIO A MEIO GRANDES,Suíno defumado com geleia de pimenta artesanal,METADE *G* - SUINA,10802,39.95,"Lombo suíno desfiado, cebola roxa em tiras, orégano, mussarela, cream cheese e geleia de pimenta artesanal ."
+AMICIS - PIZZAS INDIVIDUAIS,Suíno defumado com geleia de pimenta artesanal.,PIZZA *P* - SUINA,10803,42.9,"Lombo suíno desfiado, cebola roxa em tiras, orégano, mussarela, cream cheese e geleia de pimenta artesanal."
