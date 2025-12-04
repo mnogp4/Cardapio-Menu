@@ -309,6 +309,13 @@ Outros,Alface e tomate,ADC - ALFACE E TOMATE,45133,2.9,Alface e tomate em rodela
 Outros,Cebola caramelizada,ADC - CEBOLA CARAMELIZADA,45134,2.9,Cebola caramelizada. Item adicional servido dentro do burger.
 Outros,Burger Suíno,ADC - BLEND SUINO BUK,45154,8.9,Blend de carnes bovina. Item adicional servido dentro do burger.
 Escolha 2 itens e faça sua Mistura,Escolha dois pratos diversos.,COMBO JUNTOS E MISTURADOS,45217,64.9,
+Escolha Dois Pratos Diversos,Devasso com Molho Especial da Casa,DEVASSO MLH ROSE+SALADA,45218,0.0,"Pão brioche, 2 pedaços de filé de frango crocante, cheddar, cebola roxa e a deliciosa maionese da casa."
+Escolha Dois Pratos Diversos,Sóbrio com Molho Especial da Casa,SOBRIO MLH ROSE+SALADA,45219,0.0,"Pão brioche, burger de falafel, cheddar cremoso, picles de pepino e a deliciosa maionese da casa."
+Escolha Dois Pratos Diversos,Insano com Molho Especial da Casa,INSANO MLH ROSE+SALADA,45220,0.0,"Pão brioche, 2 pedaços de filé de frango crocante, cheddar, salada coleslaw, picles de pepino e a deliciosa maionese da casa."
+Escolha Dois Pratos Diversos,Old Man Com Molho Especial da Casa,OLD MAN MLH ROSE+SALADA,45221,0.0,"Pão brioche, blend bovino, cheddar e a deliciosa maionese da casa."
+Escolha Dois Pratos Diversos,Desejo com Molho Especial da Casa,DESEJO MLH ROSE+SALADA,45222,3.9,"Pão brioche, 2 pedaços de filé de frango crocante, cheddar, bacon em tiras, cebola roxa e a deliciosa maionese da casa."
+Escolha Dois Pratos Diversos,Divindade com Molho Especial da Casa,DIVINDADE MLH ROSE+SALADA,45223,4.9,"Pão brioche, blend bovino, cheddar, cream cheese e cebola crispy e a deliciosa maionese da casa."
+Escolha Dois Pratos Diversos,Clímax com Molho especial da Casa,CLIMAX MLH ROSE+SALADA,45224,5.9,"Pão brioche, blend bovino, carne de sol desfiada, queijo coalho grelhado e picles de cebola roxa e a deliciosa maionese da casa."
 Vai uma saladinha?,Quero salada,**COM** FLZ SALADA BURGER,49000,0.0,Salada de alface americana e tomate.
 Extras,Creme de avelã,EXT - CREME DE AVELA 30G,55008,3.9,Creme de avelã.
 Extras,Doce de leite cremoso,EXT - CREME DOCE LEITE 30G,55058,3.9,Doce de leite cremoso.
@@ -354,10 +361,276 @@ Outros,Smash Pork Cheese Onion,LCL - SMS PORK ONION,60490,21.9,"Pão brioche, 2 
 Outros,Smash Cheese Onion,LCL - SMS BOV ONION,60491,24.9,"Pão brioche, 2 carnes smash (fininhas) de 40g cada, exclusivo blend de queijos, cebola caramelizada e molho (servido diretamente no burger)"
 Outros,Old Man (Suíno),LCL - BGR PORK OLDMAN,60720,24.9,"Blend de toscana com suíno e cheddar, no pão com gergelim. Acompanha 1 molho."
 Outros,Old Man (Bovino),LCL - BGR BOV OLDMAN,60721,27.9,"Blend de carnes da casa e cheddar, no pão com gergelim. Acompanha 1 molho."
+PETISCOS,Batata frita,PETISCO - 120G BATATA FRITA,80001,13.9,Porção de 120g. 
+PETISCOS,Frango frito,PETISCO - 150G FGO FRITO ,80002,17.9,"Frango em tiras empanado, com mix de gergelim (150g)."
+PETISCOS,Croquetas de carne de sol,PETISCO - 8UN CROQ SOL,80003,19.9,Croquetas de carne de sol empanadas (8 unidades).
+PETISCOS,Sticks de bacon,PETISCO - 150G BACON EMPANADO,80004,19.9,Tiras de bacon empanadas na farinha panko (150g).
+PETISCOS,Onion Rings,PETISCO - 8 UN ONION RINGS,80005,20.9,Porção de onion rings (8 unidades).
+PETISCOS,Batata com Cheddar e Bacon,MIX - BAT CHEDDAR BACON,80009,27.9,Porção de batatas fritas com creme de cheddar e bacon crocante.
+PETISCOS,Mix Frango Frito e Batata,MIX - FGO FRITO + BATATA FRITA,80010,29.9,Porção de batatas fritas e frango em tiras empanado com mix de gergelim.
+PETISCOS,Mix de Croquetas e Onion Rings,MIX - CROQ SOL + ONION RINGS,80011,39.9,Porção de croquetas de carne de sol empanadas e onion rings.
+PETISCOS,Porção de Onion Rings e Batata,MIX - ONION + BATATA,80012,33.9,Porção de onion ringss e batatas fritas.
+Bebidas,Água Crystal Sem Gás,AGUA SEM GAS - 500ML,80022,4.9,Garrafa 500ml
+Bebidas,Água Crystal Com Gás,AGUA COM GAS - 500ML,80023,4.9,Garrafa 500ml
+Bebidas,Coca-Cola Mini,COCA COLA ORIGINAL - 250ML,80024,5.9,Garrafa 250ml
+Bebidas,Coca-Cola Sem Açúcar Mini,COCA COLA SEM ACUCAR - 250ML,80025,5.9,Garrafa 250ml
+Bebidas,Refrigerante São Geraldo,SAO GERALDO - 250ML,80026,5.9,Garrafa 250ml
+Bebidas,Fanta Uva Lata,FANTA UVA - 350ML,80027,6.9,Lata 350ml
+Bebidas,Coca-Cola Lata,COCA COLA ORGINAL - 350ML,80028,6.9,Lata 350ml
+Bebidas,Coca-Cola Sem Açúcar Lata,COCA COLA SEM ACUCAR - 350ML,80029,6.9,Lata 350ml
+Bebidas,Fanta Laranja Lata,FANTA LARANJA - 350ML,80030,6.9,Lata 350ml
+Bebidas,Guaraná Antarctica Lata,GUARANA ANTARTICA - 350ML,80031,6.9,Lata 350ml
+Bebidas,Coca-Cola,COCA COLA ORGINAL - 600ML,80032,9.9,Garrafa 600ml
+Bebidas,Coca-Cola Sem Açúcar,COCA COLA SEM ACUCAR - 600ML,80033,9.9,Garrafa 600ml
+Cervejas,Cerveja Heineken,CERVEJA HEINKEN LONGNECK - 355ML,80034,10.9,Long Neck 330ml
+Cervejas,Cerveja Tiger,CERVEJA TIGER LATA 350ML,80035,7.9,Cerveja Puro Malte Crystal Tiger Lata 350ml
+Sucos Naturais,Suco Natural de Laranja ,SUCO LARANJA - 300ML,80036,10.9,Garrafa 300ml
+PETISCOS,Faláfel,PETISCO - 10UN FALAFEL,80039,15.9,Porção de faláfel frito (10 unidades).
+Bebidas,Suco Del Valle Frut Uva 250ml,SUCO UVA DEL VALE 250ML,80041,5.9,Garrafa 250ml
+Bebidas,Refrigerante Antarctica Guaraná 200ml,GUARANÁ ANTARTICA MINI,80045,5.9,Garrafa 200ml
+Bebidas,Chá Ice Tea Leão Limão 250ml,ICE TEA - LIMAO 250ML,80046,5.9,Garrafa 250ml
+Bebidas,Chá Ice Tea Leão Pêssego 250ml,ICE TEA - PESSEGO 250ML,80047,5.9,Garrafa 250ml
+Acompanhamentos,Arroz branco,ACP - ARROZ BRANCO,90001,0.0,Arroz branco.
+Acompanhamentos,Arroz à grega,ACP - ARROZ A GREGA,90002,0.0,Arroz branco refogado com uvas passas e legumes.
+Acompanhamentos,Arroz cremoso,ACP - ARROZ CREMOSO,90003,0.0,"Arroz branco com molho de queijos, finalizado com salsinha fresca."
+Acompanhamentos,Baião de dois cremoso,ACP - BAIAO DE DOIS CREMOSO,90004,0.0,Baião de dois molhadinho no molho de queijos da casa.
+Acompanhamentos,Farofa crispy,ACP - FAROFA CRISPY,90005,0.0,Farofa temperada com cebola frita.
+Acompanhamentos,Feijão carioca,ACP - FEIJAO CARIOCA,90006,0.0,Clássico feijão carioquinha.
+Acompanhamentos,Farofa de cuscuz com ovo,ACP - CUSCUZ COM OVO,90007,0.0,Farofa de cuscuz com ovos mexidos.
+Acompanhamentos,Batata frita,ACP - BATATA FRITA,90008,0.0,Batata frita.
+Acompanhamentos,Batata palha,ACP - BATATA PALHA,90009,0.0,Batata palha.
+Acompanhamentos,Purê de batata,ACP - PURE BATATA,90010,0.0,Purê de batata inglesa.
+Acompanhamentos,Salada mini menu com molho caesar,ACP - SALADA MENU (M CEASAR + RICOTA),90011,0.0,"Alface americana temperada com molho caesar, tomate, cenoura e ricota."
+Acompanhamentos,Espaguete ao sugo,ACP - ESPAGUETE AO SUGO,90012,0.0,Espaguete granoduro ao molho de tomates da casa.
+Acompanhamentos,Espaguete ao molho de queijos,ACP - ESPAGUETE MOLHO DE QUEIJOS,90013,0.0,Espaguete granoduro ao molho de queijos.
+Acompanhamentos,Espaguete puxado em manteiga de ervas,ACP - ESPAGUTE MANT. ERVAS,90014,0.0,Espaguete granoduro puxado na manteiga de ervas frescas.
+Acompanhamentos,Caponata de berinjela e abrobrinha,ACP - CAPONATA DE BERINJELA COM ABOBRINHA,90015,0.0,"Berinjela, abobrinha, cebola, uva passas e azeitonas."
+Acompanhamentos,Fusilli integral ao sugo,ACP - FUSILLI INTEGRAL AO SUGO,90016,0.0,Fusilli integral ao molho de tomates da casa.
+Acompanhamentos,Fusilli integral ao molho de queijos,ACP - FUSILLI INTEGRAL MOLHO QUEIJOS,90017,0.0,Fusilli integral ao molho de queijos.
+Acompanhamentos,Fusilli integral puxado em manteiga de ervas,ACP - FUSILI INTEGRAL MANT. ERVAS,90018,0.0,Fusilli integral puxado na manteiga de ervas frescas.
+Pratos Executivos,Creme de frango,EXC - CREME DE FRANGO,90019,19.9,Creme de frango desfiado. 
+Pratos Executivos,Vatapá de frango,EXC - VATAPÁ DE FRANGO,90020,19.9,Vatapá de frango. 
+Pratos Executivos,Panqueca de frango,EXC - PANQUECA FGO QUEIJOS,90021,22.9,"Panquecas recheadas com frango desfiado cremoso, finalizadas com molho de queijos e salsinha fresca."
+Pratos Executivos,Panqueca de ricota com espinafre,EXC - PANQUECA RICOTA SUGO,90022,22.9,"Panquecas de ricota e espinafre, finalizadas com o  molho de tomates frescos e salsinha."
+Pratos Executivos,Frango grelhado,EXC - FILE DE FGO GRELHADO,90023,22.9,Filé de peito frango grelhado.
+Pratos Executivos,Frango ao molho de queijos,EXC - FRANGO MOLHO QUEIJOS,90024,24.9,"Filé de peito frango em tiras, molho de queijos e salsinha fresca."
+Pratos Executivos,Frango teriyaki,EXC - FRANGO TERYIAKI,90025,22.9,"Filé de peito frango em tiras, molho agridoce a base de shoyu e gengibre, finalizado com mix de grãos."
+Pratos Executivos,Frango salsa de ervas,EXC - FRANGO SALSA ERVAS,90026,24.9,"Filé de peito frango em tiras, molho de ervas frescas a base de azeite."
+Pratos Executivos,Tiras de carne ao molho de queijos,EXC - TIRAS DE CARNE QUEIJOS,90027,32.9,"Tiras de carne, molho de queijos e salsinha fresca."
+Pratos Executivos,Strogonoff de frango,EXC - ESTROG FRANGO,90028,26.9,Strogonoff de frango.
+Pratos Executivos,Strogonoff de carne,EXC - ESTROG CARNE,90029,32.9,Strogonoff de carne.
+Pratos Executivos,Calabresa acebolada,EXC - CALABRESA ACEBOLADA,90030,19.9,Calabresa refogada com cebola branca.
+Pratos Executivos,Frango acebolado,EXC - FRANGO ACEBOLADO,90031,19.9,Tirinhas de frango refogadas com cebola braca.
+Pratos Executivos,Frango frito thai com teriyaki,EXC - FRANGO FRITO THAY,90032,23.9,Tiras de filé de frango empanados na farinha panko e mix de gergelim finalizado com molho teriyaki e cebolinha fresca.
+Pratos Executivos,Camarão ao molho de queijos,EXC - CAMARAO MOLHO QUEIJOS,90033,39.9,"Filé de camarão, molho de queijos e salsinha fresca."
+Pratos Executivos,Camarão ao sugo e ervas,EXC - CAMARAO SUGO E ERVAS,90034,39.9,"Filé de camarão, molho de tomate caseiro com azeite de ervas frescas."
+Pratos Executivos,Carne moída ao molho de queijos,EXC - CARNE MOIDA QUEIJOS,90035,26.9,"Carne moída, molho de queijos e salsinha fresca."
+Pratos Executivos,Carne moída ao sugo e ervas,EXC - CARNE MOIDA SUGO E ERVAS,90036,26.9,"Carne moída, molho de tomate caseiro com azeite de ervas frescas."
+Pratos Executivos,Frango empanado,EXC - FRANGO CROC TRADICIONAL,90037,19.9,Filé de peito de frango empanado na farinha panko.
+Pratos Executivos,Frango à parmegiana,EXC - FRANGO CROC A PARMEGIANA,90038,25.9,"Filé de peito de frango empanado na farinha panko, molho de tomates frescos e queijo mussarela."
+Pratos Executivos,Frango crocante teriyaki,EXC - FRANGO CROC TERYIAKI,90039,22.9,"Filé de peito de frango empanado na farinha panko, molho agridoce a base de shoyu e gengibre, finalizado com mix de gergelim."
+Pratos Executivos,Frango crocante ranch,EXC - FRANGO CROC RANCH,90040,22.9,"Filé de peito de frango empanado na farinha panko, molho ranch, levemente cítrico e apimentado com base de maionese."
+Pratos Executivos,Creme de carne de sol,EXC - CREME DE CARNE DE SOL,90041,29.9,Carne de sol desfiada cremosa. 
+Pratos Executivos,Tiras de carne acebolada,EXC - TIRAS DE CARNE ACEBOLADA,90042,29.9,Tiras de carne refogada com cebola branca.
+Pratos Executivos,Frango mostarda e mel,EXC - FRANGO MOSTARDA E MEL,90043,23.9,"Filé de peito frango em tiras, molho mostarda e mel."
+Massas,Monte sua massa,MASSA PARA MONTAR,90044,27.9,"1 massa, 1 molho, 5 itens + 1 Topping."
+Escolha sua massa,Espaguete,ESPAGUETE,90045,0.0,Massa espaguete tipo granoduro.
+Escolha sua massa,Fusilli integral,FUSILLI INTEGRAL,90046,0.0,Massa integral tipo fusilli.
+Escolha sua massa,Fettuccini,FETTUCINNI,90047,0.0,Massa fettuccini tipo granoduro.
+Escolha seu molho,Molho de queijos,MOLHO DE QUEIJOS,90048,0.0,Molho a base de queijos.
+Escolha seu molho,Molho sugo,MOLHO SUGO,90049,0.0,Molho de tomate artesanal.
+Escolha seu molho,Molho gorgonzola,MOLHO GORGONZOLA,90050,1.99,Molho gorgonzola.
+Escolha seu molho,Molho branco,MOLHO BRANCO,90051,0.0,Molho branco tradicional.
+Escolha seu molho,Molho de tomates e azeite de ervas frescas,MOLHO DE TOMATE E ERVAS,90052,0.0,Molho de tomate com azeite de ervas frescas.
+Escolha os ingredientes,Frango em cubos,FRANGO EM CUBOS,90053,0.0,Frango grelhado em cubos.
+Escolha os ingredientes,Carne de sol desfiada,CARNE DE SOL DESFIADA,90054,0.99,Carne de sol desfiada.
+Escolha os ingredientes,Carne em cubos,CARNE EM CUBOS,90055,1.99,Carne em cubos.
+Escolha os ingredientes,Camarão,CAMARAO,90056,4.99,Filé de camarão.
+Escolha os ingredientes,Calabresa acebolada,CALABRESA ACEBOLADA,90057,0.0,Calabresa refogada com cebola branca.
+Escolha os ingredientes,Bacon,BACON,90058,0.0,Bacon frito.
+Escolha os ingredientes,Carne moída,CARNE MOIDA,90059,0.0,Carne moída.
+Escolha os ingredientes,Salmão em lascas,SALMAO EM LASCAS,90060,4.99,Salmão em lascas.
+Escolha os ingredientes,Peito de peru ralado,PEITO DE PERU RALADO,90061,0.0,Peito de peru ralado.
+Escolha os ingredientes,Frango desfiado,FRANGO DESFIADO,90062,0.0,Frango desfiado.
+Escolha os ingredientes,Caponata de berinjela com abobrinha,CAPONATA DE BERINJELA COM ABOBRINHA,90063,0.0,"Berinjela, abobrinha, cebola, uva passas e azeitonas."
+Escolha os ingredientes,Presunto,PRESUNTO PICADO,90064,0.0,Presunto picadinho.
+Escolha os ingredientes,Milho verde,MILHO,90065,0.0,Milho verde.
+Escolha os ingredientes,Ovo de codorna,OVO DE CODORNA (CORTADO),90066,0.0,Ovo de codorna.
+Escolha os ingredientes,Tomate seco,TOMATE SECO,90067,0.0,Tomate seco picado.
+Escolha os ingredientes,Queijo coalho,QUEIJO COALHO,90068,0.0,Queijo coalho ralado.
+Escolha os ingredientes,Requeijão Catupiry® Original,REQUEIJAO CATUPIRY,90069,0.99,Requeijão cremoso Catupiry® Original.
+Escolha os ingredientes,Cream Cheese,CREAM CHEESE,90070,0.0,Cream cheese.
+Escolha os ingredientes,Queijo ricota,QUEIJO RICOTA,90071,0.0,Queijo ricota ralado.
+Escolha os ingredientes,Queijo gorgonzola,QUEIJO GORGONZOLA,90072,0.99,Queijo gorgonzola em pedaços.
+Escolha os ingredientes,Queijo mussarela,QUEIJO MUSSARELA,90073,0.0,Queijo mussarela.
+Escolha os ingredientes,Queijo minas,QUEIJO MINAS,90074,0.0,Queijo minas ralado.
+Massas,Queijo parmesão,QUEIJO PARMESÃO (FINALIZAÇÃO),90075,0.0,queijo parmesão ralado.
+Escolha os ingredientes,Tomate em cubos,TOMATE EM CUBOS,90076,0.0,Tomate em cubos.
+Escolha os ingredientes,Cebola branca,CEBOLA EM CUBOS,90077,0.0,Cebola branca refogada.
+Escolha os ingredientes,Refogado colorido,MIX DE REFOGADOS,90078,0.0,"Refogado de cebola branca, tomate e pimentão."
+Escolha os ingredientes,Cebola caramelizada,CEBOLA CARAMELIZADA,90079,0.0,Cebola caramelizada.
+Massas,Cebola crispy,CEBOLA CRISPY (FINALIZAÇÃO),90080,0.0,Cebola crispy.
+Escolha os ingredientes,Cenoura ralada,CENOURA RALADA,90081,0.0,Cenoura ralada.
+Massas,Cheiro verde,MIX DE CHEIRO VERDE (FINALIZAÇÃO),90082,0.0,Coentro e cebolinha picados.
+Massas,Salsinha,SALSINHA (FINALIZAÇÃO),90083,0.0,Salsinha picada.
+Poke Nordestino,Poke Nordestino,POKE PARA MONTAR,90084,19.9,Monte seu Poke Nordestino. Escolha sua base: Cuscuz ou Baião de dois - os dois pratos eleitos os mais tipicamente cearenses. Depois escolha uma proteína e dois acompanhamentos.
+Poke Nordestino,Cuscuz,POKE DE CUSCUZ - 150G,90085,0.0,Base de cuscuz com manteiga.
+Poke Nordestino,Arroz de leite,POKE DE ARROZ CREM - 250G,90086,0.0,Base de arroz branco cremoso com molho a base de leite e queijos.
+Poke Nordestino,Baião de dois cremoso,POKE DE BAIAO - 250G,90087,0.0,Base de baião de dois cremoso.
+Poke Nordestino,Ovo frito,ADC - 1UN OVO FRITO,90088,0.0,Ovo frito inteiro.
+Poke Nordestino,Peito de peru,ADC - 40G P PERU RALADO,90089,0.0,Peito de peru ralado.
+Poke Nordestino,Calabresa acebolada,ADC - 60G CALABRESA ACEBOLADA,90090,0.0,Calabresa fatiada refogada com cebola branca.
+Poke Nordestino,Carne moída,ADC - 60G CARNE MOIDA,90091,0.0,Carne moída refogada com mix de especiarias.
+Poke Nordestino,Carne de sol acebolada,ADC - 60G CARNE SOL C CEB ROXA,90092,5.99,Carne de sol desfiada refogada com cebola roxa.
+Poke Nordestino,Frango desfiado,ADC - 60G FGO DESFIADO,90093,0.0,Frango desfiado refogado com cebola roxa.
+Poke Nordestino,Camarão,ADC - 70G CAMARAO,90094,14.99,Camarões limpos temperados com azeite de ervas.
+Poke Nordestino,Frango acebolado,ADC - 70G FGO ACEBOLADO,90095,0.0,Tiras de frango refogadas com cebola branca.
+Poke Nordestino,Tiras de carne,ADC - 70G TIRAS CARNE GRELHADA,90096,9.99,Tiras de carne bovina grelhadas.
+Poke Nordestino,Caponata de berinjela e abobrinha,ADC - 90G CAPONATA,90097,0.0,"Berinjela, abobrinha, cebola, uvas passas e azeitonas."
+Poke Nordestino,Queijo coalho grelhado,ADC - 30G Q COALHO GRELHADO,90098,0.0,Queijo coalho grelhado em cubinhos.
+Poke Nordestino,Queijo minas,ADC - 30G Q MINAS RALADO,90099,0.0,Queijo minas ralado.
+Poke Nordestino,Ricota,ADC - 40G Q RICOTA RALADO,90100,0.0,Queijo ricota ralado.
+Poke Nordestino,Presunto,ADC - 30G PRESUNTO PICADO,90101,0.0,Presunto picadinho.
+Poke Nordestino,Refogado colorido,ADC - 30G MIX LEG REFOG,90102,0.0,"Refogado de cebola branca, tomate e pimentão."
+Poke Nordestino,Batata palha,ADC - 20G BATATA PALHA,90103,0.0,Batata palha.
+Poke Nordestino,Milho verde,ADC - 30G MILHO VERDE,90104,0.0,Milho verde.
+Poke Nordestino,Cebola crispy,ADC - 20G CEBOLA CRISPY,90105,0.0,Tiras fininhas de cebola empanadas e fritas.
+Poke Nordestino,Cebola caramelizada,ADC - 30G CEBOLA CARAMELIZADA,90106,0.0,Cebola caramelizada.
+Poke Nordestino,Cenoura,ADC - 30G CENOURA RALADA,90107,0.0,Cenoura ralada.
+Poke Nordestino,Tomate,ADC - 30G TOMATE CUBOS,90108,0.0,Tomate cortado em cubinhos.
+Poke Nordestino,Tomate seco,ADC - 30G TOMATE SECO,90109,0.0,Tomate seco.
+Poke Nordestino,Ovo de codorna,ADC - 3UN OVO CORDONA CORTADO,90110,0.0,Ovos de codorna cozidos.
+Poke Nordestino,Bacon,ADC - 20G BACON GRELHADO,90111,1.99,Fatias de bacon grelhadas e cortadas em pedaços.
+Poke Nordestino,Cream Cheese,ADC - 40G CREAM CHEESE,90112,0.0,Cream cheese cremoso.
+Poke Nordestino,Requeijão Catupiry® Original,ADC - 40G REQ CATUPIRY,90113,1.99,Requeijão cremoso Catupiry® Original
+Poke Nordestino,Feijão cremoso,ADC - 60G FEJAO CREMOSO,90114,0.0,Feijão com molho cremoso de queijos.
+Poke Nordestino,Farofa Crispy,ADC - 40G FAROFA CRISPY,90115,0.0,Farinha de mandioca puxada na manteiga com cebola frita.
+Poke Nordestino,Cheiro verde,ADC - 2G MIX CHEIRO VERDE,90116,0.0,Coentro e cebolinha picados.
+Poke Nordestino,"Não, obrigado!",SEM*** MIX CHEIRO VERDE,90117,0.0,
+Poke Nordestino,Ovo frito,EXT - 1UN OVO FRITO,90118,1.99,Ovo frito inteiro.
+Poke Nordestino,Bacon,EXT - 20G BACON GRELHADO,90119,5.99,Fatias de bacon grelhadas e cortadas em pedaços.
+Poke Nordestino,Cebola crispy,EXT - 20G CEBOLA CRISPY,90120,1.99,Tiras fininhas de cebola empanadas e fritas.
+Poke Nordestino,Milho verde,EXT - 30G MILHO VERDE,90121,1.99,Milho verde.
+Poke Nordestino,Queijo coalho grelhado,EXT - 30G Q COALHO GRELHADO,90122,3.99,Queijo coalho grelhado em cubinhos.
+Poke Nordestino,Tomate,EXT - 30G TOMATE CUBOS,90123,1.99,Tomate cortado em cubinhos.
+Poke Nordestino,Ovo de codorna,EXT - 3UN OVO CORDONA CORTADO,90124,2.99,Ovos de codorna.
+Poke Nordestino,Calabresa acebolada,EXT - 60G CALABRESA ACEBOLADA,90125,3.99,Calabresa refogada com cebola branca.
+Poke Nordestino,Carne de sol acebolada,EXT - 60G CARNE SOL C CEB ROXA,90126,13.99,Carne de sol desfiada refogada com cebola roxa.
+Poke Nordestino,Frango desfiado,EXT - 60G FGO DESFIADO,90127,6.99,Frango desfiado refogado com cebola roxa
+Saladas,Salada do meu jeito!,SALADA DO MEU JEITO,90128,25.9,A Soodeli traz para você a opção de montar a sua própria salada! Do seu jeito!
+Saladas,Alface americana,ALFACE AMERICANA 80G,90129,0.0,Base de alface americana para a sua salada.
+Saladas,Fusilli integral e alface americana,FUSILI 70G + MIX ALF 80G,90130,0.0,"Base de fusilli integral cozido, alface americana e alface roxa."
+Saladas,Mix de Alfaces,MIX DE ALFACES 80G,90131,0.0,Base de alface americana e alface roxa.
+Saladas,Camarão,CAMARAO GRELHADO 70G,90132,14.99,Camarão grelhado.
+Saladas,Caponata de berinjela e abobrinha,CAPONATA BERINJELA 80G,90133,0.0,"Berinjela, abobrinha, cebola, uva passas e azeitonas."
+Saladas,Carne do sol,CARNE SOL REFOGADA 60G,90134,5.99,Carne do sol desfiada.
+Saladas,Faláfel,FALAFEL (5UN),90135,0.0,"Bolinhos de grão-de-bico, temperado com especiarias."
+Saladas,Frango desfiado,FGO DESF REFOGADO 60G,90136,0.0,Frango desfiado refogado.
+Saladas,Hamburguer de lentilha,HAMB. LENTILHA (2UNID),90137,0.0,Hambúrguer de lentilha assado.
+Saladas,Peito de peru,PEITO DE PERU RALADO 60G,90138,4.99,Peito de peru ralado.
+Saladas,Castanhas granuladas,CASTANHA TRITURADA 15G,90139,0.0,Castanha de caju granulada.
+Saladas,Cenoura ralada,CENOURA RALADA 25G,90140,0.0,Cenoura ralada.
+Saladas,Grão-de-bico,GRÃO DE BICO 50G,90141,0.0,Grão de bico temperado com especiarias e suco de limão.
+Saladas,Mix de grãos tostados,GRAOS TOSTADOS 10G,90142,0.0,"Aveia, linhaça, gergelim branco e gergelim preto."
+Saladas,Milho verde,MILHO VERDE 20G,90143,0.0,Milho verde.
+Saladas,Ovo de codorna,OVO COD -3 UNID AO MEIO,90144,1.99,Ovos de codorna.
+Saladas,Tomate em cubos,TOMATE EM CUBOS 25G,90145,0.0,Tomate em cubos.
+Saladas,Tomate seco,TOMATE SECO 25G,90146,0.99,Tomate seco.
+Saladas,Queijo coalho,COALHO RALADO 25G,90147,0.0,Queijo coalho ralado.
+Saladas,Queijo parmesão,PARMESAO GRAN MSTR 15G,90148,1.99,Queijo parmesão premium ralado.
+Saladas,Queijo gorgonzola,QUEIJO GORGONZOLA 20G,90149,1.99,Queijo gorgonzola em pedaços.
+Saladas,Queijo minas,QUEIJO MINAS RALADO 25G,90150,0.0,Queijo minas ralado.
+Saladas,Queijo ricota,RICOTA RALADA 25G,90151,0.0,Queijo ricota ralado. 
+Wraps,Wrap do meu jeito,WRAP DO MEU JEITO,90152,19.9,A Soodeli traz para você a opção de montar seu próprio wrap! Do seu jeito!
+Wraps,Alface americana,ADC - 30G ALFACE AMERICANA,90153,0.0,Alface americana.
+Wraps,Frango desfiado,ADC - 60G FGO DESF FABRICA,90154,0.0,Frango desfiado.
+Wraps,Peito de Peru ralado,ADC - 60G P PERU RALADO,90155,4.99,Peito de peru ralado.
+Wraps,Salmão em lascas,ADC - 60G SALMAO LASCAS,90156,14.99,Salmão em lascas.
+Wraps,Carne de sol desfiada,ADC - 60G CARNE SOL REFOGADA,90157,5.99,Carne de sol desfiada.
+Wraps,Hamburguer de lentilha,ADC - 2 UN HAMB LENTILHA,90158,0.0,Hambúrguer de lentilha assado.
+Wraps,Camarão,ADC - 70G CAMARAO,90159,14.99,Camarão temperados com azeite de ervas.
+Wraps,Falafel,ADC - 5UN FALAFEL,90160,0.0,Falafel de grão de bico.
+Wraps,Caponata de berinjela e abobrinha,ADC - 80G CAPONATA,90161,0.0,"Berinjela, abobrinha, cebola, uva passas e azeitonas."
+Wraps,Tomate em cubos,ADC - 20G TOMATE CUBOS,90162,0.0,Tomate em cubos.
+Wraps,Tomate seco,ADC - 30G TOMATE SECO,90163,0.0,Tomate seco.
+Wraps,Cenoura ralada,ADC - 20G CENOURA RALADA,90164,0.0,Cenoura ralada.
+Wraps,Milho verde,ADC - 20G MILHO VERDE,90165,0.0,Milho verde.
+Wraps,Ovo de codorna,ADC - 3UN OVO COD. AO MEIO,90166,0.0,Ovos de codorna.
+Wraps,Mix de grãos assados,ADC - 10G MIX GRAOS ASSADOS,90167,0.0,"Aveia, linhaça, gergelim branco e gergelim preto."
+Wraps,Farofa de croutons,ADC - 10G FAROFA CROUTONS,90168,0.0,Farofa de croutons assados.
+Wraps,Castanhas granuladas,ADC - 10G CASTANHA GRANULADA,90169,0.0,Castanhas granuladas.
+Wraps,Ricota ralada,ADC - 30G Q RICOTA RALADA,90170,0.0,Queijo ricota ralado.
+Wraps,Queijo Minas ralado,ADC - 30G Q MINAS RALADO,90171,0.0,Queijo minas ralado.
+Wraps,Queijo coalho ralado,ADC - 30G Q COALHO RALADO,90172,0.0,Queijo coalho ralado.
+Wraps,Queijo gorgonzola,ADC - 20G Q GORGONZOLA CUBOS,90173,1.99,Queijo gorgonzola em pedaços.
+Wraps,Creme de ricota,ADC - 30G CREME DE RICOTA,90174,0.0,Creme de ricota.
+Wraps,Queijo parmesão ralado,ADC - 15G Q PARMESAO RALADO,90175,1.99,Queijo parmesão premium ralado.
+Wraps,Molho caesar,ADC - 30G MOLHO CAESAR,90176,0.0,Molho clássico a base de queijo parmesão.
+Wraps,Molho sweetchilli,ADC - 20G SWEET CHILLI,90177,0.0,"Molho agridoce asiático a base de vinagre, açúcar e pimenta. "
+Wraps,Molho sweet and sour,ADC - 20G SWEET AND SOUR,90178,0.0,Molho agridoce.
+Wraps,Molho sour cream,ADC - 30G SOUR CREAM,90179,0.0,Molho a base de creme de leite e sumo de limão.
+Wraps,Molho ranch,ADC - 30G MOLHO RANCH,90180,0.0,"Clássico molho americano a base de maionese, creme de leite e ervas."
+Wraps,Molho mostarda e mel,ADC - 30G MOSTARDA MEL,90181,0.0,Clássico molho a base de mel e mostarda amarela. 
+Wraps,Molho balsâmico,ADC - 20G MOLHO BALSAMICO,90182,0.0,Molho agridoce a base de redução de vinagre balsâmico. 
+Wraps,Molho salsa ervas,ADC - 20G MOLHO SALSA ERVAS,90183,0.0,Molho a base de azeite e ervas frescas. 
+Pratos Executivos,Strogonoff de frango,EXECUTIVO 1 - ESTROG FGO,90184,26.9,Strogonoff de frango.
+Pratos Executivos,Tiras de carne acebolada,EXECUTIVO 2 - TIRAS CARNE ACEB,90185,29.9,Tiras de carne refogada com cebola branca.
+Pratos Executivos,Frango crocante teriyaki,EXECUTIVO 3 - FGO CROC TERYIAKI,90186,22.9,"Filé de peito de frango empanado na farinha panko, molho agridoce a base de shoyu e gengibre, finalizado com mix de gergelim."
+Pratos Executivos,Frango à parmegiana,EXECUTIVO 4 - FGO PARMEGIANA,90187,25.9,"Filé de peito de frango empanado na farinha panko, molho de tomates frescos e queijo mussarela."
+Pratos Executivos,Strogonoff de carne,EXECUTIVO 5 - ESTROG CARNE,90188,32.9,Strogonoff de carne.
+Pratos Executivos,Frango ao molho de queijos,EXECUTIVO 6 - FGO QUEIJOS,90189,24.9,"Filé de peito frango em tiras, molho de queijos e salsinha fresca."
+Pratos Executivos,Calabresa acebolada,EXECUTIVO 7 - CALAB ACEBOLADA,90190,25.9,Calabresa refogada com cebola branca.
+Massas,Parrí é aqui!,MASSA 1 - PARRÍ É AQUI ,90191,27.9,"Fettuccini ao molho de queijos, milho, presunto, queijo mussarela, bacon, frango desfiado. Finalizado com parmesão ralado."
+Massas,Aquela à Bolonhesa,MASSA 2 - AQUELA À BOLONHESA,90192,27.9,"Espaguete ao sugo, cebola, carne moída, cenoura ralada, cheiro verde, ovo de codorna. Finalizado com parmesão ralado."
+Massas,Aquela do foco,MASSA 3 - AQUELA DO FOCO ,90193,27.9,"Fusilli integral ao molho de tomate e azeite de ervas, tomate seco, cenoura ralada, caponata de berinjela e abobrinha, frango desfiado, cebola caramelizada e ricota."
+Massas,Chiquezim,MASSA 4 - CHIQUEZIM,90194,27.9,"Espaguete ao sugo, cebola, bacon, camarão, tomate em cubos, cheiro verde. Finalizado com cebola crispy."
+Massas,Sertanejo,MASSA 5 - SERTANEJO,90195,32.9,"Espaguete ao molho de gorgonzola, cebola, carne de sol, queijo parmesão, queijo coalho, queijo mussarela. Finalizado com cheiro verde."
+Massas,Calabria,MASSA 6 - CALABRIA,90196,27.9,"Fettuccini ao molho sugo, calabresa, cebolinha, milho, bacon e tomate em cubos. Finalizado com parmesão."
+Massas,Al Mare,MASSA 7 - AL MARE,90197,36.9,"Fusilli integral ao molho de queijos, cebola, lascas de salmão, camarão, cebolinha, tomate seco. Finalizado com parmesão."
+Poke Nordestino,Gostosin,POKE 1 - GOSTOSIN,90198,19.9,"Dançar um forrozin agarrado com a cumade ou com o cumpade é bem gostosin, mas tu já comeu um cuscuz com uma carninha moída? Ainda mais com milho e ovo frito. É gostosinnn demais!"
+Poke Nordestino,Danado de Bom,POKE 3 - DANADO DE BOM,90200,24.9,"Tá é danado de bom
+Tá danado de bom, meu cumpade 🎵 Cuscuz soltinho, carne de sol desfiada, feijão cremoso e cebola crispy, essa mistura o rei teria cantado!
+"
+Poke Nordestino,Corralinda,POKE 4 - CORRALINDA,90201,19.9,"Tão bonito que chega a estremecer as estribeiras e dar água na boca. Frango desfiado acebolado, milho verde e tomate picadinho, tudo por cima do mais lindo, o arroz de leite cremoso."
+Poke Nordestino,Arretado,POKE 5 - ARRETADO,90202,29.9,"O mais mais que vai estremecer as estribeiras da suas papilas gustativas. Baiozinho tradicional cremoso que só a gente conhece, carne do sol desfiada e refogada com cebola roxada, cebola crispy e bacon pra zé ninguém botar defeito."
+Saladas,Salada de falafel,SALADA 1 - FALAFEL,90203,24.9,"Mix de alfaces (alface americana e alface roxa), grão de bico temperado, tomate em cubos, molho sour cream e falafel."
+Saladas,Salada Frango levinha,SALADA 2 - FGO LEVINHA,90204,24.9,"Mix de alfaces (alface americana e alface roxa), frango desfiado, cenoura ralada, milho, ricota e mix de grãos assados. "
+Saladas,Salada Mediterrânea,SALADA 3 - MEDITERRANEA,90205,25.9,"Mix de alfaces (alface americana e alface roxa), caponata de berinjela e abobrinha, tomate seco, fusilli integral, ovos de codorna, queijo minas ralado. "
+Saladas,Salada Caprese,SALADA 4 - CAPRESE,90206,25.9,"Mix de alfaces (alface americana e alface roxa), fusilli integral, tomate em cubos, tomate seco, queijo minas."
+Saladas,Salada Caesar,SALADA 5 - CAESAR,90207,28.9,"Alface americana, frango desfiado, queijo parmesão, queijo coalho e tomate em cubos."
+Saladas,Salada de Frango com gorgonzola,SALADA 6 - FGO GORGONZOLA,90208,29.9,"Mix de alfaces (alface americana e alface roxa), cenoura ralada, tomate em cubos, frango desfiado, gorgonzola e queijo minas. "
+Wraps,Wrap peru levinho,WRAP 1 - PERU LEVINHO,90209,23.9,"Peito de peru ralado, creme de ricota, cenoura, milho, alface americana e mix de grãos assados, tudo enroladinho no pão folha."
+Wraps,Wrap caeser,WRAP 2 - CAESAR,90210,22.9,"Frango desfiado, queijo parmesão, tomate em cubos, alface americana, molho caesar e farofinha de croutons, tudo enroladinho no pão folha."
+Wraps,Wrap de carne de sol,WRAP 3 - CARNE DE SOL,90211,24.9,"Carne de sol desfiada refogada com cebola roxa, queijo coalho, molho sweet and sour, tomate em cubos, castanhas granuladas e alface americana, tudo enroladinho no pão folha."
+Wraps,Wrap caprese,WRAP 4 - CAPRESE,90212,19.9,"Tomate seco, tomate em cubos, queijo minas, molho de ervas frescas, alface americana e farofinha de croutons, tudo enroladinho no pão folha."
+Wraps,Wrap frango levinho,WRAP 5 - FGO LEVINHO,90213,19.9,"Frango desfiado, creme de ricota, cenoura, milho, alface americana e mix de grãos assados, tudo enroladinho no pão folha."
 Brasil no Pote,Brasil no pote: Creme de frango,POTE - CREME DE FRANGO,99531,26.9,"Creme de frango, arroz branco e batata palha. "
 Brasil no Pote,Brasil no pote: Vatapá de frango,POTE - VATAPÁ FRANGO,99532,28.9,"Vatapá de frango, baião de dois cremoso e farofa de cuscuz com ovo."
 Brasil no Pote,Brasil no pote: Fricassê de frango,POTE - FRICASSE FRANGO,99533,28.9,"Fricassê de frango, arroz à grega e batata palha. "
-Outros,Item promocional,ITEM PROMOCIONAL,100010,0.0,
+ESCOLHA SEUS MOLHOS,Maionese artesanal,A PARTE - MAIONESE TEMPERADA,800130,0.0,
+MOLHO EXTRA,Maionese artesanal,EXT A PARTE - MAIONESE TEMPERADA,800131,2.5,
+ESCOLHA SEUS MOLHOS,Maionese de alho,A PARTE - MAIONESE DE ALHO,800140,0.0,
+MOLHO EXTRA,Maionese de alho,EXT A PARTE - MAIONESE DE ALHO,800141,2.5,
+ESCOLHA SEUS MOLHOS,Barbecue,A PARTE - BARBECUE ARTESANAL,800150,0.0,
+MOLHO EXTRA,Barbecue,EXT A PARTE - BARBECUE ARTESANAL,800151,2.5,
+ESCOLHA SEUS MOLHOS,Ranch,A PARTE - MAIONESE RANCH,800160,0.0,
+MOLHO EXTRA,Ranch,EXT A PARTE - MAIONESE RANCH,800161,2.5,
+ESCOLHA SEUS MOLHOS,Mostarda e mel,A PARTE - MOSTARDA E MEL,800170,0.0,
+MOLHO EXTRA,Mostarda e mel,EXT A PARTE - MOSTARDA E MEL,800171,2.5,
+ESCOLHA SEUS MOLHOS,Ketchup,A PARTE - KETCHUP,800180,0.0,
+MOLHO EXTRA,Ketchup,EXT A PARTE - KETCHUP,800181,2.5,
+ESCOLHA SEUS MOLHOS,Mostarda,A PARTE - MOSTARDA,800190,0.0,
+MOLHO EXTRA,Mostarda,EXT A PARTE - MOSTARDA,800191,2.5,
+ESCOLHA SEUS MOLHOS,Cheddar Cream,A PARTE - MOLHO CHEDDAR,800200,0.0,
+MOLHO EXTRA,Cheddar Cream,EXT A PARTE - MOLHO CHEDDAR,800201,2.5,
+ESCOLHA SEUS MOLHOS,Teriyaki,A PARTE - MOLHO TERIYAKI,800210,0.0,
+MOLHO EXTRA,Teriyaki,EXT A PARTE - MOLHO TERIYAKI,800211,2.5,
+Sucos Naturais,"Suco Natural de Morango, com adoçante",SUCO MORANGO 300ML - ADOCANTE,800370,12.9,Garrafa 300ml
+Sucos Naturais,"Suco Natural de Morango,  com açúcar",SUCO MORANGO 300ML - ACUCAR,800371,12.9,Garrafa 300ml
+Sucos Naturais,"Limonada de limão siciliano, com adoçante",LIMONADA 300ML - ADOCANTE,800380,9.9,Garrafa 300ml
+Sucos Naturais,"Limonada de limão siciliano, com açúcar",LIMONADA 300ML - ACUCAR,800381,9.9,Garrafa 300ml
+ESCOLHA SEUS MOLHOS,Sour Cream,A PARTE - MOLHO SOUR CREAM,800400,0.0,
+MOLHO EXTRA,Sour Cream,EXT A PARTE - MOLHO SOUR CREAM,800401,2.5,
 Outros,Não adoçar,,,0.0,
 Menu de Natal,Lombo suíno especial de Natal,CHEF-SUINO NATALINO,1914,29.9,"Suculento lombo suíno com couve crispy e regado com geleia de pimenta e abacaxi, farofa especial de natal, salpicão de frango e arroz cremoso."
 Outros,,EXTRA QUEIJO PARMESAO,,4.9,
