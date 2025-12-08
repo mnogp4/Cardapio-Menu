@@ -1,89 +1,49 @@
 CATEGORIA,NOME CARDAPIO,NOME PDV,CÓD PDV,PREÇO VENDA CHEIO,DESCRICAO ITEM CARDAPIO
-BEBIDAS - COMBO,,REFRIGERANTE COMBO,70131,14.9,
-BEBIDAS - COMBO,,AGUA COM GAS - 500ML,70132,0,
-BEBIDAS - COMBO,,AGUA SEM GAS - 500ML,70133,0,
-BEBIDAS - COMBO,,COCA COLA LATA ORIGINAL,70134,2.9,
-BEBIDAS - COMBO,,COCA COLA LATA SEM ACUCAR,70135,2.9,
-BEBIDAS - COMBO,,COCA COLA MINI ORIGINAL,70136,1.9,
-BEBIDAS - COMBO,,COCA COLA MINI SEM ACUCAR,70137,1.9,
-BEBIDAS - COMBO,,SAO GERALDO - 200ML,70138,0,
-BEBIDAS - COMBO,,FANTA LARANJA - 350ML,70139,2.9,
-BEBIDAS - COMBO,,GUARANA ANTARTICA - 350ML,70140,2.9,
 POKE ARROZ,Parrudo,POKE ARROZ-PARRUDO,70057,32.9,"Arroz de leite cremoso, carne moída, um ovinho frito e batata palha pra fechar de com força. Lá vem ele, forte, bonitão e cheio de marra."
-BEBIDAS - COMBO,,TRANSF. REFRIGERNTE COMBO,70160,5,
-BEBIDAS - COMBO,,SÃO GERALDO - 350ML,70173,2.9,
-HAPPY HOUR,Cerveja Heineken,HH-CERVEJA HEINEKEN ,70186,9.9,
 POKE DE ARROZ,Xodó especial de Natal,POKE ARROZ-XODO NATAL,1926,33.9,"Fricassê de Frango, batata palha, farofa natalina e arroz de leite. "
 POKE DE ARROZ,Lombo suíno especial de Natal,POKE ARROZ-SUÍNO NATAL,1937,33.9,"Lombo suíno desfiado refogado com cebola roxa, salpicão de frango, farofa natalina e arroz de leite."
-HAPPY HOUR,Bolinha de Lombo Suíno,HH-BOLINHA DE LOMBO SUIN,70188,19.9,Bolinha de lombo suíno com molho de barbecue e tamarindo a parte.
 POKE NORDESTINO - COD CONTROLE,,PRODUTO POKE NORDESTI,70000,0,
-MONTE SEU POKE - ETAPA 0,Poke Nordestino,POKE-PARA MONTAR---------,70041,32.9,Monte seu Poke Nordestino. Escolha sua base: Cuscuz ou Baião de dois - os dois pratos eleitos os mais tipicamente cearenses. Depois escolha uma proteína e dois acompanhamentos.
 POKE NORDESTINO - ETAPA 1,Baião de dois cremoso,ACP-250G BAIAO CREMOS,70001,0,Baião de dois cremoso.
-MONTE SEU POKE - ETAPA 1,Baião de dois cremoso,ACP-250G BAIAO CREMOS,70001,0,Baião de dois cremoso.
 POKE NORDESTINO - ETAPA 1,Cuscuz,ACP-150G CUSCUZ ,70002,0,Cuscuz bem fofinho.
-MONTE SEU POKE - ETAPA 1,Cuscuz,ACP-150G CUSCUZ ,70002,0,Cuscuz bem fofinho.
 POKE NORDESTINO - ETAPA 2,Frango desfiado,ACP-70G FGO DESFIADO,70003,0,Frango desfiado refogado com cebola roxa.
-MONTE SEU POKE - ETAPA 1,Arroz de leite,ACP-250G ARROZ CREMOS,70055,0,Arroz branco super cremoso.
 POKE NORDESTINO - ETAPA 2,Carne de sol desfiada,ACP-70G CARNE SOL,70004,4.9,Carne de sol desfiada refogada com cebola roxa.
-MONTE SEU POKE - ETAPA 1,Arroz Branco,ACP-150G ARROZ BRANCO,70073,0,Arroz branco bem soltinho. 
 POKE NORDESTINO - ETAPA 2,Ovo frito,ACP-1UN OVO FRITO,70005,0,Ovo frito inteiro.
 POKE NORDESTINO - ETAPA 2,Frango acebolado,ACP-70G FGO ACEBOLADO,70006,0,Tiras de frango refogadas com cebola branca.
 POKE NORDESTINO - ETAPA 2,Tiras de carne,ACP-70G TIRAS CARNE,70007,6.9,Tiras de carne bovina grelhadas.
-MONTE SEU POKE - ETAPA 1,Baião de dois soltinho,ACP-150G BAIAO SOLTNH,70080,0,Baião de dois soltinho com feijão de corda.
 POKE NORDESTINO - ETAPA 2,Calabresa acebolada,ACP-60G CALABRSA ACEB,70008,0,Calabresa fatiada refogada com cebola branca.
 POKE NORDESTINO - ETAPA 2,Camarão,ACP-70G CAMARAO,70009,15.9,Camarões limpos temperados com azeite de ervas.
-MONTE SEU POKE - ETAPA 2,Frango desfiado,ACP-70G FGO DESFIADO,70003,0,Frango desfiado refogado com cebola roxa.
 POKE NORDESTINO - ETAPA 2,Carne moída,ACP-70G CARNE MOIDA,70010,0.9,Carne moída refogada com mix de especiarias.
 POKE NORDESTINO - ETAPA 2,Caponata de berinjela e abobrinha,ACP-90G CAPONATA,70011,0,"Berinjela, abobrinha, cebola, uvas passas e azeitonas."
 POKE NORDESTINO - ETAPA 2,Peito de peru,ACP-40G PEITO PERU,70012,0,Peito de peru ralado.
 POKE NORDESTINO - ETAPA 3,Presunto,ACP-30G PRESUNTO PIC,70013,0,Presunto picadinho.
-MONTE SEU POKE - ETAPA 2,Carne de sol desfiada,ACP-70G CARNE SOL,70004,2.9,Carne de sol desfiada refogada com cebola roxa.
 POKE NORDESTINO - ETAPA 3,Tomate,ACP-30G TOMATE CUBOS,70014,0,Tomate cortado em cubinhos.
 POKE NORDESTINO - ETAPA 3,Cenoura,ACP-30G CENOURA RALAD,70015,0,Cenoura ralada.
 POKE NORDESTINO - ETAPA 3,Tomate seco,ACP-30G TOMATE SECO,70016,0.99,Tomate seco.
-MONTE SEU POKE - ETAPA 2,Ovo frito(2und.),ACP-2UN OVO FRITO,70005,0,Ovo frito inteiro.
 POKE NORDESTINO - ETAPA 3,Cebola crispy,ACP-20G CEBOLA CRISPY,70017,0,Tiras fininhas de cebola empanadas e fritas.
 POKE NORDESTINO - ETAPA 3,Cebola caramelizada,ACP-30G CEBOLA CARAME,70018,0,Cebola caramelizada.
-MONTE SEU POKE - ETAPA 2,Calabresa acebolada,ACP-60G CALABRSA ACEB,70008,0,Calabresa fatiada refogada com cebola branca.
 POKE NORDESTINO - ETAPA 3,Bacon,ACP-20G BACON GRELHAD,70019,1.99,Fatias de bacon grelhadas e cortadas em pedaços.
-MONTE SEU POKE - ETAPA 2,Carne moída,ACP-70G CARNE MOIDA,70010,1.9,Carne moída refogada com mix de especiarias.
 POKE NORDESTINO - ETAPA 3,Milho verde,ACP-30G MILHO VERDE,70020,0,Milho verde.
-MONTE SEU POKE - ETAPA 2,Creme de frango,ACP-150G CREME FGO,70062,0,Creme de frango desfiado. 
 POKE NORDESTINO - ETAPA 3,Feijão cremoso,ACP-60G FEIJAO CREMOS,70021,0,Feijão com molho cremoso de queijos.
-MONTE SEU POKE - ETAPA 2,Vatapá de frango,ACP-150G VATAPA,70063,0,Vatapá de frango.
 POKE NORDESTINO - ETAPA 3,Queijo coalho grelhado,ACP-30G Q COALHO GREL,70022,0,Queijo coalho grelhado em cubinhos.
 POKE NORDESTINO - ETAPA 3,Queijo minas,ACP-30G Q MINAS RALAD,70023,0,Queijo minas ralado.
 POKE NORDESTINO - ETAPA 3,Refogado colorido,ACP-30G REFOGADO COLO,70024,0,"Refogado de cebola branca, tomate e pimentão."
-MONTE SEU POKE - ETAPA 2,Fricassê de frango,ACP-100G FRICASSE,70069,0,Fricassê de frango.
 POKE NORDESTINO - ETAPA 3,Ovo de codorna,ACP-3UN OVO CODRNA,70025,0,Ovos de codorna cozidos.
 POKE NORDESTINO - ETAPA 3,Ricota,ACP-40G Q RICOTA RALA,70026,0,Queijo ricota ralado.
-MONTE SEU POKE - ETAPA 2,Lombo Suíno desfiado,ACP-70G SUINO DESFIAD,70084,1.9,Lombo súino desfiado refogado com cebola branca
 POKE NORDESTINO - ETAPA 3,Farofa Crispy,ACP-40G FAROFA CRISPY,70027,0,Farinha de mandioca puxada na manteiga com cebola frita.
-MONTE SEU POKE - ETAPA 2,Tiras de Carne de sol ,ACP-70G TIRAS DE SOL,70100,2.9,
 POKE NORDESTINO - ETAPA 3,Requeijão Cremoso,ACP-40G REQ CREMOSO,70028,0,Requeijão cremoso.
 POKE NORDESTINO - ETAPA 3,Cream Cheese,ACP-40G CREAM CHEESE,70029,0.99,Cream cheese cremoso.
-MONTE SEU POKE - ETAPA 2,Feijoada,ACP-300G FEIJOADA,70206,2.9,
 POKE NORDESTINO - ETAPA 4,Cheiro verde,**FLZ-MIX CHEIRO VERD,70030,0,Coentro e cebolinha picados.
-POKE NORDESTINO - ETAPA 5,No Pote,**EMBALAGEM POTE,70250,0,Embalagem Original Poke Nordestino
-POKE NORDESTINO - ETAPA 5,No Prato,**EMBALAGEM PRATO,70251,0,"Prato de louça (bem chique, viu?)"
 POKE NORDESTINO - EXTRAS,Frango desfiado,**ADC-60G FGO DESFIAD,70031,6.9,Frango desfiado refogado com cebola roxa
-MONTE SEU POKE - ETAPA 3,Tomate,ACP-30G TOMATE CUBOS,70014,0,Tomate cortado em cubinhos.
 POKE NORDESTINO - EXTRAS,Carne de sol acebolada,**ADC-70G CARNE SOL,70032,13.9,Carne de sol desfiada refogada com cebola roxa.
-MONTE SEU POKE - ETAPA 3,Cebola crispy,ACP-20G CEBOLA CRISPY,70017,0,Tiras fininhas de cebola empanadas e fritas.
 POKE NORDESTINO - EXTRAS,Ovo frito,**ADC-1UN OVO FRITO,70033,1.9,Ovo frito inteiro.
-MONTE SEU POKE - ETAPA 3,Bacon,ACP-20G BACON GRELHAD,70019,1.9,Fatias de bacon grelhadas e cortadas em pedaços.
 POKE NORDESTINO - EXTRAS,Calabresa acebolada,**ADC-60G CALABRESA ACEB,70034,3.9,Calabresa refogada com cebola branca.
 POKE NORDESTINO - EXTRAS,Tomate,**ADC-30G TOMATE CUBO,70035,1.9,Tomate cortado em cubinhos.
-MONTE SEU POKE - ETAPA 3,Milho verde,ACP-30G MILHO VERDE,70020,0,Milho verde.
 POKE NORDESTINO - EXTRAS,Cebola crispy,**ADC-20G CEBOLA CRISPY,70036,1.9,Tiras fininhas de cebola empanadas e fritas.
 POKE NORDESTINO - EXTRAS,Bacon,**ADC-20G BACON GRELH,70037,5.9,Fatias de bacon grelhadas e cortadas em pedaços.
 POKE NORDESTINO - EXTRAS,Milho verde,**ADC-30G MILHO VERDE,70038,1.9,Milho verde.
-MONTE SEU POKE - ETAPA 3,Feijão cremoso,ACP-60G FEIJAO CREMOS,70021,0,Feijão com molho cremoso de queijos.
 POKE NORDESTINO - EXTRAS,Queijo coalho grelhado,**ADC-30G Q COALH GRE,70039,3.9,Queijo coalho grelhado em cubinhos.
-MONTE SEU POKE - ETAPA 3,Queijo coalho grelhado,ACP-30G Q COALHO GREL,70022,0,Queijo coalho grelhado em cubinhos.
 POKE NORDESTINO - EXTRAS,Ovo de codorna,**ADC-3UN OVO CODRNA,70040,2.9,Ovos de codorna.
 POKE NORDESTINO,"Monte Seu Poke Nordestino, Ganhe uma Bebida",POKE-PARA MONTAR---------,70041,37.9,Monte seu Poke Nordestino. Escolha sua base: Cuscuz ou Baião de dois - os dois pratos eleitos os mais tipicamente cearenses. Depois escolha uma proteína e dois acompanhamentos.
-MONTE SEU POKE - ETAPA 3,Ovo de codorna,ACP-3UN OVO CODRNA,70025,0,Ovos de codorna cozidos.
 POKE ARROZ,Charloso,POKE ARROZ-CHARLOSO,70058,34.9,"Arroz de leite cremoso, carne de sol acebolada, cebola crispy e ovo de codorna. Pense num poke que chama atenção é esse aqui, charla demais! "
 POKE ARROZ,Ispilicute,POKE ARROZ-ISPILICUTE,70059,28.9,"Arroz de leite cremoso, calabresa, milho e batata palha, esse aqui é estrela onde chega! Ispilicute todo é ele, todo amostrado. Cuida e pede o teu!"
 POKE ARROZ,Corralinda,POKE ARROZ-CORRALINDA,70061,31.9,"Arroz de leite cremoso, frango desfiado acebolado, milho verde e tomate picadinho.Tão bonito que chega a estremecer as estribeiras."
@@ -96,11 +56,8 @@ POKE BAIAO,Marrapaiz,POKE BAIAO- MARRAPAIZ,70042,29.9,"Um baiãozinho de dois cr
 "
 POKE BAIAO,Sustança,POKE BAIAO-SUSTANCA,70043,33.9,"Baião cremoso, frango acebolado, refogado de cebola branca, tomate e pimentão com requeijão cremoso pra aumentar a gostosura. Pra quem tá brocado e precisando de sustança não dá outra."
 POKE BAIAO,Arretado,POKE BAIAO-ARRETADO,70044,35.9,"Baiãozinho tradicional cremoso que só a gente conhece, carne do sol desfiada e refogada com cebola roxa, cebola crispy e bacon pra zé ninguém botar defeito. O mais mais que vai estremecer as estribeiras da suas papilas gustativas. "
-MONTE SEU POKE - ETAPA 3,Farofa Crispy,ACP-40G FAROFA CRISPY,70027,0,Farinha de mandioca puxada na manteiga com cebola frita.
 POKE NORDESTINO - ETAPA 4,"Não, obrigado!",**FLZ-SEM FINALIZAÇÃO,70054,0,
 POKE NORDESTINO - ETAPA 1,Arroz de leite,ACP-250G ARROZ CREMOS,70055,0,Arroz branco super cremoso.
-MONTE SEU POKE - ETAPA 3,Requeijão Cremoso,ACP-40G REQUEIJAO,70028,0,
-MONTE SEU POKE - ETAPA 3,Batata palha,ACP-20G BATATA PALHA,70056,0,Batata palha.
 POKE NORDESTINO - ETAPA 3,Batata palha,ACP-20G BATATA PALHA,70056,0,Batata palha.
 POKE BAIAO,Arrasta Pé,POKE BAIAO-ARRASTA PE,70045,35.9,"Baião cremoso, carne moída, ovo e aquele bacon crocante que faz crec! Gostoso feito dançar agarradinho. Bora dançar mais eu?
 "
@@ -108,45 +65,27 @@ POKE BAIAO,Pitéu,POKE BAIAO-PITEU,70046,32.9,"Baião cremoso, frango desfiado, 
 POKE BAIAO,Coladin,POKE BAIAO-COLADIN,70067,31.9,"Vatapá de frango, baião cremoso, batata palha crocante e queijo coalho grelhado. Cada garfada é um passo de forró na boca. É o sabor do Nordeste em um prato, uma experiência irresistível e autêntica."
 POKE BAIAO,Matuto,POKE BAIAO-MATUTO,70071,35.9,"Poke de baião cremoso, carne de sol, macaxeira frita, farofinha e ovo! Criado especialmente para o melhor mês no ano. Esse poke vai encher teu bucho e te deixar preparado pra aproveitar os arraiá! "
 POKE NORDESTINO - ETAPA 2,Creme de frango,ACP-100G CREME FGO,70062,0,Creme de frango desfiado. 
-MONTE SEU POKE - ETAPA 3,Macaxeira Frita,ACP-30G MACAXEIRA ,70074,0,Macaxeira Frita cortada em cubinhos.
 POKE NORDESTINO - ETAPA 2,Vatapá de frango,ACP-100G VATAPA,70063,0,Vatapá de frango.
-MONTE SEU POKE - ETAPA 3,Couve crispy,ACP-10G COUVE CRISPY,70081,0,Couve crispy.
 POKE BAIAO,Bacurim,POKE BAIAO-BACURIM,70077,34.9,"Baião de dois cremoso, Lombo Suíno desfiado dos bem gostosos e refogado com cebola branca, macaxeira frita e paçoca de torresmo que enche o bucho de alegria.  Chamado de Bacurim, esse prato é uma festa de sabores! "
 POKE BAIAO,Pai D'egua,POKE BAIAO-PAIDEGUA,70086,37.9,"Baião cremoso com tiras de carne de sol, couve crispy e farofa. Era só um desses pra tu ser feliz!"
-MONTE SEU POKE - ETAPA 3,Torresmo frito,ACP-30G TORRESMO,70082,0,Torresmo crocantíssimo! 
 POKE NORDESTINO - ETAPA 2,Fricassê de frango,ACP-100G FRICASSE,70069,0,Fricassê de frango.
-MONTE SEU POKE - ETAPA 3,Paçoca de Carne de Sol,ACP-40G PACOCA DE SOL,70101,0.9,
 POKE NORDESTINO - EXTRAS,Requeijão Cremoso,**ADC-40G REQ CREMOSO,70070,2.9,Requeijão cremoso.
 POKE CUSCUZ,Belezura,POKE CUSCUZ-BELEZURA,70048,25.9,"Cuscuz soltinho, ovo frito, queijo coalho grelhado e tomate pra terminar a obra prima. Rapaz, pense num negócio bonito é esse poke. É tanta belezura que limpou foi minha vista."
-MONTE SEU POKE - ETAPA 3,Palha de batata doce,ACP-20G PALHA DOCE,70102,0,"Palha de batata doce bem crocante, receita especial da Chef Van. "
 POKE NORDESTINO - ETAPA 1,Arroz Branco,ACP-150G ARROZ BRANCO,70073,0,Arroz branco bem soltinho. 
-MONTE SEU POKE - ETAPA 4,Cheiro verde,**FLZ-MIX CHEIRO VERD,70030,0,Coentro e cebolinha picados.
 POKE NORDESTINO - ETAPA 3,Macaxeira Frita,ACP-30G MACAXEIRA ,70074,0,Macaxeira Frita cortada em cubinhos.
-MONTE SEU POKE - ETAPA 4,"Não, obrigado!",**FLZ-SEM FINALIZAÇÃO,70054,0,
-MONTE SEU POKE - EXTRAS,Carne de sol desfiada,**ADC-70G CARNE SOL DESF,70032,5.9,Carne de sol desfiada refogada com cebola roxa.
 POKE NORDESTINO - EXTRAS,Macaxeira Frita,**ADC-30G MACAXEIRA ,70076,2.9,Macaxeira Frita cortada em cubinhos.
 POKE CUSCUZ,Da Merenda,POKE CUSCUZ-DA MEREND,70049,28.9,"Cuscuz, ovo frito, presunto e requeijão cremoso. Aquela merendinha que sustenta. E é bom viu?"
-MONTE SEU POKE - EXTRAS,Ovo Frito,**ADC-1UND OVO FRITO,70033,1.9,Ovo frito inteiro.
 POKE CUSCUZ,Amostradinho,POKE CUSCUZ-AMOSTRADINHO,70050,36.9,"Cuscuz, carne de sol desfiada com cebola roxa, requeijão cremoso e bacon. Esse aqui é estrela onde chega! Cuida!"
-MONTE SEU POKE - EXTRAS,Calabresa acebolada,**ADC-60G CALABRSA ACEB,70034,3.9,Calabresa fatiada refogada com cebola branca.
 POKE CUSCUZ,Danado de Bom,POKE CUSCUZ-DANADO DE BOM,70051,32.9,"Cuscuz soltinho, carne de sol desfiada, feijão cremoso e cebola crispy. Tá é danado de bom,
 Tá danado de bom, meu cumpade 🎵 essa mistura o rei teria cantado!
 "
-MONTE SEU POKE - EXTRAS,Cebola crispy,**ADC-20G CEBOLA CRISPY,70036,1.9,Tiras fininhas de cebola empanadas e fritas.
 POKE NORDESTINO - ETAPA 1,Baião de dois soltinho,ACP-150G BAIAO SOLTNH,70080,0,Baião de dois soltinho com feijão de corda.
-MONTE SEU POKE - EXTRAS,Queijo coalho grelhado,**ADC-30G Q COALHO GREL,70039,2.9,Queijo coalho grelhado em cubinhos.
 POKE NORDESTINO - ETAPA 3,Couve crispy,ACP-5G COUVE CRISPY,70081,0,Couve crispy.
-MONTE SEU POKE - EXTRAS,Ovo de codorna,**ADC-3UN OVO CODRNA,70040,1.9,Ovos de codorna cozidos.
 POKE NORDESTINO - ETAPA 3,Torresmo frito,ACP-30G TORRESMO FRIT,70082,2.99,Torresmo crocantíssimo! 
-MONTE SEU POKE - EXTRAS,Requeijão Cremoso,**ADC-40G REQUEIJAO,70070,2.9,
 POKE NORDESTINO - ETAPA 3,Farofa de Torresmo,ACP-30G PCOCA TORES C/2UN,70083,0,Farofa de Torresmo especial da Chef Van.
-MONTE SEU POKE - EXTRAS,Macaxeira Frita,**ADC-30G MACAXEIRA ,70076,1.9,Macaxeira Frita cortada em cubinhos.
 POKE NORDESTINO - ETAPA 2,Lombo Suíno desfiado,ACP-70G SUINO DESFIAD,70084,1.9,Lombo súino desfiado refogado com cebola branca
-MONTE SEU POKE - EXTRAS,Palha de batata doce,**ADC-20G PALHA DOCE,70107,1.9,
 POKE CUSCUZ,Chamego,POKE CUSCUZ-CHAMEGO,70052,28.9,"Cuscuz, frango desfiado refogado com cebola roxa, cubos de queijo coalho grelhado, refogado de tomate, pimentão e cebola branca. É chamego puro no pote."
-MONTE SEU POKE - EXTRAS,Torresmo frito,**ADC-30G TORRESMO,70185,3.9,Torresmo crocantíssimo! 
 POKE CUSCUZ,Gostosin,POKE CUSCUZ-GOSTOSIN,70053,29.9,"Cuscuz, carne moída, ovo frito e milho. É gostosinnn demais!"
-MONTE SEU POKE - EXTRAS,Bolinha de Lombo Suíno,**ADC-1 BOLINHO SUINO,70218,3.9,Bolinha de lombo suíno com molho de barbecue e tamarindo a parte.
 POKE NORDESTINO -GUARNIÇÃO,Cuscuz,POKE-250G CUSCUZ,70087,15.9,Cuscuz de milho fofinho e quentinho. Você sente o sabor do milho a todo momento.
 POKE NORDESTINO -GUARNIÇÃO,Baião Cremoso,POKE-400G BAIAO CREM,70088,19.9,Aquele baião que já é tradição cearense.
 POKE NORDESTINO -GUARNIÇÃO,Arroz de leite,POKE-400G ARROZ CREM,70089,19.9,Arroz de leite super cremoso.
@@ -161,167 +100,10 @@ POKE NORDESTINO -GUARNIÇÃO,Farofa Crispy,POKE-200G FAROF CRSPY,70097,17.9,Faro
 POKE NORDESTINO -GUARNIÇÃO,Baião Soltinho,POKE-300G BAIAO SOLT,70098,19.9,Baião de dois com feijão de corda. É de nos fazer voltar no tempo.
 POKE NORDESTINO -GUARNIÇÃO,Lombo Suíno desfiado,POKE-300G SUINO DESF,70099,43.9,Lombo suíno assado em fogo lento até desfiar facinho. Refogado com cebola branca. Cheio de sabor.
 POKE NORDESTINO - ETAPA 2,Tiras de Carne de Sol,ACP-70G TIRAS C.SOL,70100,5.9,Tiras de Carne de Sol refogado com cebola branca.
-MONTE SEU POKE - EXTRAS,Dadinho de Vatapá,**ADC-1 DADINHO VATAPA,70219,3.9,Dadinho de vatapá com molho de coco fresco a parte.
 POKE NORDESTINO - ETAPA 3,Paçoca de Carne de Sol,ACP-40G PACOCA DE SOL,70101,0,Paçoca crocante com a deliciosa Carne de Sol da Chef Van.
-MONTE SEU POKE - EXTRAS,Croquete de Feijoada,**ADC-1 CROQUETE FEIJOADA,70220,3.9,Croquete de feijoada com molho de calabresa a parte.
 POKE NORDESTINO - ETAPA 3,Palha de batata doce,ACP-20G PALHA DOCE,70102,0,"Palha de batata doce bem crocante, receita especial da Chef Van. "
-MONTE SEU POKE - EXTRAS,Couve crispy,**ADC-10G COUVE CRISPY,70221,1.9,Couve crispy.
-HAPPY HOUR,Croquete de Feijoada,HH-CROQUETE DE FEIJOADA,70189,19.9,Croquete de feijoada com molho de calabresa a parte.
 POKE NORDESTINO - EXTRAS,Palha de batata doce,**ADC-20G PALHA DOCE,70107,1.9,"Palha de batata doce bem crocante, receita especial da Chef Van. "
-MONTE SEU POKE - EXTRAS,Carne moída,**ADC-70G CARNE MOIDA,70222,5.9,
-HAPPY HOUR,Dadinho de Vatapá,HH-DADINHO DE VATAPA,70190,19.9,Dadinho de vatapá com molho de coco fresco a parte.
-HAPPY HOUR,Meiota,HH-POKE ARROZ MEIOTA ,70191,20.9,Arroz branco com metadinha de Vatapá com Calabresa e Paçoca de carne do Sol crocante. É de comer rezando!
-HAPPY HOUR,Fartura,HH-POKE CUSCUZ FAR,70192,20.9,"Cuscuz, Tiras de carne do sol acebolada, feijão cremoso e cebola crispy. Aqui tem fartura de ruma, homi!"
-HAPPY HOUR,Porreta,HH-POKE BAIAO PORRETA,70193,20.9,"Baião cremoso, calabresa acebolada, cebola crispy e farofa crispy. Pense num poke porreta."
-HAPPY HOUR,Dadinho de Tapioca.,HH-DADINHO DE TAPIOCA,70216,19.9,Dadinho de tapioca com geleia de pimenta artesanal à parte.
-HAPPY HOUR,Carne de sol com Macaxeira,HH-CARNE DE SOL C MACX,70217,24.9,Carne de sol acebolada com macaxeira frita em cubos.
-HORA DA MERENDA,Lampião,PROM-CUSCUZ LAMPIAO,70149,20.9,"Cuscuz, carne moída, requeijão cremoso e ovo frito."
-HORA DA MERENDA,Merendeiro,PROM-CUSCUZ MERENDEIR,70150,15.9,"Cuscuz, dois ovos fritos, cubos de coalho assado."
-HORA DA MERENDA,Caipira,PROM-CUSCUZ CAIPIRA,70151,19.9,"Cuscuz, frango desfiado, ovo frito e requeijão cremoso."
-HORA DA MERENDA,Fortaleza,PROM-CUSCUZ FORTALEZA,70152,22.9,"Cuscuz, carne de sol desfiada, ovo frito e cubos de coalho assado."
-MONTE SEU POKE - ETAPA 0,"Monte Seu Poke Nordestino, Ganhe uma Bebida",PARA MONTAR + REFRI,70154,17,
-MONTE SEU POKE - ETAPA 0,Poke Nordestino,POKE-PARA MONTAR---------,70500,27.9,Monte seu Poke Nordestino. Escolha sua base: Cuscuz ou Baião de dois - os dois pratos eleitos os mais tipicamente cearenses. Depois escolha uma proteína e dois acompanhamentos.
-MONTE SEU POKE - ETAPA 1,Baião de dois cremoso,ACP-250G BAIAO CREMOS,70501,0,Baião de dois cremoso.
-MONTE SEU POKE - ETAPA 1,Cuscuz,ACP-150G CUSCUZ ,70502,0,Cuscuz bem fofinho.
-MONTE SEU POKE - ETAPA 1,Arroz de leite,ACP-250G ARROZ CREMOS,70503,0,Arroz branco super cremoso.
-MONTE SEU POKE - ETAPA 1,Arroz Branco,ACP-150G ARROZ BRANCO,70504,0,Arroz branco bem soltinho. 
-MONTE SEU POKE - ETAPA 1,Baião de dois soltinho,ACP-150G BAIAO SOLTNH,70505,0,Baião de dois soltinho com feijão de corda.
-MONTE SEU POKE - ETAPA 2,Frango desfiado,ACP-70G FGO DESFIADO,70506,0,Frango desfiado refogado com cebola roxa.
-MONTE SEU POKE - ETAPA 2,Carne de sol desfiada,ACP-70G CARNE SOL,70507,2.9,Carne de sol desfiada refogada com cebola roxa.
-MONTE SEU POKE - ETAPA 2,Ovo frito,ACP-2UN OVO FRITO,70508,0,Ovo frito inteiro.
-MONTE SEU POKE - ETAPA 2,Calabresa acebolada,ACP-60G CALABRSA ACEB,70510,0,Calabresa fatiada refogada com cebola branca.
-MONTE SEU POKE - ETAPA 2,Carne moída,ACP-70G CARNE MOIDA,70511,1.9,Carne moída refogada com mix de especiarias.
-MONTE SEU POKE - ETAPA 2,Creme de frango,ACP-150G CREME FGO,70513,0,Creme de frango desfiado. 
-MONTE SEU POKE - ETAPA 2,Vatapá de frango,ACP-150G VATAPA,70514,0,Vatapá de frango.
-MONTE SEU POKE - ETAPA 2,Fricassê de frango,ACP-100G FRICASSE,70515,0,Fricassê de frango.
-MONTE SEU POKE - ETAPA 2,Lombo Suíno desfiado,ACP-70G SUINO DESFIAD,70516,1.9,Lombo súino desfiado refogado com cebola branca
-MONTE SEU POKE - ETAPA 2,Tiras de Carne de sol ,ACP-70G TIRAS DE SOL,70518,2.9,
-MONTE SEU POKE - ETAPA 2,Feijoada,ACP-300G FEIJOADA,70519,2.9,
-MONTE SEU POKE - ETAPA 3,Tomate,ACP-30G TOMATE CUBOS,70520,0,Tomate cortado em cubinhos.
-MONTE SEU POKE - ETAPA 3,Cebola crispy,ACP-20G CEBOLA CRISPY,70521,0,Tiras fininhas de cebola empanadas e fritas.
-MONTE SEU POKE - ETAPA 3,Bacon,ACP-20G BACON GRELHAD,70522,1.9,Fatias de bacon grelhadas e cortadas em pedaços.
-MONTE SEU POKE - ETAPA 3,Milho verde,ACP-30G MILHO VERDE,70523,0,Milho verde.
-MONTE SEU POKE - ETAPA 3,Feijão cremoso,ACP-60G FEIJAO CREMOS,70524,0,Feijão com molho cremoso de queijos.
-MONTE SEU POKE - ETAPA 3,Queijo coalho grelhado,ACP-30G Q COALHO GREL,70525,0,Queijo coalho grelhado em cubinhos.
-MONTE SEU POKE - ETAPA 3,Ovo de codorna,ACP-3UN OVO CODRNA,70526,0,Ovos de codorna cozidos.
-MONTE SEU POKE - ETAPA 3,Farofa Crispy,ACP-40G FAROFA CRISPY,70527,0,Farinha de mandioca puxada na manteiga com cebola frita.
-MONTE SEU POKE - ETAPA 3,Batata palha,ACP-20G BATATA PALHA,70528,0,Batata palha.
-MONTE SEU POKE - ETAPA 3,Macaxeira Frita,ACP-30G MACAXEIRA ,70529,0,Macaxeira Frita cortada em cubinhos.
-MONTE SEU POKE - ETAPA 3,Couve crispy,ACP-10G COUVE CRISPY,70530,0,Couve crispy.
-MONTE SEU POKE - ETAPA 3,Torresmo frito,ACP-30G TORRESMO,70531,1.9,Torresmo crocantíssimo! 
-MONTE SEU POKE - ETAPA 3,Palha de batata doce,ACP-20G PALHA DOCE,70532,0,"Palha de batata doce bem crocante, receita especial da Chef Van. "
-MONTE SEU POKE - ETAPA 3,Paçoca de Carne de Sol,ACP-40G PACOCA DE SOL,70533,0.9,
 POKE NORDESTINO - EXTRAS,Torresmo frito,**ADC-30G TORRESMO FR,70185,6.9,Torresmo crocantíssimo! 
-MONTE SEU POKE - EXTRAS,,**ADC-100G CREME DE FGO,70223,5.9,
-MONTE SEU POKE - ETAPA 3,Requeijão Cremoso,ACP-40G REQUEIJAO,70534,0,
-MONTE SEU POKE - ETAPA 3,Farofa de Torresmo,ACP-40G FAR.TORRESM 2UND,70546,0,
-MONTE SEU POKE - ETAPA 4,Cheiro verde,**FLZ-MIX CHEIRO VERD,70535,0,Coentro e cebolinha picados.
-MONTE SEU POKE - ETAPA 4,"Não, obrigado!",**FLZ-SEM FINALIZAÇÃO,70536,0,
-MONTE SEU POKE - EXTRAS,Couve crispy,**ADC-10G COUVE CRISPY,70105,1.9,Couve crispy.
-MONTE SEU POKE - EXTRAS,Torresmo frito,**ADC-30G TORRESMO,70110,3.9,Torresmo crocantíssimo! 
-MONTE SEU POKE - EXTRAS,,**ADC-70G CARNE MOIDA,70175,3.9,
-MONTE SEU POKE - EXTRAS,,**ADC-100G CREME FGO,70177,3.9,
-MONTE SEU POKE - EXTRAS,,**ADC-100G VATAPA,70178,3.9,
-MONTE SEU POKE - EXTRAS,,**ADC-70G TIRAS DE SOL,70182,6.9,
-MONTE SEU POKE - EXTRAS,Bolinha de Lombo Suíno,**ADC-1 BOLINHO SUINO,70198,3.9,Bolinha de lombo suíno com molho de barbecue e tamarindo a parte.
-MONTE SEU POKE - EXTRAS,Dadinho de Vatapá,**ADC-1 DADINHO VATAPA,70199,3.9,Dadinho de vatapá com molho de coco fresco a parte.
-MONTE SEU POKE - EXTRAS,Croquete de Feijoada,**ADC- 1 CROQUETE FEIJOADA,70200,3.9,Croquete de feijoada com molho de calabresa a parte.
 SÃO JOÃO ETAPA 2,Metadinha Creme de Frango e Calabresa acebolada.,ACP-150GCREME-30GCALAB,70200, R$ -   ,Creme de frango desfiado e calabresa acebolada.
 SÃO JOÃO ETAPA 2,Metadinha Vatapá de Frango e Calabresa acebolada.,ACP-150GVAT-30GCALAB,70201, R$ -   ,Vatapá de frango desfiado e calabresa acebolada.
 POKE CUSCUZ,Lá na Roça ,POKE CUSCUZ-LA NA ROÇ,70078,29.9,"Cuscuz quentinho, suíno desfiado suculento refogado com cebola branca, torresmo crocante e um feijão cremoso de dar água na boca. Lá na roça tem fartura, meu cumpade! "
-MONTE SEU POKE - EXTRAS,,**ADC-100G VATAPA DE FGO,70224,5.9,
-POKE DE ARROZ,Xodó especial de Natal,POKE ARROZ-XODO NATAL,70252,33.9,"Fricassê de Frango, batata palha, farofa natalina e arroz de leite. "
-MONTE SEU POKE - EXTRAS,Tiras de carne de sol,**ADC-70G TIRAS DE SOL,70225,6.9,
-PETISCOS DA VAN,Bolinha de Lombo Suíno,PETSCO-BOLINHA SUINA,70226,25.9,Bolinha de lombo suíno com molho de barbecue e tamarindo a parte.
-MONTE SEU POKE - EXTRAS,,**ADC-70G CARNE SOL,70537,4.9,
-MONTE SEU POKE - EXTRAS,,**ADC-1UN OVO FRITO,70538,1.9,
-MONTE SEU POKE - EXTRAS,,**ADC-60G CALABRSA ACEB,70539,3.9,
-MONTE SEU POKE - EXTRAS,Cebola crispy,**ADC-20G CEBOLA CRISPY,70540,1.9,Tiras fininhas de cebola empanadas e fritas.
-MONTE SEU POKE - EXTRAS,Queijo coalho grelhado,**ADC-30G Q COALHO GREL,70541,2.9,Queijo coalho grelhado em cubinhos.
-MONTE SEU POKE - EXTRAS,Ovo de codorna,**ADC-3UN OVO CODRNA,70542,1.9,Ovos de codorna cozidos.
-MONTE SEU POKE - EXTRAS,,**ADC-20G PALHA DOCE,70543,1.9,
-MONTE SEU POKE - EXTRAS,,**ADC-40G REQUEIJAO,70544,2.9,
-MONTE SEU POKE - EXTRAS,Macaxeira Frita,**ADC-30G MACAXEIRA ,70545,1.9,Macaxeira Frita cortada em cubinhos.
-PESTISCOS DA VAN,Bolinha de Lombo Suíno,PETSCO-BOLINHA SUINA,70195,23.9,Bolinha de lombo suíno com molho de barbecue e tamarindo a parte.
-PETISCOS DA VAN,Croquete de Feijoada,PETSCO-CRQUTE  FJOADA,70227,25.9,Croquete de feijoada com molho de calabresa a parte.
-PETISCOS DA VAN,Dadinho de Vatapá,PETSCO-DADINHO VATAPA,70228,25.9,Dadinho de vatapá com molho de coco fresco a parte.
-PETISCOS DA VAN,Dadinho de Tapioca.,PETSCO-DADINHO TAPIOC,70229,25.9,Dadinho de tapioca com geleia de pimenta artesanal à parte.
-PETISCOS DA VAN,Carne de sol com Macaxeira,PETSCO-CARNE DE SOL,70230,29.9,Carne de sol acebolada com macaxeira frita em cubos.
-POKE ARROZ,Xodó,POKE ARROZ-XODO,70068,31.9,"Conheça o novo Xodó do Nordeste! O novo Poke Nordestino vai te conquistar com fricassê de frango, arroz cremoso, batata palha e farofa crispy. Pense num sabor cremoso da peste!"
-POKE ARROZ,Arroxadim,POKE ARROZ-ARROXADIM,70079,31.9,"Todo Arroxadim chegou pra fazer teu queixo cair. O bixin é dos bons: arroz de leite cremoso, Lombo Suíno desfiado bem gostoso refogado com cebola branca, macaxeira frita e couve crispy pra arrematar. É de comer dançando!"
-POKE ARROZ,Feijoada da Van,POKE ARROZ- FEIJOADA,70203,35.9,"Feijoada da Chef Van no potinho! Acompanha arroz branco soltinho, couve crispy e paçoca de torresmo."
-POKE ARROZ,Cabra da Peste,POKE ARROZ-CABRA PEST,70239,32.9,"Arroz cremoso, carne moída, farofa crispy e couve crispy. Esse sim é Cabra da peste!"
-POKE ARROZ,Avexadim,POKE ARROZ-AVEXADIM,70240,30.9,"Arroz branco com creme de frango, palha de batata doce e paçoca de carne de sol. Pra quem vive avexado, mas não abre mão de comida boa."
-POKE ARROZ,Xique-xique,POKE ARROX-CHIC CHIC,70241,35.9,"Arroz cremoso, tiras de carne do sol, farofa de torresmo e macaxeira. O gostinho do Nordeste no pote."
-POKE ARROZ,Invocado,POKE ARROZ-INVOCADO,70242,29.9,"Arroz cremoso, calabresa acebolada, cebola crispy e macaxeira. Pense num bichim invocado!"
-POKE BAIAO,Matuto,POKE BAIAO-MATUTO,70071,34.9,"Poke de baião cremoso, carne de sol, macaxeira frita, farofinha e ovo! Criado especialmente para o melhor mês no ano. Esse poke vai encher teu bucho e te deixar preparado pra aproveitar os arraiá! "
-POKE BAIAO,Bacurim,POKE BAIAO-BACURIM,70077,34.9,"Chamado de Bacurim, esse prato é uma festa de sabores! Tem baião de dois cremoso, Lombo Suíno desfiado dos bem gostosos e refogado com cebola branca, macaxeira frita e paçoca de torresmo que enche o bucho de alegria.  "
-POKE BAIAO,Pai D'egua,POKE BAIAO-PAI DEGUA,70086,33.9,"Baião cremoso com tiras de carne de sol, couve crispy e farofa. Era só um desses pra tu ser feliz!"
-POKE BAIAO,Porreta,POKE BAIAO-PORRETA,70231,29.9,"Baião cremoso, calabresa acebolada, cebola crispy e farofa crispy. Pense num poke porreta."
-POKE BAIAO,Batoré,POKE BAIAO-BATORE,70232,33.9,"Baião cremoso, Carne moída, ovo frito e macaxeira pra fechar com chave de ouro. Parece batoré, mas só esse bixin já enche o bucho, viu!"
-POKE BAIAO,Marminino,POKE BAIAO-MARMININO,70233,30.9,"Marminino que o bichim é arretado! Tem baião soltinho, vatapá de frango, palha de batata doce e farofa crispy."
-POKE CUSCUZ,Lá na Roça ,POKE CUSCUZ-LA NA ROÇ,70078,33.9,"Lá na roça tem fartura, meu cumpade! Cuscuz quentinho e suíno suculento refogado com cebola branca. Pra ficar ainda melhor, tem torresmo crocante e um feijão cremoso de dar água na boca. É de lamber os beiços!"
-POKE CUSCUZ,Merendeiro,POKE CUSCUZ-MERENDEIRO,70234,27.9,"Cuscuz, dois ovos fritos, cubos de coalho assado."
-POKE CUSCUZ,Caipira,POKE CUSCUZ-CAIPIRA,70235,29.9,"Cuscuz, frango desfiado, ovo frito e requeijão cremoso."
-POKE CUSCUZ,Fortaleza,POKE CUSCUZ-FORTALEZA,70236,33.9,"Cuscuz, carne de sol desfiada, ovo frito e cubos de coalho assado."
-POKE CUSCUZ,Lampião,POKE CUSCUZ-LAMPIAO,70237,32.9,"Cuscuz, carne moída, requeijão cremoso e ovo frito."
-POKE CUSCUZ,Fartura,POKE CUSCUZ-FARTURA,70238,30.9,"Cuscuz, Tiras de carne do sol acebolada, feijão cremoso e cebola crispy. Aqui tem fartura de ruma, homi!"
-SOBREMESAS,Brigadeiro Queijo Brule,BRIGADEIRO QUEIJO ,70243,6.9,Brigadeiro de Queijo Brule criado pela Chef Van.
-SOBREMESAS,Brigadeiro Capim Santo,BRIGADEIRO CAPIM,70244,6.9,Brigadeiro de Capim Santo criado pela Chef Van.
-SOBREMESAS,Kit Brigadeiro Queijo Brule,KIT 4 BRIGADEIRO QUEIJO,70245,19.9,Kit com 4 brigadeiros de Queijo Brule.
-SOBREMESAS,Kit Brigadeiro Capim Santo,KIT 4 BRIGADEIRO CAPIM,70246,19.9,Kit com 4 brigadeiros de Capim Santo.
-SOBREMESAS,Kit Misto de Brigadeiro,KIT 2 BRIG QUEIJ 2 CAPIM,70247,19.9,Kit com 2 brigadeiros de Queijo Brule e 2 brigadeiros de Capim Santo.
-PESTISCOS DA VAN,Croquete de Feijoada,PETSCO-CRQUTE  FJOADA,70196,23.9,Croquete de feijoada com molho de calabresa a parte.
-PESTISCOS DA VAN,Dadinho de Vatapá,PETSCO-DADINHO VATAPA,70197,23.9,Dadinho de vatapá com molho de coco fresco a parte.
-PESTISCOS DA VAN,Dadinho de Tapioca.,PETSCO-DADINHO TAPIOC,70214,23.9,Dadinho de tapioca com geleia de pimenta artesanal à parte.
-PESTISCOS DA VAN,Carne de sol com Macaxeira,PETSCO-CARNE DE SOL,70215,29.9,Carne de sol acebolada com macaxeira frita em cubos.
-POKE ARROZ,Meiota,POKE ARROZ MEIOTA,70116,24.9,Arroz branco com metadinha de Vatapá com Calabresa e Paçoca de carne do Sol crocante. É de comer rezando!
-POKE ARROZ,Avexadim,POKE ARROZ AVEXADIM,70117,24.9,"Arroz branco com creme de frango, palha de batata doce e paçoca de carne de sol. Pra quem vive avexado, mas não abre mão de comida boa."
-POKE ARROZ,Feijoada da Van,POKE ARROZ  FEIJOADA,70169,29.9,"Feijoada da Chef Van no potinho! Acompanha arroz branco soltinho, couve crispy e paçoca de torresmo."
-POKE ARROZ,Xique-xique,POKE ARROZ CHIC CHIC,70118,28.9,"Arroz cremoso, tiras de carne do sol, farofa de torresmo e macaxeira. O gostinho do Nordeste no pote."
-POKE ARROZ,Invocado,POKE ARROZ INVOCADO,70158,24.9,"Arroz cremoso, calabresa acebolada, cebola crispy e macaxeira. Pense num bichim invocado!"
-POKE ARROZ,Praieiro,POKE ARROZ PRAIEIRO,70207,39.9,"O poke Praieiro une arroz cremoso ao molho de queijos, camarões grelhados e cubos de queijo coalho tostado. Finalizado com um delicioso dadinho de vatapá, pimenta biquinho e toque crocante de palha de batata doce, esse poke é um encontro sofisticado entre o litoral e a tradição nordestina."
-POKE ARROZ,Arroxadim,POKE ARROZ ARROXADIM,70547,26.9,"Todo Arroxadim chegou pra fazer teu queixo cair. O bixin é dos bons: arroz de leite cremoso, Lombo Suíno desfiado bem gostoso refogado com cebola branca, macaxeira frita e couve crispy pra arrematar. É de comer dançando!"
-POKE ARROZ,Xodó,POKE ARROZ XODO,70548,25.9,"Conheça o novo Xodó do Nordeste! O novo Poke Nordestino vai te conquistar com fricassê de frango, arroz cremoso, batata palha e farofa crispy. Pense num sabor cremoso da peste!"
-POKE BAIAO,Pai D'egua,POKE BAIAO PAI DEGUA,70119,30.9,"Baião cremoso com tiras de carne de sol, couve crispy e farofa. Era só um desses pra tu ser feliz!"
-POKE BAIAO,Porreta,POKE BAIAO PORRETA,70120,25.9,"Baião cremoso, calabresa acebolada, cebola crispy e farofa crispy. Pense num poke porreta."
-POKE BAIAO,Batoré,POKE BAIAO BATORE,70121,28.9,"Baião cremoso, Carne moída, ovo frito e macaxeira pra fechar com chave de ouro. Parece batoré, mas só esse bixin já enche o bucho, viu!"
-POKE BAIAO,Marminino,POKE BAIAO MARMININO,70159,24.9,"Marminino que o bichim é arretado! Tem baião soltinho, vatapá de frango, palha de batata doce e farofa crispy."
-POKE BAIAO,Bacurim,POKE BAIAO BACURIM,70549,29.9,"Chamado de Bacurim, esse prato é uma festa de sabores! Tem baião de dois cremoso, Lombo Suíno desfiado dos bem gostosos e refogado com cebola branca, macaxeira frita e paçoca de torresmo que enche o bucho de alegria.  "
-POKE BAIAO,Matuto,POKE BAIAO MATUTO,70550,30.9,"Poke de baião cremoso, carne de sol, macaxeira frita, farofinha e ovo! Criado especialmente para o melhor mês no ano. Esse poke vai encher teu bucho e te deixar preparado pra aproveitar os arraiá! "
-POKE CUSCUZ,Merendeiro,POKE CUSCUZ MERENDEIRO,70123,22.9,"Cuscuz, dois ovos fritos, cubos de coalho assado."
-POKE CUSCUZ,Caipira,POKE CUSCUZ CAIPIRA,70124,23.9,"Cuscuz, frango desfiado, ovo frito e requeijão cremoso."
-POKE CUSCUZ,Fortaleza,POKE CUSCUZ FORTALEZA,70125,26.9,"Cuscuz, carne de sol desfiada, ovo frito e cubos de coalho assado."
-POKE CUSCUZ,Lampião,POKE CUSCUZ LAMPIAO,70126,22.9,"Cuscuz, carne moída, requeijão cremoso e ovo frito."
-POKE CUSCUZ,Fartura,POKE CUSCUZ FARTURA,70127,26.9,"Cuscuz, Tiras de carne do sol acebolada, feijão cremoso e cebola crispy. Aqui tem fartura de ruma, homi!"
-POKE CUSCUZ,Lá na Roça ,POKE CUSCUZ LA NA ROÇ,70551,24.9,"Lá na roça tem fartura, meu cumpade! Cuscuz quentinho e suíno suculento refogado com cebola branca. Pra ficar ainda melhor, tem torresmo crocante e um feijão cremoso de dar água na boca. É de lamber os beiços!"
-POKE DO DIA,Segunda Avexadim,SEG-POKE ARROZ CHIC CHIC,70142,24.9,"Arroz branco com creme de frango, palha de batata doce e paçoca de carne de sol. Pra quem vive avexado, mas não abre mão de comida boa."
-POKE DO DIA,Terça Marminino,TER-POKE BAIAO MARMININO,70143,21.9,"Marminino que o bichim é arretado! Tem baião soltinho, vatapá de frango, palha de batata doce e farofa crispy."
-POKE DO DIA,Quarta Fartura,QUA-POKE BAIAO BACURIM,70144,25.9,"Cuscuz, Tiras de carne do sol acebolada, feijão cremoso e cebola crispy. Aqui tem fartura de ruma, homi!"
-POKE DO DIA,Quinta Meiota,QUI-POKE ARROZ MEIOTA,70145,21.9,Arroz branco com metadinha de Vatapá com Calabresa e Paçoca de carne do Sol crocante. É de comer rezando!
-POKE DO DIA,Sexta Bacurim,SEX-POKE ARROZ FEIJOADA VAN,70146,25.9,"Chamado de Bacurim, esse prato é uma festa de sabores! Tem baião de dois cremoso, Lombo Suíno desfiado dos bem gostosos e refogado com cebola branca, macaxeira frita e paçoca de torresmo que enche o bucho de alegria.  "
-SOBREMESAS,Brigadeiro Queijo Brule,BRIGADEIRO QUEIJO ,70208,4.9,Brigadeiro de Queijo Brule criado pela Chef Van.
-SOBREMESAS,Brigadeiro Capim Santo,BRIGADEIRO CAPIM,70209,4.9,Brigadeiro de Capim Santo criado pela Chef Van.
-SOBREMESAS,Kit Brigadeiro Queijo Brule,KIT 4 BRIGADEIRO QUEIJO,70210,14.9,Kit com 4 brigadeiros de Queijo Brule.
-SOBREMESAS,Kit Brigadeiro Capim Santo,KIT 4 BRIGADEIRO CAPIM,70211,14.9,Kit com 4 brigadeiros de Capim Santo.
-SOBREMESAS,Kit Misto de Brigadeiro,KIT 2 BRIG QUEIJ 2 CAPIM,70212,14.9,Kit com 2 brigadeiros de Queijo Brule e 2 brigadeiros de Capim Santo.
-TO GO (VIAGEM),,****EMBALAGEM TO GO****,70153,0,
-X - BEBIDAS,,COCA COLA LATA ORIGINAL,338,7.9,
-X - BEBIDAS,,COCA COLA LATA SEM ACUCAR,339,7.9,
-X - BEBIDAS,,AGUA SEM GAS - 500ML,341,4.9,
-X - BEBIDAS,,FANTA LARANJA - 350ML,342,7.9,
-X - BEBIDAS,,COCA COLA MINI ORIGINAL,352,5.9,
-X - BEBIDAS,,COCA COLA MINI SEM ACUCAR,353,5.9,
-X - BEBIDAS,Cerveja Heineken Garrafa 330ml,CERVEJA HEINKEN - 330ML,901,11.9,Produto para maiores de 18 anos
-X - BEBIDAS,,AGUA COM GAS - 500ML,1565,4.9,
-X - BEBIDAS,,GUARANA ANTARTICA - 350ML,1643,7.9,
-X - BEBIDAS,,SUCO LARANJA - 300ML,1671,10.9,
-X - BEBIDAS,,SAO GERALDO - 200ML,2026,5.9,
-X - BEBIDAS,Refrigerante São Geraldo Cajú Embalagem 350ml,SÃO GERALDO - 350ML,2060,7.9,Garrafa 350mL
-X - BEBIDAS,Refrigerante São Geraldo Cajú Zero ,SÃO GERALDO ZERO - 350ML,2061,7.9,350mL
-Z - POKE NORDESTINO - COD CONTROLE,,PRODUTO POKE NORDESTI,70000,0,
-POKE DE ARROZ,Lombo suíno especial de Natal,POKE ARROZ-SUÍNO NATAL,70253,33.9,"Lombo suíno desfiado refogado com cebola roxa, salpicão de frango, farofa natalina e arroz de leite."
-PF DO POKE,Vatapá de Frango,PF-VATAPÁ FRANGO,70300,19.9,"Vatapá de frango, baião de dois soltinho, cubos de queijo coalho grelhado e farofa crispy."
-PF DO POKE,Fricassê de frango,PF-FRICASSÊ DE FRANGO,70301,19.9,"Fricassê de frango, batata palha e arroz branco cozido."
-PF DO POKE,Tiras de carne,PF-TIRAS DE CARNE E OVO,70302,24.9,"Tiras de carne refogada com cebola branca, ovo frito, baião de dois soltinho e farofa crispy."
-PF DO POKE,Lombo Suíno desfiado,PF-LOMBO SUÍNO DESFIADO,70303,19.9,"Lombo suíno desfiado, feijão cremoso, farofa crispy e arroz branco cozido."
