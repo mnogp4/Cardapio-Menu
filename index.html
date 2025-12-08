@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Menu Brands - Cardápio Digital</title>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-  
+ 
   <style>
     :root { --vermelho: #e30613; --vermelho-hover: #c4000f; --branco: #fff; }
     body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #fff; color: #333; overflow-x: hidden; transition: background 0.4s ease; }
-
     .topbar {
       background: var(--vermelho);
       padding: 22px 20px;
@@ -41,6 +40,37 @@
       object-fit: contain;
     }
 
+    /* OBSERVAÇÃO NO HEADER - CANTO SUPERIOR DIREITO */
+    .observacao-header {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      font-size: 1.15em;
+      font-weight: 600;
+      text-align: right;
+      max-width: 460px;
+      line-height: 1.4;
+      opacity: 0.98;
+      z-index: 10;
+      pointer-events: none;
+    }
+    @media (max-width: 768px) {
+      .observacao-header {
+        font-size: 0.95em;
+        right: 15px;
+        max-width: 280px;
+        line-height: 1.3;
+      }
+    }
+    @media (max-width: 480px) {
+      .observacao-header {
+        font-size: 0.85em;
+        max-width: 220px;
+      }
+    }
+
     /* IDENTIDADE VISUAL POR LOJA */
     body.menu-brands {
       --cor-principal: #e30613;
@@ -59,6 +89,7 @@
       background: #008248; border-color: #008248;
     }
     body.amicis .preco, body.amicis .filtros label { color: #008248; }
+
     body.buk {
       --cor-principal: #001F3F;
       --cor-hover: #001028;
@@ -72,6 +103,7 @@
     }
     body.buk .preco, body.buk .filtros label { color: #FF9F1C; }
     body.buk .carrinho-total { background: #fff8f0; color: #001F3F; border-top-color: #FF9F1C; }
+
     body.buoni {
       --cor-principal: #e30613;
       --cor-hover: #c4000f;
@@ -84,6 +116,7 @@
       background: #e30613; border-color: #e30613;
     }
     body.buoni .preco, body.buoni .filtros label { color: #e30613; }
+
     body.chapa {
       --cor-principal: #e30613;
       --cor-hover: #c4000f;
@@ -96,6 +129,7 @@
       background: #e30613; border-color: #e30613;
     }
     body.chapa .preco, body.chapa .filtros label { color: #e30613; }
+
     body.ginger {
       --cor-principal: #e30613;
       --cor-hover: #c4000f;
@@ -108,6 +142,7 @@
       background: #e30613; border-color: #e30613;
     }
     body.ginger .preco, body.ginger .filtros label { color: #e30613; }
+
     body.tipico {
       --cor-principal: #d32f2f;
       --cor-hover: #b71c1c;
@@ -120,17 +155,20 @@
       background: #d32f2f; border-color: #d32f2f;
     }
     body.tipico .preco, body.tipico .filtros label { color: #d32f2f; }
+
     body.poke-nordestino {
       --cor-principal: #f4a261;
       --cor-hover: #e76f51;
       background: #fff7ed;
     }
+
     body.soodeli {
       --cor-principal: #008248;
       --cor-hover: #006400;
       background: #fff59d;
     }
     body.soodeli .topbar { background: #d8dd12 !important; }
+
     body.zack {
       --cor-principal: #0066FF;
       --cor-hover: #0044cc;
@@ -154,7 +192,6 @@
     .item-carrinho { background: rgba(227,6,19,0.1); }
     .sidebar li:hover, .sidebar li.active { background: var(--cor-principal); }
 
-    /* TEXTO "Filtrar por categoria:" SEM NEGRITO + BRANCO NAS LOJAS COM FUNDO CLARO */
     .filtros label {
       font-weight: normal !important;
       font-size: 1.2em;
@@ -163,19 +200,15 @@
     body:not(.menu-brands):not(.poke-nordestino):not(.soodeli) .filtros label {
       color: white !important;
     }
-
-    /* TOTAL DO CARRINHO BRANCO EM TODAS AS LOJAS */
     .carrinho-total {
       color: white !important;
     }
-    /* TOTAL PRETO NAS 3 LOJAS ESPECIAIS */
     body.menu-brands .carrinho-total,
     body.poke-nordestino .carrinho-total,
     body.soodeli .carrinho-total {
       color: #000 !important;
     }
 
-    /* SIDEBAR COM SCROLL INTERNO */
     .sidebar {
       position: fixed; top: 0; left: -320px; width: 320px; height: 100%; background: #111;
       transition: left 0.35s ease; z-index: 999; box-shadow: 5px 0 20px rgba(0,0,0,0.5);
@@ -186,9 +219,7 @@
       padding: 20px 25px; background: #222; color: white; font-size: 1.4em; font-weight: bold;
       text-align: center; border-bottom: 1px solid #444;
     }
-    .sidebar-content {
-      flex: 1; overflow-y: auto; padding: 10px 0;
-    }
+    .sidebar-content { flex: 1; overflow-y: auto; padding: 10px 0; }
     .sidebar ul { list-style: none; padding: 0; margin: 0; }
     .sidebar li {
       padding: 18px 25px; color: white; cursor: pointer; transition: 0.3s; font-size: 1.2em;
@@ -199,13 +230,11 @@
       position: fixed; top: 0; left: 0; width: 100%; height: 100%;
       background: rgba(0,0,0,0.5); z-index: 998;
     }
-
     .container {
       max-width: 1160px;
       margin: 80px auto 50px auto;
       padding: 0 20px;
     }
-
     .filtros {
       background: white; padding: 24px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);
       margin-bottom: 30px; text-align: center; border: 3px solid var(--cor-principal);
@@ -213,8 +242,7 @@
     select, input { padding: 13px 16px; font-size: 1.05em; border: 2px solid #ddd; border-radius: 12px; }
     select { width: 320px; }
     input { width: 420px; max-width: 100%; border-color: var(--cor-principal); margin-left: 15px; }
-
-    table { width: 100%; border-collapse: collapse; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 25px rgba(227,6,19,0.12); border: 2px solid var(--cor-principal); }
+    table { width: 100%; border-collapse: collapse; background: white; border-radius: 2px solid var(--cor-principal); border-radius: 16px; overflow: hidden; box-shadow: 0 8px 25px rgba(227,6,19,0.12); }
     th { background: var(--cor-principal); color: white; padding: 18px 16px; font-weight: 600; font-size: 1.1em; }
     td { padding: 18px 16px; cursor: pointer; transition: 0.2s; }
     tr:hover { background: #fff5f5; }
@@ -225,7 +253,6 @@
       font-size: 0.85em; font-weight: bold; max-width: 180px; overflow: hidden;
       text-overflow: ellipsis; white-space: nowrap; display: inline-block;
     }
-
     .carrinho-flutuante {
       position: fixed; bottom: 20px; right: 20px; width: 400px; background: white;
       border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.3); border: 4px solid var(--cor-principal);
@@ -278,9 +305,12 @@
     <div class="logo-container">
       <img id="logo" src="Menu.png" alt="Logo da loja">
     </div>
+    <div class="observacao-header" id="observacaoHeader"></div>
     <div style="width: 70px;"></div>
   </div>
+
   <div class="overlay" onclick="toggleSidebar()"></div>
+
   <div class="sidebar" id="sidebar">
     <div class="sidebar-header">Lojas</div>
     <div class="sidebar-content">
@@ -298,6 +328,7 @@
       </ul>
     </div>
   </div>
+
   <div class="container">
     <div class="filtros">
       <label for="categoria">Filtrar por categoria:</label>
@@ -306,6 +337,7 @@
     </div>
     <div id="resultado"></div>
   </div>
+
   <div id="carrinho" class="carrinho-flutuante">
     <div class="carrinho-header">
       <button class="btn-minimizar" onclick="minimizarCarrinho()">−</button>
@@ -315,15 +347,42 @@
     <div class="carrinho-body" id="listaItens">Clique nos itens para adicionar</div>
     <div class="carrinho-total">Total: R$ 0,00</div>
   </div>
+
   <script>
     let todosOsItens = [];
     let carrinho = [];
+
     function limparCategoria(txt) {
       if (!txt || txt.trim() === "") return "Outros";
       return txt.toString().replace(/[\r\n\t\v\f]+/g, " ").replace(/[^\w\s\-\(\)\+\&à-úÀ-Ú]/g, "").replace(/\s+/g, " ").replace(/:/g, "").trim().substring(0, 80);
     }
+
+    function definirObservacaoHeader(nomeLoja, categoria = "") {
+      const el = document.getElementById("observacaoHeader");
+      let texto = "";
+
+      if (nomeLoja.includes("Menu")) {
+        texto = "2 acompanhamentos para cada prato";
+      } else if (nomeLoja.includes("Poke")) {
+        texto = "Poke pra montar: 1 proteína e 2 acompanhamentos";
+      } else if (nomeLoja.includes("Ginger")) {
+        texto = "2 acompanhamentos para cada prato executivo";
+      } else if (nomeLoja === "Soodeli") {
+        if (categoria.includes("SALADA DO MEU JEITO")) {
+          texto = "1 base, 1 proteína, até 3 ingredientes, 1 queijo, 1 molho, 1 topping";
+        } else if (categoria.includes("SOODELI LEV")) {
+          texto = "1 base, até 4 ingredientes, 1 proteína, 1 finalização, 1 molho, adicional";
+        } else if (categoria.includes("WRAP DO MEU JEITO")) {
+          texto = "alface ou colesaw, 1 proteína, 2 ingredientes, 1 queijo, 1 molho";
+        }
+      }
+
+      el.textContent = texto;
+    }
+
     function carregarLoja(arquivo, nomeLoja, logoSrc, botaoClicado) {
-      document.body.classList.remove("menu-brands", "amicis", "buk", "buoni", "chapa", "ginger", "tipico", "poke-nordestino", "soodeli", "zack");
+      document.body.classList.remove("menu-brands","amicis","buk","buoni","chapa","ginger","tipico","poke-nordestino","soodeli","zack");
+
       if (nomeLoja.includes("Menu")) document.body.classList.add("menu-brands");
       else if (nomeLoja.includes("Amicis")) document.body.classList.add("amicis");
       else if (nomeLoja.includes("BUK")) document.body.classList.add("buk");
@@ -334,10 +393,15 @@
       else if (nomeLoja.includes("Poke")) document.body.classList.add("poke-nordestino");
       else if (nomeLoja === "Soodeli") document.body.classList.add("soodeli");
       else if (nomeLoja.includes("Zack")) document.body.classList.add("zack");
+
       document.getElementById("logo").src = logoSrc;
+
       document.querySelectorAll(".sidebar li").forEach(li => li.classList.remove("active"));
       botaoClicado.classList.add("active");
       if (botaoClicado !== document.getElementById("loja-menu")) toggleSidebar();
+
+      definirObservacaoHeader(nomeLoja, ""); // observação padrão ao trocar de loja
+
       Papa.parse(arquivo, {
         download: true,
         header: true,
@@ -346,6 +410,7 @@
           todosOsItens = results.data
             .filter(i => i["NOME CARDAPIO"] && i["NOME CARDAPIO"].trim())
             .map(i => ({ ...i, CATEGORIA: limparCategoria(i.CATEGORIA) }));
+
           const categorias = [...new Set(todosOsItens.map(i => i.CATEGORIA))].sort();
           const select = document.getElementById("categoria");
           select.innerHTML = '<option value="">Tudo</option>';
@@ -354,6 +419,7 @@
             opt.value = c; opt.textContent = c;
             select.appendChild(opt);
           });
+
           mostrarItens(todosOsItens);
         },
         error: function() {
@@ -361,18 +427,13 @@
         }
       });
     }
+
     function toggleSidebar() {
       const sidebar = document.getElementById("sidebar");
       sidebar.classList.toggle("open");
       document.querySelector(".overlay").style.display = sidebar.classList.contains("open") ? "block" : "none";
     }
-    window.addEventListener("DOMContentLoaded", () => {
-      document.body.classList.add("menu-brands");
-      document.getElementById("logo").src = "Menu.png";
-      const botaoMenu = document.getElementById("loja-menu");
-      botaoMenu.classList.add("active");
-      carregarLoja("MenuFiltrado.csv", "Menu Brands", "Menu.png", botaoMenu);
-    });
+
     function mostrarItens(itensFiltrados) {
       const container = document.getElementById("resultado");
       if (itensFiltrados.length === 0) {
@@ -398,11 +459,12 @@
           <td>${item["NOME PDV"]}</td>
           <td>${item["CÓD PDV"]}</td>
           <td class="preco">R$ ${preco.toFixed(2).replace(".",",")}</td>
-          <td>${item["DESCRICAO ITEM CARDAPIO"]}</td>
+          <td>${item["DESCRICAO ITEM CARDAPIO"] || ''}</td>
         </tr>`;
       });
       container.innerHTML = html + `</tbody></table>`;
     }
+
     function adicionarItem(item) {
       const existente = carrinho.find(x => x.codigo === item["CÓD PDV"]);
       if (existente) existente.qtd += 1;
@@ -411,6 +473,7 @@
       atualizarCarrinho();
       mostrarItens(getItensFiltrados());
     }
+
     function mudarQuantidade(codigo, delta) {
       const item = carrinho.find(x => x.codigo === codigo);
       if (item) {
@@ -420,6 +483,7 @@
         mostrarItens(getItensFiltrados());
       }
     }
+
     function atualizarCarrinho() {
       const lista = document.getElementById("listaItens");
       const totalEl = document.querySelector(".carrinho-total");
@@ -442,14 +506,17 @@
       lista.innerHTML = html || "Nenhum item";
       totalEl.textContent = `Total: R$ ${total.toFixed(2).replace(".",",")}`;
     }
+
     function minimizarCarrinho() {
       document.getElementById("carrinho").classList.toggle("minimizado");
     }
+
     function fecharCarrinho() {
       carrinho = [];
       document.getElementById("carrinho").style.display = "none";
       mostrarItens(getItensFiltrados());
     }
+
     function getItensFiltrados() {
       let lista = todosOsItens;
       const cat = document.getElementById("categoria").value;
@@ -462,8 +529,29 @@
       );
       return lista;
     }
-    document.getElementById("categoria").addEventListener("change", () => mostrarItens(getItensFiltrados()));
+
+    // Atualiza a observação quando muda a categoria (especialmente importante para Soodeli)
+    document.getElementById("categoria").addEventListener("change", function() {
+      let nomeLoja = "";
+      if (document.body.classList.contains("menu-brands")) nomeLoja = "Menu Brands";
+      else if (document.body.classList.contains("poke-nordestino")) nomeLoja = "Poke Nordestino";
+      else if (document.body.classList.contains("soodeli")) nomeLoja = "Soodeli";
+      else if (document.body.classList.contains("ginger")) nomeLoja = "Ginger - Street Food & Kebabs";
+
+      definirObservacaoHeader(nomeLoja, this.value);
+      mostrarItens(getItensFiltrados());
+    });
+
     document.getElementById("busca").addEventListener("input", () => mostrarItens(getItensFiltrados()));
+
+    window.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.add("menu-brands");
+      document.getElementById("logo").src = "Menu.png";
+      const botaoMenu = document.getElementById("loja-menu");
+      botaoMenu.classList.add("active");
+      definirObservacaoHeader("Menu Brands", "");
+      carregarLoja("MenuFiltrado.csv", "Menu Brands", "Menu.png", botaoMenu);
+    });
   </script>
 </body>
 </html>
