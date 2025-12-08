@@ -362,18 +362,18 @@
       let texto = "";
 
       if (nomeLoja.includes("Menu")) {
-        texto = "2 acompanhamentos para cada prato";
+        texto = "*2 acompanhamentos para cada prato";
       } else if (nomeLoja.includes("Poke")) {
-        texto = "Poke pra montar: 1 proteína e 2 acompanhamentos";
+        texto = "*Poke pra montar: 1 proteína e 2 acompanhamentos";
       } else if (nomeLoja.includes("Ginger")) {
         texto = "2 acompanhamentos para cada prato executivo";
       } else if (nomeLoja === "Soodeli") {
         if (categoria.includes("SALADA DO MEU JEITO")) {
-          texto = "1 base, 1 proteína, até 3 ingredientes, 1 queijo, 1 molho, 1 topping";
+          texto = "*1 base, 1 proteína, até 3 ingredientes, 1 queijo, 1 molho, 1 topping";
         } else if (categoria.includes("SOODELI LEV")) {
-          texto = "1 base, até 4 ingredientes, 1 proteína, 1 finalização, 1 molho, adicional";
+          texto = "*1 base, até 4 ingredientes, 1 proteína, 1 finalização, 1 molho, X adicional";
         } else if (categoria.includes("WRAP DO MEU JEITO")) {
-          texto = "alface ou colesaw, 1 proteína, 2 ingredientes, 1 queijo, 1 molho";
+          texto = "*alface ou colesaw, 1 proteína, 2 ingredientes, 1 queijo, 1 molho";
         }
       }
 
