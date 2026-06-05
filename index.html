@@ -73,11 +73,23 @@
     }
     .preco, .filtros label { color: var(--cor-principal); }
 
-    .item-carrinho { background: rgba(227,6,19,0.1); }
-    .carrinho-total { color: white !important; }
-    body.menu-brands .carrinho-total,
-    body.poke-nordestino .carrinho-total,
-    body.soodeli .carrinho-total { color: #000 !important; }
+      .carrinho-total {
+      background: #fff5f5; 
+      padding: 20px; 
+      text-align: center; 
+      font-size: 1.7em;
+      font-weight: bold; 
+      border-top: 4px solid var(--cor-principal);
+      color: #000 !important;           /* Cor escura por padrão */
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Mantém branco apenas em temas com fundo escuro (se necessário) */
+    body.buk .carrinho-total,
+    body.zack .carrinho-total {
+      color: white !important;
+      background: var(--cor-principal) !important;
+    }
 
     .container {
       max-width: 1420px; /* Aumentado para descrições longas */
