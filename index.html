@@ -3,34 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Menu Brands - Cardápio Digital</title>
+  <title>Cardápio Digital - Menu Brands</title>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
  
   <style>
     :root { --vermelho: #e30613; --vermelho-hover: #c4000f; --branco: #fff; }
     body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #fff; color: #333; overflow-x: hidden; transition: background 0.4s ease; }
+
     .topbar {
       background: var(--vermelho);
       padding: 22px 20px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       box-shadow: 0 6px 20px rgba(227,6,19,0.35);
       position: relative;
       z-index: 100;
       min-height: 100px;
       transition: background 0.4s ease;
     }
-    .btn-lojas {
-      background: none; border: none; color: white; font-size: 1.62em;
-      cursor: pointer; padding: 12px 18px; border-radius: 12px; transition: 0.2s; font-weight: bold;
-    }
-    .btn-lojas:hover { background: rgba(255,255,255,0.25); }
+
     .logo-container {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
       max-width: 240px;
     }
     .logo-container img {
@@ -40,7 +33,7 @@
       object-fit: contain;
     }
 
-    /* OBSERVAÇÃO NO HEADER - CANTO SUPERIOR DIREITO */
+    /* OBSERVAÇÃO NO HEADER */
     .observacao-header {
       position: absolute;
       right: 20px;
@@ -56,6 +49,7 @@
       z-index: 10;
       pointer-events: none;
     }
+
     @media (max-width: 768px) {
       .observacao-header {
         font-size: 0.95em;
@@ -72,166 +66,135 @@
     }
 
     /* IDENTIDADE VISUAL POR LOJA */
-    body.menu-brands {
-      --cor-principal: #e30613;
-      --cor-hover: #c4000f;
-      background: #ffffff;
-    }
-    body.amicis {
-      --cor-principal: #e30613;
-      --cor-hover: #c4000f;
-      --cor-secundaria: #008248;
-      background: #ffffff;
-    }
-    body.amicis .topbar { background: #e30613; }
-    body.amicis .categoria-tag, body.amicis .quantidade button, body.amicis .carrinho-header,
-    body.amicis .filtros, body.amicis .carrinho-total {
-      background: #008248; border-color: #008248;
-    }
-    body.amicis .preco, body.amicis .filtros label { color: #008248; }
+    body.menu-brands     { --cor-principal: #e30613; --cor-hover: #c4000f; background: #ffffff; }
+    body.amicis          { --cor-principal: #e30613; --cor-hover: #c4000f; --cor-secundaria: #008248; background: #ffffff; }
+    body.buk             { --cor-principal: #001F3F; --cor-hover: #001028; --cor-secundaria: #FF9F1C; background: #ffffff; }
+    body.buoni,
+    body.chapa           { --cor-principal: #e30613; --cor-hover: #c4000f; background: #FFC107; }
+    body.ginger          { --cor-principal: #e30613; --cor-hover: #c4000f; background: #d4a017; }
+    body.tipico          { --cor-principal: #d32f2f; --cor-hover: #b71c1c; background: #f5e6cc; }
+    body.poke-nordestino { --cor-principal: #f4a261; --cor-hover: #e76f51; background: #fff7ed; }
+    body.soodeli         { --cor-principal: #008248; --cor-hover: #006400; background: #fff59d; }
+    body.zack            { --cor-principal: #0066FF; --cor-hover: #0044cc; --cor-secundaria: #FFC107; background: #ffffff; }
 
-    body.buk {
-      --cor-principal: #001F3F;
-      --cor-hover: #001028;
-      --cor-secundaria: #FF9F1C;
-      background: #ffffff;
-    }
-    body.buk .topbar { background: #001F3F; }
-    body.buk .categoria-tag, body.buk .quantidade button, body.buk .carrinho-header,
-    body.buk .filtros, body.buk .carrinho-total {
-      background: #FF9F1C; border-color: #FF9F1C; color: #001F3F !important;
-    }
-    body.buk .preco, body.buk .filtros label { color: #FF9F1C; }
-    body.buk .carrinho-total { background: #fff8f0; color: #001F3F; border-top-color: #FF9F1C; }
-
-    body.buoni {
-      --cor-principal: #e30613;
-      --cor-hover: #c4000f;
-      background: #FFC107;
-    }
-    body.buoni .topbar { background: #FFC107; }
-    body.buoni .btn-lojas, body.buoni th, body.buoni .categoria-tag,
-    body.buoni .quantidade button, body.buoni .carrinho-header,
-    body.buoni .filtros, body.buoni .carrinho-total {
-      background: #e30613; border-color: #e30613;
-    }
-    body.buoni .preco, body.buoni .filtros label { color: #e30613; }
-
-    body.chapa {
-      --cor-principal: #e30613;
-      --cor-hover: #c4000f;
-      background: #FFC107;
-    }
-    body.chapa .topbar { background: #FFC107; }
-    body.chapa .btn-lojas, body.chapa th, body.chapa .categoria-tag,
-    body.chapa .quantidade button, body.chapa .carrinho-header,
-    body.chapa .filtros, body.chapa .carrinho-total {
-      background: #e30613; border-color: #e30613;
-    }
-    body.chapa .preco, body.chapa .filtros label { color: #e30613; }
-
-    body.ginger {
-      --cor-principal: #e30613;
-      --cor-hover: #c4000f;
-      background: #d4a017;
-    }
-    body.ginger .topbar { background: #d4a017; }
-    body.ginger .btn-lojas, body.ginger th, body.ginger .categoria-tag,
-    body.ginger .quantidade button, body.ginger .carrinho-header,
-    body.ginger .filtros, body.ginger .carrinho-total {
-      background: #e30613; border-color: #e30613;
-    }
-    body.ginger .preco, body.ginger .filtros label { color: #e30613; }
-
-    body.tipico {
-      --cor-principal: #d32f2f;
-      --cor-hover: #b71c1c;
-      background: #f5e6cc;
-    }
-    body.tipico .topbar { background: #f5e6cc; }
-    body.tipico .btn-lojas, body.tipico th, body.tipico .categoria-tag,
-    body.tipico .quantidade button, body.tipico .carrinho-header,
-    body.tipico .filtros, body.tipico .carrinho-total {
-      background: #d32f2f; border-color: #d32f2f;
-    }
-    body.tipico .preco, body.tipico .filtros label { color: #d32f2f; }
-
-    body.poke-nordestino {
-      --cor-principal: #f4a261;
-      --cor-hover: #e76f51;
-      background: #fff7ed;
-    }
-
-    body.soodeli {
-      --cor-principal: #008248;
-      --cor-hover: #006400;
-      background: #fff59d;
-    }
-    body.soodeli .topbar { background: #d8dd12 !important; }
-
-    body.zack {
-      --cor-principal: #0066FF;
-      --cor-hover: #0044cc;
-      --cor-secundaria: #FFC107;
-      background: #ffffff;
-    }
-    body.zack .topbar { background: #0066FF; }
-    body.zack .categoria-tag, body.zack .quantidade button, body.zack .carrinho-header,
-    body.zack .filtros, body.zack .carrinho-total {
-      background: #FFC107; border-color: #FFC107; color: #0066FF !important;
-    }
-    body.zack .preco, body.zack .filtros label { color: #0066FF; }
-    body.zack .carrinho-total { background: #fffdf0; color: #0066FF; border-top-color: #FFC107; }
+    body.amicis .topbar,
+    body.buk .topbar,
+    body.zack .topbar     { background: var(--cor-principal) !important; }
+    body.soodeli .topbar  { background: #d8dd12 !important; }
 
     .topbar { background: var(--cor-principal); }
-    .btn-lojas, th, .categoria-tag, .quantidade button, .carrinho-header, .filtros, .carrinho-total {
+    th, .categoria-tag, .quantidade button, .carrinho-header, .filtros, .carrinho-total {
       background: var(--cor-principal);
       border-color: var(--cor-principal);
     }
     .preco, .filtros label { color: var(--cor-principal); }
-    .item-carrinho { background: rgba(227,6,19,0.1); }
-    .sidebar li:hover, .sidebar li.active { background: var(--cor-principal); }
 
-    .filtros label {
-      font-weight: normal !important;
-      font-size: 1.2em;
-      color: #333 !important;
-    }
-    body:not(.menu-brands):not(.poke-nordestino):not(.soodeli) .filtros label {
-      color: white !important;
-    }
-    .carrinho-total {
-      color: white !important;
-    }
+    .item-carrinho { background: rgba(227,6,19,0.1); }
+    .carrinho-total { color: white !important; }
     body.menu-brands .carrinho-total,
     body.poke-nordestino .carrinho-total,
-    body.soodeli .carrinho-total {
-      color: #000 !important;
-    }
+    body.soodeli .carrinho-total { color: #000 !important; }
 
+    /* FILTROS - Melhoria de layout */
     .container {
-      max-width: 1160px;
+      max-width: 1180px;
       margin: 80px auto 50px auto;
       padding: 0 20px;
     }
+
     .filtros {
-      background: white; padding: 24px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-      margin-bottom: 30px; text-align: center; border: 3px solid var(--cor-principal);
+      background: white;
+      padding: 28px 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      border: 3px solid var(--cor-principal);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
     }
-    select, input { padding: 13px 16px; font-size: 1.05em; border: 2px solid #ddd; border-radius: 12px; }
-    select { width: 320px; }
-    input { width: 420px; max-width: 100%; border-color: var(--cor-principal); margin-left: 15px; }
-    table { width: 100%; border-collapse: collapse; background: white; border-radius: 2px solid var(--cor-principal); border-radius: 16px; overflow: hidden; box-shadow: 0 8px 25px rgba(227,6,19,0.12); }
-    th { background: var(--cor-principal); color: white; padding: 18px 16px; font-weight: 600; font-size: 1.1em; }
-    td { padding: 18px 16px; cursor: pointer; transition: 0.2s; }
+
+    .filtro-grupo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: nowrap;
+    }
+
+    .filtros label {
+      font-weight: 600;
+      font-size: 1.18em;
+      white-space: nowrap;
+    }
+
+    select, input {
+      padding: 14px 18px;
+      font-size: 1.08em;
+      border: 2px solid #ddd;
+      border-radius: 12px;
+    }
+
+    #loja, #categoria {
+      min-width: 260px;
+    }
+
+    #busca {
+      min-width: 420px;
+      flex: 1;
+      max-width: 520px;
+      border-color: var(--cor-principal);
+    }
+
+    /* TABELA - Colunas centralizadas */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(227,6,19,0.12);
+    }
+
+    th {
+      background: var(--cor-principal);
+      color: white;
+      padding: 18px 12px;
+      font-weight: 600;
+      font-size: 1.1em;
+      text-align: center;
+    }
+
+    td {
+      padding: 16px 12px;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .preco { 
+      font-weight: bold; 
+      color: var(--cor-principal); 
+      text-align: right; 
+      font-size: 1.22em; 
+    }
+
+    .categoria-tag {
+      background: var(--cor-principal);
+      color: white;
+      padding: 7px 16px;
+      border-radius: 30px;
+      font-size: 0.85em;
+      font-weight: bold;
+      display: inline-block;
+    }
+
     tr:hover { background: #fff5f5; }
     tr.selected { background: #ffebee !important; }
-    .preco { font-weight: bold; color: var(--cor-principal); text-align: right; font-size: 1.2em; }
-    .categoria-tag {
-      background: var(--cor-principal); color: white; padding: 7px 16px; border-radius: 30px;
-      font-size: 0.85em; font-weight: bold; max-width: 180px; overflow: hidden;
-      text-overflow: ellipsis; white-space: nowrap; display: inline-block;
-    }
+
+    /* Carrinho */
     .carrinho-flutuante {
       position: fixed; bottom: 20px; right: 20px; width: 400px; background: white;
       border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.3); border: 4px solid var(--cor-principal);
@@ -271,6 +234,14 @@
     .minimizado .carrinho-header { padding: 14px 18px; font-size: 1.4em; }
 
     @media (max-width: 768px) {
+      .filtros {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 22px;
+      }
+      .filtro-grupo { justify-content: center; }
+      select, input { min-width: auto; width: 100%; }
+      #busca { max-width: none; }
       .carrinho-flutuante, .minimizado { width: 92% !important; right: 4%; left: 4%; }
       .topbar { padding: 16px; }
       .logo-container { max-width: 180px; }
@@ -278,9 +249,8 @@
     }
   </style>
 </head>
-<body>
+<body class="menu-brands">
   <div class="topbar">
-    <div style="width: 70px;"></div>
     <div class="logo-container">
       <img id="logo" src="Menu.png" alt="Logo da loja">
     </div>
@@ -289,11 +259,21 @@
 
   <div class="container">
     <div class="filtros">
-      <label for="loja">Filtrar por Loja:</label>
-      <select id="loja"><option value="">Todas</option></select>
-      <label for="categoria">Filtrar por categoria:</label>
-      <select id="categoria"><option value="">Tudo</option></select>
-      <input type="text" id="busca" placeholder=" Pesquisar produto ou descrição...">
+      <div class="filtro-grupo">
+        <label for="loja">Filtrar por Loja:</label>
+        <select id="loja">
+          <option value="">Todas</option>
+        </select>
+      </div>
+      <div class="filtro-grupo">
+        <label for="categoria">Filtrar por categoria:</label>
+        <select id="categoria">
+          <option value="">Tudo</option>
+        </select>
+      </div>
+      <div class="filtro-grupo">
+        <input type="text" id="busca" placeholder="Pesquisar produto ou descrição...">
+      </div>
     </div>
     <div id="resultado"></div>
   </div>
@@ -311,6 +291,7 @@
   <script>
     let todosOsItens = [];
     let carrinho = [];
+    let lojaAtual = "";
 
     function limparCategoria(txt) {
       if (!txt || txt.trim() === "") return "Outros";
@@ -336,23 +317,36 @@
           texto = "*alface ou colesaw, 1 proteína, 2 ingredientes, 1 queijo, 1 molho";
         }
       }
-
       el.textContent = texto;
     }
 
-    function aplicarTemaLoja(nomeLoja) {
+    function aplicarTema(loja) {
       document.body.classList.remove("menu-brands","amicis","buk","buoni","chapa","ginger","tipico","poke-nordestino","soodeli","zack");
 
-      if (nomeLoja.includes("Menu")) document.body.classList.add("menu-brands");
-      else if (nomeLoja.includes("Amicis")) document.body.classList.add("amicis");
-      else if (nomeLoja.includes("BUK")) document.body.classList.add("buk");
-      else if (nomeLoja.includes("Buoni")) document.body.classList.add("buoni");
-      else if (nomeLoja.includes("Chapa")) document.body.classList.add("chapa");
-      else if (nomeLoja.includes("Ginger")) document.body.classList.add("ginger");
-      else if (nomeLoja.includes("Típico")) document.body.classList.add("tipico");
-      else if (nomeLoja.includes("Poke")) document.body.classList.add("poke-nordestino");
-      else if (nomeLoja === "Soodeli") document.body.classList.add("soodeli");
-      else if (nomeLoja.includes("Zack")) document.body.classList.add("zack");
+      if (loja.includes("Menu")) document.body.classList.add("menu-brands");
+      else if (loja.includes("Amicis")) document.body.classList.add("amicis");
+      else if (loja.includes("BUK")) document.body.classList.add("buk");
+      else if (loja.includes("Buoni")) document.body.classList.add("buoni");
+      else if (loja.includes("Chapa")) document.body.classList.add("chapa");
+      else if (loja.includes("Ginger")) document.body.classList.add("ginger");
+      else if (loja.includes("Típico")) document.body.classList.add("tipico");
+      else if (loja.includes("Poke")) document.body.classList.add("poke-nordestino");
+      else if (loja === "Soodeli") document.body.classList.add("soodeli");
+      else if (loja.includes("Zack")) document.body.classList.add("zack");
+    }
+
+    function getLogoForStore(loja) {
+      if (loja.includes("Menu")) return "Menu.png";
+      if (loja.includes("Amicis")) return "Amicis.png";
+      if (loja.includes("BUK")) return "Buk.png";
+      if (loja.includes("Buoni")) return "Buoni.png";
+      if (loja.includes("Chapa")) return "Chapa.png";
+      if (loja.includes("Ginger")) return "Ginger.png";
+      if (loja.includes("Típico")) return "Tipico.png";
+      if (loja.includes("Poke")) return "Poke.png";
+      if (loja === "Soodeli") return "Soodeli.png";
+      if (loja.includes("Zack")) return "Zac.png";
+      return "Menu.png";
     }
 
     function carregarCardapio() {
@@ -366,39 +360,50 @@
             .map(i => ({ 
               ...i, 
               CATEGORIA: limparCategoria(i.CATEGORIA),
-              LOJA: i.LOJA ? i.LOJA.trim() : "Desconhecida"
+              LOJA: (i.LOJA || "").trim()
             }));
 
           // Popular filtro de lojas
-          const lojas = [...new Set(todosOsItens.map(i => i.LOJA))].sort();
+          const lojas = [...new Set(todosOsItens.map(i => i.LOJA))].filter(l => l).sort();
           const selectLoja = document.getElementById("loja");
           selectLoja.innerHTML = '<option value="">Todas</option>';
           lojas.forEach(l => {
             const opt = document.createElement("option");
-            opt.value = l; opt.textContent = l;
+            opt.value = l;
+            opt.textContent = l;
             selectLoja.appendChild(opt);
           });
 
-          // Popular categorias (inicialmente todas)
-          atualizarCategorias(todosOsItens);
-
-          mostrarItens(todosOsItens);
-          definirObservacaoHeader("Menu Brands", ""); // Default
+          // Carregar inicialmente com Menu Brands
+          lojaAtual = "Menu Brands";
+          aplicarTema(lojaAtual);
+          document.getElementById("logo").src = getLogoForStore(lojaAtual);
+          definirObservacaoHeader(lojaAtual, "");
+          atualizarFiltrosCategoria();
+          mostrarItens(getItensFiltrados());
         },
         error: function() {
-          document.getElementById("resultado").innerHTML = "<p style='color:red;text-align:center;'>Erro ao carregar o cardápio. Verifique se Cardapio.csv existe.</p>";
+          document.getElementById("resultado").innerHTML = "<p style='color:red;text-align:center;padding:50px;'>Erro ao carregar Cardapio.csv. Verifique se o arquivo está na mesma pasta.</p>";
         }
       });
     }
 
-    function atualizarCategorias(itens) {
-      const categorias = [...new Set(itens.map(i => i.CATEGORIA))].sort();
-      const select = document.getElementById("categoria");
-      select.innerHTML = '<option value="">Tudo</option>';
+    function atualizarFiltrosCategoria() {
+      const catSelect = document.getElementById("categoria");
+      const lojaSelecionada = document.getElementById("loja").value;
+      
+      let itensFiltrados = todosOsItens;
+      if (lojaSelecionada) {
+        itensFiltrados = itensFiltrados.filter(i => i.LOJA === lojaSelecionada);
+      }
+
+      const categorias = [...new Set(itensFiltrados.map(i => i.CATEGORIA))].sort();
+      catSelect.innerHTML = '<option value="">Tudo</option>';
       categorias.forEach(c => {
         const opt = document.createElement("option");
-        opt.value = c; opt.textContent = c;
-        select.appendChild(opt);
+        opt.value = c;
+        opt.textContent = c;
+        catSelect.appendChild(opt);
       });
     }
 
@@ -408,20 +413,23 @@
         container.innerHTML = '<p style="text-align:center; color:#888; padding:50px;">Nenhum produto encontrado.</p>';
         return;
       }
+
       let html = `<table><thead><tr>
-        <th style="width:120px;">Loja</th>
-        <th style="width:180px;">Categoria</th>
+        <th>Loja</th>
+        <th style="width:160px;">Categoria</th>
         <th>Nome no Cardápio</th>
         <th>Nome PDV</th>
         <th>Cód. PDV</th>
         <th style="width:110px;">Preço</th>
         <th>Descrição</th>
       </tr></thead><tbody>`;
+
       itensFiltrados.forEach(item => {
         const preco = parseFloat(item["PREÇO VENDA CHEIO"]) || 0;
         const itemNoCarrinho = carrinho.find(x => x.codigo === item["CÓD PDV"]);
         const qtd = itemNoCarrinho ? itemNoCarrinho.qtd : 0;
         const itemJSON = JSON.stringify(item).replace(/'/g, "&apos;");
+
         html += `<tr onclick='adicionarItem(${itemJSON})' style="cursor:pointer;${qtd>0?'background:#ffebee;':''}">
           <td><strong>${item.LOJA}</strong></td>
           <td><span class="categoria-tag">${item.CATEGORIA}</span></td>
@@ -432,6 +440,7 @@
           <td>${item["DESCRICAO ITEM CARDAPIO"] || ''}</td>
         </tr>`;
       });
+
       container.innerHTML = html + `</tbody></table>`;
     }
 
@@ -439,6 +448,7 @@
       const existente = carrinho.find(x => x.codigo === item["CÓD PDV"]);
       if (existente) existente.qtd += 1;
       else carrinho.push({ nome: item["NOME PDV"], codigo: item["CÓD PDV"], preco: parseFloat(item["PREÇO VENDA CHEIO"]) || 0, qtd: 1 });
+      
       document.getElementById("carrinho").style.display = "block";
       atualizarCarrinho();
       mostrarItens(getItensFiltrados());
@@ -463,7 +473,8 @@
       }
       let html = ""; let total = 0;
       carrinho.forEach(item => {
-        const subtotal = item.preco * item.qtd; total += subtotal;
+        const subtotal = item.preco * item.qtd;
+        total += subtotal;
         html += `<div class="item-carrinho">
           <div><strong>${item.nome}</strong><br>Cód: ${item.codigo} — R$ ${item.preco.toFixed(2).replace(".",",")} cada</div>
           <div class="quantidade">
@@ -473,7 +484,7 @@
           </div>
         </div>`;
       });
-      lista.innerHTML = html || "Nenhum item";
+      lista.innerHTML = html;
       totalEl.textContent = `Total: R$ ${total.toFixed(2).replace(".",",")}`;
     }
 
@@ -505,39 +516,22 @@
 
     // Event listeners
     document.getElementById("loja").addEventListener("change", function() {
-      const nomeLoja = this.value || "Menu Brands";
-      aplicarTemaLoja(nomeLoja);
-      document.getElementById("logo").src = getLogoForStore(nomeLoja); // Placeholder, adjust as needed
-      definirObservacaoHeader(nomeLoja, document.getElementById("categoria").value);
-      
-      const filtrados = getItensFiltrados();
-      atualizarCategorias(filtrados); // Update categories based on selected store
-      mostrarItens(filtrados);
+      lojaAtual = this.value || "Menu Brands";
+      aplicarTema(lojaAtual);
+      document.getElementById("logo").src = getLogoForStore(lojaAtual);
+      definirObservacaoHeader(lojaAtual, document.getElementById("categoria").value);
+      atualizarFiltrosCategoria();
+      mostrarItens(getItensFiltrados());
     });
 
     document.getElementById("categoria").addEventListener("change", function() {
-      const nomeLoja = document.getElementById("loja").value || "Menu Brands";
-      definirObservacaoHeader(nomeLoja, this.value);
+      definirObservacaoHeader(lojaAtual, this.value);
       mostrarItens(getItensFiltrados());
     });
 
     document.getElementById("busca").addEventListener("input", () => mostrarItens(getItensFiltrados()));
 
-    function getLogoForStore(nomeLoja) {
-      // Map logos based on store name - adjust paths as needed
-      if (nomeLoja.includes("Menu")) return "Menu.png";
-      if (nomeLoja.includes("Amicis")) return "Amicis.png";
-      if (nomeLoja.includes("BUK")) return "Buk.png";
-      if (nomeLoja.includes("Buoni")) return "Buoni.png";
-      if (nomeLoja.includes("Chapa")) return "Chapa.png";
-      if (nomeLoja.includes("Ginger")) return "Ginger.png";
-      if (nomeLoja.includes("Típico")) return "Tipico.png";
-      if (nomeLoja.includes("Poke")) return "Poke.png";
-      if (nomeLoja === "Soodeli") return "Soodeli.png";
-      if (nomeLoja.includes("Zack")) return "Zac.png";
-      return "Menu.png"; // default
-    }
-
+    // Inicialização
     window.addEventListener("DOMContentLoaded", () => {
       carregarCardapio();
     });
