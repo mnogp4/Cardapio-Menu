@@ -5,11 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cardápio Digital</title>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
- 
   <style>
     :root { --vermelho: #e30613; --vermelho-hover: #c4000f; --branco: #fff; }
     body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #fff; color: #333; overflow-x: hidden; transition: background 0.4s ease; }
-
     .topbar {
       background: var(--vermelho);
       padding: 22px 20px;
@@ -22,7 +20,6 @@
       min-height: 100px;
       transition: background 0.4s ease;
     }
-
     .logo-container {
       max-width: 240px;
     }
@@ -32,7 +29,6 @@
       max-height: 144px;
       object-fit: contain;
     }
-
     .observacao-header {
       position: absolute;
       right: 20px;
@@ -48,24 +44,21 @@
       z-index: 10;
       pointer-events: none;
     }
-
     /* IDENTIDADE VISUAL POR LOJA */
-    body.menu-brands     { --cor-principal: #e30613; --cor-hover: #c4000f; background: #ffffff; }
-    body.amicis          { --cor-principal: #e30613; --cor-hover: #008248; --cor-secundaria: #008248; background: #ffffff; }
-    body.buk             { --cor-principal: #001F3F; --cor-hover: #001028; --cor-secundaria: #FF9F1C; background: #ffffff; }
+    body.menu-brands { --cor-principal: #e30613; --cor-hover: #c4000f; background: #ffffff; }
+    body.amicis { --cor-principal: #008248; --cor-hover: #c4000f; --cor-secundaria: #c4000f; background: #ffffff; }
+    body.buk { --cor-principal: #001F3F; --cor-hover: #001028; --cor-secundaria: #FF9F1C; background: #ffffff; }
     body.buoni,
-    body.chapa           { --cor-principal: #e30613; --cor-hover: #c4000f; background: #FFC107; }
-    body.ginger          { --cor-principal: #e30613; --cor-hover: #c4000f; background: #d4a017; }
-    body.tipico          { --cor-principal: #d32f2f; --cor-hover: #b71c1c; background: #f5e6cc; }
+    body.chapa { --cor-principal: #e30613; --cor-hover: #c4000f; background: #FFC107; }
+    body.ginger { --cor-principal: #e30613; --cor-hover: #c4000f; background: #d4a017; }
+    body.tipico { --cor-principal: #d32f2f; --cor-hover: #b71c1c; background: #f5e6cc; }
     body.poke-nordestino { --cor-principal: #f4a261; --cor-hover: #e76f51; background: #fff7ed; }
-    body.soodeli         { --cor-principal: #008248; --cor-hover: #006400; background: #fff59d; }
-    body.zack            { --cor-principal: #0066FF; --cor-hover: #0044cc; --cor-secundaria: #FFC107; background: #ffffff; }
-
+    body.soodeli { --cor-principal: #008248; --cor-hover: #006400; background: #fff59d; }
+    body.zack { --cor-principal: #0066FF; --cor-hover: #0044cc; --cor-secundaria: #FFC107; background: #ffffff; }
     body.amicis .topbar,
     body.buk .topbar,
-    body.zack .topbar     { background: var(--cor-principal) !important; }
-    body.soodeli .topbar  { background: #d8dd12 !important; }
-
+    body.zack .topbar { background: var(--cor-principal) !important; }
+    body.soodeli .topbar { background: #d8dd12 !important; }
     .topbar { background: var(--cor-principal); }
     th, .categoria-tag, .quantidade button, .carrinho-header, .filtros, .carrinho-total {
       background: var(--cor-principal);
@@ -73,9 +66,34 @@
     }
     .preco, .filtros label { color: var(--cor-principal); }
 
-        /* TOTAL - Fundo com cor do tema (igual BUK e ZACK) */
+    /* ==================== CARRINHO ==================== */
+    .carrinho-flutuante {
+      position: fixed; bottom: 20px; right: 20px; width: 400px; background: white;
+      border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.3); border: 4px solid var(--cor-principal);
+      z-index: 1000; transition: all 0.3s ease; display: none; overflow: hidden;
+    }
+    .carrinho-header {
+      background: var(--cor-principal); color: white; padding: 18px 20px; font-size: 1.5em;
+      text-align: center; font-weight: bold; position: relative; min-height: 32px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .btn-minimizar, .btn-fechar {
+      background: none; border: none; color: white; font-size: 1.8em; cursor: pointer; font-weight: bold;
+      width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;
+    }
+    .carrinho-body { max-height: 50vh; overflow-y: auto; padding: 18px; }
+    .item-carrinho {
+      background: #fff0f0; border-radius: 14px; padding: 14px; margin: 12px 0;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .quantidade button {
+      width: 32px; height: 32px; border: none; background: var(--cor-principal); color: white;
+      border-radius: 50%; cursor: pointer; font-weight: bold;
+    }
+
+    /* TOTAL - Fundo com cor do tema da loja (funciona para todas) */
     .carrinho-total {
-      background: var(--cor-principal);
+      background: var(--cor-principal) !important;
       color: white !important;
       padding: 20px;
       text-align: center;
@@ -84,7 +102,6 @@
       border-top: 4px solid var(--cor-principal);
       box-shadow: 0 -3px 10px rgba(0,0,0,0.15);
     }
-
     .minimizado .carrinho-total {
       font-size: 1.6em !important;
       padding: 24px 12px !important;
@@ -95,7 +112,6 @@
       margin: 80px auto 50px auto;
       padding: 0 20px;
     }
-
     .filtros {
       background: white;
       padding: 28px 30px;
@@ -109,30 +125,25 @@
       justify-content: center;
       gap: 20px;
     }
-
     .filtro-grupo {
       display: flex;
       align-items: center;
       gap: 10px;
       flex-wrap: nowrap;
     }
-
     .filtros label {
       font-weight: 600;
       font-size: 1.18em;
       white-space: nowrap;
     }
-
     select, input {
       padding: 14px 18px;
       font-size: 1.08em;
       border: 2px solid #ddd;
       border-radius: 12px;
     }
-
     #loja, #categoria { min-width: 260px; }
     #busca { min-width: 420px; flex: 1; max-width: 520px; border-color: var(--cor-principal); }
-
     table {
       width: 100%;
       border-collapse: collapse;
@@ -141,7 +152,6 @@
       overflow: hidden;
       box-shadow: 0 8px 25px rgba(227,6,19,0.12);
     }
-
     th {
       background: var(--cor-principal);
       color: white;
@@ -150,7 +160,6 @@
       font-size: 1.1em;
       text-align: center;
     }
-
     td {
       padding: 16px 12px;
       text-align: center;
@@ -158,14 +167,12 @@
       cursor: pointer;
       transition: background 0.2s;
     }
-
-    .preco { 
-      font-weight: bold; 
-      color: var(--cor-principal); 
-      text-align: right; 
-      font-size: 1.22em; 
+    .preco {
+      font-weight: bold;
+      color: var(--cor-principal);
+      text-align: right;
+      font-size: 1.22em;
     }
-
     .categoria-tag {
       background: var(--cor-principal);
       color: white;
@@ -175,10 +182,8 @@
       font-weight: bold;
       display: inline-block;
     }
-
     tr:hover { background: #fff5f5; }
     tr.selected { background: #ffebee !important; }
-
     /* Carrinho */
     .carrinho-flutuante {
       position: fixed; bottom: 20px; right: 20px; width: 400px; background: white;
@@ -203,11 +208,6 @@
       width: 32px; height: 32px; border: none; background: var(--cor-principal); color: white;
       border-radius: 50%; cursor: pointer; font-weight: bold;
     }
-    .carrinho-total {
-      background: #fff5f5; padding: 20px; text-align: center; font-size: 1.7em;
-      font-weight: bold; color: white !important; border-top: 4px solid var(--cor-principal);
-    }
-
     @media (max-width: 768px) {
       .filtros { flex-direction: column; align-items: stretch; padding: 22px; }
       select, input { width: 100%; min-width: auto; }
@@ -222,7 +222,6 @@
     </div>
     <div class="observacao-header" id="observacaoHeader"></div>
   </div>
-
   <div class="container">
     <div class="filtros">
       <div class="filtro-grupo">
@@ -239,7 +238,6 @@
     </div>
     <div id="resultado"></div>
   </div>
-
   <div id="carrinho" class="carrinho-flutuante">
     <div class="carrinho-header">
       <button class="btn-minimizar" onclick="minimizarCarrinho()">−</button>
@@ -249,17 +247,14 @@
     <div class="carrinho-body" id="listaItens">Clique nos itens para adicionar</div>
     <div class="carrinho-total">Total: R$ 0,00</div>
   </div>
-
   <script>
     let todosOsItens = [];
     let carrinho = [];
     let lojaAtual = "MENU";
-
     function limparCategoria(txt) {
       if (!txt || txt.trim() === "") return "Outros";
       return txt.toString().replace(/[\r\n\t\v\f]+/g, " ").replace(/[^\w\s\-\(\)\+\&à-úÀ-Ú]/g, "").replace(/\s+/g, " ").replace(/:/g, "").trim().substring(0, 80);
     }
-
     function definirObservacaoHeader(nomeLoja, categoria = "") {
       const el = document.getElementById("observacaoHeader");
       let texto = "";
@@ -276,12 +271,9 @@
       }
       el.textContent = texto;
     }
-
     function aplicarTema(loja) {
       document.body.classList.remove("menu-brands","amicis","buk","buoni","chapa","ginger","tipico","poke-nordestino","soodeli","zack");
-
       const lojaUpper = (loja || "").toUpperCase();
-
       if (lojaUpper.includes("MENU") || lojaUpper.includes("AZILADOS")) {
         document.body.classList.add("menu-brands");
       } else if (lojaUpper.includes("AMICIS")) {
@@ -306,7 +298,6 @@
         document.body.classList.add("menu-brands"); // fallback
       }
     }
-
     function getLogoForStore(loja) {
       const lojaUpper = (loja || "").toUpperCase();
       if (lojaUpper.includes("MENU") || lojaUpper.includes("AZILADOS")) return "Menu.png";
@@ -321,7 +312,6 @@
       if (lojaUpper.includes("ZACK")) return "Zac.png";
       return "Menu.png";
     }
-
     function carregarCardapio() {
       Papa.parse("Cardapio.csv", {
         download: true,
@@ -330,12 +320,11 @@
         complete: function(results) {
           todosOsItens = results.data
             .filter(i => i["NOME CARDAPIO"] && i["NOME CARDAPIO"].trim())
-            .map(i => ({ 
-              ...i, 
+            .map(i => ({
+              ...i,
               CATEGORIA: limparCategoria(i.CATEGORIA),
               LOJA: (i.LOJA || "").trim()
             }));
-
           const lojas = [...new Set(todosOsItens.map(i => i.LOJA))].filter(l => l).sort();
           const selectLoja = document.getElementById("loja");
           selectLoja.innerHTML = '<option value="">Todas</option>';
@@ -345,7 +334,6 @@
             opt.textContent = l;
             selectLoja.appendChild(opt);
           });
-
           // Inicializa com MENU
           lojaAtual = "MENU";
           aplicarTema(lojaAtual);
@@ -359,13 +347,11 @@
         }
       });
     }
-
     function atualizarFiltrosCategoria() {
       const catSelect = document.getElementById("categoria");
       const lojaSel = document.getElementById("loja").value;
       let itens = todosOsItens;
       if (lojaSel) itens = itens.filter(i => i.LOJA === lojaSel);
-
       const categorias = [...new Set(itens.map(i => i.CATEGORIA))].sort();
       catSelect.innerHTML = '<option value="">Tudo</option>';
       categorias.forEach(c => {
@@ -374,14 +360,12 @@
         catSelect.appendChild(opt);
       });
     }
-
     function mostrarItens(itensFiltrados) {
       const container = document.getElementById("resultado");
       if (itensFiltrados.length === 0) {
         container.innerHTML = '<p style="text-align:center; color:#888; padding:50px;">Nenhum produto encontrado.</p>';
         return;
       }
-
       let html = `<table><thead><tr>
         <th>Loja</th>
         <th style="width:160px;">Categoria</th>
@@ -391,13 +375,11 @@
         <th style="width:110px;">Preço</th>
         <th>Descrição</th>
       </tr></thead><tbody>`;
-
       itensFiltrados.forEach(item => {
         const preco = parseFloat(item["PREÇO VENDA CHEIO"]) || 0;
         const itemNoCarrinho = carrinho.find(x => x.codigo === item["CÓD PDV"]);
         const qtd = itemNoCarrinho ? itemNoCarrinho.qtd : 0;
         const itemJSON = JSON.stringify(item).replace(/'/g, "&apos;");
-
         html += `<tr onclick='adicionarItem(${itemJSON})' style="cursor:pointer;${qtd>0?'background:#ffebee;':''}">
           <td><strong>${item.LOJA}</strong></td>
           <td><span class="categoria-tag">${item.CATEGORIA}</span></td>
@@ -408,20 +390,17 @@
           <td style="text-align:left;">${item["DESCRICAO ITEM CARDAPIO"] || ''}</td>
         </tr>`;
       });
-
       container.innerHTML = html + `</tbody></table>`;
     }
-
     function adicionarItem(item) {
       const existente = carrinho.find(x => x.codigo === item["CÓD PDV"]);
       if (existente) existente.qtd += 1;
       else carrinho.push({ nome: item["NOME PDV"], codigo: item["CÓD PDV"], preco: parseFloat(item["PREÇO VENDA CHEIO"]) || 0, qtd: 1 });
-      
+     
       document.getElementById("carrinho").style.display = "block";
       atualizarCarrinho();
       mostrarItens(getItensFiltrados());
     }
-
     function mudarQuantidade(codigo, delta) {
       const item = carrinho.find(x => x.codigo === codigo);
       if (item) {
@@ -431,7 +410,6 @@
         mostrarItens(getItensFiltrados());
       }
     }
-
     function atualizarCarrinho() {
       const lista = document.getElementById("listaItens");
       const totalEl = document.querySelector(".carrinho-total");
@@ -455,20 +433,17 @@
       lista.innerHTML = html;
       totalEl.textContent = `Total: R$ ${total.toFixed(2).replace(".",",")}`;
     }
-
     function minimizarCarrinho() { document.getElementById("carrinho").classList.toggle("minimizado"); }
     function fecharCarrinho() {
       carrinho = [];
       document.getElementById("carrinho").style.display = "none";
       mostrarItens(getItensFiltrados());
     }
-
     function getItensFiltrados() {
       let lista = todosOsItens;
       const lojaSel = document.getElementById("loja").value;
       const cat = document.getElementById("categoria").value;
       const termo = document.getElementById("busca").value.toLowerCase().trim();
-
       if (lojaSel) lista = lista.filter(i => i.LOJA === lojaSel);
       if (cat) lista = lista.filter(i => i.CATEGORIA === cat);
       if (termo) lista = lista.filter(i =>
@@ -478,7 +453,6 @@
       );
       return lista;
     }
-
     // Event Listeners
     document.getElementById("loja").addEventListener("change", function() {
       lojaAtual = this.value || "MENU";
@@ -488,14 +462,11 @@
       atualizarFiltrosCategoria();
       mostrarItens(getItensFiltrados());
     });
-
     document.getElementById("categoria").addEventListener("change", function() {
       definirObservacaoHeader(lojaAtual, this.value);
       mostrarItens(getItensFiltrados());
     });
-
     document.getElementById("busca").addEventListener("input", () => mostrarItens(getItensFiltrados()));
-
     window.addEventListener("DOMContentLoaded", carregarCardapio);
   </script>
 </body>
