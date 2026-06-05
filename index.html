@@ -73,53 +73,22 @@
     }
     .preco, .filtros label { color: var(--cor-principal); }
 
-    /* ==================== CARRINHO ==================== */
-    .carrinho-flutuante {
-      position: fixed; bottom: 20px; right: 20px; width: 400px; background: white;
-      border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.3); border: 4px solid var(--cor-principal);
-      z-index: 1000; transition: all 0.3s ease; display: none; overflow: hidden;
-    }
-    .carrinho-header {
-      background: var(--cor-principal); color: white; padding: 18px 20px; font-size: 1.5em;
-      text-align: center; font-weight: bold; position: relative; min-height: 32px;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .btn-minimizar, .btn-fechar {
-      background: none; border: none; color: white; font-size: 1.8em; cursor: pointer; font-weight: bold;
-      width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;
-    }
-    .carrinho-body { max-height: 50vh; overflow-y: auto; padding: 18px; }
-    .item-carrinho {
-      background: #fff0f0; border-radius: 14px; padding: 14px; margin: 12px 0;
-      display: flex; justify-content: space-between; align-items: center;
-    }
-    .quantidade button {
-      width: 32px; height: 32px; border: none; background: var(--cor-principal); color: white;
-      border-radius: 50%; cursor: pointer; font-weight: bold;
-    }
-
-    /* TOTAL - Cor corrigida definitivamente */
+        /* TOTAL - Fundo com cor do tema (igual BUK e ZACK) */
     .carrinho-total {
-      background: #fff5f5;
+      background: var(--cor-principal);
+      color: white !important;
       padding: 20px;
       text-align: center;
       font-size: 1.7em;
       font-weight: bold;
       border-top: 4px solid var(--cor-principal);
-      color: #000000 !important;
-      box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 -3px 10px rgba(0,0,0,0.15);
     }
 
-    /* Apenas BUK e ZACK ficam com branco */
-    body.buk .carrinho-total,
-    body.zack .carrinho-total {
-      color: white !important;
-      background: var(--cor-principal) !important;
+    .minimizado .carrinho-total {
+      font-size: 1.6em !important;
+      padding: 24px 12px !important;
     }
-
-    .minimizado { width: 300px !important; height: 100px !important; }
-    .minimizado .carrinho-body { display: none !important; }
-    .minimizado .carrinho-total { font-size: 1.6em !important; padding: 24px 12px !important; }
 
     .container {
       max-width: 1420px; /* Aumentado para descrições longas */
